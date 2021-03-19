@@ -17,8 +17,8 @@ ___Enlace al tablero de Trello___: [https://trello.com/b/jc7s84Ov/pr%C3%A1ctica-
 ![Captura3](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr3-grupo1/blob/desarrollo/img/cap3.png)
 *Captura del tablero de Trello al iniciar la práctica (3/3)*
 
-![Captura4](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr3-grupo1/blob/desarrollo/img/cap4.png)
+![Captura4](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr3-grupo1/blob/desarrollo/img/cap4.PNG)
 *Captura de Telegram al vincular Trello*
 
-![Captura5](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr3-grupo1/blob/desarrollo/img/cap5.png)
+![Captura5](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr3-grupo1/blob/desarrollo/img/cap5.PNG)
 *Captura de Telegram al vincular GitHub*
