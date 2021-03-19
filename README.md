@@ -36,6 +36,7 @@ En ese trayecto el personaje se enfrentará a varios villanos. Deberá de elegir
 
 ___Enlace al tablero de Trello___: [https://trello.com/b/jc7s84Ov/pr%C3%A1ctica-3-desarrollo-%C3%A1gil](https://trello.com/b/jc7s84Ov/pr%C3%A1ctica-3-desarrollo-%C3%A1gil)
 
+
 <a name="backlog"></a>
 ### 1.2.1. Backlog
 
