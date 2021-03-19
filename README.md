@@ -3,19 +3,19 @@
 
 ## Miembros 
 
-Vico Guzmán, Sebastián Alberto - _savg0001@red.uajen.es_.
-Domingo Aguilar, Rocío - _rda00010@red.uajen.es_.
-Martínez Morales, Álvaro - _amm00337@red.uajen.es_.
-Cristian Hidalgo, Lozano - _chl00014@red.uajen.es_.
+* Vico Guzmán, Sebastián Alberto - _savg0001@red.uajen.es_.
+* Domingo Aguilar, Rocío - _rda00010@red.uajen.es_.
+* Martínez Morales, Álvaro - _amm00337@red.uajen.es_.
+* Cristian Hidalgo, Lozano - _chl00014@red.uajen.es_.
 
 3º Ingeniería del software - Ingeniería informática.
 
 ## Índice
 * [1. Sprint 0](#sprint0)
-*   [1.1. Descripción](#descripcion)
-*       [1.1.1. Título: El misterio de Arcadia](#titulo)
-*   [1.2. Trello](#trello)
-*       [1.2.1. Backlog](#backlog)
+* [1.1. Descripción](#descripcion)
+* [1.1.1. Título: El misterio de Arcadia](#titulo)
+* [1.2. Trello](#trello)
+* [1.2.1. Backlog](#backlog)
 
 
 <a name="sprint0"></a>
