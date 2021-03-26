@@ -29,21 +29,19 @@ undum.game.slideUpSpeed = 500
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
     start: new undum.SimpleSituation(
-        "<h1>Starting Out with Undum</h1>\
-        <img src='media/games/tutorial/woodcut1.png' class='float_right'>\
-        <p>Welcome to the Undum tutorial. Undum is a tool for writing\
-        hypertext interactive fiction. It has some unique features\
-        and a visual design that encourages narrative games.</p>\
-        \
-        <p>Hypertext interactive fiction is the digital equivalent of the\
-        Choose Your Own Adventure (CYOA) books that were popular in the\
-        1980s. The story is told in chunks, and you select from a range\
-        of options to move it forward. Unlike the book form, however, the\
-        digital form gives you far more flexibility to tell rich stories\
-        and introduce more interesting game elements.</p>\
-        \
-        <p class='transient'>Click <a href='hub'>this link to\
-        continue...</a></p>"
+        "<h1>LA HISTORIA COMIENZA...</h1>\
+        <p>Despierto de golpe. La luz del sol me deslumbra. Froto mis ojos hasta que consigo abrirlos por completo.\
+        Miro hacia arriba y a mi alrededor. El cielo está despejado. No sé dónde estoy. Intento hacer memoria para recordar\
+        como he llegado aquí... yo estaba en mi habitación, en el escritorio, con mi ordenador, terminando la práctica de\
+        Desarrollo Ágil que se entregaba hoy las 23.55h... ¿¡QUÉ HORA ES!? ¡Tengo que entregar la práctica! Miro mi muñeca y\
+        descubro que no tengo reloj. De repente, escucho un ruido, alguien se acerca.</p>\
+        <p class="dialogo">- La historia comienza cuando el protagonista decide ejecutar la acción que lo inicia todo.</p>\
+        <p>No me lo puedo creer. ¡Acaba de hablarme un mono que viene hacia a mí!</p>\
+        <p class="dialogo">- No pongas esa cara. Me llamo Momo. No sé quién eres ni qué buscas. La verdad es que me da igual.\
+        Solo quiero un amigo. ¿Quieres ser mi amigo?</p>\
+        <p>Continúo en shock.</p>
+        <a href="sinmono">No quiero hablar con nadie ni que nadie me moleste.</a>\
+        <a href="conmono">O quizás sea una buena idea tener alguien al lado, aunque sea un mono.</a>
     ),
 
     // NB: The 'hub' situation which is the main list of topics, is
@@ -62,77 +60,22 @@ undum.game.situations = {
         optionText: "What Undum Games are Made Of",
         displayOrder: 1
     }),
-    todo: new undum.SimpleSituation(
-        "<p>Two things can happen in a situation. The character either\
-        <a href='links'>leaves</a> the situation and enters another one, or\
-        they carry out some <a href='./do-something'>action</a>. Actions may\
-        perform some processing, they may display some results, but\
-        ultimately they put the character back into the same situation\
-        again.</p>\
-        \
-        <p>When you are designing your game, use situations to reflect a\
-        change in what the character can do. So you would change situation if\
-        the character pulls a lever to open a trapdoor, for example. Actions\
-        are intended for situations where the character can examine things\
-        more closely, or maybe top up their magic by drinking a potion.\
-        Things that don't affect the state of the world around them.</p>\
-        \
-        <p>Situations generate content when they are <em>enter</em>ed,\
-        <em>exit</em>ed, and when they receive an <em>act</em>ion (the\
-        italicised words are the names of the three methods that do this).\
-        You can write code to generate content in any way you like, so the\
-        content that is displayed can be totally dynamic: taking into\
-        account the current state of the character.\
-        Content is just plain HTML, so you use regular HTML tags to make\
-        things <strong>bold</strong> or <em>italic</em>, or to include\
-        images. This gives you a lot of flexibility. For example, since Undum\
-        targets HTML5 browsers, you could use the <em>audio</em> or\
-        <em>video</em> tags to include rich media.</p>\
-        \
-        <p class='transient'>Make sure you've carried out the action above,\
-        then <a href='hub'>return to the topic list</a>.</p>",
+    sinmono: new undum.SimpleSituation(
+        "<p>Momo frunce el ceño y empieza a sacar plátanos de la riñonera que lleva.\
+        Empieza a lanzármelos a la cabeza. Consigue darme con un par de ellos. Está muy cabreado.\
+        Corro por un camino escapando de él. De repente de encuentro frente a un gnomo.</p>,
         {
-            actions: {
-                'do-something': "<p>You carried out the action, well done.\
-                                 You'll notice that the links for this\
-                                 situation are still active. This means you\
-                                 can click to perform the action again.</p>"
-            }
+            heading: "CONTINUO LA HISTORIO SIN MOMO...",
+            displayOrder: 2,
+            tags: ["topic"]
         }
     ),
-    links: new undum.SimpleSituation(
-        "<p>Between each chunk of new text, Undum inserts a discreet line\
-        in the margin. This allows you to see at a glance everything that\
-        has been output as a result of your last click.\
-        It is particularly useful for small devices, or when\
-        lots of content has appeared. The window also scrolls so the start\
-        of the new content is as near to the top of the window as possible.\
-        This is also designed to help you read more naturally.</p>\
-        \
-        <p>If you've been watching carefully, you will have noticed that\
-        parts of the text have been disappearing when you move between\
-        situations. This isn't a bug! One of the aims of Undum is to give\
-        game designers the ability to make the transcript of\
-        the game read as a coherent piece of narrative. However, you often\
-        need chunks of text that do nothing but offer the reader choices.\
-        Undum defines a special CSS class to add to your HTML for this\
-        (remember generated content is just HTML). It is <em>transient</em>,\
-        and can be applied to paragraphs, <em>div</em>s, or just\
-        <em>span</em>s<span class='transient'> (such as this one)</span>.</p>\
-        \
-        <p>You may also have noticed that, when you move situations, all the\
-        links in the previous situation turn into regular text. This is to\
-        stop you backtracking and trying previous options when you've already\
-        committed to one. In other H-IF systems, this is\
-        done by completely removing the content from previous pages.\
-        That prevents you going back and reading your story, however.</p>\
-        \
-        <p class='transient'>The 'Different Kinds of Links' topic has more\
-        about these links.\
-        Let's return to the <a href='hub'>topic list</a>.</p>",
+    sinmono: new undum.SimpleSituation(
+        "<p>Momo luce sonriente sabiendo que puede quedar conmigo. Hace una seña para lo siga.\
+        Sin saber qué hacer, lo sigo por un camino extraño. De repente nos encontramos en frente de un gnomo.</p>,
         {
-            heading: "Disappearing Content",
-            diplayOrder: 2,
+            heading: "CONTINUO LA HISTORIO SIN MOMO...",
+            displayOrder: 2,
             tags: ["topic"]
         }
     ),
