@@ -25,7 +25,6 @@
     <link media="only screen and (max-width: 640px)"
           rel="stylesheet" type="text/css" href="media/css/undum-mobile.css">
     <!--<![endif]-->
-
   </head>
   <body>
     <!-- This isn't needed and isn't visible in desktop versions,
@@ -54,7 +53,10 @@
           <h1>Undum</h1>
           <p>
             Ejemplo de juego "conversacional" creado con Undum para la asignatura Desarrollo Ágil.
+            <br>
+            <b>Nombre del personaje:</b> <label id="mostrarNombre"></label>
           </p>
+          
           <!-- End of Game Background -->
 
           <div class='buttons'>
@@ -222,4 +224,9 @@
     <script type="text/javascript"
             src="media/games/tutorial/tutorial.game.en.js"></script>
   </body>
+  <script>
+        var nombre;
+        nombre = prompt("Antes de comenzar, por favor, ingrese un nombre para su jugador/a: ");
+        document.getElementById('mostrarNombre').innerHTML = nombre;
+    </script>
 </html>
