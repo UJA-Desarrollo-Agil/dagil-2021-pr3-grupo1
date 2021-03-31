@@ -62,6 +62,139 @@ undum.game.situations = {
         optionText: "What Undum Games are Made Of",
         displayOrder: 1
     }),
+	entrada: new undum.SimpleSituation(
+	"<p>Antes de llegar a la puerta principal, veo un bulto a lo lejos un tanto sospechoso\
+	por lo que me acerco para ver de qué se trata.</p>\
+	<p>Para mi sorpresa, era un <a href='./traje-tru' class='once'>traje de guardia</a> que se había perdido.\
+	Mejor lo guardo, nunca se sabe si lo podré necesitar.</p>\
+	Una vez llego a la puerta principal, empiezo a pensar en la\
+	forma de colarme en el castillo. Teniendo en cuenta que hay un\
+	ejército de guardias rodeándolo igual es mejor buscar una opción\
+	alternativa a la puerta principal.</p>\
+	<p>No es momento de pensar, tengo que decidir por dónde ir.\
+	Puedo <a href='entrar_sigilo'>ir en sigilo</a> e infiltrarme o puedo\
+	<a href='ataca_guardias'>atacar a los guardias</a>.\
+	</p>",
+	{
+			actions: {
+				"traje-tru": function(character, system, action) {
+                    system.setQuality("traje", true);
+				}
+			},
+			heading:"Entrada al castillo",
+	}
+	),
+	ataca_guardias: new undum.SimpleSituation(
+	"<p>\
+	\
+	\
+	</p>\
+	<p>\
+	\
+	</p>",
+	{
+			heading:"Ataco a los guardias",
+	}
+	),
+	entrar_sigilo: new undum.SimpleSituation(
+	"<p>Decido entrar en sigilo ya que no me apetece enfrentarme a un ejército entero.\
+	Para encontrar mi vía de entrada voy a dar una vuelta por las afueras del castillo.</p>\
+	<p>Tras haber dado un paseo exploratorio, creo que las mejores opciones son\
+	intentar colarme por donde menos seguridad hay, <a href='parte_atras'>la parte de atrás</a>. O quizá también puedo\
+	<a href='disfraz_guardia'>disfrazarme como un guardia</a> y colarme por la puerta principal.\
+	</p>",
+	{			
+			heading:"Entro en sigilo"
+	}
+	),
+	parte_atras: new undum.SimpleSituation(
+	"<p>Al final la mejor decisión era infiltrarse por la parte de atrás del castillo.\
+	Durante el paseo vi una ventana abierta que dejé atascada por si las moscas.\
+	</p>\
+	<p>Ahora que estoy dentro del castillo sólo me queda encontrar al ladrón que me robó\
+	el ordenador. Para ello primero tengo que encontrar la habitación en la que está.\
+	Puedo <a href='preguntar'>preguntar a los trabajadores</a> o\
+	igual <a href='investigar'>puedo investigar por mi cuenta</a>.\
+	</p>",
+	{
+			heading:"Entro por la parte de atrás",
+	}
+	),
+	preguntar: new undum.SimpleSituation(
+	"<p>Me acerco a un trabajador que estaba merodeando por los pasillos. Llevaba un uniforme\
+	un tanto extraño, iba vestido de una forma elegante pero a la vez se podía adivinar que\
+	trabajaba ahí.</p>\
+	<p>Le pregunto sobre su jefe y su ubicación. Ahora ya conozco el nombre de mi enemigo,\
+	el temible Victorcillo. También me dijo que su despacho se encontraba en la primera planta.\
+	Me resulta raro que haya un despacho dentro de un castillo pero no tengo más opción que ir\
+	a comprobarlo.</p>\
+	<p>Efectivamente, ahí estaba. Solo me separa la puerta del despacho. No quedan más opciones.\
+	Es el momento de recuperar mi ordenador. <a href='despacho'>Entro al despacho de Victorcillo</a>.\
+	</p>",
+	{
+			heading:"Pregunto a los trabajadores",
+	}
+	),
+	investigar: new undum.SimpleSituation(
+	"<p>Para encontrar la habitación que busco tendré que buscar por todo el castillo.\
+	Espero que este proceso no sea muy largo.</p>\
+	<p>Tras dar un breve paseo por esta zona del castillo encuentro una habitación un tanto llamativa.\
+	En la puerta pone: <em>Victorcillo, product owner</em>. No entiendo mucho de este extraño\
+	lenguaje pero tiene pinta de que es la persona a la que busco.\
+	</p>\
+	<p><a href='despacho'>Entro al despacho</a>.\
+	</p>",
+	{
+			heading:"Investigo por mi cuenta",
+	}
+	),
+	despacho: new undum.SimpleSituation(
+	"<p>\
+	\
+	</p>\
+	<p>\
+	\
+	\
+	\
+	</p>",
+	{
+			heading:"Entro en el despacho",
+	}
+	),
+	disfraz_guardia: new undum.SimpleSituation(
+	"",
+	{
+			enter: function(character, system, from){
+				if(character.qualities.traje){
+					system.doLink("disfraz_guardia2");
+				}else{
+					system.write("<p>Me acerco al grupo de guardias que estaban en la puerta principal.\
+					Desde lejos ya me están gritando que no me acerque\
+					pero les digo que no soy un peligro, solo un turista perdido.</p>\
+					<p>Cuando estoy cerca de ellos puedo ver lo malhumorados y agresivos que están.\
+					Antes de si quiera darme tiempo a responder, me finiquitan rápido cual daily Scrum.\
+					Sin duda estos guardias de Arcadia son de lo más peligroso.</p>\
+					<p>En un hipotético caso de que pueda resucitar y volver a esta situación,\
+					igual es mejor tener un traje de guardia para acercarme a ellos.\
+					</p>");
+				}
+			},
+			
+			heading:"Me disfrazo como un guardia",
+	}
+	),
+	disfraz_guardia2: new undum.SimpleSituation(
+	"<p>Me acerco al grupo de guardias que estaban en la puerta principal. Al ir vestido como ellos\
+	no sospecharán de mi.</p>\
+	<p>Cuando estoy cerca de ellos les digo que venía de un lugar lejano ya que estaba haciendo un\
+	encargo para el jefe. Por suerte me dijeron que un tal Victorcillo me estaba esperando en su despacho.</p>\
+	<p>Menos mal que ha colado y he podido entrar al castillo. Además ahora sé que me tengo que\
+	enfrentar a Victorcillo y que está en su habitación, así que <a href='despacho'>allí me dirijo</a>.\
+	</p>",
+	{
+	
+	}
+	),
     todo: new undum.SimpleSituation(
         "<p>Two things can happen in a situation. The character either\
         <a href='links'>leaves</a> the situation and enters another one, or\
@@ -137,42 +270,7 @@ undum.game.situations = {
         }
     ),
     sticky: new undum.SimpleSituation(
-        "<p>There are three types of link in Undum. The first two we've seen\
-        in previous topics:\
-        links to change situation and links to carry out an action. When you\
-        include a link in your output, Undum parses it and wires it up\
-        correctly. If you create a link with a HTML <em>href</em> attribute\
-        containing just a name ('ballroom', for\
-        example) this will send the character to the situation with that\
-        name. Links\
-        with two components ('ballroom/view-painting', for example) send\
-        the character to a new situation <em>and then</em> carry out the\
-        named action ('view-painting' in this case). To carry out an action\
-        in the current situation, you can replace the situation name with a\
-        dot (so it would be './view-painting'). In all cases, if the\
-        character is already in that situation, then the situation's\
-        <em>enter</em> method won't be called again.</p>\
-        \
-        <img src='media/games/tutorial/woodcut2.png' class='float_left'>\
-        <p>The third type of link, then, is a general hyperlink. If your\
-        link doesn't consist of a single element or pair of elements, as\
-        above, then Undum will guess that you have a normal hyperlink. As\
-        <a href='http://news.bbc.co.uk' class='sticky'>in this link</a>.\
-        If you have a link that <em>does</em> look like an Undum link, you\
-        can still force Undum not to interpret it as an action or situation\
-        move, by adding the CSS class <em>raw</em> to the HTML <em>a</em> tag.\
-        links that don't have the <em>raw</em> class, but that are considered\
-        to be non-Undum links (like the link above), will have <em>raw</em>\
-        added to them before display. This could allow you to style external\
-        links differently, as we have done here.</p>\
-        \
-        <p>In the last situation I said you can prevent links from being\
-        turned into regular text when you move situations. This is done\
-        by another CSS class: <em>sticky</em>. When you\
-        <a href='oneshot'>leave this situation</a>, you'll notice the\
-        external link stays active. This can allow you to have options that\
-        stay valid throughout the narrative, for example, such as a spell to\
-        teleport home.</p>",
+        "<p><a href='entrada'>bbbbbbbbbbbbbbbb</a></p>",
         {
             tags: ["topic"],
             displayOrder: 3,
@@ -462,6 +560,9 @@ undum.game.qualities = {
     ),
     novice: new undum.OnOffQuality(
         "Novice", {priority:"0002", group:'progress', onDisplay:"&#10003;"}
+    ),
+	traje: new undum.OnOffQuality(
+        "Traje de guardia", {priority:"0002", group:'objetos', onDisplay:"&#10003;"}
     )
 };
 
@@ -473,6 +574,7 @@ undum.game.qualities = {
  * non-existent group. */
 undum.game.qualityGroups = {
     stats: new undum.QualityGroup(null, {priority:"0001"}),
+	objetos: new undum.QualityGroup(null, {priority:"0001"}),
     progress: new undum.QualityGroup('Progress', {priority:"0002"})
 };
 
@@ -485,5 +587,6 @@ undum.game.init = function(character, system) {
     character.qualities.luck = 0;
     character.qualities.novice = 1;
     character.qualities.inspiration = 0;
+	system.setQuality( "traje" , false )
     system.setCharacterText("<p>You are starting on an exciting journey.</p>");
 };
