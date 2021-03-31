@@ -85,15 +85,39 @@ undum.game.situations = {
 	}
 	),
 	ataca_guardias: new undum.SimpleSituation(
-	"<p>\
-	\
-	\
-	</p>\
-	<p>\
-	\
+	"",
+	{
+			enter: function(character, system, from){
+				if(character.qualities.equipamiento > 3){
+					system.doLink("ganas");
+				}else{
+					system.write("<p>Creo que atacar a los guardias va a ser la mejor opción.\
+					Cuantos menos enemigos vivos, mejor.</p>\
+					<p>Voy corriendo hacia ellos y empiezo a enfrentarme con todos los que se interponen\
+					en mi camino.</p>\
+					<p>Cuando pensaba que habia derrotado a todos, vienen refuerzos y parecen demasiados\
+					para mi solo.</p>\
+					<p>Se abalanzan contra mi y me inflan a palos. Para enfrentarme a un ejército entero\
+					tengo que ir mucho más armado.\
+					</p>");
+				}
+			},
+			
+			heading:"Ataco a los guardias",
+	}
+	),
+	ganas: new undum.SimpleSituation(
+	"<p>Creo que atacar a los guardias va a ser la mejor opción.Cuantos menos enemigos vivos, mejor.</p>\
+	<p>Voy corriendo hacia ellos y empiezo a enfrentarme con todos los que se interponen en mi camino.</p>\
+	<p>Con mis armas voy acabando con cada uno de mis enemigos. Cuando pensaba que había derrotado a todos,\
+	vienen refuerzos pero me da igual. Acabaré con todos.</p>\
+	<p>Una vez he acabado con el ejército de mequetrefes, entro al castillo y busco al jefe con la\
+	información que me dieron los guardias.</p>\
+	<p>Efectivamente, la habitación del jefe está donde dijeron. Ahora <a href='despacho'>tengo que entrar</a>\
+	a recuperar mi ordenador.\
 	</p>",
 	{
-			heading:"Ataco a los guardias",
+			
 	}
 	),
 	entrar_sigilo: new undum.SimpleSituation(
@@ -139,7 +163,7 @@ undum.game.situations = {
 	"<p>Para encontrar la habitación que busco tendré que buscar por todo el castillo.\
 	Espero que este proceso no sea muy largo.</p>\
 	<p>Tras dar un breve paseo por esta zona del castillo encuentro una habitación un tanto llamativa.\
-	En la puerta pone: <em>Victorcillo, product owner</em>. No entiendo mucho de este extraño\
+	En la puerta pone: <em>Victorcillo</em>. No entiendo mucho de este extraño\
 	lenguaje pero tiene pinta de que es la persona a la que busco.\
 	</p>\
 	<p><a href='despacho'>Entro al despacho</a>.\
@@ -149,18 +173,44 @@ undum.game.situations = {
 	}
 	),
 	despacho: new undum.SimpleSituation(
-	"<p>\
-	\
-	</p>\
-	<p>\
-	\
-	\
-	\
+	"<p>Abro la puerta de la habitación y observo desde fuera sin decir nada para no revelar\
+	mi identidad.</p>\
+	<p>Veo que Victorcillo está usando mi ordenador mientras dice unos vocablos un tanto extraños.\
+	Escucho no se qué de Scrum, que si Product Owner, que si Product Backlog. No lo tengo claro,\
+	pero debe de estar haciendo un ritual satánico o debe estar borracho.</p>\
+	<p>Entro a la sala y al verme, Victorcillo se levanta y viene hacia mí. Algo dentro de mí dice que\
+	no le ataque, al menos todavía. Cuando está cerca, me da un abrazo mientras llora.</p>\
+	<p>Aunque haya sido el ladrón de mi ordenador, me da pena y me apiado de él.\
+	En su versión de la historia cuenta que tuvo que robarme el ordenador porque estaba en\
+	pleno Sprint y debía acabar el trabajo. Acto seguido se arrodilló ante mí pidiéndome perdón\
+	por lo que hizo.</p>\
+	<p>Es una decisión difícil pero en mis manos está, <a href='perdon'>lo perdono</a> o\
+	<a href='muerte'>acabo con él</a>.\
 	</p>",
 	{
 			heading:"Entro en el despacho",
 	}
 	),
+	perdon: new undum.SimpleSituation(
+	"<p>Tras saber esto no puedo hacerle nada malo. Aunque lo que ha hecho está mal, puedo entenderlo.\
+	Dicho esto, Victorcillo me entrega mi ordenador de vuelta. Ahora sí que podré acabar mis prácticas.</p>\
+	<p>Arcadia es un lugar extraño pero al final, todo ha salido bien.\
+	</p>",
+	{
+			heading:"Perdono a Victorcillo",
+	}
+	),
+	muerte: new undum.SimpleSituation(
+	"<p>Después de lo que ha hecho no sé si espera que lo perdonase pero aprovechando que está\
+	de rodillas, le atizo un puñetazo que desciende del cielo cual gráfica Burndown.</p>\
+	<p>El ataque fue un éxito. Victorcillo está echando la siesta a mis pies. Aprovecho para recuperar\
+	mi ordenador y escapar de ahí. Ahora sí que soy libre para terminar mis prácticas.</p>\
+	<p>Arcadia es un lugar extraño pero al final, todo ha salido bien.\
+	</p>",
+	{
+			heading:"Acabo con Victorcillo",
+	}
+	),	
 	disfraz_guardia: new undum.SimpleSituation(
 	"",
 	{
@@ -563,6 +613,9 @@ undum.game.qualities = {
     ),
 	traje: new undum.OnOffQuality(
         "Traje de guardia", {priority:"0002", group:'objetos', onDisplay:"&#10003;"}
+    ),
+	    equipamiento: new undum.IntegerQuality(
+        "Equipamiento", {priority:"0001", group:'stats'}
     )
 };
 
@@ -587,6 +640,7 @@ undum.game.init = function(character, system) {
     character.qualities.luck = 0;
     character.qualities.novice = 1;
     character.qualities.inspiration = 0;
+	character.qualities.equipamiento = 0;
 	system.setQuality( "traje" , false )
     system.setCharacterText("<p>You are starting on an exciting journey.</p>");
 };
