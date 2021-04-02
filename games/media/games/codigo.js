@@ -60,7 +60,7 @@ undum.game.situations = {
 
     /*Comienzo capitulo 2*/
     situacion_intermedia1: new undum.SimpleSituation(
-        "<h1>Situación intermendia 1</h1>\
+        "<h1>CAPITULO 2 - CONOCIENDO AL GNOMO</h1>\
         <p> El gnomo parece bastante amigable a pesar de su ridículo aspecto así que decido acercarme a él para saber si tiene idea de donde estamos. </p>\
         <p> Hola, me llamo -----------nombre personaje----------- y no se si decirle Buenas tardes o buenos días porque no se donde estamos y para colmo, ¡¡he perdido mi reloj!!.</p>\
         <p>Hola -----------nombre personaje-----------, yo soy Raerpin y estamos en el Mágico Mundo de Arcadia, he estado esperándote. ¿Deseas que te acompañe en tu aventura?  <a href='acompanar'>acompañar a Raerpin</a> o <a href='no_acompanar'>no acompañar a Raerpin</a>.</p>",
@@ -106,12 +106,11 @@ undum.game.situations = {
 
     /*Comienzo capitulo 3*/
     capitulo_tercero: new undum.SimpleSituation(
-        "<p>Decido ir por la ruta más larga, <br> pero de la que más información tengo, llegar hasta allí me llevará cinco días y cuatro noches, por lo que decido partir ya.</p>\
-        <p>Tras varias días caminando sin cesar, diviso a lo lejos el campamento de villanos. Para mi asombro solo está compuesto por cabañas de madera con el techo de paja y de un río que cruza por el centro.</p>\
-        <p><a href='detalladamente_campamento'>Mirar detalladamente el campamento</a>.</p>\
-        <p>Permanezco escondido y comienzo a preparar el plan para atacar, pudiendo hacerlo de dos formas distintas, o bien <a href='campamento_fuerza'>entro a la fuerza</a> atacando e intentando pillarlos desprevenidos o me centro en <a href='campamento_sigilo'>hacerlo sigilosamente</a>.</p>",
+        "<p>Tras conocer la ubicación <br> de mi ordenador y preguntar por las rutas existentes me planteo cuál seguir.</p>\
+        <p>Por la ruta más larga tengo un <a href='campamento'>campamento de villanos</a>, según los datos proporcionados por el gnomo habitan cinco villanos y van armados con espadas de metal y escudos de madera.</p>\
+        <p>Por la ruta más corta tengo que <a href='montana'>pasar la montaña</a>, gobernada por un monstruo del cual no se conoce información, solo sé que es conocido como \"El rey de la montaña\".</p>",
         {
-            heading: "Campamento de villanos",
+            heading: "Capítulo 3 - MI OBJETIVO",
         }
     ),
 
@@ -487,23 +486,6 @@ undum.game.start = "start";
  * possess. We don't have to be exhaustive, but if we miss one out then
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
-    skill: new undum.IntegerQuality(
-        "Skill", {priority:"0001", group:'stats'}
-    ),
-    stamina: new undum.NumericQuality(
-        "Stamina", {priority:"0002", group:'stats'}
-    ),
-    luck: new undum.FudgeAdjectivesQuality( // Fudge as in the FUDGE RPG
-        "<span title='Skill, Stamina and Luck are reverently borrowed from the Fighting Fantasy series of gamebooks. The words representing Luck are from the FUDGE RPG. This tooltip is illustrating that you can use any HTML in the label for a quality (in this case a span containing a title attribute).'>Luck</span>",
-        {priority:"0003", group:'stats'}
-    ),
-    inspiration: new undum.NonZeroIntegerQuality(
-        "Inspiration", {priority:"0001", group:'progress'}
-    ),
-    novice: new undum.OnOffQuality(
-        "Novice", {priority:"0002", group:'progress', onDisplay:"&#10003;"}
-    ),
-
     cuchilloHueso: new undum.OnOffQuality(
         "Cuchillo de huesos", {priority:"0002", group:'objetos', onDisplay:"&#10003;"}
     ),
@@ -540,8 +522,6 @@ undum.game.qualities = {
 undum.game.qualityGroups = {
     stats: new undum.QualityGroup(null, {priority:"0001"}),
 
-    objetos: new undum.QualityGroup(null, {priority:"0001"}),
-
 	objetos: new undum.QualityGroup(null, {priority:"0001"}),
 
     progress: new undum.QualityGroup('Progress', {priority:"0002"})
@@ -551,22 +531,14 @@ undum.game.qualityGroups = {
 /* This function gets run before the game begins. It is normally used
  * to configure the character at the start of play. */
 undum.game.init = function(character, system) {
-    character.qualities.skill = 12;
-    character.qualities.stamina = 12;
-    character.qualities.luck = 0;
-    character.qualities.novice = 1;
-    character.qualities.inspiration = 0;
     character.qualities.cuchilloHueso = 0;
     character.qualities.espadaHueso = 0;
     character.qualities.arcoHueso = 0;
     character.qualities.cuchilloMetal = 0;
     character.qualities.espadaMetal = 0;
     character.qualities.arcoMetal = 0;
+    character.qualities.equipamiento = 0;
+    system.setQuality( "traje" , false )
 
     system.setCharacterText("<p>Listado de objetos que lleva encima:</p>");
-
-	character.qualities.equipamiento = 0;
-	system.setQuality( "traje" , false )
-    system.setCharacterText("<p>You are starting on an exciting journey.</p>");
-
 };
