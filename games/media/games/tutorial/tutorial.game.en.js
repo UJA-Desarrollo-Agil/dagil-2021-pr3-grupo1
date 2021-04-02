@@ -315,7 +315,7 @@ undum.game.situations = {
         enter: function(character, system, from) {
             system.write($("#s_situations2").html());
                 system.animateQuality(
-                    'cuchilloHueso', character.qualities.cuchilloHueso+1
+                    'cuchilloHueso', character.qualities.cuchilloHueso+1,
                 );
             system.write($("#recojo_cuchillohuesos").html());
         },
