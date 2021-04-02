@@ -29,7 +29,7 @@ undum.game.slideUpSpeed = 500
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
     start: new undum.SimpleSituation(
-        "<h1>LA HISTORIA COMIENZA...</h1>\
+        "<h1>CAPÍTULO 1: LA HISTORIA COMIENZA...</h1>\
         <p>Despierto de golpe. La luz del sol me deslumbra. Froto mis ojos hasta que consigo abrirlos por completo.</p>\
         <p>Miro hacia arriba y a mi alrededor. El cielo está despejado. No sé dónde estoy. Intento hacer memoria para recordar</p>\
         <p>como he llegado aquí... yo estaba en mi habitación, en el escritorio, con mi ordenador, terminando la práctica de Desarrollo Ágil que se entregaba hoy las 23.55h... ¿¡QUÉ HORA ES!? ¡Tengo que entregar la práctica! Miro mi muñeca y descubro que no tengo reloj. De repente, escucho un ruido, alguien se acerca.</p>\
@@ -41,16 +41,18 @@ undum.game.situations = {
     ),
     sin_mono: new undum.SimpleSituation(
     	"<p>Momo luce sonriente sabiendo que puede quedar conmigo. Hace una seña para lo siga.</p>\
-    	<p>Sin saber qué hacer, lo sigo por un camino extraño. De repente nos encontramos en frente de un gnomo.</p>",
+    	<p>Sin saber qué hacer, lo sigo por un camino extraño. De repente nos encontramos en frente de un\
+      <a href='gnomo'>gnomo.</p>",
         {
             heading: "Sin mono",
         }
 	),
-    
+
     con_mono: new undum.SimpleSituation(
     	"<p>Momo frunce el ceño y empieza a sacar plátanos de la riñonera que lleva.</p>\
     	<p>Empieza a lanzármelos a la cabeza. Consigue darme con un par de ellos. Está muy cabreado.</p>\
-    	<p>Corro por un camino escapando de él. De repente de encuentro frente a un gnomo.</p>",
+    	<p>Corro por un camino escapando de él. De repente de encuentro frente a un\
+      <a href='gnomo'>gnomo.</p>",
         {
             heading: "Con mono",
         }
@@ -66,7 +68,7 @@ undum.game.situations = {
             heading: "Campamento de villanos",
         }
     ),
-    
+
     campamento: new undum.SimpleSituation(
         "<p>Decido ir por la ruta más larga, <br> pero de la que más información tengo, llegar hasta allí me llevará cinco días y cuatro noches, por lo que decido partir ya.</p>\
         <p>Tras varias días caminando sin cesar, diviso a lo lejos el campamento de villanos. Para mi asombro solo está compuesto por cabañas de madera con el techo de paja y de un río que cruza por el centro.</p>\
@@ -140,7 +142,7 @@ undum.game.situations = {
 					</p>");
 				}
 			},
-			
+
 			heading:"Ataco a los guardias",
 	}
 	),
@@ -155,7 +157,7 @@ undum.game.situations = {
 	a recuperar mi ordenador.\
 	</p>",
 	{
-			
+
 	}
 	),
 	entrar_sigilo: new undum.SimpleSituation(
@@ -165,7 +167,7 @@ undum.game.situations = {
 	intentar colarme por donde menos seguridad hay, <a href='parte_atras'>la parte de atrás</a>. O quizá también puedo\
 	<a href='disfraz_guardia'>disfrazarme como un guardia</a> y colarme por la puerta principal.\
 	</p>",
-	{			
+	{
 			heading:"Entro en sigilo"
 	}
 	),
@@ -248,7 +250,7 @@ undum.game.situations = {
 	{
 			heading:"Acabo con Victorcillo",
 	}
-	),	
+	),
 	disfraz_guardia: new undum.SimpleSituation(
 	"",
 	{
@@ -267,7 +269,7 @@ undum.game.situations = {
 					</p>");
 				}
 			},
-			
+
 			heading:"Me disfrazo como un guardia",
 	}
 	),
@@ -280,7 +282,7 @@ undum.game.situations = {
 	enfrentar a Victorcillo y que está en su habitación, así que <a href='despacho'>allí me dirijo</a>.\
 	</p>",
 	{
-	
+
 	}
 	),
     /*Elección campamento de villanos a la fuerza*/
@@ -307,9 +309,9 @@ undum.game.situations = {
             heading: "Ataque al campamento sigilosamente",
         }
     ),
-    
-    
-    
+
+
+
     /*Elección pasar por la montaña*/
     montana: new undum.SimpleSituation(
         "<p>Decido ir por la ruta más corta, <br>pese a no tener información sobre el monstruo.</p>\
@@ -320,7 +322,7 @@ undum.game.situations = {
             heading: "El rey de la montaña",
         }
     ),
-    
+
     /*Salir corriendo del lobo*/
     salir_corriendo: new undum.SimpleSituation(
         "<p>Tras pensarlo rapidamente, <br>decido salir corriendo entre la maleza del bosque, el lobo me persigue sin cesar por lo que no me queda otra que darme la vuelta y <a href='enfrentarme'>enfrentarme a él</p>",
@@ -328,7 +330,7 @@ undum.game.situations = {
             heading: "Salir corriendo",
         }
     ),
-    
+
     /*Enfrentarme a el*/
     enfrentarme: new undum.SimpleSituation(
         "<p>Cojo mi espada, <br> y salgo corriendo hacia él, me muerde el brazo mientras le atravieso el cuello con mi arma.\
@@ -356,7 +358,7 @@ undum.game.situations = {
             system.write($("#s_situations2").html());
                 system.animateQuality('cuchilloHueso', character.qualities.cuchilloHueso+1);
                 system.setQuality('equipamiento', character.qualities.equipamiento+1);
-            
+
             system.write($("#recojo_cuchillohuesos").html());
         },
         tags: ["eleccion_montana"],
@@ -367,7 +369,7 @@ undum.game.situations = {
     opcion2: new undum.Situation({
         enter: function(character, system, from) {
             system.write($("#s_situations1").html());
-            
+
                 system.animateQuality(
                     'cuchilloMetal', character.qualities.cuchilloMetal+1,
                 );
@@ -396,7 +398,7 @@ undum.game.situations = {
     opcion4: new undum.Situation({
         enter: function(character, system, from) {
             system.write($("#s_situations1").html());
-            
+
                 system.animateQuality(
                     'espadaMetal', character.qualities.espadaMetal+1,
                 );
@@ -425,7 +427,7 @@ undum.game.situations = {
     opcion6: new undum.Situation({
         enter: function(character, system, from) {
             system.write($("#s_situations1").html());
-            
+
                 system.animateQuality(
                     'arcoMetal', character.qualities.arcoMetal+1,
                 );
@@ -456,7 +458,7 @@ undum.game.situations = {
         }
     ),
 
-    /*Solución de la adivinanza*/ 
+    /*Solución de la adivinanza*/
     adivinanza: new undum.SimpleSituation(
         "<p>La mesa.</p>\
         <p><a href='fin_capitulo'>Continuar con la historia</a></p>",
@@ -479,7 +481,7 @@ undum.game.situations = {
         "<p>La clave era acompañar a Raerpin, por no hacerlo me convierte en perro y acaba la historia.</p>",
         {
             heading: "No me inspira confianza, mejor me voy"
-        }    
+        }
     )
 };
 
@@ -567,7 +569,7 @@ undum.game.init = function(character, system) {
     character.qualities.cuchilloMetal = 0;
     character.qualities.espadaMetal = 0;
     character.qualities.arcoMetal = 0;
-    
+
     system.setCharacterText("<p>Listado de objetos que lleva encima:</p>");
 
 	character.qualities.equipamiento = 0;
