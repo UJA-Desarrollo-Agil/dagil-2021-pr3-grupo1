@@ -28,7 +28,7 @@ undum.game.slideUpSpeed = 500
 
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
-    start: new undum.SimpleSituation(
+    situacionIntermedia1: new undum.SimpleSituation(
         "<h1>Situación intermendia 1</h1>\
         <p> El gnomo parece bastante amigable a pesar de su ridículo aspecto así que decido acercarme a él para saber si tiene idea de donde estamos. </p>\
         <p> Hola, me llamo -----------nombre personaje----------- y no se si decirle Buenas tardes o buenos días porque no se donde estamos y para colmo, ¡¡he perdido mi reloj!!.</p>\
