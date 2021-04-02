@@ -533,7 +533,7 @@ undum.game.qualities = {
 	traje: new undum.OnOffQuality(
         "Traje de guardia", {priority:"0002", group:'objetos', onDisplay:"&#10003;"}
     ),
-	    equipamiento: new undum.IntegerQuality(
+	equipamiento: new undum.IntegerQuality(
         "Equipamiento", {priority:"0001", group:'stats'}
 
     )
