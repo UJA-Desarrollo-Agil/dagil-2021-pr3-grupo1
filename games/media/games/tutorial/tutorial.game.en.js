@@ -29,12 +29,57 @@ undum.game.slideUpSpeed = 500
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
     start: new undum.SimpleSituation(
-        "<h1>Capítulo 3 - MI OBJETIVO</h1>\
-        <p>Tras conocer la ubicación <br> de mi ordenador y preguntar por las rutas existentes me planteo cuál seguir.</p>\
-        \
-        <p>Por la ruta más larga tengo un <a href='campamento'>campamento de villanos</a>, según los datos proporcionados por el gnomo habitan cinco villanos y van armados con espadas de metal y escudos de madera.</p>\
-        \
-        <p>Por la ruta más corta tengo que <a href='montana'>pasar la montaña</a>, gobernada por un monstruo del cual no se conoce información, solo sé que es conocido como \"El rey de la montaña\".</p>"
+        "<h1>LA HISTORIA COMIENZA...</h1>\
+        <p>Despierto de golpe. La luz del sol me deslumbra. Froto mis ojos hasta que consigo abrirlos por completo.</p>\
+    	<p>Miro hacia arriba y a mi alrededor. El cielo está despejado. No sé dónde estoy. Intento hacer memoria para recordar</p>\
+    	<p>como he llegado aquí... yo estaba en mi habitación, en el escritorio, con mi ordenador, terminando la práctica de</p>\
+    	<p>Desarrollo Ágil que se entregaba hoy las 23.55h... ¿¡QUÉ HORA ES!? ¡Tengo que entregar la práctica! Miro mi muñeca y</p>\
+    	<p>descubro que no tengo reloj. De repente, escucho un ruido, alguien se acerca.</p>\
+        <p class='dialogo'>- La historia comienza cuando el protagonista decide ejecutar la acción que lo inicia todo.</p>\
+    	<p>No me lo puedo creer. ¡Acaba de hablarme un mono que viene hacia a mí!</p>\
+        <p class='dialogo'>- No pongas esa cara. Me llamo Momo. No sé quién eres ni qué buscas. La verdad es que me da igual.\
+    	Solo quiero un amigo. ¿Quieres ser mi amigo?</p>\
+    	<p>Continúo en shock.</p>\
+    	<a href='sin_mono'>No quiero hablar con nadie ni que nadie me moleste.</a>\
+    	<a href='con_mono'>O quizás sea una buena idea tener alguien al lado, aunque sea un mono.</a>"
+    ),
+    
+    sin_mono: new undum.SimpleSituation(
+    	"<p>Momo luce sonriente sabiendo que puede quedar conmigo. Hace una seña para lo siga.\
+    	Sin saber qué hacer, lo sigo por un camino extraño. De repente nos encontramos en frente de un gnomo.</p>",
+        {
+            heading: "Sin mono",
+        }
+	),
+    
+    con_mono: new undum.SimpleSituation(
+    	"<p>Momo frunce el ceño y empieza a sacar plátanos de la riñonera que lleva.\
+    	Empieza a lanzármelos a la cabeza. Consigue darme con un par de ellos. Está muy cabreado.\
+    	Corro por un camino escapando de él. De repente de encuentro frente a un gnomo.</p>",
+        {
+            heading: "Con mono",
+        }
+	),
+
+    /*Comienzo capitulo 3*/
+    capitulo_tercero: new undum.SimpleSituation(
+        "<p>Decido ir por la ruta más larga, <br> pero de la que más información tengo, llegar hasta allí me llevará cinco días y cuatro noches, por lo que decido partir ya.</p>\
+        <p>Tras varias días caminando sin cesar, diviso a lo lejos el campamento de villanos. Para mi asombro solo está compuesto por cabañas de madera con el techo de paja y de un río que cruza por el centro.</p>\
+        <p><a href='detalladamente_campamento'>Mirar detalladamente el campamento</a>.</p>\
+        <p>Permanezco escondido y comienzo a preparar el plan para atacar, pudiendo hacerlo de dos formas distintas, o bien <a href='campamento_fuerza'>entro a la fuerza</a> atacando e intentando pillarlos desprevenidos o me centro en <a href='campamento_sigilo'>hacerlo sigilosamente</a>.</p>",
+        {
+            heading: "Campamento de villanos",
+        }
+    ),
+    
+    campamento: new undum.SimpleSituation(
+        "<p>Decido ir por la ruta más larga, <br> pero de la que más información tengo, llegar hasta allí me llevará cinco días y cuatro noches, por lo que decido partir ya.</p>\
+        <p>Tras varias días caminando sin cesar, diviso a lo lejos el campamento de villanos. Para mi asombro solo está compuesto por cabañas de madera con el techo de paja y de un río que cruza por el centro.</p>\
+        <p><a href='detalladamente_campamento'>Mirar detalladamente el campamento</a>.</p>\
+        <p>Permanezco escondido y comienzo a preparar el plan para atacar, pudiendo hacerlo de dos formas distintas, o bien <a href='campamento_fuerza'>entro a la fuerza</a> atacando e intentando pillarlos desprevenidos o me centro en <a href='campamento_sigilo'>hacerlo sigilosamente</a>.</p>",
+        {
+            heading: "Campamento de villanos",
+        }
     ),
 
     /*Elección campamento de villanos*/
