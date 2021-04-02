@@ -31,31 +31,26 @@ undum.game.situations = {
     start: new undum.SimpleSituation(
         "<h1>LA HISTORIA COMIENZA...</h1>\
         <p>Despierto de golpe. La luz del sol me deslumbra. Froto mis ojos hasta que consigo abrirlos por completo.</p>\
-    	<p>Miro hacia arriba y a mi alrededor. El cielo está despejado. No sé dónde estoy. Intento hacer memoria para recordar</p>\
-    	<p>como he llegado aquí... yo estaba en mi habitación, en el escritorio, con mi ordenador, terminando la práctica de</p>\
-    	<p>Desarrollo Ágil que se entregaba hoy las 23.55h... ¿¡QUÉ HORA ES!? ¡Tengo que entregar la práctica! Miro mi muñeca y</p>\
-    	<p>descubro que no tengo reloj. De repente, escucho un ruido, alguien se acerca.</p>\
-        <p class='dialogo'>- La historia comienza cuando el protagonista decide ejecutar la acción que lo inicia todo.</p>\
-    	<p>No me lo puedo creer. ¡Acaba de hablarme un mono que viene hacia a mí!</p>\
-        <p class='dialogo'>- No pongas esa cara. Me llamo Momo. No sé quién eres ni qué buscas. La verdad es que me da igual.\
-    	Solo quiero un amigo. ¿Quieres ser mi amigo?</p>\
-    	<p>Continúo en shock.</p>\
-    	<a href='sin_mono'>No quiero hablar con nadie ni que nadie me moleste.</a>\
-    	<a href='con_mono'>O quizás sea una buena idea tener alguien al lado, aunque sea un mono.</a>"
+        <p>Miro hacia arriba y a mi alrededor. El cielo está despejado. No sé dónde estoy. Intento hacer memoria para recordar</p>\
+        <p>como he llegado aquí... yo estaba en mi habitación, en el escritorio, con mi ordenador, terminando la práctica de Desarrollo Ágil que se entregaba hoy las 23.55h... ¿¡QUÉ HORA ES!? ¡Tengo que entregar la práctica! Miro mi muñeca y descubro que no tengo reloj. De repente, escucho un ruido, alguien se acerca.</p>\
+        <p>La historia comienza cuando el protagonista decide ejecutar la acción que lo inicia todo.</p>\
+        <p>No me lo puedo creer. ¡Acaba de hablarme un mono que viene hacia a mí!</p>\
+        <p>No pongas esa cara. Me llamo Momo. No sé quién eres ni qué buscas. La verdad es que me da igual.</p>\
+        <p>Continúo en shock.</p>\
+        <p><a href='sin_mono'>No quiero hablar con nadie ni que nadie me moleste.</a><a href='sin_mono'>O quizás sea una buena idea tener alguien al lado, aunque sea un mono.</a>.</p>",
     ),
-    
     sin_mono: new undum.SimpleSituation(
-    	"<p>Momo luce sonriente sabiendo que puede quedar conmigo. Hace una seña para lo siga.\
-    	Sin saber qué hacer, lo sigo por un camino extraño. De repente nos encontramos en frente de un gnomo.</p>",
+    	"<p>Momo luce sonriente sabiendo que puede quedar conmigo. Hace una seña para lo siga.</p>\
+    	<p>Sin saber qué hacer, lo sigo por un camino extraño. De repente nos encontramos en frente de un gnomo.</p>",
         {
             heading: "Sin mono",
         }
 	),
     
     con_mono: new undum.SimpleSituation(
-    	"<p>Momo frunce el ceño y empieza a sacar plátanos de la riñonera que lleva.\
-    	Empieza a lanzármelos a la cabeza. Consigue darme con un par de ellos. Está muy cabreado.\
-    	Corro por un camino escapando de él. De repente de encuentro frente a un gnomo.</p>",
+    	"<p>Momo frunce el ceño y empieza a sacar plátanos de la riñonera que lleva.</p>\
+    	<p>Empieza a lanzármelos a la cabeza. Consigue darme con un par de ellos. Está muy cabreado.</p>\
+    	<p>Corro por un camino escapando de él. De repente de encuentro frente a un gnomo.</p>",
         {
             heading: "Con mono",
         }
@@ -359,9 +354,9 @@ undum.game.situations = {
     opcion1: new undum.Situation({
         enter: function(character, system, from) {
             system.write($("#s_situations2").html());
-                system.animateQuality(
-                    'cuchilloHueso', character.qualities.cuchilloHueso+1
-                );
+                system.animateQuality('cuchilloHueso', character.qualities.cuchilloHueso+1);
+                system.setQuality('equipamiento', character.qualities.equipamiento+1);
+            
             system.write($("#recojo_cuchillohuesos").html());
         },
         tags: ["eleccion_montana"],
@@ -376,6 +371,7 @@ undum.game.situations = {
                 system.animateQuality(
                     'cuchilloMetal', character.qualities.cuchilloMetal+1,
                 );
+            system.setQuality('equipamiento', character.qualities.equipamiento+1);
             system.write($("#recojo_cuchillometal").html());
         },
         tags: ["eleccion_villanos"],
@@ -389,6 +385,7 @@ undum.game.situations = {
                 system.animateQuality(
                     'espadaHueso', character.qualities.espadaHueso+1
                 );
+            system.setQuality('equipamiento', character.qualities.equipamiento+1);
             system.write($("#recojo_espadahuesos").html());
         },
         tags: ["eleccion_montana"],
@@ -403,6 +400,7 @@ undum.game.situations = {
                 system.animateQuality(
                     'espadaMetal', character.qualities.espadaMetal+1,
                 );
+            system.setQuality('equipamiento', character.qualities.equipamiento+1);
             system.write($("#recojo_espadametal").html());
         },
         tags: ["eleccion_villanos"],
@@ -416,6 +414,7 @@ undum.game.situations = {
                 system.animateQuality(
                     'arcoHueso', character.qualities.arcoHueso+1
                 );
+            system.setQuality('equipamiento', character.qualities.equipamiento+1);
             system.write($("#recojo_arcohuesos").html());
         },
         tags: ["eleccion_montana"],
@@ -430,6 +429,7 @@ undum.game.situations = {
                 system.animateQuality(
                     'arcoMetal', character.qualities.arcoMetal+1,
                 );
+            system.setQuality('equipamiento', character.qualities.equipamiento+1);
             system.write($("#recojo_arcometal").html());
         },
         tags: ["eleccion_villanos"],
