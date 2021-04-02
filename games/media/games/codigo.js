@@ -29,12 +29,8 @@ undum.game.slideUpSpeed = 500
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
     start: new undum.SimpleSituation(
-<<<<<<< HEAD
-        "<h1>LA HISTORIA COMIENZA...</h1>\
-=======
         "<h1>CAPÍTULO 1: LA HISTORIA COMIENZA...</h1>\
         <p>Despierto de golpe. La luz del sol me deslumbra. Froto mis ojos hasta que consigo abrirlos por completo.</p>\
->>>>>>> 4dd1bf87c535ed7e07c949aec9f8d73d81f6dbd4
         <p>Miro hacia arriba y a mi alrededor. El cielo está despejado. No sé dónde estoy. Intento hacer memoria para recordar</p>\
         <p>como he llegado aquí... yo estaba en mi habitación, en el escritorio, con mi ordenador, terminando la práctica de Desarrollo Ágil que se entregaba hoy las 23.55h... ¿¡QUÉ HORA ES!? ¡Tengo que entregar la práctica! Miro mi muñeca y descubro que no tengo reloj. De repente, escucho un ruido, alguien se acerca.</p>\
         <p>La historia comienza cuando el protagonista decide ejecutar la acción que lo inicia todo.</p>\
