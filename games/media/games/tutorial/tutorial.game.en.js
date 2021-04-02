@@ -41,7 +41,10 @@ undum.game.situations = {
     	Solo quiero un amigo. ¿Quieres ser mi amigo?</p>\
     	<p>Continúo en shock.</p>\
     	<a href='sin_mono'>No quiero hablar con nadie ni que nadie me moleste.</a>\
-    	<a href='con_mono'>O quizás sea una buena idea tener alguien al lado, aunque sea un mono.</a>"
+    	<a href='con_mono'>O quizás sea una buena idea tener alguien al lado, aunque sea un mono.</a>",
+		{
+			
+		}
     ),
     
     sin_mono: new undum.SimpleSituation(
