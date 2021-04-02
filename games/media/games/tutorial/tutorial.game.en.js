@@ -37,7 +37,6 @@ undum.game.situations = {
         <p>Por la ruta más corta tengo que <a href='montana'>pasar la montaña</a>, gobernada por un monstruo del cual no se conoce información, solo sé que es conocido como \"El rey de la montaña\".</p>"
     ),
 
-<<<<<<< HEAD
     /*Elección campamento de villanos*/
     campamento: new undum.SimpleSituation(
         "<p>Decido ir por la ruta más larga, <br> pero de la que más información tengo, llegar hasta allí me llevará cinco días y cuatro noches, por lo que decido partir ya.</p>\
@@ -59,24 +58,8 @@ undum.game.situations = {
     /*Mirar detalladamente el campamento*/
     detalladamente_campamento: new undum.SimpleSituation(
         "<p>Tras mirar detallademente, veo que hay un tirador con arco y flechas de piedra.</p>\
-        <p><a href='campamento2'>Continuar con la historia</a></p>",
-=======
-    // NB: The 'hub' situation which is the main list of topics, is
-    // defined wholly in the HTML file, and doesn't have an entry in
-    // the game.situations dictionary in this file.
-
-    // For variety, here we define a situation using the top-level
-    // Situation type. This is a neat approach to generate text by
-    // looking it up in the HTML document. For static text that makes
-    // more sense than writing it longhand.
-    situations: new undum.Situation({
-        enter: function(character, system, from) {
-            system.write($("#s_situations").html());
-        },
-        tags: ["topic"],
-        optionText: "What Undum Games are Made Of",
-        displayOrder: 1
-    }),
+        <p><a href='campamento2'>Continuar con la historia</a></p>"
+	),
 	entrada: new undum.SimpleSituation(
 	"<p>Antes de llegar a la puerta principal, veo un bulto a lo lejos un tanto sospechoso\
 	por lo que me acerco para ver de qué se trata.</p>\
@@ -260,14 +243,6 @@ undum.game.situations = {
 	
 	}
 	),
-    sticky: new undum.SimpleSituation(
-        "<p><a href='entrada'>bbbbbbbbbbbbbbbb</a></p>",
->>>>>>> RamaAlvaro
-        {
-            heading: "Mirar detalladamente el campamento",
-        }
-<<<<<<< HEAD
-    ),
     /*Elección campamento de villanos a la fuerza*/
     campamento_fuerza: new undum.SimpleSituation(
         "<p>Decido hacer el ataque por la fuerza, <br> con mi espada en mano salgo a correr hacia el campamento entrando por la parte trasera y acabando con la vida de dos villanos. En este momento los dos que se encuentran en tierra más el arquero subido en una plataforma se focalizan en mí. Esquivando flechas y luchando contra los dos a la vez consigo salir victorioso pero con heridas físicas graves, por lo que tendré que recuperarme antes de poder seguir.</p>\
@@ -329,7 +304,7 @@ undum.game.situations = {
     llegada_castillo: new undum.SimpleSituation(
         "<p>Tras reponer mi inventario con nuevas armas, <br> focalizo mi atención en llegar hacia el castillo.</p>\
         <p>Tras un día caminando sin descanso diviso a lo lejos el inmenso castillo del responsable de robar mi ordenador.</p>\
-        <p><a href='cap4'>Me dirigo hacia la puerta principal</a></p>",
+        <p><a href='entrada'>Me dirigo hacia la puerta principal</a></p>",
         {
             heading: "Llegada al castillo",
         }
@@ -416,9 +391,7 @@ undum.game.situations = {
         optionText: "Arco de metal",
         displayOrder: 1
     })
-=======
-    )
->>>>>>> RamaAlvaro
+
 };
 
 // ---------------------------------------------------------------------------
@@ -446,7 +419,7 @@ undum.game.qualities = {
     novice: new undum.OnOffQuality(
         "Novice", {priority:"0002", group:'progress', onDisplay:"&#10003;"}
     ),
-<<<<<<< HEAD
+
     cuchilloHueso: new undum.OnOffQuality(
         "Cuchillo de huesos", {priority:"0002", group:'objetos', onDisplay:"&#10003;"}
     ),
@@ -464,13 +437,13 @@ undum.game.qualities = {
     ),
     arcoMetal: new undum.OnOffQuality(
         "Arco de metal", {priority:"0002", group:'objetos', onDisplay:"&#10003;"}
-=======
+	),
 	traje: new undum.OnOffQuality(
         "Traje de guardia", {priority:"0002", group:'objetos', onDisplay:"&#10003;"}
     ),
 	    equipamiento: new undum.IntegerQuality(
         "Equipamiento", {priority:"0001", group:'stats'}
->>>>>>> RamaAlvaro
+
     )
 };
 
@@ -482,11 +455,11 @@ undum.game.qualities = {
  * non-existent group. */
 undum.game.qualityGroups = {
     stats: new undum.QualityGroup(null, {priority:"0001"}),
-<<<<<<< HEAD
+
     objetos: new undum.QualityGroup(null, {priority:"0001"}),
-=======
+
 	objetos: new undum.QualityGroup(null, {priority:"0001"}),
->>>>>>> RamaAlvaro
+
     progress: new undum.QualityGroup('Progress', {priority:"0002"})
 };
 
@@ -499,9 +472,6 @@ undum.game.init = function(character, system) {
     character.qualities.luck = 0;
     character.qualities.novice = 1;
     character.qualities.inspiration = 0;
-<<<<<<< HEAD
-    
-    //aaa
     character.qualities.cuchilloHueso = 0;
     character.qualities.espadaHueso = 0;
     character.qualities.arcoHueso = 0;
@@ -510,9 +480,9 @@ undum.game.init = function(character, system) {
     character.qualities.arcoMetal = 0;
     
     system.setCharacterText("<p>Listado de objetos que lleva encima:</p>");
-=======
+
 	character.qualities.equipamiento = 0;
 	system.setQuality( "traje" , false )
     system.setCharacterText("<p>You are starting on an exciting journey.</p>");
->>>>>>> RamaAlvaro
+
 };
