@@ -438,8 +438,52 @@ undum.game.situations = {
         tags: ["eleccion_villanos"],
         optionText: "Arco de metal",
         displayOrder: 1
-    })
+    }),
 
+
+    situacionIntermedia1: new undum.SimpleSituation(
+        "<h1>Situación intermendia 1</h1>\
+        <p> El gnomo parece bastante amigable a pesar de su ridículo aspecto así que decido acercarme a él para saber si tiene idea de donde estamos. </p>\
+        <p> Hola, me llamo -----------nombre personaje----------- y no se si decirle Buenas tardes o buenos días porque no se donde estamos y para colmo, ¡¡he perdido mi reloj!!.</p>\
+        <p>Hola -----------nombre personaje-----------, yo soy Raerpin y estamos en el Mágico Mundo de Arcadia, he estado esperándote. ¿Deseas que te acompañe en tu aventura?  <a href='acompanar'>acompañar a Raerpin</a> o <a href='no_acompanar'>no acompañar a Raerpin</a>.</p>",
+    ),
+
+    /*Elijo Acompañar al gnomo*/
+    acompanar: new undum.SimpleSituation(
+        "<p>Decido emprender mi aventura junto a Raerpin por tres razones, la primera es que sigo sin tener idea de donde estoy,  la segunda, ¿cómo que me estaba esperando? y la tercera, que hace decantarme ¡¡¡ESTOY HABLANDO CON UN GNOMO!!!</p>\
+        <p>Raerpin me explica que me estaba esperando porque vio caer un ordenador hacía un tiempo y le basto con verme y olerme...para saber que soy estudiante de una ingeniería asi que supuso que sería mío.</p>\
+        <p>Continua diciendo que en el camino encontraremos diversos malvados y que dejará en mis manos la elección del camino que afontaremos pero que si llego intacto al final, recuperaré mi ordenador y podré acabar la práctica de Desarrollo Ágil a tiempo. Pero que tendré que acertar la siguiente adivinanza: Tengo patas y no ando, soy plana y no canto, se apoyan para escribir y no te puedo hacer reír. Por suerte me la se </p>\
+        <p><a href='adivinanza'>Piensa un poco....Ver solución.</a>.</p>",
+        {
+            heading: "Acompañar a Raerpin",
+        }
+    ),
+
+    /*Solución de la adivinanza*/ 
+    adivinanza: new undum.SimpleSituation(
+        "<p>La mesa.</p>\
+        <p><a href='fin_capitulo'>Continuar con la historia</a></p>",
+        {
+            heading: "Solución",
+        }
+    ),
+
+    /*Fin del capítulo*/
+    fin_capitulo: new undum.SimpleSituation(
+        "<p>Por haber dado con la solución, Raerpin me confiesa que el ordenador lo encontraré en el último lugar de mi camino y que solo lo conseguiré si derroto al villano de Arcadia junto a todos sus secuaces que iré encontrando hasta llegar a él.</p>",
+        {
+            heading: "Continuamos...",
+        }
+    ),
+
+
+    /*Elijo No acompañar al gnomo*/
+    no_acompanar: new undum.SimpleSituation(
+        "<p>La clave era acompañar a Raerpin, por no hacerlo me convierte en perro y acaba la historia.</p>",
+        {
+            heading: "No me inspira confianza, mejor me voy"
+        }    
+    )
 };
 
 // ---------------------------------------------------------------------------
