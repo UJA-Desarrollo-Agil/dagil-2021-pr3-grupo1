@@ -232,7 +232,6 @@ undum.game.qualities = {
         "<span title='Skill, Stamina and Luck are reverently borrowed from the Fighting Fantasy series of gamebooks. The words representing Luck are from the FUDGE RPG. This tooltip is illustrating that you can use any HTML in the label for a quality (in this case a span containing a title attribute).'>Luck</span>",
         {priority:"0003", group:'stats'}
     ),
-
     inspiration: new undum.NonZeroIntegerQuality(
         "Inspiration", {priority:"0001", group:'progress'}
     ),
