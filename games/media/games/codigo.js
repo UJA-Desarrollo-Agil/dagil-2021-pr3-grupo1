@@ -33,28 +33,60 @@ undum.game.situations = {
         <p>Despierto de golpe. La luz del sol me deslumbra. Froto mis ojos hasta que consigo abrirlos por completo.</p>\
         <p>Miro hacia arriba y a mi alrededor. El cielo está despejado. No sé dónde estoy. Intento hacer memoria para recordar</p>\
         <p>como he llegado aquí... yo estaba en mi habitación, en el escritorio, con mi ordenador, terminando la práctica de Desarrollo Ágil que se entregaba hoy las 23.55h... ¿¡QUÉ HORA ES!? ¡Tengo que entregar la práctica! Miro mi muñeca y descubro que no tengo reloj. De repente, escucho un ruido, alguien se acerca.</p>\
-        <p>La historia comienza cuando el protagonista decide ejecutar la acción que lo inicia todo.</p>\
+        <p>   MOMO: La historia comienza cuando el protagonista decide ejecutar la acción que lo inicia todo.</p>\
         <p>No me lo puedo creer. ¡Acaba de hablarme un mono que viene hacia a mí!</p>\
-        <p>No pongas esa cara. Me llamo Momo. No sé quién eres ni qué buscas. La verdad es que me da igual.</p>\
+        <p>   MOMO:No pongas esa cara. Me llamo Momo. No sé quién eres ni qué buscas. La verdad es que me da igual.</p>\
         <p>Continúo en shock.</p>\
-        <p><a href='sin_mono'>No quiero hablar con nadie ni que nadie me moleste.</a><a href='con_mono'>O quizás sea una buena idea tener alguien al lado, aunque sea un mono.</a>.</p>",
+        <p><a href='sin_mono'>No quiero hablar con nadie</a> ni que nadie me moleste. O quizás sea\
+        <a href='con_mono'>una buena idea tener alguien al lado, aunque sea un mono.</a>.</p>",
     ),
-    sin_mono: new undum.SimpleSituation(
-    	"<p>Momo luce sonriente sabiendo que puede quedar conmigo. Hace una seña para lo siga.</p>\
-    	<p>Sin saber qué hacer, lo sigo por un camino extraño. De repente nos encontramos en frente de un\
-      <a href='situacion_intermedia1'>gnomo.</a></p>",
+    con_mono: new undum.SimpleSituation(
+    	"<p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
+      <p>   MOMO: ¿Es el destino la mano que elige si nuestro reloj de arena funcionará hacia arriba o hacia abajo, o esa mano somos nosotros mismos?</p>\
+      <p>   NOMBRE: ¿Qué dices? Necesito terminar mi trabajo para entregarlo a tiempo...</p>\
+      <p>No puede ser. Creo que ya entiendo lo que Momo me quiere decir</p>\
+      <p>   NOMBRE: ¿No te estarás refiriendo a que el tiempo que tiene ese reloj es el que tengo para poder\
+      encontrar mi ordenador?</p>\
+      <p>El mono asiente con la cabeza. ¡Qué estrés! Siento angustia. Esto me pasa por dejarlo todo para el último momento. No me veo con futuro en la carrera de ingeniería, quizás me equivoqué al elegirla...</p>\
+      <p>Momo siente mi decaida. Quiere darme ánimos. ¿Sigo escuchando<a href='detalle'> más detalladamente al mono</a>?</p>\
+      <p>Hace una seña para <a href='seguirlo'>lo siga</a>.</p>",
         {
-            heading: "Sin mono",
+            heading: "Momo me acompañará",
         }
 	),
 
-    con_mono: new undum.SimpleSituation(
+    detalle: new undum.SimpleSituation(
+      "<p>    MOMO: Tú eliges, puedes pasar todo tu tiempo muerto o puedes coger tu tiempo y hacer algo valioso con él.\
+      Algo que llene ese tiempo de energía. Hay que vivir con la fuerza suficiente como para que la vida ceda a tu paso, no tú ante ella.\
+      La vida no es nada si no te atreves a vivirla. Hay que hacer algo con la vida que tenemos. Que se entere de que estamos aquí, dispuestos a dejarla\
+      boquiabierta con nuestra forma de pasar por ella.</p>\
+      <p>¡No puedo creer las palabras de este mono! Es más sabio de lo que parece, me ha hecho pensar... Y me siento con más energía. <a href='seguirlo'> CONTINUAR HISTORIA...</a></p>",
+        {
+            heading: "El mono me habla...",
+          }
+    ),
+
+    seguirlo: new undum.SimpleSituation(
+      "<p>Sigo a Momo por un camino estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas, pero mi mente se encuentra en otro sitio</p>\
+      <p><<Si Alicia se hubiera cansado de correr tras el Conejo Blanco, no habría caído por la madriguera. Ni descubierto el País\
+      de las Maravillas. Ni descubrierto quién era ella. Seguiré corriendo. Me caeré. E intentaré no tener miedo a aquello que me tenga que enfrentar</p>\
+      <p>Llegamos al final del camino, frente a un gnomo. Momo se acerca a mí y saca algo de su riñonera. Es un frasco.\
+      En el pone: VIDA.</p>\
+      <p> MOMO: Por si lo necesitas a lo largo de tu aventura ;)</p>\
+      <p>Rápidamente, Momo desaparece ante mis ojos. Guardo el frasco en mi bolsillo y me acerco al <a href='situacion_intermedia1'>gnomo.</a></p>",
+          {
+            heading: "Extraño camino",
+          }
+    ),
+
+    sin_mono: new undum.SimpleSituation(
     	"<p>Momo frunce el ceño y empieza a sacar plátanos de la riñonera que lleva.</p>\
     	<p>Empieza a lanzármelos a la cabeza. Consigue darme con un par de ellos. Está muy cabreado.</p>\
-    	<p>Corro por un camino escapando de él. De repente de encuentro frente a un\
-      <a href='situacion_intermedia1'>gnomo.</a></p>",
+    	<p>Corro por un camino escapando de él. El camino es estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas.</p>\
+      <p>   NOMBRE: Mi vida es un continuo intentar hacer crecer flores en el desierto...</p>\
+      <p>De repente, encuentro a un <a href='situacion_intermedia1'>gnomo</a> enfrente.</p>",
         {
-            heading: "Con mono",
+            heading: "No quiero continuar con Momo",
         }
 	),
 
@@ -102,7 +134,7 @@ undum.game.situations = {
             heading: "No me inspira confianza, mejor me voy"
         }
     ),
-    
+
 
     /*Comienzo capitulo 3*/
     capitulo_tercero: new undum.SimpleSituation(
