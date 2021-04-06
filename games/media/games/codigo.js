@@ -39,19 +39,19 @@ undum.game.situations = {
         <p>Despierto de golpe. La luz del sol me deslumbra. Froto mis ojos hasta que consigo abrirlos por completo.</p>\
         <p>Miro hacia arriba y a mi alrededor. El cielo está despejado. No sé dónde estoy. Intento hacer memoria para recordar</p>\
         <p>como he llegado aquí... yo estaba en mi habitación, en el escritorio, con mi ordenador, terminando la práctica de Desarrollo Ágil que se entregaba hoy las 23.55h... ¿¡QUÉ HORA ES!? ¡Tengo que entregar la práctica! Miro mi muñeca y descubro que no tengo reloj. De repente, escucho un ruido, alguien se acerca.</p>\
-        <p>   MOMO: La historia comienza cuando el protagonista decide ejecutar la acción que lo inicia todo.</p>\
+        <p>   <b>MOMO:</b> La historia comienza cuando el protagonista decide ejecutar la acción que lo inicia todo.</p>\
         <p>No me lo puedo creer. ¡Acaba de hablarme un mono que viene hacia a mí!</p>\
-        <p>   MOMO:No pongas esa cara. Me llamo Momo. No sé quién eres ni qué buscas. La verdad es que me da igual.</p>\
+        <p>   <b>MOMO:</b> No pongas esa cara. Me llamo Momo. No sé quién eres ni qué buscas. La verdad es que me da igual.</p>\
         <p>Continúo en shock.</p>\
         <p><a href='sin_mono'>No quiero hablar con nadie</a> ni que nadie me moleste. O quizás sea\
         <a href='con_mono'>una buena idea tener alguien al lado, aunque sea un mono.</a>.</p>"
     ),
     con_mono: new undum.SimpleSituation(
     	"<p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
-      <p>   MOMO: ¿Es el destino la mano que elige si nuestro reloj de arena funcionará hacia arriba o hacia abajo, o esa mano somos nosotros mismos?</p>\
-      <p>   " + nombre +": ¿Qué dices? Necesito terminar mi trabajo para entregarlo a tiempo...</p>\
+      <p>   <b>MOMO:</b> ¿Es el destino la mano que elige si nuestro reloj de arena funcionará hacia arriba o hacia abajo, o esa mano somos nosotros mismos?</p>\
+      <p>   <b>" + nombre +":</b> ¿Qué dices? Necesito terminar mi trabajo para entregarlo a tiempo...</p>\
       <p>No puede ser. Creo que ya entiendo lo que Momo me quiere decir</p>\
-      <p>   "+ nombre +": ¿No te estarás refiriendo a que el tiempo que tiene ese reloj es el que tengo para poder\
+      <p>   <b>"+ nombre +":</b> ¿No te estarás refiriendo a que el tiempo que tiene ese reloj es el que tengo para poder\
       encontrar mi ordenador?</p>\
       <p>El mono asiente con la cabeza. ¡Qué estrés! Siento angustia. Esto me pasa por dejarlo todo para el último momento. No me veo con futuro en la carrera de ingeniería, quizás me equivoqué al elegirla...</p>\
       <p>Momo siente mi decaida. Quiere darme ánimos. ¿Sigo escuchando<a href='detalle'> más detalladamente al mono</a>?</p>\
@@ -63,7 +63,7 @@ undum.game.situations = {
 	),
 
     detalle: new undum.SimpleSituation(
-      "<p>    MOMO: Tú eliges, puedes pasar todo tu tiempo muerto o puedes coger tu tiempo y hacer algo valioso con él.\
+      "<p>    <b>MOMO:</b> Tú eliges, puedes pasar todo tu tiempo muerto o puedes coger tu tiempo y hacer algo valioso con él.\
       Algo que llene ese tiempo de energía. Hay que vivir con la fuerza suficiente como para que la vida ceda a tu paso, no tú ante ella.\
       La vida no es nada si no te atreves a vivirla. Hay que hacer algo con la vida que tenemos. Que se entere de que estamos aquí, dispuestos a dejarla\
       boquiabierta con nuestra forma de pasar por ella.</p>\
@@ -77,8 +77,8 @@ undum.game.situations = {
 
     seguirlo: new undum.SimpleSituation(
       "<p>Sigo a Momo por un camino estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas, pero mi mente se encuentra en otro sitio</p>\
-      <p><<Si Alicia se hubiera cansado de correr tras el Conejo Blanco, no habría caído por la madriguera. Ni descubierto el País\
-      de las Maravillas. Ni descubrierto quién era ella. Seguiré corriendo. Me caeré. E intentaré no tener miedo a aquello que me tenga que enfrentar</p>\
+      <p><b> << </b>Si Alicia se hubiera cansado de correr tras el Conejo Blanco, no habría caído por la madriguera. Ni descubierto el País\
+      de las Maravillas. Ni descubrierto quién era ella. Seguiré corriendo. Me caeré. E intentaré no tener miedo a aquello que me tenga que enfrentar <b> >> </b></p>\
       <p>Llegamos al final del camino, frente a un gnomo. Momo se acerca a mí y saca algo de su riñonera. Es un frasco.\
       En el pone: VIDA.</p>\
       <p> MOMO: Por si lo necesitas a lo largo de tu aventura ;)</p>\
