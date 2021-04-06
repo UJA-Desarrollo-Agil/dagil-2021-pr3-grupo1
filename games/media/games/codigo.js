@@ -155,6 +155,7 @@ undum.game.situations = {
         <p>Por la ruta más corta tengo que <a href='montana'>pasar la montaña</a>, gobernada por un monstruo del cual no se conoce información, solo sé que es conocido como \"El rey de la montaña\".</p>",
         {
             heading: "Capítulo 3 - MI OBJETIVO",
+            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
         }
     ),
 
@@ -167,6 +168,7 @@ undum.game.situations = {
         <p>Permanezco escondido y comienzo a preparar el plan para atacar, pudiendo hacerlo de dos formas distintas, o bien <a href='campamento_fuerza'>entro a la fuerza</a> atacando e intentando pillarlos desprevenidos o me centro en <a href='campamento_sigilo'>hacerlo sigilosamente</a>.</p>",
         {
             heading: "Campamento de villanos",
+            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
         }
     ),
     campamento2: new undum.SimpleSituation(
@@ -179,8 +181,12 @@ undum.game.situations = {
     ),
     /*Mirar detalladamente el campamento*/
     detalladamente_campamento: new undum.SimpleSituation(
-        "<p>Tras mirar detallademente, veo que hay un tirador con arco y flechas de piedra.</p>\
-        <p><a href='campamento2'>Continuar con la historia</a></p>"
+        "<p>veo que hay un tirador con arco y flechas de piedra.</p>\
+        <p><a href='campamento2'>Continuar con la historia</a></p>",
+        {
+        heading: "Tras mirar detalladamente ...",
+        enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+3);}
+        }
 	),
 	entrada: new undum.SimpleSituation(
 	"<p>Antes de llegar a la puerta principal, veo un bulto a lo lejos un tanto sospechoso\
@@ -248,7 +254,8 @@ undum.game.situations = {
 	<a href='disfraz_guardia'>disfrazarme como un guardia</a> y colarme por la puerta principal.\
 	</p>",
 	{
-			heading:"Entro en sigilo"
+			heading:"Entro en sigilo",
+            
 	}
 	),
 	parte_atras: new undum.SimpleSituation(
@@ -371,6 +378,7 @@ undum.game.situations = {
         <p>Me tumbo en una de las camas del campamento para <a href='campamento_fuerza2'> reposar y sanar mis heridas</a>.</p>",
         {
             heading: "Ataque al campamento por la fuerza",
+            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
         }
     ),
     campamento_fuerza2: new undum.SimpleSituation(
@@ -387,6 +395,8 @@ undum.game.situations = {
         <p>Decido pasar la noche en el campamento y antes de partir hacia el castillo <a href='eleccion_villanos'>recojo algunas armas pertenecientes a los villanos.</a></p>",
         {
             heading: "Ataque al campamento sigilosamente",
+            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
+        
         }
     ),
 
@@ -400,6 +410,7 @@ undum.game.situations = {
         <p>Tengo poco tiempo para pensar ya que se volvera a avalanzar sobre mi, nose si debería <a href='salir_corriendo'>salir corriendo</a> o <a href='enfrentarme'>enfrentarme a él</a>.</p>",
         {
             heading: "El rey de la montaña",
+            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+6);}
         }
     ),
 
@@ -419,6 +430,7 @@ undum.game.situations = {
         <p>Puesto que no tengo todo el tiempo del mundo debo decidir que <a href='eleccion_montana'>armas fabricar</a>.</p>",
         {
             heading: "Enfrentamiento con el lobo",
+            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+7);}
         }
     ),
 
@@ -429,6 +441,7 @@ undum.game.situations = {
         <p><a href='entrada'>Me dirigo hacia la puerta principal</a></p>",
         {
             heading: "Llegada al castillo",
+            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+12);}
         }
     ),
     // Menu elecciones.
