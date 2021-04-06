@@ -229,6 +229,7 @@ undum.game.situations = {
 					{system.setQuality('progreso_historia', character.qualities.progreso_historia+4);}
 					system.doLink("ganas");
 				}else{
+					{system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
 					system.write("<p>Creo que atacar a los guardias va a ser la mejor opción.\
 					Cuantos menos enemigos vivos, mejor.</p>\
 					<p>Voy corriendo hacia ellos y empiezo a enfrentarme con todos los que se interponen\
@@ -238,9 +239,6 @@ undum.game.situations = {
 					<p>Se abalanzan contra mi y me inflan a palos. Para enfrentarme a un ejército entero\
 					tengo que ir mucho más armado.\
 					</p>",
-					{
-						enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
-					}
 					);
 				}
 			},
@@ -368,6 +366,7 @@ undum.game.situations = {
 					{system.setQuality('progreso_historia', character.qualities.progreso_historia+3);}
 					system.doLink("disfraz_guardia2");
 				}else{
+					{system.setQuality('progreso_historia', character.qualities.progreso_historia+8);}
 					system.write("<p>Me acerco al grupo de guardias que estaban en la puerta principal.\
 					Desde lejos ya me están gritando que no me acerque\
 					pero les digo que no soy un peligro, solo un turista perdido.</p>\
@@ -377,9 +376,6 @@ undum.game.situations = {
 					<p>En un hipotético caso de que pueda resucitar y volver a esta situación,\
 					igual es mejor tener un traje de guardia para acercarme a ellos.\
 					</p>",
-					{
-						enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+8);}
-					}
 					);
 				}
 			},
