@@ -58,7 +58,7 @@ undum.game.situations = {
       <p>Hace una seña para <a href='seguirlo'>lo siga</a>.</p>",
         {
             heading: "Momo me acompañará",
-            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+3);}
+            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+10);}
         }
 	),
 
@@ -70,9 +70,9 @@ undum.game.situations = {
       <p>¡No puedo creer las palabras de este mono! Es más sabio de lo que parece, me ha hecho pensar... Y me siento con más energía. <a href='seguirlo'> CONTINUAR HISTORIA...</a></p>",
         {
             heading: "El mono me habla...",
-            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+1);}
+            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+3);}
         },
-        
+
     ),
 
     seguirlo: new undum.SimpleSituation(
@@ -85,9 +85,9 @@ undum.game.situations = {
       <p>Rápidamente, Momo desaparece ante mis ojos. Guardo el frasco en mi bolsillo y me acerco al <a href='situacion_intermedia1'>gnomo.</a></p>",
           {
             heading: "Extraño camino",
-            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+3);}
+            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+12);}
           },
-        
+
     ),
 
     sin_mono: new undum.SimpleSituation(
@@ -98,7 +98,7 @@ undum.game.situations = {
       <p>De repente, encuentro a un <a href='situacion_intermedia1'>gnomo</a> enfrente.</p>",
         {
             heading: "No quiero continuar con Momo",
-            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+3);}
+            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+20);}
         },
 	),
 
@@ -589,6 +589,3 @@ undum.game.init = function(character, system) {
 
     system.setCharacterText("<p>Listado de objetos que lleva encima:</p>");
 };
-
-
-
