@@ -46,13 +46,13 @@ undum.game.situations = {
         <p><a href='sin_mono'>No quiero hablar con nadie</a> ni que nadie me moleste. O quizás sea\
         <a href='con_mono'>una buena idea tener alguien al lado, aunque sea un mono.</a>.</p>"
     ),
-<<<<<<< HEAD
 	
     sin_mono: new undum.SimpleSituation(
     	"<p>Momo luce sonriente sabiendo que puede quedar conmigo. Hace una seña para lo siga.</p>\
     	<p>Sin saber qué hacer, lo sigo por un camino extraño. De repente nos encontramos en frente de un\
-      <a href='situacion_intermedia1'>gnomo.</a></p>",
-=======
+      <a href='situacion_intermedia1'>gnomo.</a></p>"
+	),
+	
     con_mono: new undum.SimpleSituation(
     	"<p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
       <p>   MOMO: ¿Es el destino la mano que elige si nuestro reloj de arena funcionará hacia arriba o hacia abajo, o esa mano somos nosotros mismos?</p>\
@@ -63,7 +63,6 @@ undum.game.situations = {
       <p>El mono asiente con la cabeza. ¡Qué estrés! Siento angustia. Esto me pasa por dejarlo todo para el último momento. No me veo con futuro en la carrera de ingeniería, quizás me equivoqué al elegirla...</p>\
       <p>Momo siente mi decaida. Quiere darme ánimos. ¿Sigo escuchando<a href='detalle'> más detalladamente al mono</a>?</p>\
       <p>Hace una seña para <a href='seguirlo'>lo siga</a>.</p>",
->>>>>>> 78bf5d368081ef2db026cf090acff390cf7bec0c
         {
             heading: "Momo me acompañará",
             enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+3);}
@@ -85,7 +84,7 @@ undum.game.situations = {
 
     seguirlo: new undum.SimpleSituation(
       "<p>Sigo a Momo por un camino estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas, pero mi mente se encuentra en otro sitio</p>\
-      <p><<Si Alicia se hubiera cansado de correr tras el Conejo Blanco, no habría caído por la madriguera. Ni descubierto el País\
+      <p>Si Alicia se hubiera cansado de correr tras el Conejo Blanco, no habría caído por la madriguera. Ni descubierto el País\
       de las Maravillas. Ni descubrierto quién era ella. Seguiré corriendo. Me caeré. E intentaré no tener miedo a aquello que me tenga que enfrentar</p>\
       <p>Llegamos al final del camino, frente a un gnomo. Momo se acerca a mí y saca algo de su riñonera. Es un frasco.\
       En el pone: VIDA.</p>\
@@ -210,6 +209,7 @@ undum.game.situations = {
 				}
 			},
 			heading:"Entrada al castillo",
+			enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+3);}
 	}
 	),
 	ataca_guardias: new undum.SimpleSituation(
@@ -217,6 +217,7 @@ undum.game.situations = {
 	{
 			enter: function(character, system, from){
 				if(character.qualities.equipamiento > 3){
+					{system.setQuality('progreso_historia', character.qualities.progreso_historia+4);}
 					system.doLink("ganas");
 				}else{
 					system.write("<p>Creo que atacar a los guardias va a ser la mejor opción.\
@@ -227,7 +228,11 @@ undum.game.situations = {
 					para mi solo.</p>\
 					<p>Se abalanzan contra mi y me inflan a palos. Para enfrentarme a un ejército entero\
 					tengo que ir mucho más armado.\
-					</p>");
+					</p>",
+					{
+						enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
+					}
+					);
 				}
 			},
 
@@ -245,7 +250,7 @@ undum.game.situations = {
 	a recuperar mi ordenador.\
 	</p>",
 	{
-
+		enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+6);}
 	}
 	),
 	entrar_sigilo: new undum.SimpleSituation(
@@ -256,7 +261,8 @@ undum.game.situations = {
 	<a href='disfraz_guardia'>disfrazarme como un guardia</a> y colarme por la puerta principal.\
 	</p>",
 	{
-			heading:"Entro en sigilo"
+			heading:"Entro en sigilo",
+			enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+2);}
 	}
 	),
 	parte_atras: new undum.SimpleSituation(
@@ -270,6 +276,7 @@ undum.game.situations = {
 	</p>",
 	{
 			heading:"Entro por la parte de atrás",
+			enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+3);}
 	}
 	),
 	preguntar: new undum.SimpleSituation(
@@ -285,6 +292,7 @@ undum.game.situations = {
 	</p>",
 	{
 			heading:"Pregunto a los trabajadores",
+			enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
 	}
 	),
 	investigar: new undum.SimpleSituation(
@@ -298,6 +306,7 @@ undum.game.situations = {
 	</p>",
 	{
 			heading:"Investigo por mi cuenta",
+			enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
 	}
 	),
 	despacho: new undum.SimpleSituation(
@@ -317,6 +326,7 @@ undum.game.situations = {
 	</p>",
 	{
 			heading:"Entro en el despacho",
+			enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+7);}
 	}
 	),
 	perdon: new undum.SimpleSituation(
@@ -326,6 +336,7 @@ undum.game.situations = {
 	</p>",
 	{
 			heading:"Perdono a Victorcillo",
+			enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
 	}
 	),
 	muerte: new undum.SimpleSituation(
@@ -337,6 +348,7 @@ undum.game.situations = {
 	</p>",
 	{
 			heading:"Acabo con Victorcillo",
+			enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
 	}
 	),
 	disfraz_guardia: new undum.SimpleSituation(
@@ -344,6 +356,7 @@ undum.game.situations = {
 	{
 			enter: function(character, system, from){
 				if(character.qualities.traje){
+					{system.setQuality('progreso_historia', character.qualities.progreso_historia+3);}
 					system.doLink("disfraz_guardia2");
 				}else{
 					system.write("<p>Me acerco al grupo de guardias que estaban en la puerta principal.\
@@ -354,7 +367,11 @@ undum.game.situations = {
 					Sin duda estos guardias de Arcadia son de lo más peligroso.</p>\
 					<p>En un hipotético caso de que pueda resucitar y volver a esta situación,\
 					igual es mejor tener un traje de guardia para acercarme a ellos.\
-					</p>");
+					</p>",
+					{
+						enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+8);}
+					}
+					);
 				}
 			},
 
@@ -370,7 +387,7 @@ undum.game.situations = {
 	enfrentar a Victorcillo y que está en su habitación, así que <a href='despacho'>allí me dirijo</a>.\
 	</p>",
 	{
-
+		enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
 	}
 	),
     /*Elección campamento de villanos a la fuerza*/
@@ -562,14 +579,10 @@ undum.game.qualities = {
 	traje: new undum.OnOffQuality(
         "Traje de guardia", {priority:"0002", group:'objetos', onDisplay:"&#10003;"}
     ),
-<<<<<<< HEAD
-	equipamiento: new undum.IntegerQuality(
-=======
     progreso_historia: new undum.IntegerQuality(
         "Progreso %:", {priority:"0001", group:'stats'}
     ),
     equipamiento: new undum.IntegerQuality(
->>>>>>> 78bf5d368081ef2db026cf090acff390cf7bec0c
         "Equipamiento", {priority:"0001", group:'stats'}
     )
 };
