@@ -135,9 +135,9 @@ undum.game.situations = {
 
     /*Fin del capítulo*/
     fin_capitulo: new undum.SimpleSituation(
-        "<p>Por haber dado con la solución, Raerpin me confiesa que el ordenador lo encontraré en el último lugar de mi camino y que solo lo conseguiré si derroto al villano de Arcadia junto a todos sus secuaces que iré encontrando hasta llegar a <a href= 'capitulo_tercero'>él.</a></p>",
+        "<p>Por haber dado con la solución, Raerpin me confiesa que el ordenador lo encontraré en el último lugar de mi camino y que solo lo conseguiré si derroto al villano de Arcadia junto a todos sus secuaces que iré encontrando <a href= 'capitulo_tercero'>hasta llegar a él.</a></p>",
         {
-            heading: "Continuamos...",
+            heading: "Continuamos.....",
             enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
         }
     ),
