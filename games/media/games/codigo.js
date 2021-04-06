@@ -46,7 +46,7 @@ undum.game.situations = {
         <p><a href='sin_mono'>No quiero hablar con nadie</a> ni que nadie me moleste. O quizás sea\
         <a href='con_mono'>una buena idea tener alguien al lado, aunque sea un mono.</a>.</p>"
     ),
-    
+
     con_mono: new undum.SimpleSituation(
     	"<p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
       <p>   <b>MOMO:</b> ¿Es el destino la mano que elige si nuestro reloj de arena funcionará hacia arriba o hacia abajo, o esa mano somos nosotros mismos?</p>\
@@ -82,7 +82,7 @@ undum.game.situations = {
       de las Maravillas. Ni descubrierto quién era ella. Seguiré corriendo. Me caeré. E intentaré no tener miedo a aquello que me tenga que enfrentar <b> >> </b></p>\
       <p>Llegamos al final del camino, frente a un gnomo. Momo se acerca a mí y saca algo de su riñonera. Es un frasco.\
       En el pone: VIDA.</p>\
-      <p> MOMO: Por si lo necesitas a lo largo de tu aventura ;)</p>\
+      <p> MOMO: Por si lo necesitas a lo largo de tu aventura </p>\
       <p>Rápidamente, Momo desaparece ante mis ojos. Guardo el frasco en mi bolsillo y me acerco al <a href='situacion_intermedia1'>gnomo.</a></p>",
           {
             heading: "Extraño camino",
@@ -256,7 +256,7 @@ undum.game.situations = {
 	</p>",
 	{
 			heading:"Entro en sigilo",
-            
+
 	}
 	),
 	parte_atras: new undum.SimpleSituation(
@@ -397,7 +397,7 @@ undum.game.situations = {
         {
             heading: "Ataque al campamento sigilosamente",
             enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
-        
+
         }
     ),
 
