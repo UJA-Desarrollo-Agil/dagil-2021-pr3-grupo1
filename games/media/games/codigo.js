@@ -118,6 +118,7 @@ undum.game.situations = {
         <p><a href='adivinanza'>Piensa un poco....Ver solución.</a>.</p>",
         {
             heading: "Acompañar a Raerpin",
+            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+15);}
         }
     ),
 
@@ -127,6 +128,7 @@ undum.game.situations = {
         <p><a href='fin_capitulo'>Continuar con la historia</a></p>",
         {
             heading: "Solución",
+            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
         }
     ),
 
@@ -135,6 +137,7 @@ undum.game.situations = {
         "<p>Por haber dado con la solución, Raerpin me confiesa que el ordenador lo encontraré en el último lugar de mi camino y que solo lo conseguiré si derroto al villano de Arcadia junto a todos sus secuaces que iré encontrando hasta llegar a <a href= 'capitulo_tercero'>él.</a></p>",
         {
             heading: "Continuamos...",
+            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
         }
     ),
 
