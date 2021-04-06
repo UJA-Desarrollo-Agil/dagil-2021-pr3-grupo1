@@ -27,10 +27,10 @@ undum.game.fadeSpeed = 1500
  * option. */
 undum.game.slideUpSpeed = 500
 
+//Variable nombre que almacena el nombre del jugador
 var nombre
 
 nombre = prompt("Antes de comenzar, por favor, ingrese un nombre para su jugador/a: ");
-
 
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
