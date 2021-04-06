@@ -46,13 +46,13 @@ undum.game.situations = {
         <p><a href='sin_mono'>No quiero hablar con nadie</a> ni que nadie me moleste. O quizás sea\
         <a href='con_mono'>una buena idea tener alguien al lado, aunque sea un mono.</a>.</p>"
     ),
-<<<<<<< HEAD
 	
     sin_mono: new undum.SimpleSituation(
     	"<p>Momo luce sonriente sabiendo que puede quedar conmigo. Hace una seña para lo siga.</p>\
     	<p>Sin saber qué hacer, lo sigo por un camino extraño. De repente nos encontramos en frente de un\
-      <a href='situacion_intermedia1'>gnomo.</a></p>",
-=======
+      <a href='situacion_intermedia1'>gnomo.</a></p>"
+	  ),
+
 
     con_mono: new undum.SimpleSituation(
     	"<p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
@@ -64,7 +64,6 @@ undum.game.situations = {
       <p>El mono asiente con la cabeza. ¡Qué estrés! Siento angustia. Esto me pasa por dejarlo todo para el último momento. No me veo con futuro en la carrera de ingeniería, quizás me equivoqué al elegirla...</p>\
       <p>Momo siente mi decaida. Quiere darme ánimos. ¿Sigo escuchando<a href='detalle'> más detalladamente al mono</a>?</p>\
       <p>Hace una seña para <a href='seguirlo'>lo siga</a>.</p>",
->>>>>>> b09c259f0ede5bcd161c04f5336a6217b3a78e43
         {
             heading: "Momo me acompañará",
             enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+10);}
@@ -579,14 +578,10 @@ undum.game.qualities = {
 	traje: new undum.OnOffQuality(
         "Traje de guardia", {priority:"0002", group:'objetos', onDisplay:"&#10003;"}
     ),
-<<<<<<< HEAD
-	equipamiento: new undum.IntegerQuality(
-=======
     progreso_historia: new undum.IntegerQuality(
         "Progreso %:", {priority:"0001", group:'stats'}
     ),
     equipamiento: new undum.IntegerQuality(
->>>>>>> b09c259f0ede5bcd161c04f5336a6217b3a78e43
         "Equipamiento", {priority:"0001", group:'stats'}
     )
 };
