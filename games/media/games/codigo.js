@@ -86,7 +86,7 @@ undum.game.situations = {
       de las Maravillas. Ni descubrierto quién era ella. Seguiré corriendo. Me caeré. E intentaré no tener miedo a aquello que me tenga que enfrentar</p>\
       <p>Llegamos al final del camino, frente a un gnomo. Momo se acerca a mí y saca algo de su riñonera. Es un frasco.\
       En el pone: VIDA.</p>\
-      <p> MOMO: Por si lo necesitas a lo largo de tu aventura </p>\
+      <p> <b>MOMO</b>: Por si lo necesitas a lo largo de tu aventura </p>\
       <p>Rápidamente, Momo desaparece ante mis ojos. Guardo el frasco en mi bolsillo y me acerco al <a href='situacion_intermedia1'>gnomo.</a></p>",
           {
             heading: "Extraño camino",
