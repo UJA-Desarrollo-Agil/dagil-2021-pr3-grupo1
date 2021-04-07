@@ -29,14 +29,13 @@ undum.game.slideUpSpeed = 500
 
 //Variable nombre que almacena el nombre del jugador
 var nombre
-
 nombre = prompt("Antes de comenzar, por favor, ingrese un nombre para su jugador/a: ");
 
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
     start: new undum.SimpleSituation(
         "<h1>CAPÍTULO 1: LA HISTORIA COMIENZA...</h1>\
-        <p>Despierto de golpe. La luz del sol me deslumbra. Froto mis ojos hasta que consigo abrirlos por completo.</p>\
+        <p>Despierto de golpe. La luz del sol me deslumbra.<br> Froto mis ojos hasta que consigo abrirlos por completo.</p>\
         <p>Miro hacia arriba y a mi alrededor. El cielo está despejado. No sé dónde estoy. Intento hacer memoria para recordar</p>\
         <p>como he llegado aquí... yo estaba en mi habitación, en el escritorio, con mi ordenador, terminando la práctica de Desarrollo Ágil que se entregaba hoy las 23.55h... ¿¡QUÉ HORA ES!? ¡Tengo que entregar la práctica! Miro mi muñeca y descubro que no tengo reloj. De repente, escucho un ruido, alguien se acerca.</p>\
         <p>   <b>MOMO:</b> La historia comienza cuando el protagonista decide ejecutar la acción que lo inicia todo.</p>\
@@ -56,7 +55,6 @@ undum.game.situations = {
     con_mono: new undum.SimpleSituation(
     	"<p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
       <p>   <b>MOMO:</b> ¿Es el destino la mano que elige si nuestro reloj de arena funcionará hacia arriba o hacia abajo, o esa mano somos nosotros mismos?</p>\
-      <p>   <b>" + nombre +":</b> ¿Qué dices? Necesito terminar mi trabajo para entregarlo a tiempo...</p>\
       <p>No puede ser. Creo que ya entiendo lo que Momo me quiere decir</p>\
       <p>   <b>"+ nombre +":</b> ¿No te estarás refiriendo a que el tiempo que tiene ese reloj es el que tengo para poder\
       encontrar mi ordenador?</p>\
@@ -88,11 +86,14 @@ undum.game.situations = {
       de las Maravillas. Ni descubrierto quién era ella. Seguiré corriendo. Me caeré. E intentaré no tener miedo a aquello que me tenga que enfrentar</p>\
       <p>Llegamos al final del camino, frente a un gnomo. Momo se acerca a mí y saca algo de su riñonera. Es un frasco.\
       En el pone: VIDA.</p>\
-      <p> MOMO: Por si lo necesitas a lo largo de tu aventura </p>\
+      <p> <b>MOMO</b>: Por si lo necesitas a lo largo de tu aventura </p>\
       <p>Rápidamente, Momo desaparece ante mis ojos. Guardo el frasco en mi bolsillo y me acerco al <a href='situacion_intermedia1'>gnomo.</a></p>",
           {
             heading: "Extraño camino",
-            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+12);}
+            enter: function(character, system, from) {
+                system.setQuality('progreso_historia', character.qualities.progreso_historia+12);
+                system.setQuality('frascoVida', character.qualities.frascoVida+1);
+            }
           },
 
     ),
@@ -405,11 +406,26 @@ undum.game.situations = {
         }
     ),
     campamento_fuerza2: new undum.SimpleSituation(
-        "<p> Tras una semana, <br> mis heridas han sanado y procedo a prepararme para llegar al castillo del jefe, quien ha robado mi ordenador.</p>\
-        <p>Antes de salir voy a llevar conmigo algunas de las <a href='eleccion_villanos'>armas que tenían los villanos</a></p>",
-        {
-            heading: "Recuperación",
-        }
+        "",
+	    {
+			enter: function(character, system, from){
+				if(character.qualities.frascoVida > 0){
+					system.write("<p>Al tumbarme sobre la cama de una cabaña, recuerdo el frasco de vida que me dio Momo.</p>\
+                    <p>Decido tomarmelo de un trago y, para mi asombro todas mis heridas han sanado en cueston de segundos.\
+                    Gracias a esto podré <a href='eleccion_villanos'>continuar mi viaje</a> sin perder tiempo.</p>");
+                    
+                    system.setQuality('frascoVida', character.qualities.frascoVida-1);
+                    
+				}else{
+					system.write("<p> Tras una semana, <br> mis heridas han sanado y procedo a prepararme para llegar al castillo del jefe,\
+                     quien ha robado mi ordenador.</p>\
+                    <p>Antes de salir voy a llevar conmigo algunas de las\
+                     <a href='eleccion_villanos'>armas que tenían los villanos</a></p>");
+				}
+			},
+
+			heading:"Recuperación",
+	    }
     ),
     /*Elección campamento de villanos en sigilo*/
     campamento_sigilo: new undum.SimpleSituation(
@@ -447,14 +463,31 @@ undum.game.situations = {
 
     /*Enfrentarme a el*/
     enfrentarme: new undum.SimpleSituation(
-        "<p>Cojo mi espada, <br> y salgo corriendo hacia él, me muerde el brazo mientras le atravieso el cuello con mi arma.\
-        El resultado ha sido desastroso, mi brazo ha acabado destrozado, pero al menos he conseguido sobrevivir ante semejante amenaza.</p>\
-        <p>Tras varios días de recuperación, el gnomo me cuenta que se trata de un animal mágico y que sus huesos sirven para hacer armas mas fuertes que el hierro.</p>\
-        <p>Puesto que no tengo todo el tiempo del mundo debo decidir que <a href='eleccion_montana'>armas fabricar</a>.</p>",
-        {
-            heading: "Enfrentamiento con el lobo",
-            enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+7);}
-        }
+        "",
+	    {
+			enter: function(character, system, from){
+				if(character.qualities.frascoVida > 0){
+					system.write("<p>Cojo mi espada, <br> y salgo corriendo hacia él, me muerde el brazo mientras le atravieso el cuello con mi arma.\
+                    El resultado ha sido desastroso, mi brazo ha acabado destrozado, pero al menos he conseguido sobrevivir ante semejante amenaza.</p>\
+                    <p>Tras acabar la batalla me tumbo en el suelo del bosque destrozado y recuerdo el frasco de vida que me dió Momo,\
+                    decido tomarlo de un trago y, para mi asombro ¡Qué está pasando! en cuestión de segundos mis heridas han sanado y mi brazo\
+                    a crecido de nuevo. Tras varios minutos asimilando lo sucedido decido conversar con el gnomo sobre el lobo.\
+                    El gnomo me cuenta que se trata de un animal mágico y que sus huesos sirven para hacer armas mas fuertes que el hierro.</p>\
+                    <p>Puesto que no tengo todo el tiempo del mundo debo decidir que <a href='eleccion_montana'>armas fabricar</a>.</p>");
+                    
+                    system.setQuality('frascoVida', character.qualities.frascoVida-1);
+                    
+				}else{
+					system.write("<p>Cojo mi espada, <br> y salgo corriendo hacia él, me muerde el brazo mientras le atravieso el cuello con mi arma.\
+                    El resultado ha sido desastroso, mi brazo ha acabado destrozado, pero al menos he conseguido sobrevivir ante semejante amenaza.</p>\
+                    <p>Tras varios días de recuperación, el gnomo me cuenta que se trata de un animal mágico y que sus huesos sirven para hacer armas mas fuertes que el hierro.</p>\
+                    <p>Puesto que no tengo todo el tiempo del mundo debo decidir que <a href='eleccion_montana'>armas fabricar</a>.</p>");
+				}
+			},
+
+			heading: "Enfrentamiento con el lobo",
+            //enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+7);}
+	    }
     ),
 
     /*llegada a castillo*/
@@ -587,6 +620,9 @@ undum.game.qualities = {
     arcoMetal: new undum.OnOffQuality(
         "Arco de metal", {priority:"0002", group:'objetos', onDisplay:"&#10003;"}
 	),
+    frascoVida: new undum.OnOffQuality(
+        "Frasco de vida", {priority:"0002", group:'objetos', onDisplay:"&#10003;"}
+	),
 	traje: new undum.OnOffQuality(
         "Traje de guardia", {priority:"0002", group:'objetos', onDisplay:"&#10003;"}
     ),
@@ -624,6 +660,7 @@ undum.game.init = function(character, system) {
     character.qualities.arcoMetal = 0;
     character.qualities.progreso_historia = 0;
     character.qualities.equipamiento = 0;
+    character.qualities.frascoVida = 0;
     system.setQuality( "traje" , false )
 
     system.setCharacterText("<p>Listado de objetos que lleva encima:</p>");
