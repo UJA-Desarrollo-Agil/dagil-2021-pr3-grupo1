@@ -717,7 +717,6 @@ undum.game.situations = {
     }
   ),
 };
-
 // ---------------------------------------------------------------------------
 /* The Id of the starting situation. */
 undum.game.start = "start";
