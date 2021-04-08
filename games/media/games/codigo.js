@@ -47,12 +47,6 @@ undum.game.situations = {
         <a href='con_mono'>una buena idea tener alguien al lado, aunque sea un mono.</a>.</p>"
   ),
 
-  sin_mono: new undum.SimpleSituation(
-    "<p>Momo luce sonriente sabiendo que puede quedar conmigo. Hace una seña para lo siga.</p>\
-    	<p>Sin saber qué hacer, lo sigo por un camino extraño. De repente nos encontramos en frente de un\
-      <a href='situacion_intermedia1'>gnomo.</a></p>"
-  ),
-
   con_mono: new undum.SimpleSituation(
     "<p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
       <p>   <b>MOMO:</b> ¿Es el destino la mano que elige si nuestro reloj de arena funcionará hacia arriba o hacia abajo, o esa mano somos nosotros mismos?</p>\
@@ -140,14 +134,20 @@ undum.game.situations = {
       " y no se si decirle Buenas tardes o buenos días porque no se donde estamos y para colmo, ¡¡he perdido mi reloj!!.</p>\
         <p>Hola " +
       nombre +
-      ", yo soy Raerpin y estamos en el Mágico Mundo de Arcadia, he estado esperándote. ¿Deseas que te acompañe en tu aventura?  <a href='acompanar'>acompañar a Raerpin</a> o <a href='no_acompanar'>no acompañar a Raerpin</a>.</p>"
+      ", yo soy Raerpin y estamos en el Mágico Mundo de Arcadia, he estado esperándote. ¿Deseas que te acompañe en tu aventura?\
+        <a href='acompanar'>acompañar a Raerpin</a> o <a href='no_acompanar'>no acompañar a Raerpin</a>.</p>"
   ),
 
   /*Elijo Acompañar al gnomo*/
   acompanar: new undum.SimpleSituation(
-    "<p>Decido emprender mi aventura junto a Raerpin por tres razones, la primera es que sigo sin tener idea de donde estoy,  la segunda, ¿cómo que me estaba esperando? y la tercera, que hace decantarme ¡¡¡ESTOY HABLANDO CON UN GNOMO!!!</p>\
-        <p>Raerpin me explica que me estaba esperando porque vio caer un ordenador hacía un tiempo y le basto con verme y olerme...para saber que soy estudiante de una ingeniería asi que supuso que sería mío.</p>\
-        <p>Continua diciendo que en el camino encontraremos diversos malvados y que dejará en mis manos la elección del camino que afontaremos pero que si llego intacto al final, recuperaré mi ordenador y podré acabar la práctica de Desarrollo Ágil a tiempo. Pero que tendré que acertar la siguiente adivinanza: Tengo patas y no ando, soy plana y no canto, se apoyan para escribir y no te puedo hacer reír. Por suerte me la se </p>\
+    "<p>Decido emprender mi aventura junto a Raerpin por tres razones, la primera es que sigo sin tener idea de donde estoy,\
+      la segunda, ¿cómo que me estaba esperando? y la tercera, que hace decantarme ¡¡¡ESTOY HABLANDO CON UN GNOMO!!!</p>\
+        <p>Raerpin me explica que me estaba esperando porque vio caer un ordenador hacía un tiempo y le basto con verme y</p>\
+        <p>olerme...para saber que soy estudiante de una ingeniería asi que supuso que sería mío.</p>\
+        <p>Continua diciendo que en el camino encontraremos diversos malvados y que dejará en mis manos la elección del camino</p>\
+        <p>que afontaremos pero que si llego intacto al final, recuperaré mi ordenador y podré acabar la práctica de Desarrollo Ágil</p>\
+        <p> a tiempo. Pero que tendré que acertar la siguiente adivinanza: Tengo patas y no ando, soy plana y no canto, se apoyan para</p>\
+          <p>escribir y no te puedo hacer reír. Por suerte me la se </p>\
         <p><a href='adivinanza'>Piensa un poco....Ver solución.</a>.</p>",
     {
       heading: "Acompañar a Raerpin",
@@ -204,12 +204,6 @@ undum.game.situations = {
         <p>Por la ruta más corta tengo que <a href='montana'>pasar la montaña</a>, gobernada por un monstruo del cual no se conoce información, solo sé que es conocido como \"El rey de la montaña\".</p>",
     {
       heading: "Capítulo 3 - MI OBJETIVO",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 5
-        );
-      },
     }
   ),
 
@@ -251,6 +245,214 @@ undum.game.situations = {
       },
     }
   ),
+  /*Elección campamento de villanos a la fuerza*/
+  campamento_fuerza: new undum.SimpleSituation(
+    "<p>Decido hacer el ataque por la fuerza, <br> con mi espada en mano salgo a correr hacia el campamento entrando por la parte trasera y acabando con la vida de dos villanos. En este momento los dos que se encuentran en tierra más el arquero subido en una plataforma se focalizan en mí. Esquivando flechas y luchando contra los dos a la vez consigo salir victorioso pero con heridas físicas graves, por lo que tendré que recuperarme antes de poder seguir.</p>\
+        <p>Me tumbo en una de las camas del campamento para <a href='campamento_fuerza2'> reposar y sanar mis heridas</a>.</p>",
+    {
+      heading: "Ataque al campamento por la fuerza",
+      enter: function (character, system, from) {
+        system.setQuality(
+          "progreso_historia",
+          character.qualities.progreso_historia + 5
+        );
+      },
+    }
+  ),
+  campamento_fuerza2: new undum.SimpleSituation("", {
+    enter: function (character, system, from) {
+      if (character.qualities.frascoVida > 0) {
+        system.write(
+          "<p>Al tumbarme sobre la cama de una cabaña, recuerdo el frasco de vida que me dio Momo.</p>\
+                    <p>Decido tomarmelo de un trago y, para mi asombro todas mis heridas han sanado en cueston de segundos.\
+                    Gracias a esto podré <a href='eleccion_villanos'>continuar mi viaje</a> sin perder tiempo.</p>"
+        );
+
+        system.setQuality("frascoVida", character.qualities.frascoVida - 1);
+      } else {
+        system.write(
+          "<p> Tras una semana, <br> mis heridas han sanado y procedo a prepararme para llegar al castillo del jefe,</p>\
+          quien ha robado mi ordenador.</p>\
+          <p>Antes de salir voy a llevar conmigo algunas de las\
+          <a href='eleccion_villanos'>armas que tenían los villanos</a></p>"
+        );
+      }
+    },
+
+    heading: "Recuperación",
+  }),
+  /*Elección campamento de villanos en sigilo*/
+  campamento_sigilo: new undum.SimpleSituation(
+    "<p>Decido hacer un ataque sigiloso, <br> con mi espada en mano entro de noche en el campamento nadando por el río.</p>\
+        <p>Mi mayor prioridad es acabar con el arquero, ya que es el que presenta la gran amenaza. Me avalanzo sobre él por la espalda sin que el resto se percate. Cojo su arco y acabo con dos soldados que se encontraban de guardia, bajo y acaba con la vida de los soldados que estaban descansando en sus cabañas.</p>\
+        <p>Decido pasar la noche en el campamento y antes de partir hacia el castillo <a href='eleccion_villanos'>recojo algunas armas pertenecientes a los villanos.</a></p>",
+    {
+      heading: "Ataque al campamento sigilosamente",
+      enter: function (character, system, from) {
+        system.setQuality(
+          "progreso_historia",
+          character.qualities.progreso_historia + 5
+        );
+      },
+    }
+  ),
+  /*Elección pasar por la montaña*/
+  montana: new undum.SimpleSituation(
+    "<p>Decido ir por la ruta más corta, <br>pese a no tener información sobre el monstruo.</p>\
+        <p>Tras un dia de camino llego a las llanuras de la montaña, noto algo inquietante y es que la vegetación y el clima son muy secos.</p>\
+        <p>Me adentro en ella y continuo recto durante el día. Al llegar la noche decido continuar sin parar hasta que noto como algo me vigila en la distancia, decido correr y algo se avalanza sobre mí, consigo escaparme y verlo de frente, se trata de un lobo enorme.</p>\
+        <p>Tengo poco tiempo para pensar ya que se volvera a avalanzar sobre mi, nose si debería <a href='salir_corriendo'>salir corriendo</a> o <a href='enfrentarme'>enfrentarme a él</a>.</p>",
+    {
+      heading: "El rey de la montaña",
+      enter: function (character, system, from) {
+        system.setQuality(
+          "progreso_historia",
+          character.qualities.progreso_historia + 6
+        );
+      },
+    }
+  ),
+  /*Salir corriendo del lobo*/
+  salir_corriendo: new undum.SimpleSituation(
+    "<p>Tras pensarlo rapidamente, <br>decido salir corriendo entre la maleza del bosque, el lobo me persigue sin cesar por lo que no me queda otra que darme la vuelta y <a href='enfrentarme'>enfrentarme a él</p>",
+    {
+      heading: "Salir corriendo",
+    }
+  ),
+  /*Enfrentarme a el*/
+  enfrentarme: new undum.SimpleSituation("", {
+    enter: function (character, system, from) {
+      if (character.qualities.frascoVida > 0) {
+        system.write(
+          "<p>Cojo mi espada, <br> y salgo corriendo hacia él, me muerde el brazo mientras le atravieso el cuello con mi arma.\
+                    El resultado ha sido desastroso, mi brazo ha acabado destrozado, pero al menos he conseguido sobrevivir ante semejante amenaza.</p>\
+                    <p>Tras acabar la batalla me tumbo en el suelo del bosque destrozado y recuerdo el frasco de vida que me dió Momo,\
+                    decido tomarlo de un trago y, para mi asombro ¡Qué está pasando! en cuestión de segundos mis heridas han sanado y mi brazo\
+                    a crecido de nuevo. Tras varios minutos asimilando lo sucedido decido conversar con el gnomo sobre el lobo.\
+                    El gnomo me cuenta que se trata de un animal mágico y que sus huesos sirven para hacer armas mas fuertes que el hierro.</p>\
+                    <p>Puesto que no tengo todo el tiempo del mundo debo decidir que <a href='eleccion_montana'>armas fabricar</a>.</p>"
+        );
+        system.setQuality("frascoVida", character.qualities.frascoVida - 1);
+        system.setQuality(
+          "progreso_historia",
+          character.qualities.progreso_historia + 7
+        );
+      } else {
+        system.write(
+          "<p>Cojo mi espada, <br> y salgo corriendo hacia él, me muerde el brazo mientras le atravieso el cuello con mi arma.\
+                    El resultado ha sido desastroso, mi brazo ha acabado destrozado, pero al menos he conseguido sobrevivir ante semejante amenaza.</p>\
+                    <p>Tras varios días de recuperación, el gnomo me cuenta que se trata de un animal mágico y que sus huesos sirven para hacer armas mas fuertes que el hierro.</p>\
+                    <p>Puesto que no tengo todo el tiempo del mundo debo decidir que <a href='eleccion_montana'>armas fabricar</a>.</p>"
+        );
+        system.setQuality(
+          "progreso_historia",
+          character.qualities.progreso_historia + 7
+        );
+      }
+    },
+
+    heading: "Enfrentamiento con el lobo",
+  }),
+  /*llegada a castillo*/
+  llegada_castillo: new undum.SimpleSituation(
+    "<p>Tras reponer mi inventario con nuevas armas, <br> focalizo mi atención en llegar hacia el castillo.</p>\
+        <p>Tras un día caminando sin descanso diviso a lo lejos el inmenso castillo del responsable de robar mi ordenador.</p>\
+        <p><a href='entrada'>Me dirigo hacia la puerta principal</a></p>",
+    {
+      heading: "Llegada al castillo",
+      enter: function (character, system, from) {
+        system.setQuality(
+          "progreso_historia",
+          character.qualities.progreso_historia + 12
+        );
+      },
+    }
+  ),
+  // Menu elecciones.
+  // cuchilloHueso
+  opcion1: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations2").html());
+      system.animateQuality(
+        "cuchilloHueso",
+        character.qualities.cuchilloHueso + 1
+      );
+      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+
+      system.write($("#recojo_cuchillohuesos").html());
+    },
+    tags: ["eleccion_montana"],
+    optionText: "Cuchillo de huesos",
+    displayOrder: 1,
+  }),
+  // Cuchillo Metal
+  opcion2: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations1").html());
+
+      system.animateQuality(
+        "cuchilloMetal",
+        character.qualities.cuchilloMetal + 1
+      );
+      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      system.write($("#recojo_cuchillometal").html());
+    },
+    tags: ["eleccion_villanos"],
+    optionText: "Cuchillo de metal",
+    displayOrder: 1,
+  }),
+  // espada de huesos
+  opcion3: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations2").html());
+      system.animateQuality("espadaHueso", character.qualities.espadaHueso + 1);
+      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      system.write($("#recojo_espadahuesos").html());
+    },
+    tags: ["eleccion_montana"],
+    optionText: "Espada de huesos",
+    displayOrder: 1,
+  }),
+  // Espada de metal
+  opcion4: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations1").html());
+
+      system.animateQuality("espadaMetal", character.qualities.espadaMetal + 1);
+      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      system.write($("#recojo_espadametal").html());
+    },
+    tags: ["eleccion_villanos"],
+    optionText: "Espada de metal",
+    displayOrder: 1,
+  }),
+  // arco de huesos
+  opcion5: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations2").html());
+      system.animateQuality("arcoHueso", character.qualities.arcoHueso + 1);
+      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      system.write($("#recojo_arcohuesos").html());
+    },
+    tags: ["eleccion_montana"],
+    optionText: "Arco de huesos",
+    displayOrder: 1,
+  }),
+  // arco de metal
+  opcion6: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations1").html());
+
+      system.animateQuality("arcoMetal", character.qualities.arcoMetal + 1);
+      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      system.write($("#recojo_arcometal").html());
+    },
+    tags: ["eleccion_villanos"],
+    optionText: "Arco de metal",
+    displayOrder: 1,
+  }),
+
+  /*Comienzo capítulo 4*/
   entrada: new undum.SimpleSituation(
     "<p>Antes de llegar a la puerta principal, veo un bulto a lo lejos un tanto sospechoso\
 	por lo que me acerco para ver de qué se trata.</p>\
@@ -514,214 +716,6 @@ undum.game.situations = {
       },
     }
   ),
-  /*Elección campamento de villanos a la fuerza*/
-  campamento_fuerza: new undum.SimpleSituation(
-    "<p>Decido hacer el ataque por la fuerza, <br> con mi espada en mano salgo a correr hacia el campamento entrando por la parte trasera y acabando con la vida de dos villanos. En este momento los dos que se encuentran en tierra más el arquero subido en una plataforma se focalizan en mí. Esquivando flechas y luchando contra los dos a la vez consigo salir victorioso pero con heridas físicas graves, por lo que tendré que recuperarme antes de poder seguir.</p>\
-        <p>Me tumbo en una de las camas del campamento para <a href='campamento_fuerza2'> reposar y sanar mis heridas</a>.</p>",
-    {
-      heading: "Ataque al campamento por la fuerza",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 5
-        );
-      },
-    }
-  ),
-  campamento_fuerza2: new undum.SimpleSituation("", {
-    enter: function (character, system, from) {
-      if (character.qualities.frascoVida > 0) {
-        system.write(
-          "<p>Al tumbarme sobre la cama de una cabaña, recuerdo el frasco de vida que me dio Momo.</p>\
-                    <p>Decido tomarmelo de un trago y, para mi asombro todas mis heridas han sanado en cueston de segundos.\
-                    Gracias a esto podré <a href='eleccion_villanos'>continuar mi viaje</a> sin perder tiempo.</p>"
-        );
-
-        system.setQuality("frascoVida", character.qualities.frascoVida - 1);
-      } else {
-        system.write(
-          "<p> Tras una semana, <br> mis heridas han sanado y procedo a prepararme para llegar al castillo del jefe,\
-                     quien ha robado mi ordenador.</p>\
-                    <p>Antes de salir voy a llevar conmigo algunas de las\
-                     <a href='eleccion_villanos'>armas que tenían los villanos</a></p>"
-        );
-      }
-    },
-
-    heading: "Recuperación",
-  }),
-  /*Elección campamento de villanos en sigilo*/
-  campamento_sigilo: new undum.SimpleSituation(
-    "<p>Decido hacer un ataque sigiloso, <br> con mi espada en mano entro de noche en el campamento nadando por el río.</p>\
-        <p>Mi mayor prioridad es acabar con el arquero, ya que es el que presenta la gran amenaza. Me avalanzo sobre él por la espalda sin que el resto se percate. Cojo su arco y acabo con dos soldados que se encontraban de guardia, bajo y acaba con la vida de los soldados que estaban descansando en sus cabañas.</p>\
-        <p>Decido pasar la noche en el campamento y antes de partir hacia el castillo <a href='eleccion_villanos'>recojo algunas armas pertenecientes a los villanos.</a></p>",
-    {
-      heading: "Ataque al campamento sigilosamente",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 5
-        );
-      },
-    }
-  ),
-
-  /*Elección pasar por la montaña*/
-  montana: new undum.SimpleSituation(
-    "<p>Decido ir por la ruta más corta, <br>pese a no tener información sobre el monstruo.</p>\
-        <p>Tras un dia de camino llego a las llanuras de la montaña, noto algo inquietante y es que la vegetación y el clima son muy secos.</p>\
-        <p>Me adentro en ella y continuo recto durante el día. Al llegar la noche decido continuar sin parar hasta que noto como algo me vigila en la distancia, decido correr y algo se avalanza sobre mí, consigo escaparme y verlo de frente, se trata de un lobo enorme.</p>\
-        <p>Tengo poco tiempo para pensar ya que se volvera a avalanzar sobre mi, nose si debería <a href='salir_corriendo'>salir corriendo</a> o <a href='enfrentarme'>enfrentarme a él</a>.</p>",
-    {
-      heading: "El rey de la montaña",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 6
-        );
-      },
-    }
-  ),
-
-  /*Salir corriendo del lobo*/
-  salir_corriendo: new undum.SimpleSituation(
-    "<p>Tras pensarlo rapidamente, <br>decido salir corriendo entre la maleza del bosque, el lobo me persigue sin cesar por lo que no me queda otra que darme la vuelta y <a href='enfrentarme'>enfrentarme a él</p>",
-    {
-      heading: "Salir corriendo",
-    }
-  ),
-
-  /*Enfrentarme a el*/
-  enfrentarme: new undum.SimpleSituation("", {
-    enter: function (character, system, from) {
-      if (character.qualities.frascoVida > 0) {
-        system.write(
-          "<p>Cojo mi espada, <br> y salgo corriendo hacia él, me muerde el brazo mientras le atravieso el cuello con mi arma.\
-                    El resultado ha sido desastroso, mi brazo ha acabado destrozado, pero al menos he conseguido sobrevivir ante semejante amenaza.</p>\
-                    <p>Tras acabar la batalla me tumbo en el suelo del bosque destrozado y recuerdo el frasco de vida que me dió Momo,\
-                    decido tomarlo de un trago y, para mi asombro ¡Qué está pasando! en cuestión de segundos mis heridas han sanado y mi brazo\
-                    a crecido de nuevo. Tras varios minutos asimilando lo sucedido decido conversar con el gnomo sobre el lobo.\
-                    El gnomo me cuenta que se trata de un animal mágico y que sus huesos sirven para hacer armas mas fuertes que el hierro.</p>\
-                    <p>Puesto que no tengo todo el tiempo del mundo debo decidir que <a href='eleccion_montana'>armas fabricar</a>.</p>"
-        );
-
-        system.setQuality("frascoVida", character.qualities.frascoVida - 1);
-      } else {
-        system.write(
-          "<p>Cojo mi espada, <br> y salgo corriendo hacia él, me muerde el brazo mientras le atravieso el cuello con mi arma.\
-                    El resultado ha sido desastroso, mi brazo ha acabado destrozado, pero al menos he conseguido sobrevivir ante semejante amenaza.</p>\
-                    <p>Tras varios días de recuperación, el gnomo me cuenta que se trata de un animal mágico y que sus huesos sirven para hacer armas mas fuertes que el hierro.</p>\
-                    <p>Puesto que no tengo todo el tiempo del mundo debo decidir que <a href='eleccion_montana'>armas fabricar</a>.</p>"
-        );
-      }
-    },
-
-    heading: "Enfrentamiento con el lobo",
-    //enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+7);}
-  }),
-
-  /*llegada a castillo*/
-  llegada_castillo: new undum.SimpleSituation(
-    "<p>Tras reponer mi inventario con nuevas armas, <br> focalizo mi atención en llegar hacia el castillo.</p>\
-        <p>Tras un día caminando sin descanso diviso a lo lejos el inmenso castillo del responsable de robar mi ordenador.</p>\
-        <p><a href='entrada'>Me dirigo hacia la puerta principal</a></p>",
-    {
-      heading: "Llegada al castillo",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 12
-        );
-      },
-    }
-  ),
-  // Menu elecciones.
-  // cuchilloHueso
-  opcion1: new undum.Situation({
-    enter: function (character, system, from) {
-      system.write($("#s_situations2").html());
-      system.animateQuality(
-        "cuchilloHueso",
-        character.qualities.cuchilloHueso + 1
-      );
-      system.animateQuality(
-        "cuchilloHueso",
-        character.qualities.cuchilloHueso + 1
-      );
-      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
-
-      system.write($("#recojo_cuchillohuesos").html());
-    },
-    tags: ["eleccion_montana"],
-    optionText: "Cuchillo de huesos",
-    displayOrder: 1,
-  }),
-  // Cuchillo Metal
-  opcion2: new undum.Situation({
-    enter: function (character, system, from) {
-      system.write($("#s_situations1").html());
-
-      system.animateQuality(
-        "cuchilloMetal",
-        character.qualities.cuchilloMetal + 1
-      );
-      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
-      system.write($("#recojo_cuchillometal").html());
-    },
-    tags: ["eleccion_villanos"],
-    optionText: "Cuchillo de metal",
-    displayOrder: 1,
-  }),
-  // espada de huesos
-  opcion3: new undum.Situation({
-    enter: function (character, system, from) {
-      system.write($("#s_situations2").html());
-      system.animateQuality("espadaHueso", character.qualities.espadaHueso + 1);
-      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
-      system.write($("#recojo_espadahuesos").html());
-    },
-    tags: ["eleccion_montana"],
-    optionText: "Espada de huesos",
-    displayOrder: 1,
-  }),
-  // Espada de metal
-  opcion4: new undum.Situation({
-    enter: function (character, system, from) {
-      system.write($("#s_situations1").html());
-
-      system.animateQuality("espadaMetal", character.qualities.espadaMetal + 1);
-      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
-      system.write($("#recojo_espadametal").html());
-    },
-    tags: ["eleccion_villanos"],
-    optionText: "Espada de metal",
-    displayOrder: 1,
-  }),
-  // arco de huesos
-  opcion5: new undum.Situation({
-    enter: function (character, system, from) {
-      system.write($("#s_situations2").html());
-      system.animateQuality("arcoHueso", character.qualities.arcoHueso + 1);
-      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
-      system.write($("#recojo_arcohuesos").html());
-    },
-    tags: ["eleccion_montana"],
-    optionText: "Arco de huesos",
-    displayOrder: 1,
-  }),
-  // arco de metal
-  opcion6: new undum.Situation({
-    enter: function (character, system, from) {
-      system.write($("#s_situations1").html());
-
-      system.animateQuality("arcoMetal", character.qualities.arcoMetal + 1);
-      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
-      system.write($("#recojo_arcometal").html());
-    },
-    tags: ["eleccion_villanos"],
-    optionText: "Arco de metal",
-    displayOrder: 1,
-  }),
 };
 
 // ---------------------------------------------------------------------------
