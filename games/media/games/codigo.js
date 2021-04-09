@@ -720,7 +720,6 @@ undum.game.situations = {
 // ---------------------------------------------------------------------------
 /* The Id of the starting situation. */
 undum.game.start = "start";
-
 // ---------------------------------------------------------------------------
 /* Here we define all the qualities that our characters could
  * possess. We don't have to be exhaustive, but if we miss one out then
