@@ -466,7 +466,6 @@ undum.game.situations = {
 	Puedo <a href='entrar_sigilo'>ir en sigilo</a> e infiltrarme o puedo\
 	<a href='ataca_guardias'>atacar a los guardias</a>.\
 	</p>",
-<<<<<<< HEAD
 	{
 			actions: {
 				"traje-tru": function(character, system, action) {
@@ -477,32 +476,7 @@ undum.game.situations = {
 			enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+3);}
 	}
 	),
-	ataca_guardias: new undum.SimpleSituation(
-	"",
-	{
-			enter: function(character, system, from){
-				if(character.qualities.equipamiento > 3){
-					{system.setQuality('progreso_historia', character.qualities.progreso_historia+4);}
-					system.doLink("ganas");
-				}else{
-					{system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
-					system.write("<p>Creo que atacar a los guardias va a ser la mejor opción.\
-=======
-    {
-      actions: {
-        "traje-tru": function (character, system, action) {
-          system.setQuality("traje", true);
-        },
-      },
-      heading: "Entrada al castillo",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 3
-        );
-      },
-    }
-  ),
+
   ataca_guardias: new undum.SimpleSituation("", {
     enter: function (character, system, from) {
       if (character.qualities.equipamiento > 3) {
@@ -522,7 +496,6 @@ undum.game.situations = {
         }
         system.write(
           "<p>Creo que atacar a los guardias va a ser la mejor opción.\
->>>>>>> f98bfedf2ae8331d9724cd9bf162e7a9d4e8fc16
 					Cuantos menos enemigos vivos, mejor.</p>\
 					<p>Voy corriendo hacia ellos y empiezo a enfrentarme con todos los que se interponen\
 					en mi camino.</p>\
@@ -530,7 +503,6 @@ undum.game.situations = {
 					para mi solo.</p>\
 					<p>Se abalanzan contra mi y me inflan a palos. Para enfrentarme a un ejército entero\
 					tengo que ir mucho más armado.\
-<<<<<<< HEAD
 					</p>",
 					);
 				}
@@ -539,19 +511,8 @@ undum.game.situations = {
 			heading:"Ataco a los guardias",
 	}
 	),
-	ganas: new undum.SimpleSituation(
-	"<p>Creo que atacar a los guardias va a ser la mejor opción.Cuantos menos enemigos vivos, mejor.</p>\
-=======
-					</p>"
-        );
-      }
-    },
-
-    heading: "Ataco a los guardias",
-  }),
   ganas: new undum.SimpleSituation(
     "<p>Creo que atacar a los guardias va a ser la mejor opción.Cuantos menos enemigos vivos, mejor.</p>\
->>>>>>> f98bfedf2ae8331d9724cd9bf162e7a9d4e8fc16
 	<p>Voy corriendo hacia ellos y empiezo a enfrentarme con todos los que se interponen en mi camino.</p>\
 	<p>Con mis armas voy acabando con cada uno de mis enemigos. Cuando pensaba que había derrotado a todos,\
 	vienen refuerzos pero me da igual. Acabaré con todos.</p>\
@@ -692,33 +653,11 @@ undum.game.situations = {
 	mi ordenador y escapar de ahí. Ahora sí que soy libre para terminar mis prácticas.</p>\
 	<p>Arcadia es un lugar extraño pero al final, todo ha salido bien.\
 	</p>",
-<<<<<<< HEAD
 	{
 			heading:"Acabo con Victorcillo",
 			enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
 	}
 	),
-	disfraz_guardia: new undum.SimpleSituation(
-	"",
-	{
-			enter: function(character, system, from){
-				if(character.qualities.traje){
-					{system.setQuality('progreso_historia', character.qualities.progreso_historia+3);}
-					system.doLink("disfraz_guardia2");
-				}else{
-					{system.setQuality('progreso_historia', character.qualities.progreso_historia+8);}
-					system.write("<p>Me acerco al grupo de guardias que estaban en la puerta principal.\
-=======
-    {
-      heading: "Acabo con Victorcillo",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 5
-        );
-      },
-    }
-  ),
   disfraz_guardia: new undum.SimpleSituation("", {
     enter: function (character, system, from) {
       if (character.qualities.traje) {
@@ -738,7 +677,6 @@ undum.game.situations = {
         }
         system.write(
           "<p>Me acerco al grupo de guardias que estaban en la puerta principal.\
->>>>>>> f98bfedf2ae8331d9724cd9bf162e7a9d4e8fc16
 					Desde lejos ya me están gritando que no me acerque\
 					pero les digo que no soy un peligro, solo un turista perdido.</p>\
 					<p>Cuando estoy cerca de ellos puedo ver lo malhumorados y agresivos que están.\
@@ -746,7 +684,6 @@ undum.game.situations = {
 					Sin duda estos guardias de Arcadia son de lo más peligroso.</p>\
 					<p>En un hipotético caso de que pueda resucitar y volver a esta situación,\
 					igual es mejor tener un traje de guardia para acercarme a ellos.\
-<<<<<<< HEAD
 					</p>",
 					);
 				}
@@ -755,19 +692,8 @@ undum.game.situations = {
 			heading:"Me disfrazo como un guardia",
 	}
 	),
-	disfraz_guardia2: new undum.SimpleSituation(
-	"<p>Me acerco al grupo de guardias que estaban en la puerta principal. Al ir vestido como ellos\
-=======
-					</p>"
-        );
-      }
-    },
-
-    heading: "Me disfrazo como un guardia",
-  }),
   disfraz_guardia2: new undum.SimpleSituation(
     "<p>Me acerco al grupo de guardias que estaban en la puerta principal. Al ir vestido como ellos\
->>>>>>> f98bfedf2ae8331d9724cd9bf162e7a9d4e8fc16
 	no sospecharán de mi.</p>\
 	<p>Cuando estoy cerca de ellos les digo que venía de un lugar lejano ya que estaba haciendo un\
 	encargo para el jefe. Por suerte me dijeron que un tal Victorcillo me estaba esperando en su despacho.</p>\
