@@ -157,6 +157,7 @@ undum.game.situations = {
     }
   ),
    
+  /*DIÁLOGO CON RAERPIN*/
   /*Así es*/
   elijo_si: new undum.SimpleSituation(
     " <p><b>Raerpin:</b> He visto caer un ordenador hace un rato y me ha bastado con verte y olerme...para saber que eres estudiante de una ingeniería\
@@ -184,8 +185,22 @@ undum.game.situations = {
     " <p><b>Raerpin:</b> No lo pongo en duda pero hoy se te ha olvidado. Por suerte ¡tengo esta pinza para la nariz! Pero ahora me pondré serio. En Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
       <p><b>" +
       nombre +
-      ":</b> <a href='elijo_seguir'>-Nací preparado-</a>   |   <a href='elijo_asustarme'>-Tengo mucho miedo, quiero irme a casa-</a></p>",
+      ":</b> <a href='elijo_seguir'>-Nací preparado-</a>   |   <a href='cabezon'>-Tengo mucho miedo, quiero irme a casa-</a></p>",
   ),  
+
+  /*Nací preparado*/
+  elijo_seguir: new undum.SimpleSituation(
+    " <p><b>Raerpin:</b> De acuerdo, ¿Eres capaz de acertar esta adivinanza?</p>\
+    <p>1 + 4 = 5</p>\
+    <p>2 + 5 = 12</p>\
+    <p>3 + 6 = 21</p>\
+    <p>8 + 11 = ¿?</p>\
+      <p><b>" +
+      nombre +
+      ":</b> <a href='elijo_40'>-40-</a>   |   <a href='elijo_seguir'>-96-</a></p>",
+  ),
+  /*Tengo mucho miedo, quiero irme a casa- GAME OVER*/
+
 
   /*Solución de la adivinanza*/
   adivinanza: new undum.SimpleSituation(
@@ -229,7 +244,7 @@ undum.game.situations = {
 
   /*Vuelvo a elegir no acompañar al gnomo*/
   cabezon: new undum.SimpleSituation(
-    "<p><b>Raerpin:</b> Esta bien, por no haberte fiado de mi a pesar de mi pesadez, te convierto en mi mascota, !SERÁS UN BONITO PERRO PARA EL RESTO DE TUS DÍAS!</p>\
+    "<p><b>Raerpin:</b> Está bien, te convierto en mi nueva mascota, !SERÁS UN BONITO PERRO PARA EL RESTO DE TUS DÍAS!</p>\
     <p>   <b>" +
       nombre +
       ":</b> ¡¡Guau!! ¡¡guau!!</p>\
