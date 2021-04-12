@@ -158,6 +158,7 @@ undum.game.situations = {
   ),
    
   /*DIÁLOGO CON RAERPIN*/
+  
   /*Así es*/
   elijo_si: new undum.SimpleSituation(
     " <p><b>Raerpin:</b> He visto caer un ordenador hace un rato y me ha bastado con verte y olerme...para saber que eres estudiante de una ingeniería\
