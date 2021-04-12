@@ -134,8 +134,8 @@ undum.game.situations = {
       " y no se si decirle Buenas tardes o buenos días porque no se donde estamos y para colmo, ¡¡he perdido mi reloj!!.</p>\
         <p>Hola " +
       nombre +
-      ", yo soy Raerpin y estamos en el Mágico Mundo de Arcadia, he estado esperándote. ¿Deseas que te acompañe en tu aventura?\
-        <a href='acompanar'>acompañar a Raerpin</a> o <a href='no_acompanar'>no acompañar a Raerpin</a>.</p>"
+      ", yo soy Raerpin y estamos en el Mágico Mundo de Arcadia, he estado esperándote. ¿Deseas que te guíe en tu aventura?\
+        <a href='acompanar'>Acompañar a Raerpin</a> o <a href='no_acompanar'>no acompañar a Raerpin</a>.</p>"
   ),
 
   /*Elijo Acompañar al gnomo*/
@@ -191,11 +191,16 @@ undum.game.situations = {
 
   /*Elijo No acompañar al gnomo*/
   no_acompanar: new undum.SimpleSituation(
-    "<p>La clave era acompañar a Raerpin, por no hacerlo me convierte en perro y acaba la historia.</p>",
+    "<p><b>Raerpin:</b> ¿Te crees muy listo verdad? Todos necesitamos ayuda, mira la cantidad de ayuda que te han proporcionado tus compañero en cada una de tus prácticas, entonces ¡SÍ ACEPTABAS SU AYUDA!</p>\
+    <p>¿Y qué pasará si esta vez decido hacerlo solo? le pregunto</p>\
+    <p><b>Raerpin:</b> Que no durarás ni un minuto más...</p>\
+    <p><a href='acompanar'>Acompañar a Raerpin</a> o <a href='muerte'>no acompañar a Raerpin</a>.</p>",
     {
       heading: "No me inspira confianza, mejor me voy",
     }
   ),
+
+  
 
   /*Comienzo capitulo 3*/
   capitulo_tercero: new undum.SimpleSituation(
