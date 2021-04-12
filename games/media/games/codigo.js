@@ -142,13 +142,10 @@ undum.game.situations = {
   acompanar: new undum.SimpleSituation(
     "<p>Decido emprender mi aventura junto a Raerpin por tres razones, la primera es que sigo sin tener idea de donde estoy,\
       la segunda, ¿cómo que me estaba esperando? y la tercera, que hace decantarme ¡¡¡ESTOY HABLANDO CON UN GNOMO!!!</p>\
-        <p>Raerpin me explica que me estaba esperando porque vio caer un ordenador hacía un tiempo y le basto con verme y</p>\
-        <p>olerme...para saber que soy estudiante de una ingeniería asi que supuso que sería mío.</p>\
-        <p>Continua diciendo que en el camino encontraremos diversos malvados y que dejará en mis manos la elección del camino</p>\
-        <p>que afontaremos pero que si llego intacto al final, recuperaré mi ordenador y podré acabar la práctica de Desarrollo Ágil</p>\
-        <p> a tiempo. Pero que tendré que acertar la siguiente adivinanza: Tengo patas y no ando, soy plana y no canto, se apoyan para</p>\
-          <p>escribir y no te puedo hacer reír. Por suerte me la se </p>\
-        <p><a href='adivinanza'>Piensa un poco....Ver solución.</a>.</p>",
+      <p><b>Raerpin:</b> De acuerdo, se que te estás preguntando cómo sabía que vendrías, ¿No es así?\
+      <p><b>" +
+      nombre +
+      ":</b> <a href='elijo_si'>-Así es-</a>   |   <a href='elijo_no'>-Prefiero no saberlo-</a></p>",
     {
       heading: "Acompañar a Raerpin",
       enter: function (character, system, from) {
@@ -158,6 +155,22 @@ undum.game.situations = {
         );
       },
     }
+  ),
+   
+  /*Así es*/
+  elijo_si: new undum.SimpleSituation(
+    " <p><b>Raerpin:</b> He visto caer un ordenador hace un rato y me ha bastado con verte y olerme...para saber que eres estudiante de una ingeniería\
+      <p><b>" +
+      nombre +
+      ":</b> <a href='elijo_reirme'>-Si te soy sincero, he tenido un dia complicado...-</a>   |   <a href='elijo_enfadarme'>-¡Los ingenieros también nos duchamos!-</a></p>",
+  ),
+
+  /*Prefiero no saberlo*/
+  elijo_no: new undum.SimpleSituation(
+    " <p><b>Raerpin:</b> Igualmente te lo voy a contar para reirme de tí, he visto caer un ordenador hace un rato y me ha bastado con verte y olerme...para saber que eres estudiante de una ingeniería\
+      <p><b>" +
+      nombre +
+      ":</b> <a href='elijo_reirme'>-He tenido un dia complicado...-</a>   |   <a href='elijo_enfadarme'>-¡Los ingenieros también nos duchamos!-</a></p>",
   ),
 
   /*Solución de la adivinanza*/
@@ -194,19 +207,19 @@ undum.game.situations = {
     "<p><b>Raerpin:</b> ¿Te crees muy listo verdad? Todos necesitamos ayuda, mira la cantidad de ayuda que te han proporcionado tus compañero en cada una de tus prácticas, entonces ¡SÍ ACEPTABAS SU AYUDA!</p>\
     <p>¿Y qué pasará si esta vez decido hacerlo solo? le pregunto</p>\
     <p><b>Raerpin:</b> Que no durarás ni un minuto más...</p>\
-    <p><a href='acompanar'>Acompañar a Raerpin</a> o <a href='muerte'>no acompañar a Raerpin</a>.</p>",
+    <p><a href='acompanar'>Acompañar a Raerpin</a> o <a href='cabezon'>no acompañar a Raerpin</a>.</p>",
     {
       heading: "No me inspira confianza, mejor me voy",
     }
   ),
 
   /*Vuelvo a elegir no acompañar al gnomo*/
-  muerte: new undum.SimpleSituation(
-    "<p><b>Raerpin:</b> Esta bien, por no haberte fiado de mi a pesar de mi pesadezm, te convierto en mi mascota, !SERÁS UN BONITO PERRO PARA EL RESTO DE TUS DÍAS!</p>\
+  cabezon: new undum.SimpleSituation(
+    "<p><b>Raerpin:</b> Esta bien, por no haberte fiado de mi a pesar de mi pesadez, te convierto en mi mascota, !SERÁS UN BONITO PERRO PARA EL RESTO DE TUS DÍAS!</p>\
     <p>   <b>" +
       nombre +
       ":</b> ¡¡Guau!! ¡¡guau!!</p>\
-    <p><b>Has perido, GAME OVER</b></p>",
+    <p><b>Has perdido, GAME OVER</b></p>",
     {
       heading: "Quiero hacerlo todo solo porque soy el mejor"
     }
