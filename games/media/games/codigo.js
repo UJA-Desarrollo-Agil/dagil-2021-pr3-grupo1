@@ -36,7 +36,7 @@ nombre = prompt(
 undum.game.situations = {
   start: new undum.SimpleSituation(
     "<h1>CAPÍTULO 1: LA HISTORIA COMIENZA...</h1>\
-    <img src='./games/media/img/15.png'>\
+    <img src='media/games/img/15.jpg' class='float_right' width='200' height='350'>\
         <p>Despierto de golpe. La luz del sol me deslumbra.<br> Froto mis ojos hasta que consigo abrirlos por completo.</p>\
         <p>Miro hacia arriba y a mi alrededor. El cielo está despejado. No sé dónde estoy. Intento hacer memoria para recordar</p>\
         <p>como he llegado aquí... yo estaba en mi habitación, en el escritorio, con mi ordenador, terminando la práctica de Desarrollo Ágil que se entregaba hoy las 23.55h... ¿¡QUÉ HORA ES!? ¡Tengo que entregar la práctica! Miro mi muñeca y descubro que no tengo reloj. De repente, escucho un ruido, alguien se acerca.</p>\
@@ -49,8 +49,8 @@ undum.game.situations = {
   ),
 
   con_mono: new undum.SimpleSituation(
-    "<p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
-      <img src='games/media/img/0.png' class='float_right'>\
+    "<img src='games/media/img/0.png'>\
+    <p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
       <p>   <b>MOMO:</b> ¿Es el destino la mano que elige si nuestro reloj de arena funcionará hacia arriba o hacia abajo, o esa mano somos nosotros mismos?</p>\
       <p>No puede ser. Creo que ya entiendo lo que Momo me quiere decir</p>\
       <p>   <b>" +
@@ -72,7 +72,8 @@ undum.game.situations = {
   ),
 
   detalle: new undum.SimpleSituation(
-    "<p>    <b>MOMO:</b> Tú eliges, puedes pasar todo tu tiempo muerto o puedes coger tu tiempo y hacer algo valioso con él.\
+    "<img src='games/media/img/3.png'>\
+    <p>    <b>MOMO:</b> Tú eliges, puedes pasar todo tu tiempo muerto o puedes coger tu tiempo y hacer algo valioso con él.\
       Algo que llene ese tiempo de energía. Hay que vivir con la fuerza suficiente como para que la vida ceda a tu paso, no tú ante ella.\
       La vida no es nada si no te atreves a vivirla. Hay que hacer algo con la vida que tenemos. Que se entere de que estamos aquí, dispuestos a dejarla\
       boquiabierta con nuestra forma de pasar por ella.</p>\
@@ -89,7 +90,8 @@ undum.game.situations = {
   ),
 
   seguirlo: new undum.SimpleSituation(
-    "<p>Sigo a Momo por un camino estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas, pero mi mente se encuentra en otro sitio</p>\
+    "<img src='games/media/img/1.png'>\
+    <p>Sigo a Momo por un camino estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas, pero mi mente se encuentra en otro sitio</p>\
       <p>Si Alicia se hubiera cansado de correr tras el Conejo Blanco, no habría caído por la madriguera. Ni descubierto el País\
       de las Maravillas. Ni descubrierto quién era ella. Seguiré corriendo. Me caeré. E intentaré no tener miedo a aquello que me tenga que enfrentar</p>\
       <p>Llegamos al final del camino, frente a un gnomo. Momo se acerca a mí y saca algo de su riñonera. Es un frasco.\
@@ -109,7 +111,8 @@ undum.game.situations = {
   ),
 
   sin_mono: new undum.SimpleSituation(
-    "<p>Momo frunce el ceño y empieza a sacar plátanos de la riñonera que lleva.</p>\
+    "<img src='games/media/img/20.png'>\
+    <p>Momo frunce el ceño y empieza a sacar plátanos de la riñonera que lleva.</p>\
     	<p>Empieza a lanzármelos a la cabeza. Consigue darme con un par de ellos. Está muy cabreado.</p>\
     	<p>Corro por un camino escapando de él. El camino es estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas.</p>\
       <p>   " +
@@ -130,6 +133,7 @@ undum.game.situations = {
   /*Comienzo capitulo 2*/
   situacion_intermedia1: new undum.SimpleSituation(
     "<h1>CAPITULO 2 - CONOCIENDO AL GNOMO</h1>\
+    <img src='games/media/img/15_(2).png'>\
         <p> El gnomo parece bastante amigable a pesar de su ridículo aspecto así que decido acercarme a él para saber si tiene idea de donde estamos. </p>\
         <p> Hola, me llamo " +
       nombre +
@@ -142,7 +146,8 @@ undum.game.situations = {
 
   /*Elijo Acompañar al gnomo*/
   acompanar: new undum.SimpleSituation(
-    "<p>Decido emprender mi aventura junto a Raerpin por tres razones, la primera es que sigo sin tener idea de donde estoy,\
+    "<img src='games/media/img/6.png'>\
+    <p>Decido emprender mi aventura junto a Raerpin por tres razones, la primera es que sigo sin tener idea de donde estoy,\
       la segunda, ¿cómo que me estaba esperando? y la tercera, que hace decantarme ¡¡¡ESTOY HABLANDO CON UN GNOMO!!!</p>\
         <p>Raerpin me explica que me estaba esperando porque vio caer un ordenador hacía un tiempo y le basto con verme y</p>\
         <p>olerme...para saber que soy estudiante de una ingeniería asi que supuso que sería mío.</p>\
