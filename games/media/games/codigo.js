@@ -197,17 +197,31 @@ undum.game.situations = {
     <p>8 + 11 = ¿?</p>\
       <p><b>" +
       nombre +
-      ":</b> <a href='elijo_40'>-40-</a>   |   <a href='elijo_seguir'>-96-</a></p>",
+      ":</b> <a href='elijo_40'>-40-</a>   |   <a href='elijo_96'>-96-</a></p>",
   ),
   /*Tengo mucho miedo, quiero irme a casa- GAME OVER*/
 
 
-  /*Solución de la adivinanza*/
-  adivinanza: new undum.SimpleSituation(
-    "<p>La mesa.</p>\
-        <p><a href='fin_capitulo'>Continuar con la historia</a></p>",
+  /*40*/
+  elijo_40: new undum.SimpleSituation(
+    "<p>Ambas respuestas eran correctas, has elegido la más fácil a la que llegar. Las respuestas a las sumas dependen, menos en el primer caso, del resultado de la suma anterior.</p>\
+        <p><a href='fin_capitulo'>Continuar con la historia</a> o <a href='elijo_96'>Ver la solución difícil</a></p>",
     {
-      heading: "Solución",
+      heading: "Solución Fácil",
+      enter: function (character, system, from) {
+        system.setQuality(
+          "progreso_historia",
+          character.qualities.progreso_historia + 5
+        );
+      },
+    }
+  ),
+  /*96*/
+  elijo_96: new undum.SimpleSituation(
+    "<p>Ambas respuestas eran correctas, has elegido a la que llegan quienes consiguen pensar fuera de la caja y ven multiplicaciones donde otros solo ven sumas. Multiplicando los dígitos que plantea la suma y sumando al resultado el primero de ellos se llega a la solución.</p>\
+        <p><a href='fin_capitulo'>Continuar con la historia</a> o <a href='elijo_40'>Ver la solución fácil</a></p>",
+    {
+      heading: "Solución Difícil",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
