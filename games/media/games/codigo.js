@@ -50,6 +50,7 @@ undum.game.situations = {
 
   con_mono: new undum.SimpleSituation(
     "<p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
+      <img src='games\media\img\0.png' class='float_right'>\
       <p>   <b>MOMO:</b> ¿Es el destino la mano que elige si nuestro reloj de arena funcionará hacia arriba o hacia abajo, o esa mano somos nosotros mismos?</p>\
       <p>No puede ser. Creo que ya entiendo lo que Momo me quiere decir</p>\
       <p>   <b>" +
