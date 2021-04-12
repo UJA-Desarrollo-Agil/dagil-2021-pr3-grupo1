@@ -200,7 +200,17 @@ undum.game.situations = {
     }
   ),
 
-  
+  /*Vuelvo a elegir no acompañar al gnomo*/
+  muerte: new undum.SimpleSituation(
+    "<p><b>Raerpin:</b> Esta bien, por no haberte fiado de mi a pesar de mi pesadezm, te convierto en mi mascota, !SERÁS UN BONITO PERRO PARA EL RESTO DE TUS DÍAS!</p>\
+    <p>   <b>" +
+      nombre +
+      ":</b> ¡¡Guau!! ¡¡guau!!</p>\
+    <p><b>Has perido, GAME OVER</b></p>",
+    {
+      heading: "Quiero hacerlo todo solo porque soy el mejor"
+    }
+  ),
 
   /*Comienzo capitulo 3*/
   capitulo_tercero: new undum.SimpleSituation(
