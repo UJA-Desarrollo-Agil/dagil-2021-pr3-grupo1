@@ -127,7 +127,7 @@ undum.game.situations = {
 
   /*Comienzo capitulo 2*/
   situacion_intermedia1: new undum.SimpleSituation(
-    "<h1>CAPITULO 2 - CONOCIENDO AL GNOMO</h1>\
+    "<h1>CAPITULO 2 - CONOCIENDO A RAERPIN</h1>\
         <p> El gnomo parece bastante amigable a pesar de su ridículo aspecto así que decido acercarme a él para saber si tiene idea de donde estamos. </p>\
         <p> Hola, me llamo " +
       nombre +
@@ -175,7 +175,7 @@ undum.game.situations = {
     }
   ),
 
-  /*Fin del capítulo*/
+  /*Fin del capítulo 2*/
   fin_capitulo: new undum.SimpleSituation(
     "<p>Por haber dado con la solución, Raerpin me confiesa que el ordenador lo encontraré en el último lugar de mi camino y que solo lo conseguiré si derroto al villano de Arcadia junto a todos sus secuaces que iré encontrando <a href= 'capitulo_tercero'>hasta llegar a él.</a></p>",
     {
