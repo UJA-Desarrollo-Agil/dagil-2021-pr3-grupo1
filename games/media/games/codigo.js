@@ -36,7 +36,7 @@ nombre = prompt(
 undum.game.situations = {
   start: new undum.SimpleSituation(
     "<h1>CAPÍTULO 1: LA HISTORIA COMIENZA...</h1>\
-        <img src='games\media\img\15.png' class='float_right'>\
+        <img src='games/media/img/15.png' class='float_right'>\
         <p>Despierto de golpe. La luz del sol me deslumbra.<br> Froto mis ojos hasta que consigo abrirlos por completo.</p>\
         <p>Miro hacia arriba y a mi alrededor. El cielo está despejado. No sé dónde estoy. Intento hacer memoria para recordar</p>\
         <p>como he llegado aquí... yo estaba en mi habitación, en el escritorio, con mi ordenador, terminando la práctica de Desarrollo Ágil que se entregaba hoy las 23.55h... ¿¡QUÉ HORA ES!? ¡Tengo que entregar la práctica! Miro mi muñeca y descubro que no tengo reloj. De repente, escucho un ruido, alguien se acerca.</p>\
@@ -50,7 +50,7 @@ undum.game.situations = {
 
   con_mono: new undum.SimpleSituation(
     "<p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
-      <img src='games\media\img\0.png' class='float_right'>\
+      <img src='games/media/img/0.png' class='float_right'>\
       <p>   <b>MOMO:</b> ¿Es el destino la mano que elige si nuestro reloj de arena funcionará hacia arriba o hacia abajo, o esa mano somos nosotros mismos?</p>\
       <p>No puede ser. Creo que ya entiendo lo que Momo me quiere decir</p>\
       <p>   <b>" +
