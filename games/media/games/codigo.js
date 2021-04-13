@@ -537,7 +537,8 @@ undum.game.situations = {
 
   /*Comienzo capítulo 4*/
   entrada: new undum.SimpleSituation(
-    "<p>Antes de llegar a la puerta principal, veo un bulto a lo lejos un tanto sospechoso\
+    "<img src='./media/img/29.png' width='300' height='300'>\
+	<p>Antes de llegar a la puerta principal, veo un bulto a lo lejos un tanto sospechoso\
 	por lo que me acerco para ver de qué se trata.</p>\
 	<p>Para mi sorpresa, era un <a href='./traje-tru' class='once'>traje de guardia</a> que se había perdido.\
 	Mejor lo guardo, nunca se sabe si lo podré necesitar.</p>\
@@ -567,7 +568,7 @@ undum.game.situations = {
 
   ataca_guardias: new undum.SimpleSituation("", {
     enter: function (character, system, from) {
-      if (character.qualities.equipamiento > 3) {
+      if (character.qualities.equipamiento > 2) {
         {
           system.setQuality(
             "progreso_historia",
@@ -583,7 +584,8 @@ undum.game.situations = {
           );
         }
         system.write(
-          "<p>Creo que atacar a los guardias va a ser la mejor opción.\
+          "<img src='./media/img/8.png' width='500' height='400'>\
+					<p>Creo que atacar a los guardias va a ser la mejor opción.\
 					Cuantos menos enemigos vivos, mejor.</p>\
 					<p>Voy corriendo hacia ellos y empiezo a enfrentarme con todos los que se interponen\
 					en mi camino.</p>\
@@ -599,7 +601,8 @@ undum.game.situations = {
     heading: "Ataco a los guardias",
   }),
   ganas: new undum.SimpleSituation(
-    "<p>Creo que atacar a los guardias va a ser la mejor opción.Cuantos menos enemigos vivos, mejor.</p>\
+    "<img src='./media/img/27.jpg' width='500' height='400'>\
+	<p>Creo que atacar a los guardias va a ser la mejor opción.Cuantos menos enemigos vivos, mejor.</p>\
 	<p>Voy corriendo hacia ellos y empiezo a enfrentarme con todos los que se interponen en mi camino.</p>\
 	<p>Con mis armas voy acabando con cada uno de mis enemigos. Cuando pensaba que había derrotado a todos,\
 	vienen refuerzos pero me da igual. Acabaré con todos.</p>\
@@ -618,7 +621,8 @@ undum.game.situations = {
     }
   ),
   entrar_sigilo: new undum.SimpleSituation(
-    "<p>Decido entrar en sigilo ya que no me apetece enfrentarme a un ejército entero.\
+    "<img src='./media/img/9.jpg' width='500' height='400'>\
+	<p>Decido entrar en sigilo ya que no me apetece enfrentarme a un ejército entero.\
 	Para encontrar mi vía de entrada voy a dar una vuelta por las afueras del castillo.</p>\
 	<p>Tras haber dado un paseo exploratorio, creo que las mejores opciones son\
 	intentar colarme por donde menos seguridad hay, <a href='parte_atras'>la parte de atrás</a>. O quizá también puedo\
@@ -635,7 +639,8 @@ undum.game.situations = {
     }
   ),
   parte_atras: new undum.SimpleSituation(
-    "<p>Al final la mejor decisión era infiltrarse por la parte de atrás del castillo.\
+    "<img src='./media/img/30.png' width='400' height='300'>\
+	<p>Al final la mejor decisión era infiltrarse por la parte de atrás del castillo.\
 	Durante el paseo vi una ventana abierta que dejé atascada por si las moscas.\
 	</p>\
 	<p>Ahora que estoy dentro del castillo sólo me queda encontrar al ladrón que me robó\
@@ -654,7 +659,8 @@ undum.game.situations = {
     }
   ),
   preguntar: new undum.SimpleSituation(
-    "<p>Me acerco a un trabajador que estaba merodeando por los pasillos. Llevaba un uniforme\
+    "<img src='./media/img/32.jpg' width='500' height='400'>\
+	<p>Me acerco a un trabajador que estaba merodeando por los pasillos. Llevaba un uniforme\
 	un tanto extraño, iba vestido de una forma elegante pero a la vez se podía adivinar que\
 	trabajaba ahí.</p>\
 	<p>Le pregunto sobre su jefe y su ubicación. Ahora ya conozco el nombre de mi enemigo,\
@@ -677,6 +683,7 @@ undum.game.situations = {
   investigar: new undum.SimpleSituation(
     "<p>Para encontrar la habitación que busco tendré que buscar por todo el castillo.\
 	Espero que este proceso no sea muy largo.</p>\
+	<img src='./media/img/11.jpg' width='400' height='300'>\
 	<p>Tras dar un breve paseo por esta zona del castillo encuentro una habitación un tanto llamativa.\
 	En la puerta pone: <em>Victorcillo</em>. No entiendo mucho de este extraño\
 	lenguaje pero tiene pinta de que es la persona a la que busco.\
@@ -694,7 +701,8 @@ undum.game.situations = {
     }
   ),
   despacho: new undum.SimpleSituation(
-    "<p>Abro la puerta de la habitación y observo desde fuera sin decir nada para no revelar\
+    "<img src='./media/img/31.png' width='500' height='400'>\
+	<p>Abro la puerta de la habitación y observo desde fuera sin decir nada para no revelar\
 	mi identidad.</p>\
 	<p>Veo que Victorcillo está usando mi ordenador mientras dice unos vocablos un tanto extraños.\
 	Escucho no se qué de Scrum, que si Product Owner, que si Product Backlog. No lo tengo claro,\
@@ -719,7 +727,8 @@ undum.game.situations = {
     }
   ),
   perdon: new undum.SimpleSituation(
-    "<p>Tras saber esto no puedo hacerle nada malo. Aunque lo que ha hecho está mal, puedo entenderlo.\
+    "<img src='./media/img/26.jpg' width='500' height='400'>\
+	<p>Tras saber esto no puedo hacerle nada malo. Aunque lo que ha hecho está mal, puedo entenderlo.\
 	Dicho esto, Victorcillo me entrega mi ordenador de vuelta. Ahora sí que podré acabar mis prácticas.</p>\
 	<p>Arcadia es un lugar extraño pero al final, todo ha salido bien.\
 	</p>",
@@ -738,6 +747,7 @@ undum.game.situations = {
 	de rodillas, le atizo un puñetazo que desciende del cielo cual gráfica Burndown.</p>\
 	<p>El ataque fue un éxito. Victorcillo está echando la siesta a mis pies. Aprovecho para recuperar\
 	mi ordenador y escapar de ahí. Ahora sí que soy libre para terminar mis prácticas.</p>\
+	<img src='./media/img/22.jpg' width='400' height='300'>\
 	<p>Arcadia es un lugar extraño pero al final, todo ha salido bien.\
 	</p>",
     {
@@ -774,6 +784,7 @@ undum.game.situations = {
 					<p>Cuando estoy cerca de ellos puedo ver lo malhumorados y agresivos que están.\
 					Antes de si quiera darme tiempo a responder, me finiquitan rápido cual daily Scrum.\
 					Sin duda estos guardias de Arcadia son de lo más peligroso.</p>\
+					<img src='./media/img/8.png' width='500' height='400'>\
 					<p>En un hipotético caso de que pueda resucitar y volver a esta situación,\
 					igual es mejor tener un traje de guardia para acercarme a ellos.\
 					</p>"
@@ -786,6 +797,7 @@ undum.game.situations = {
   disfraz_guardia2: new undum.SimpleSituation(
     "<p>Me acerco al grupo de guardias que estaban en la puerta principal. Al ir vestido como ellos\
 	no sospecharán de mi.</p>\
+	<img src='./media/img/33.jpg' width='500' height='350'>\
 	<p>Cuando estoy cerca de ellos les digo que venía de un lugar lejano ya que estaba haciendo un\
 	encargo para el jefe. Por suerte me dijeron que un tal Victorcillo me estaba esperando en su despacho.</p>\
 	<p>Menos mal que ha colado y he podido entrar al castillo. Además ahora sé que me tengo que\
