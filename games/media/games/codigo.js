@@ -131,6 +131,7 @@ undum.game.situations = {
   /*Comienzo capitulo 2*/
   situacion_intermedia1: new undum.SimpleSituation(
     "<h1>CAPITULO 2 - CONOCIENDO A RAERPIN</h1>\
+    <img src='./media/img/15_2.png' class='float_right' width='250' height='250'>\
         <p> El gnomo parece bastante amigable a pesar de su ridículo aspecto así que decido acercarme a él para saber si tiene idea de donde estamos. </p>\
         <p> Hola, me llamo " +
       nombre +
@@ -143,7 +144,7 @@ undum.game.situations = {
 
   /*Elijo Acompañar al gnomo*/
   acompanar: new undum.SimpleSituation(
-    "<p>Decido emprender mi aventura junto a Raerpin por tres razones, la primera es que sigo sin tener idea de donde estoy,\
+    "<img src='./media/img/6.png' class='float_right' width='250' height='250'>\<p>Decido emprender mi aventura junto a Raerpin por tres razones, la primera es que sigo sin tener idea de donde estoy,\
       la segunda, ¿cómo que me estaba esperando? y la tercera, que hace decantarme ¡¡¡ESTOY HABLANDO CON UN GNOMO!!!</p>\
       <p><b>Raerpin:</b> De acuerdo, se que te estás preguntando cómo sabía que vendrías, ¿No es así?\
       <p><b>" +
@@ -234,7 +235,8 @@ undum.game.situations = {
 
   /*Fin del capítulo 2*/
   fin_capitulo: new undum.SimpleSituation(
-    "<p>Por haber dado con la solución, Raerpin me confiesa que el ordenador lo encontraré en el último lugar de mi camino y que solo lo conseguiré si derroto al villano de Arcadia junto a todos sus secuaces que iré encontrando <a href= 'capitulo_tercero'>hasta llegar a él.</a></p>",
+    " <img src='./media/img/23.png' class='float_right' width='250' height='250'>\
+    <p>Por haber dado con la solución, Raerpin me confiesa que el ordenador lo encontraré en el último lugar de mi camino y que solo lo conseguiré si derroto al villano de Arcadia junto a todos sus secuaces que iré encontrando <a href= 'capitulo_tercero'>hasta llegar a él.</a></p>",
     {
       heading: "Continuamos.....",
       enter: function (character, system, from) {
