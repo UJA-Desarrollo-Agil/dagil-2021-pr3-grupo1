@@ -108,9 +108,9 @@ undum.game.situations = {
 
   sin_mono: new undum.SimpleSituation(
     "<p>Momo frunce el ceño y empieza a sacar plátanos de la riñonera que lleva.</p>\
-    	<p>Empieza a lanzármelos a la cabeza. Consigue darme con un par de ellos. Está muy cabreado.</p>\
-    	<p>Corro por un camino escapando de él. El camino es estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas.</p>\
-      <p>   " +
+    <p>Empieza a lanzármelos a la cabeza. Consigue darme con un par de ellos. Está muy cabreado.</p>\
+    <p>Corro por un camino escapando de él. El camino es estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas.</p>\
+    <p>   " +
       nombre +
       " : Mi vida es un continuo intentar hacer crecer flores en el desierto...</p>\
       <p>De repente, encuentro a un <a href='situacion_intermedia1'>gnomo</a> enfrente.</p>",
@@ -156,22 +156,20 @@ undum.game.situations = {
       },
     }
   ),
-   
   /*DIÁLOGO CON RAERPIN*/
-  
   /*Así es*/
   elijo_si: new undum.SimpleSituation(
     " <p><b>Raerpin:</b> He visto caer un ordenador hace un rato y me ha bastado con verte y olerme...para saber que eres estudiante de una ingeniería\
       <p><b>" +
       nombre +
-      ":</b> <a href='elijo_reirme'>-Si te soy sincero, he tenido un dia complicado...-</a>   |   <a href='elijo_enfadarme'>-¡Los ingenieros también nos duchamos!-</a></p>",
+      ":</b> <a href='elijo_reirme'>-Si te soy sincero, he tenido un dia complicado...-</a>   |   <a href='elijo_enfadarme'>-¡Los ingenieros también nos duchamos!-</a></p>"
   ),
   /*Prefiero no saberlo*/
   elijo_no: new undum.SimpleSituation(
     " <p><b>Raerpin:</b> Igualmente te lo voy a contar para reirme de tí, he visto caer un ordenador hace un rato y me ha bastado con verte y olerme...para saber que eres estudiante de una ingeniería\
       <p><b>" +
       nombre +
-      ":</b> <a href='elijo_reirme'>-He tenido un dia complicado...-</a>   |   <a href='elijo_enfadarme'>-¡Los ingenieros también nos duchamos!-</a></p>",
+      ":</b> <a href='elijo_reirme'>-He tenido un dia complicado...-</a>   |   <a href='elijo_enfadarme'>-¡Los ingenieros también nos duchamos!-</a></p>"
   ),
 
   /*He tenido un dia complicado*/
@@ -179,15 +177,15 @@ undum.game.situations = {
     " <p><b>Raerpin:</b> ¡Menos mal que tengo esta pinza para la nariz!. Pero ahora me pondré serio. En Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
       <p><b>" +
       nombre +
-      ":</b> <a href='elijo_seguir'>-Nací preparado-</a>   |   <a href='elijo_asustarme'>-Tengo mucho miedo, quiero irme a casa-</a></p>",
+      ":</b> <a href='elijo_seguir'>-Nací preparado-</a>   |   <a href='elijo_asustarme'>-Tengo mucho miedo, quiero irme a casa-</a></p>"
   ),
   /*¡Los ingernieros tambien nos duchamos!*/
   elijo_enfadarme: new undum.SimpleSituation(
     " <p><b>Raerpin:</b> No lo pongo en duda pero hoy se te ha olvidado. Por suerte ¡tengo esta pinza para la nariz! Pero ahora me pondré serio. En Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
       <p><b>" +
       nombre +
-      ":</b> <a href='elijo_seguir'>-Nací preparado-</a>   |   <a href='cabezon'>-Tengo mucho miedo, quiero irme a casa-</a></p>",
-  ),  
+      ":</b> <a href='elijo_seguir'>-Nací preparado-</a>   |   <a href='cabezon'>-Tengo mucho miedo, quiero irme a casa-</a></p>"
+  ),
 
   /*Nací preparado*/
   elijo_seguir: new undum.SimpleSituation(
@@ -198,10 +196,9 @@ undum.game.situations = {
     <p>8 + 11 = ¿?</p>\
       <p><b>" +
       nombre +
-      ":</b> <a href='elijo_40'>-40-</a>   |   <a href='elijo_96'>-96-</a></p>",
+      ":</b> <a href='elijo_40'>-40-</a>   |   <a href='elijo_96'>-96-</a></p>"
   ),
   /*Tengo mucho miedo, quiero irme a casa- GAME OVER*/
-
 
   /*40*/
   elijo_40: new undum.SimpleSituation(
@@ -265,7 +262,7 @@ undum.game.situations = {
       ":</b> ¡¡Guau!! ¡¡guau!!</p>\
     <p><b>Has perdido, GAME OVER</b></p>",
     {
-      heading: "Quiero hacerlo todo solo porque soy el mejor"
+      heading: "Quiero hacerlo todo solo porque soy el mejor",
     }
   ),
 
