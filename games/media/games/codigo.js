@@ -535,21 +535,17 @@ undum.game.situations = {
 	Puedo <a href='entrar_sigilo'>ir en sigilo</a> e infiltrarme o puedo\
 	<a href='ataca_guardias'>atacar a los guardias</a>.\
 	</p>",
-    {
-      actions: {
-        "traje-tru": function (character, system, action) {
-          system.setQuality("traje", true);
-        },
-      },
-      heading: "Entrada al castillo",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 3
-        );
-      },
-    }
-  ),
+	{
+			actions: {
+				"traje-tru": function(character, system, action) {
+                    system.setQuality("traje", true);
+				}
+			},
+			heading:"Entrada al castillo",
+			enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+3);}
+	}
+	),
+
   ataca_guardias: new undum.SimpleSituation("", {
     enter: function (character, system, from) {
       if (character.qualities.equipamiento > 3) {
@@ -576,13 +572,14 @@ undum.game.situations = {
 					para mi solo.</p>\
 					<p>Se abalanzan contra mi y me inflan a palos. Para enfrentarme a un ejército entero\
 					tengo que ir mucho más armado.\
-					</p>"
-        );
-      }
-    },
+					</p>",
+					);
+				}
+			},
 
-    heading: "Ataco a los guardias",
-  }),
+			heading:"Ataco a los guardias",
+	}
+	),
   ganas: new undum.SimpleSituation(
     "<p>Creo que atacar a los guardias va a ser la mejor opción.Cuantos menos enemigos vivos, mejor.</p>\
 	<p>Voy corriendo hacia ellos y empiezo a enfrentarme con todos los que se interponen en mi camino.</p>\
@@ -725,16 +722,11 @@ undum.game.situations = {
 	mi ordenador y escapar de ahí. Ahora sí que soy libre para terminar mis prácticas.</p>\
 	<p>Arcadia es un lugar extraño pero al final, todo ha salido bien.\
 	</p>",
-    {
-      heading: "Acabo con Victorcillo",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 5
-        );
-      },
-    }
-  ),
+	{
+			heading:"Acabo con Victorcillo",
+			enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
+	}
+	),
   disfraz_guardia: new undum.SimpleSituation("", {
     enter: function (character, system, from) {
       if (character.qualities.traje) {
@@ -761,13 +753,14 @@ undum.game.situations = {
 					Sin duda estos guardias de Arcadia son de lo más peligroso.</p>\
 					<p>En un hipotético caso de que pueda resucitar y volver a esta situación,\
 					igual es mejor tener un traje de guardia para acercarme a ellos.\
-					</p>"
-        );
-      }
-    },
+					</p>",
+					);
+				}
+			},
 
-    heading: "Me disfrazo como un guardia",
-  }),
+			heading:"Me disfrazo como un guardia",
+	}
+	),
   disfraz_guardia2: new undum.SimpleSituation(
     "<p>Me acerco al grupo de guardias que estaban en la puerta principal. Al ir vestido como ellos\
 	no sospecharán de mi.</p>\
@@ -789,7 +782,6 @@ undum.game.situations = {
 // ---------------------------------------------------------------------------
 /* The Id of the starting situation. */
 undum.game.start = "start";
-
 // ---------------------------------------------------------------------------
 /* Here we define all the qualities that our characters could
  * possess. We don't have to be exhaustive, but if we miss one out then
