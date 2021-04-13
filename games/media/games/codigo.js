@@ -194,10 +194,7 @@ undum.game.situations = {
   /*Nací preparado*/
   elijo_seguir: new undum.SimpleSituation(
     " <p><b>Raerpin:</b> De acuerdo, ¿Eres capaz de acertar esta adivinanza?</p>\
-    <p>1 + 4 = 5</p>\
-    <p>2 + 5 = 12</p>\
-    <p>3 + 6 = 21</p>\
-    <p>8 + 11 = ¿?</p>\
+    <img src='./media/img/acertijo.jpg' align=center width='250' height='250'>\
       <p><b>" +
       nombre +
       ":</b> <a href='elijo_40'>-40-</a>   |   <a href='elijo_96'>-96-</a></p>"
