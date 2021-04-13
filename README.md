@@ -6,7 +6,7 @@
 * Vico Guzmán, Sebastián Alberto - _savg0001@red.uajen.es_.
 * Domingo Aguilar, Rocío - _rda00010@red.uajen.es_.
 * Martínez Morales, Álvaro - _amm00337@red.uajen.es_.
-* Cristian Hidalgo, Lozano - _chl00014@red.uajen.es_.
+* Hidalgo Lozano, Cristian - _chl00014@red.uajen.es_.
 
 3º Ingeniería del software - Ingeniería informática.
 
