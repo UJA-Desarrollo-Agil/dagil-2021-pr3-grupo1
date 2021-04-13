@@ -36,19 +36,19 @@ nombre = prompt(
 undum.game.situations = {
   start: new undum.SimpleSituation(
     "<h1>CAPÍTULO 1: LA HISTORIA COMIENZA...</h1>\
+    <img src='./media/img/15.png' class='float_ce' width='500' height='400'>\
         <p>Despierto de golpe. La luz del sol me deslumbra.<br> Froto mis ojos hasta que consigo abrirlos por completo.</p>\
         <p>Miro hacia arriba y a mi alrededor. El cielo está despejado. No sé dónde estoy. Intento hacer memoria para recordar</p>\
         <p>como he llegado aquí... yo estaba en mi habitación, en el escritorio, con mi ordenador, terminando la práctica de Desarrollo Ágil que se entregaba hoy las 23.55h... ¿¡QUÉ HORA ES!? ¡Tengo que entregar la práctica! Miro mi muñeca y descubro que no tengo reloj. De repente, escucho un ruido, alguien se acerca.</p>\
-        <p>   <b>MOMO:</b> La historia comienza cuando el protagonista decide ejecutar la acción que lo inicia todo.</p>\
-        <p>No me lo puedo creer. ¡Acaba de hablarme un mono que viene hacia a mí!</p>\
-        <p>   <b>MOMO:</b> No pongas esa cara. Me llamo Momo. No sé quién eres ni qué buscas. La verdad es que me da igual.</p>\
+        <p><b>MOMO:</b> No pongas esa cara. Me llamo Momo. No sé quién eres ni qué buscas. La verdad es que me da igual.</p>\
         <p>Continúo en shock.</p>\
         <p><a href='sin_mono'>No quiero hablar con nadie</a> ni que nadie me moleste. O quizás sea\
         <a href='con_mono'>una buena idea tener alguien al lado, aunque sea un mono.</a>.</p>"
   ),
 
   con_mono: new undum.SimpleSituation(
-    "<p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
+    "<img src='./media/img/0.png' class='float_right' width='250' height='250'>\
+    <p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
       <p>   <b>MOMO:</b> ¿Es el destino la mano que elige si nuestro reloj de arena funcionará hacia arriba o hacia abajo, o esa mano somos nosotros mismos?</p>\
       <p>No puede ser. Creo que ya entiendo lo que Momo me quiere decir</p>\
       <p>   <b>" +
@@ -70,7 +70,8 @@ undum.game.situations = {
   ),
 
   detalle: new undum.SimpleSituation(
-    "<p>    <b>MOMO:</b> Tú eliges, puedes pasar todo tu tiempo muerto o puedes coger tu tiempo y hacer algo valioso con él.\
+    "<img src='./media/img/3.png' class='float_right' width='250' height='250'>\
+    <p><b>MOMO:</b> Tú eliges, puedes pasar todo tu tiempo muerto o puedes coger tu tiempo y hacer algo valioso con él.\
       Algo que llene ese tiempo de energía. Hay que vivir con la fuerza suficiente como para que la vida ceda a tu paso, no tú ante ella.\
       La vida no es nada si no te atreves a vivirla. Hay que hacer algo con la vida que tenemos. Que se entere de que estamos aquí, dispuestos a dejarla\
       boquiabierta con nuestra forma de pasar por ella.</p>\
@@ -87,7 +88,8 @@ undum.game.situations = {
   ),
 
   seguirlo: new undum.SimpleSituation(
-    "<p>Sigo a Momo por un camino estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas, pero mi mente se encuentra en otro sitio</p>\
+    "<img src='./media/img/1.png' class='float_right' width='250' height='250'>\
+    <p>Sigo a Momo por un camino estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas, pero mi mente se encuentra en otro sitio</p>\
       <p>Si Alicia se hubiera cansado de correr tras el Conejo Blanco, no habría caído por la madriguera. Ni descubierto el País\
       de las Maravillas. Ni descubrierto quién era ella. Seguiré corriendo. Me caeré. E intentaré no tener miedo a aquello que me tenga que enfrentar</p>\
       <p>Llegamos al final del camino, frente a un gnomo. Momo se acerca a mí y saca algo de su riñonera. Es un frasco.\
@@ -107,7 +109,8 @@ undum.game.situations = {
   ),
 
   sin_mono: new undum.SimpleSituation(
-    "<p>Momo frunce el ceño y empieza a sacar plátanos de la riñonera que lleva.</p>\
+    "<img src='./media/img/20.png' class='float_right' width='250' height='250'>\
+    <p>Momo frunce el ceño y empieza a sacar plátanos de la riñonera que lleva.</p>\
     <p>Empieza a lanzármelos a la cabeza. Consigue darme con un par de ellos. Está muy cabreado.</p>\
     <p>Corro por un camino escapando de él. El camino es estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas.</p>\
     <p>   " +
@@ -535,16 +538,21 @@ undum.game.situations = {
 	Puedo <a href='entrar_sigilo'>ir en sigilo</a> e infiltrarme o puedo\
 	<a href='ataca_guardias'>atacar a los guardias</a>.\
 	</p>",
-	{
-			actions: {
-				"traje-tru": function(character, system, action) {
-                    system.setQuality("traje", true);
-				}
-			},
-			heading:"Entrada al castillo",
-			enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+3);}
-	}
-	),
+    {
+      actions: {
+        "traje-tru": function (character, system, action) {
+          system.setQuality("traje", true);
+        },
+      },
+      heading: "Entrada al castillo",
+      enter: function (character, system, from) {
+        system.setQuality(
+          "progreso_historia",
+          character.qualities.progreso_historia + 3
+        );
+      },
+    }
+  ),
 
   ataca_guardias: new undum.SimpleSituation("", {
     enter: function (character, system, from) {
@@ -572,14 +580,13 @@ undum.game.situations = {
 					para mi solo.</p>\
 					<p>Se abalanzan contra mi y me inflan a palos. Para enfrentarme a un ejército entero\
 					tengo que ir mucho más armado.\
-					</p>",
-					);
-				}
-			},
+					</p>"
+        );
+      }
+    },
 
-			heading:"Ataco a los guardias",
-	}
-	),
+    heading: "Ataco a los guardias",
+  }),
   ganas: new undum.SimpleSituation(
     "<p>Creo que atacar a los guardias va a ser la mejor opción.Cuantos menos enemigos vivos, mejor.</p>\
 	<p>Voy corriendo hacia ellos y empiezo a enfrentarme con todos los que se interponen en mi camino.</p>\
@@ -722,11 +729,16 @@ undum.game.situations = {
 	mi ordenador y escapar de ahí. Ahora sí que soy libre para terminar mis prácticas.</p>\
 	<p>Arcadia es un lugar extraño pero al final, todo ha salido bien.\
 	</p>",
-	{
-			heading:"Acabo con Victorcillo",
-			enter: function(character, system, from) {system.setQuality('progreso_historia', character.qualities.progreso_historia+5);}
-	}
-	),
+    {
+      heading: "Acabo con Victorcillo",
+      enter: function (character, system, from) {
+        system.setQuality(
+          "progreso_historia",
+          character.qualities.progreso_historia + 5
+        );
+      },
+    }
+  ),
   disfraz_guardia: new undum.SimpleSituation("", {
     enter: function (character, system, from) {
       if (character.qualities.traje) {
@@ -753,14 +765,13 @@ undum.game.situations = {
 					Sin duda estos guardias de Arcadia son de lo más peligroso.</p>\
 					<p>En un hipotético caso de que pueda resucitar y volver a esta situación,\
 					igual es mejor tener un traje de guardia para acercarme a ellos.\
-					</p>",
-					);
-				}
-			},
+					</p>"
+        );
+      }
+    },
 
-			heading:"Me disfrazo como un guardia",
-	}
-	),
+    heading: "Me disfrazo como un guardia",
+  }),
   disfraz_guardia2: new undum.SimpleSituation(
     "<p>Me acerco al grupo de guardias que estaban en la puerta principal. Al ir vestido como ellos\
 	no sospecharán de mi.</p>\
