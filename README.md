@@ -92,15 +92,22 @@ _Captura de Telegram al vincular GitHub_
 
 El Product Owner planificó un Sprint Backlog Refinement donde agregó diversas tareas nuevas al Product Backlog. Fueron las siguientes:
 
-**Actualización 06-abr-2021**
+**Actualización 06-abr-2021** 
+
     - Se deberá modificar el CSS del juego original, usando otras fuentes de letra, fondos de pantalla, etc.
+
     - Se posibilitará (con css) una versión “sin distracciones” que no incluya imágenes, ni fondo, ni música.
+
     - En al menos una situación (de las existentes o incluyendo alguna/s nueva/s), se podrá establecer un diálogo con otro personaje del juego (con preguntas y respuestas predefinidas, por supuesto, dado que serán acciones del juego; no se trata de implementar un chatbot). INNEGOCIABLE.
+    
     - Cada situación deberá llevar una imagen descriptiva asociada.
 
 Tras asignarle una puntuación tanto al PH como al valor, decidimos realizar las siguiente en este Sprint:
+
 16. **Se deberá modificar el CSS del juego original, usando otras fuentes de letra, fondos de pantalla, etc.**: Añadimos esta tarjeta al Sprint porque consideramos que mejoraría mucho el diseño del proyecto.
+
 18. **En al menos una situación (de las existentes o incluyendo alguna/s nueva/s), se podrá establecer un diálogo con otro personaje del juego**: Esta tarjeta pensamos que haría el proyecto más completo e interesante por lo que también fue elegida para este sprint.
+
 19. **Cada situación deberá llevar una imagen descriptiva asociada**: Añadimos esta tarjeta al Sprint porque consideramos que mejoraría mucho el diseño del proyecto.
 
 _Captura de pantalla del Product Backlog y del Sprint Backlog tras las modificaciones realizadas en el Product Backlog Refinement_
