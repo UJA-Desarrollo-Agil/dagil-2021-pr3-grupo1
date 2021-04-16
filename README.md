@@ -110,11 +110,16 @@ Tras asignarle una puntuación tanto al PH como al valor, decidimos realizar las
 
 19. **Cada situación deberá llevar una imagen descriptiva asociada**: Añadimos esta tarjeta al Sprint porque consideramos que mejoraría mucho el diseño del proyecto.
 
-_Captura de pantalla del Product Backlog y del Sprint Backlog tras las modificaciones realizadas en el Product Backlog Refinement_
+
+**_Queremos dejar constancia de que en este momento las tarjetas ya fueron ordenadas en el Product Backlog como se puede ver._**
 
 ![Captura8](/img/Sprint1-5.PNG)
+
+_Captura de pantalla del Product Backlog y del Sprint Backlog tras las modificaciones realizadas en el Product Backlog Refinement (1/2)_
+
 ![Captura9](/img/Sprint1-6.PNG)
 
+_Captura de pantalla del Product Backlog y del Sprint Backlog tras las modificaciones realizadas en el Product Backlog Refinement (2/2)_
 
 <a name="review1"></a>
 
