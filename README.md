@@ -89,15 +89,15 @@ Este sprint consiste en la realización del proyecto (Primer incremento de la ap
 
 _Capturas de las tarjetas escogidas al comienzo del primer Sprint_
 
-**_Queremos dejar constancia de que en este momento las tarjetas no estaban ordenadas en el Product Backlog porque no eramos cocientes de ello, se ordenaron mas adelante como se podrá ver._**
+**_Queremos dejar constancia de que en este momento las tarjetas no estaban ordenadas en el Product Backlog porque no eramos conscientes de ello, se ordenaron más adelante como se podrá ver._**
 
 1. **El juego habrá de tener como mínimo 9 situaciones**: Esta tarjeta es fundamental para el desarrollo del proyecto por lo que consideramos que debía estar en el primer Sprint.
 2. **El jugador podrá moverse de unas situaciones a otras**: Esta tarjeta es fundamental para el desarrollo del proyecto por lo que consideramos que debía estar en el primer Sprint.
 3. **El jugador podrá recoger objetos a lo largo del juego**: Esta tarjeta la consideramos en el primer sprint ya que al trabajar con esto en la práctica 2 estabamos familiarizados y no nos supondría mucho tiempo.
-4. **Se podrá personalizar el juego preguntando el nombre del jugador/jugadora y modificando los textos para que le citen y pregunten personalmente por su nombre**: Esta tarjeta la añadimos porque habiamos trabajado antes con JavaScript por lo que sabiamos que no iba a suponer un problema y se realizaría rapidamente.
-5. **El jugador podrá usar objetos para resolver puzzles:** Hemos considerado realizar esta tarjeta ya que el uso de objetos para resolver ciertas situaciones puede aportar dinamismo al juego y distintos finales.
-6. **El jugador podrá usar la acción “mirar detalladamente” (u otra similar) para poder descubrir nuevas cosas en las situaciones que no se le hayan descrito a primera vista:** Esta tarjeta hemos pensado que podía contribuir al proyecto ya que nos da la posibilidad de crear distintas situaciones con una simple acción.
+4. **El jugador podrá usar objetos para resolver puzzles:** Hemos considerado realizar esta tarjeta ya que el uso de objetos para resolver ciertas situaciones puede aportar dinamismo al juego y distintos finales.
+5. **El jugador podrá usar la acción “mirar detalladamente” (u otra similar) para poder descubrir nuevas cosas en las situaciones que no se le hayan descrito a primera vista:** Esta tarjeta hemos pensado que podía contribuir al proyecto ya que nos da la posibilidad de crear distintas situaciones con una simple acción.
 7. **El jugador debe poder saber cuántos puntos lleva en la partida:** Hemos decidido realizar esta tarjeta porque como jugadores pensabamos que era una buena idea saber el porcentaje del juego que habíamos completado.
+8. **Se podrá personalizar el juego preguntando el nombre del jugador/jugadora y modificando los textos para que le citen y pregunten personalmente por su nombre**: Esta tarjeta la añadimos porque habiamos trabajado antes con JavaScript por lo que sabiamos que no iba a suponer un problema y se realizaría rapidamente.
 
 <a name="descomposicion1"></a>
 
