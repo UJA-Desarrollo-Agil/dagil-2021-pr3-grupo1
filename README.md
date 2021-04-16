@@ -96,12 +96,13 @@ _Capturas de las tarjetas escogidas al comienzo del primer Sprint_
 3. **El jugador podrá recoger objetos a lo largo del juego**: Esta tarjeta la consideramos en el primer sprint ya que al trabajar con esto en la práctica 2 estabamos familiarizados y no nos supondría mucho tiempo.
 4. **El jugador podrá usar objetos para resolver puzzles:** Hemos considerado realizar esta tarjeta ya que el uso de objetos para resolver ciertas situaciones puede aportar dinamismo al juego y distintos finales.
 5. **El jugador podrá usar la acción “mirar detalladamente” (u otra similar) para poder descubrir nuevas cosas en las situaciones que no se le hayan descrito a primera vista:** Esta tarjeta hemos pensado que podía contribuir al proyecto ya que nos da la posibilidad de crear distintas situaciones con una simple acción.
-7. **El jugador debe poder saber cuántos puntos lleva en la partida:** Hemos decidido realizar esta tarjeta porque como jugadores pensabamos que era una buena idea saber el porcentaje del juego que habíamos completado.
-8. **Se podrá personalizar el juego preguntando el nombre del jugador/jugadora y modificando los textos para que le citen y pregunten personalmente por su nombre**: Esta tarjeta la añadimos porque habiamos trabajado antes con JavaScript por lo que sabiamos que no iba a suponer un problema y se realizaría rapidamente.
+6. **El jugador debe poder saber cuántos puntos lleva en la partida:** Hemos decidido realizar esta tarjeta porque como jugadores pensabamos que era una buena idea saber el porcentaje del juego que habíamos completado.
+7. **Se podrá personalizar el juego preguntando el nombre del jugador/jugadora y modificando los textos para que le citen y pregunten personalmente por su nombre**: Esta tarjeta la añadimos porque habiamos trabajado antes con JavaScript por lo que sabiamos que no iba a suponer un problema y se realizaría rapidamente.
 
 <a name="descomposicion1"></a>
 
 ## 2.2. Descomposición tarjetas
+
 Descompusimos la primera tarjeta para que cada uno de los miembros del grupo se hiciera cargo en hacer una parte de la historia.
 Lo dividimos de la siguiente manera: inicio, desarrollo(1), desarrollo(2) y fin. Para que todos siguiesemos la misma idea de la historia, elegimos el tema de la historia y algunos detalles de cómo se va a desarrollar. Estas notas que tomamos, las dejamos reflejadas en la descripción de cada una de las tarjetas. La idea de hacerlo así fue para que cada uno escribiese lo que se le ocurriera y así, además de sacar más de 9 situaciones, hicimos una historia más pintoresca.
 En las siguientes capturas de pantalla, muestro cómo lo descomponemos:
@@ -118,7 +119,7 @@ En la tarjeta 1.4, el personaje llega al final donde encuentra lo que estaba bus
 
 El Product Owner planificó un Sprint Backlog Refinement donde agregó diversas tareas nuevas al Product Backlog. Fueron las siguientes:
 
-**Actualización 06-abr-2021** 
+**Actualización 06-abr-2021**
 
 - Se deberá modificar el CSS del juego original, usando otras fuentes de letra, fondos de pantalla, etc.
 
@@ -132,10 +133,9 @@ Tras asignarle una puntuación tanto al PH como al valor, decidimos realizar las
 
 16. **Se deberá modificar el CSS del juego original, usando otras fuentes de letra, fondos de pantalla, etc.**: Añadimos esta tarjeta al Sprint porque consideramos que mejoraría mucho el diseño del proyecto.
 
-18. **En al menos una situación (de las existentes o incluyendo alguna/s nueva/s), se podrá establecer un diálogo con otro personaje del juego**: Esta tarjeta pensamos que haría el proyecto más completo e interesante por lo que también fue elegida para este sprint.
+17. **En al menos una situación (de las existentes o incluyendo alguna/s nueva/s), se podrá establecer un diálogo con otro personaje del juego**: Esta tarjeta pensamos que haría el proyecto más completo e interesante por lo que también fue elegida para este sprint.
 
-19. **Cada situación deberá llevar una imagen descriptiva asociada**: Añadimos esta tarjeta al Sprint porque consideramos que mejoraría mucho el diseño del proyecto.
-
+18. **Cada situación deberá llevar una imagen descriptiva asociada**: Añadimos esta tarjeta al Sprint porque consideramos que mejoraría mucho el diseño del proyecto.
 
 **_Queremos dejar constancia de que en este momento las tarjetas ya fueron ordenadas en el Product Backlog como se puede ver._**
 
@@ -150,6 +150,10 @@ _Captura de pantalla del Product Backlog y del Sprint Backlog tras las modificac
 <a name="review1"></a>
 
 ## 2.4. Sprint Review
+
+Al final de este incremento, nos reunimos todo el equipo en una reunión de 1 hora y llegamos a la conclusión de que este sprint ha sido muy productivo, ya que hemos avanzado mucho más de la mitad del proyecto, dejando solo una tarjeta innegociable de todas las que se pedían parfa el siguiente sprint, por lo que consideramos que cumpliremos con los plazos solicitados.
+Para el siguiente sprint tenemos pensado realizar la única tarjeta que nos queda de innegociables (**_Si una nueva versión del juego (las entregas en cada sprint) incluye nuevas situaciones, estas deben o bien complicar la misión inicial o bien añadir una nueva misión al juego._**), puesto que es la que mayor valor aporta e ir añadiendo las tarjetas que decidiremos en el proximo Sprint Planning.
+No consideramos que haya surgido ningún problema, pese a ser la primera vez que trabajamos juntos.
 
 <a name="retrospective1"></a>
 
