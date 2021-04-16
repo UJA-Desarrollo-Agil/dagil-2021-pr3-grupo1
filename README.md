@@ -90,6 +90,10 @@ _Captura de Telegram al vincular GitHub_
 
 ## 2.3. Sprint Backlog Refinement
 
+![Captura10](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr3-grupo1/blob/desarrollo/img/Sprint1-5.PNG)
+![Captura11](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr3-grupo1/blob/desarrollo/img/Sprint1-6.PNG)
+
+
 <a name="review1"></a>
 
 ## 2.4. Sprint Review
