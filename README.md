@@ -174,10 +174,10 @@ Como hemos explicado en la Sprint Review, realizaremos la tarea innegociable que
 
 Todas las historias de usuario que propusimos hacer a lo largo de este sprint han sido completadas incluyendo las que añadimos durante el Sprint Backlog Refinement.
 
-![Captura10](/img/Sprint1-4.png)
+![Captura10](/img/sprint1-4.png)
 
 _Captura de pantalla al finalizar el sprint (1/2)_
 
-![Captura10](/img/Sprint1-3.PNG)
+![Captura10](/img/sprint1-3.png)
 
 _Captura de pantalla al finalizar el sprint (2/2)_
