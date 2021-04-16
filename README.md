@@ -94,13 +94,13 @@ El Product Owner planificó un Sprint Backlog Refinement donde agregó diversas 
 
 **Actualización 06-abr-2021** 
 
-    - Se deberá modificar el CSS del juego original, usando otras fuentes de letra, fondos de pantalla, etc.
+- Se deberá modificar el CSS del juego original, usando otras fuentes de letra, fondos de pantalla, etc.
 
-    - Se posibilitará (con css) una versión “sin distracciones” que no incluya imágenes, ni fondo, ni música.
+- Se posibilitará (con css) una versión “sin distracciones” que no incluya imágenes, ni fondo, ni música.
 
-    - En al menos una situación (de las existentes o incluyendo alguna/s nueva/s), se podrá establecer un diálogo con otro personaje del juego (con preguntas y respuestas predefinidas, por supuesto, dado que serán acciones del juego; no se trata de implementar un chatbot). INNEGOCIABLE.
-    
-    - Cada situación deberá llevar una imagen descriptiva asociada.
+- En al menos una situación (de las existentes o incluyendo alguna/s nueva/s), se podrá establecer un diálogo con otro personaje del juego (con preguntas y respuestas predefinidas, por supuesto, dado que serán acciones del juego; no se trata de implementar un chatbot). INNEGOCIABLE.
+
+- Cada situación deberá llevar una imagen descriptiva asociada.
 
 Tras asignarle una puntuación tanto al PH como al valor, decidimos realizar las siguiente en este Sprint:
 
