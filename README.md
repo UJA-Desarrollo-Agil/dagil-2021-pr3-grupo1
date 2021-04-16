@@ -84,7 +84,6 @@ Este sprint consiste en la realización del proyecto (Primer incremento de la ap
 
 ## 2.1. Tarjetas escogidas
 
-![Captura5](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr3-grupo1/blob/desarrollo/img/sprint1-1.png)
 ![Captura6](/img/sprint1-1.png)
 ![Captura7](/img/sprint1-2.png)
 
