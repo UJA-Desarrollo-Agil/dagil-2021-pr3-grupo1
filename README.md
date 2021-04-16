@@ -105,7 +105,9 @@ _Capturas de las tarjetas escogidas al comienzo del primer Sprint_
 Descompusimos la primera tarjeta para que cada uno de los miembros del grupo se hiciera cargo en hacer una parte de la historia.
 Lo dividimos de la siguiente manera: inicio, desarrollo(1), desarrollo(2) y fin. Para que todos siguiesemos la misma idea de la historia, elegimos el tema de la historia y algunos detalles de cómo se va a desarrollar. Estas notas que tomamos, las dejamos reflejadas en la descripción de cada una de las tarjetas. La idea de hacerlo así fue para que cada uno escribiese lo que se le ocurriera y así, además de sacar más de 9 situaciones, hicimos una historia más pintoresca.
 En las siguientes capturas de pantalla, muestro cómo lo descomponemos:
+
 ![Captura10](/img/Descomposicion.png)
+
 En la tarjeta 1.1, contamos la situación inicial de cómo se despierta el personaje, qué siente y qué se encuentra.
 En las tarjeta 1.2, el personaje se va adentrando a la historia y conoce qué tiene que hacer.
 En el tarjeta 1.3, en la aventura comienza la acción donde el personaje se enfrenta a diferentes peligros.
