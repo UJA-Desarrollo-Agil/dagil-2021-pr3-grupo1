@@ -24,9 +24,7 @@
 - [2.3. Sprint Backlog Refinement](#refinemet1)
 - [2.4. Sprint Review](#review1)
 - [2.5. Sprint Retrospective](#retrospective1)
-- [2.6. Tarjetas restantes](#restantes1)
-- [2.6.1. Sprint Planning](#planning1)
-- [2.6.2. Historias de Usuario del Product Backlog](#hu1)
+- [2.6. Sprint Planning y Historias de Usuario del Product Backlog](#restantes1)
 
 <a name="sprint0"></a>
 
@@ -172,7 +170,9 @@ Como hemos explicado en la Sprint Review, realizaremos la tarea innegociable que
 
 <a name="restantes1"></a>
 
-## 2.6. Tarjetas restantes
+## 2.6. Sprint Planning y Historias de Usuario del Product Backlog
+
+Todas las historias de usuario que propusimos hacer a lo largo de este sprint han sido completadas incluyendo las que añadimos durante el Sprint Backlog Refinement.
 
 ![Captura10](/img/Sprint1-4.png)
 
@@ -181,13 +181,3 @@ _Captura de pantalla al finalizar el sprint (1/2)_
 ![Captura10](/img/Sprint1-3.PNG)
 
 _Captura de pantalla al finalizar el sprint (2/2)_
-
-<a name="planning1"></a>
-
-### 2.6.1. Sprint Planning
-
-
-
-<a name="hu1"></a>
-
-### 2.6.2. Historias de Usuario del Product Backlog
