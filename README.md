@@ -13,12 +13,15 @@
 
 ## Índice
 
-- [1. Sprint 0](#sprint0)
+[1. Sprint 0](#sprint0)
+
 - [1.1. Descripción](#descripcion)
 - [1.1.1. Título: El misterio de Arcadia](#titulo)
 - [1.2. Trello](#trello)
 - [1.2.1. Backlog](#backlog)
-- [2. Sprint 1](#sprint1)
+
+[2. Sprint 1](#sprint1)
+
 - [2.1. Tarjetas escogidas](#tarjetas1)
 - [2.2. Descomposición tarjetas](#descomposicion1)
 - [2.3. Sprint Backlog Refinement](#refinemet1)
@@ -109,7 +112,7 @@ En las siguientes capturas de pantalla, muestro cómo lo descomponemos:
 
 En la tarjeta 1.1, contamos la situación inicial de cómo se despierta el personaje, qué siente y qué se encuentra.
 En las tarjeta 1.2, el personaje se va adentrando a la historia y conoce qué tiene que hacer.
-En el tarjeta 1.3, en la aventura comienza la acción donde el personaje se enfrenta a diferentes peligros.
+En la tarjeta 1.3, comienza la acción donde el personaje se enfrenta a diferentes peligros.
 En la tarjeta 1.4, el personaje llega al final donde encuentra lo que estaba buscando.
 <a name="refinemet1"></a>
 
@@ -160,13 +163,13 @@ No consideramos que haya surgido ningún problema, pese a ser la primera vez que
 Al final de este incremento, nos reunimos todo el equipo en una reunión de 1 hora y media y llegamos a las siguientes conclusiones:
 
 - ¿Qué ha ido bien?
-Consideramos que la comunicación ha sido muy buena, nos hemos entendido bien y hemos sabido funcionar en equipo cumpliendo con la metodología scrum. 
+  Consideramos que la comunicación ha sido muy buena, nos hemos entendido bien y hemos sabido funcionar en equipo cumpliendo con la metodología scrum.
 
 - ¿Qué mejorar para la próxima?
-El cumplimiento de las daily scrum puesto que varios dias por calendario ha sido imposible coordinarnos, aunque las que hemos hecho han aportado cosas muy buenas al proyecto.
+  El cumplimiento de las daily scrum puesto que varios dias por calendario ha sido imposible coordinarnos, aunque las que hemos hecho han aportado cosas muy buenas al proyecto.
 
 - ¿Qué vamos a hacer en el siguiente sprint?
-Como hemos explicado en la Sprint Review, realizaremos la tarea innegociable que nos resta puesto que es la que mayor valor aporta al proyecto de las restantes. Además, implementaremos nuevas funcionalidades que hagan el proyecto más completo.
+  Como hemos explicado en la Sprint Review, realizaremos la tarea innegociable que nos resta puesto que es la que mayor valor aporta al proyecto de las restantes. Además, implementaremos nuevas funcionalidades que hagan el proyecto más completo.
 
 <a name="restantes1"></a>
 
