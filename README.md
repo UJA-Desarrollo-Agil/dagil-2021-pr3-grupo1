@@ -159,13 +159,34 @@ No consideramos que haya surgido ningún problema, pese a ser la primera vez que
 
 ## 2.5. Sprint Retrospective
 
+Al final de este incremento, nos reunimos todo el equipo en una reunión de 1 hora y media y llegamos a las siguientes conclusiones:
+
+- ¿Qué ha ido bien?
+Consideramos que la comunicación ha sido muy buena, nos hemos entendido bien y hemos sabido funcionar en equipo cumpliendo con la metodología scrum. 
+
+- ¿Qué mejorar para la próxima?
+El cumplimiento de las daily scrum puesto que varios dias por calendario ha sido imposible coordinarnos, aunque las que hemos hecho han aportado cosas muy buenas al proyecto.
+
+- ¿Qué vamos a hacer en el siguiente sprint?
+Como hemos explicado en la Sprint Review, realizaremos la tarea innegociable que nos resta puesto que es la que mayor valor aporta al proyecto de las restantes. Además, implementaremos nuevas funcionalidades que hagan el proyecto más completo.
+
 <a name="restantes1"></a>
 
 ## 2.6. Tarjetas restantes
 
+![Captura10](/img/Sprint1-4.png)
+
+_Captura de pantalla al finalizar el sprint (1/2)_
+
+![Captura10](/img/Sprint1-3.PNG)
+
+_Captura de pantalla al finalizar el sprint (2/2)_
+
 <a name="planning1"></a>
 
 ### 2.6.1. Sprint Planning
+
+
 
 <a name="hu1"></a>
 
