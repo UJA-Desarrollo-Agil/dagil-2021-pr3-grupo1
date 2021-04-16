@@ -93,6 +93,10 @@ _Capturas de las tarjetas escogidas al comienzo del primer Sprint_
 
 1. El juego habrá de tener como mínimo 9 situaciones: Esta tarjeta es fundamental para el desarrollo del proyecto por lo que consideramos que debía estar en el primer Sprint.
 
+4. **El jugador podrá usar objetos para resolver puzzles:** Hemos considerado realizar esta tarjeta ya que el uso de objetos para resolver ciertas situaciones puede aportar dinamismo al juego y distintos finales.
+5. **El jugador podrá usar la acción “mirar detalladamente” (u otra similar) para poder descubrir nuevas cosas en las situaciones que no se le hayan descrito a primera vista:** Esta tarjeta hemos pensado que podía contribuir al proyecto ya que nos da la posibilidad de crear distintas situaciones con una simple acción.
+7. **El jugador debe poder saber cuántos puntos lleva en la partida:** Hemos decidido realizar esta tarjeta porque como jugadores pensabamos que era una buena idea saber el porcentaje del juego que habíamos completado.
+
 <a name="descomposicion1"></a>
 
 ## 2.2. Descomposición tarjetas
