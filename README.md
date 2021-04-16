@@ -78,14 +78,40 @@ _Captura de Telegram al vincular GitHub_
 
 # 2. Práctica 4 - Sprint 1
 
+Este sprint consiste en la realización del proyecto (Primer incremento de la aplicación usando la metodología Scrum), por lo que comenzamos a trabajar con las tarjetas creadas en el Sprint 0.
+
 <a name="tarjetas1"></a>
 
 ## 2.1. Tarjetas escogidas
 
+![Captura6](/img/sprint1-1.png)
+![Captura7](/img/sprint1-2.png)
+
+_Capturas de las tarjetas escogidas al comienzo del primer Sprint_
+
+**_Queremos dejar constancia de que en este momento las tarjetas no estaban ordenadas en el Product Backlog porque no eramos conscientes de ello, se ordenaron más adelante como se podrá ver._**
+
+1. **El juego habrá de tener como mínimo 9 situaciones**: Esta tarjeta es fundamental para el desarrollo del proyecto por lo que consideramos que debía estar en el primer Sprint.
+2. **El jugador podrá moverse de unas situaciones a otras**: Esta tarjeta es fundamental para el desarrollo del proyecto por lo que consideramos que debía estar en el primer Sprint.
+3. **El jugador podrá recoger objetos a lo largo del juego**: Esta tarjeta la consideramos en el primer sprint ya que al trabajar con esto en la práctica 2 estabamos familiarizados y no nos supondría mucho tiempo.
+4. **El jugador podrá usar objetos para resolver puzzles:** Hemos considerado realizar esta tarjeta ya que el uso de objetos para resolver ciertas situaciones puede aportar dinamismo al juego y distintos finales.
+5. **El jugador podrá usar la acción “mirar detalladamente” (u otra similar) para poder descubrir nuevas cosas en las situaciones que no se le hayan descrito a primera vista:** Esta tarjeta hemos pensado que podía contribuir al proyecto ya que nos da la posibilidad de crear distintas situaciones con una simple acción.
+7. **El jugador debe poder saber cuántos puntos lleva en la partida:** Hemos decidido realizar esta tarjeta porque como jugadores pensabamos que era una buena idea saber el porcentaje del juego que habíamos completado.
+8. **Se podrá personalizar el juego preguntando el nombre del jugador/jugadora y modificando los textos para que le citen y pregunten personalmente por su nombre**: Esta tarjeta la añadimos porque habiamos trabajado antes con JavaScript por lo que sabiamos que no iba a suponer un problema y se realizaría rapidamente.
+
 <a name="descomposicion1"></a>
 
 ## 2.2. Descomposición tarjetas
+Descompusimos la primera tarjeta para que cada uno de los miembros del grupo se hiciera cargo en hacer una parte de la historia.
+Lo dividimos de la siguiente manera: inicio, desarrollo(1), desarrollo(2) y fin. Para que todos siguiesemos la misma idea de la historia, elegimos el tema de la historia y algunos detalles de cómo se va a desarrollar. Estas notas que tomamos, las dejamos reflejadas en la descripción de cada una de las tarjetas. La idea de hacerlo así fue para que cada uno escribiese lo que se le ocurriera y así, además de sacar más de 9 situaciones, hicimos una historia más pintoresca.
+En las siguientes capturas de pantalla, muestro cómo lo descomponemos:
 
+![Captura10](/img/Descomposicion.png)
+
+En la tarjeta 1.1, contamos la situación inicial de cómo se despierta el personaje, qué siente y qué se encuentra.
+En las tarjeta 1.2, el personaje se va adentrando a la historia y conoce qué tiene que hacer.
+En el tarjeta 1.3, en la aventura comienza la acción donde el personaje se enfrenta a diferentes peligros.
+En la tarjeta 1.4, el personaje llega al final donde encuentra lo que estaba buscando.
 <a name="refinemet1"></a>
 
 ## 2.3. Sprint Backlog Refinement
