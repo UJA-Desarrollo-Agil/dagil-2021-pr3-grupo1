@@ -91,10 +91,10 @@ _Capturas de las tarjetas escogidas al comienzo del primer Sprint_
 
 **_Queremos dejar constancia de que en este momento las tarjetas no estaban ordenadas porque no eramos cocientes de ello, se ordenaron mas adelante como se podrá ver_**
 
-1. ** El juego habrá de tener como mínimo 9 situaciones **: Esta tarjeta es fundamental para el desarrollo del proyecto por lo que consideramos que debía estar en el primer Sprint.
-2. ** El jugador podrá moverse de unas situaciones a otras **: Esta tarjeta es fundamental para el desarrollo del proyecto por lo que consideramos que debía estar en el primer Sprint.
-3. ** El jugador podrá recoger objetos a lo largo del juego **: Esta tarjeta la consideramos en el primer sprint ya que al trabajar con esto en la práctica 2 estabamos familiarizados y no nos supondría mucho tiempo.
-4. ** Se podrá personalizar el juego preguntando el nombre del jugador/jugadora y modificando los textos para que le citen y pregunten personalmente por su nombre. **: Esta tarjeta la añadimos porque habiamos trabajado antes con JavaScript por lo que sabiamos que no iba a suponer un problema y se realizaría rapidamente.
+1. **El juego habrá de tener como mínimo 9 situaciones**: Esta tarjeta es fundamental para el desarrollo del proyecto por lo que consideramos que debía estar en el primer Sprint.
+2. **El jugador podrá moverse de unas situaciones a otras**: Esta tarjeta es fundamental para el desarrollo del proyecto por lo que consideramos que debía estar en el primer Sprint.
+3. **El jugador podrá recoger objetos a lo largo del juego**: Esta tarjeta la consideramos en el primer sprint ya que al trabajar con esto en la práctica 2 estabamos familiarizados y no nos supondría mucho tiempo.
+4. **Se podrá personalizar el juego preguntando el nombre del jugador/jugadora y modificando los textos para que le citen y pregunten personalmente por su nombre**: Esta tarjeta la añadimos porque habiamos trabajado antes con JavaScript por lo que sabiamos que no iba a suponer un problema y se realizaría rapidamente.
 
 <a name="descomposicion1"></a>
 
