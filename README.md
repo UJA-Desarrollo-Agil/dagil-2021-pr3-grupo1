@@ -78,9 +78,20 @@ _Captura de Telegram al vincular GitHub_
 
 # 2. Práctica 4 - Sprint 1
 
+Este sprint consiste en la realización del proyecto (Primer incremento de la aplicación usando la metodología Scrum), por lo que comenzamos a trabajar con las tarjetas creadas en el Sprint 0.
+
 <a name="tarjetas1"></a>
 
 ## 2.1. Tarjetas escogidas
+
+![Captura6](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr3-grupo1/blob/desarrollo/img/sprint1-1.PNG)
+![Captura7](https://github.com/UJA-Desarrollo-Agil/dagil-2021-pr3-grupo1/blob/desarrollo/img/sprint1-2.PNG)
+
+_Capturas de las tarjetas escogidas al comienzo del primer Sprint_
+
+**_Queremos dejar constancia de que en este momento las tarjetas no estaban ordenadas porque no eramos cocientes de ello, se ordenaron mas adelante como se podrá ver_**
+
+- 1. El juego habrá de tener como mínimo 9 situaciones: Esta tarjeta es fundamental para el desarrollo del proyecto por lo que consideramos que debía estar en el primer Sprint.
 
 <a name="descomposicion1"></a>
 
