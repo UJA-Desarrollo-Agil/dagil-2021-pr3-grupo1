@@ -112,7 +112,7 @@ En las siguientes capturas de pantalla, muestro cómo lo descomponemos:
 
 En la tarjeta 1.1, contamos la situación inicial de cómo se despierta el personaje, qué siente y qué se encuentra.
 En las tarjeta 1.2, el personaje se va adentrando a la historia y conoce qué tiene que hacer.
-En el tarjeta 1.3, en la aventura comienza la acción donde el personaje se enfrenta a diferentes peligros.
+En la tarjeta 1.3, comienza la acción donde el personaje se enfrenta a diferentes peligros.
 En la tarjeta 1.4, el personaje llega al final donde encuentra lo que estaba buscando.
 <a name="refinemet1"></a>
 
