@@ -306,8 +306,7 @@ undum.game.situations = {
   ),
   /*Mirar detalladamente el campamento*/
   detalladamente_campamento: new undum.SimpleSituation(
-    "<img src='games/media/img/21.png' class='float_right' width='200' height='350'>\
-    <p>veo que hay un tirador con arco y flechas de piedra.</p>\
+    "<p>veo que hay un tirador con arco y flechas de piedra.</p>\
         <p><a href='campamento2'>Continuar con la historia</a></p>",
     {
       heading: "Tras mirar detalladamente ...",
