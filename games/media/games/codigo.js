@@ -357,6 +357,7 @@ undum.game.situations = {
 
     heading: "Recuperación",
   }),
+
   /*Elección campamento de villanos en sigilo*/
   campamento_sigilo: new undum.SimpleSituation(
     "<img src='./media/img/2.png' class='float_right' width='250' height='250'>\
