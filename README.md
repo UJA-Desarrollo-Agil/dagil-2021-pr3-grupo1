@@ -42,6 +42,7 @@
 ### 1.1.1. Título: El misterio de Arcadia.
 
 La historia cuenta las anécdotas de un personaje en primera persona (el usuario introducirá las credenciales de su personaje) que despierta en un mundo de fantasía llamado Arcadia, donde todo es gigantesco.
+
 Su objetivo es encontrar su ordenador para poder terminar la práctica de desarrollo ágil. El ordenador se encontrará al final del trayecto que tiene que recorrer el personaje.
 En ese trayecto el personaje se enfrentará a varios villanos. Deberá de elegir los objetos oportunos y dependiendo de los que elija se desarrollará una historia u otra, contando con distintos finales.
 
