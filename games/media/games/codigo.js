@@ -45,7 +45,6 @@ undum.game.situations = {
         <p><a href='sin_mono'>No quiero hablar con nadie</a> ni que nadie me moleste. O quizás sea\
         <a href='con_mono'>una buena idea tener alguien al lado, aunque sea un mono.</a>.</p>"
   ),
-
   con_mono: new undum.SimpleSituation(
     "<img src='./media/img/0.png' class='float_right' width='250' height='250'>\
     <p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
@@ -357,6 +356,7 @@ undum.game.situations = {
 
     heading: "Recuperación",
   }),
+
   /*Elección campamento de villanos en sigilo*/
   campamento_sigilo: new undum.SimpleSituation(
     "<img src='./media/img/2.png' class='float_right' width='250' height='250'>\
@@ -583,7 +583,7 @@ undum.game.situations = {
           );
         }
         system.write(
-          "<img src='./media/img/8.png' width='500' height='400'>\
+          "<img src='./media/img/8.png' width='400' height='400'>\
 					<p>Creo que atacar a los guardias va a ser la mejor opción.\
 					Cuantos menos enemigos vivos, mejor.</p>\
 					<p>Voy corriendo hacia ellos y empiezo a enfrentarme con todos los que se interponen\
@@ -638,7 +638,6 @@ undum.game.situations = {
     }
   ),
   parte_atras: new undum.SimpleSituation(
-
     "<img src='./media/img/30.png' width='400' height='300'>\
 	<p>Al final la mejor decisión era infiltrarse por la parte de atrás del castillo.\
 	Durante el paseo vi una ventana abierta que dejé atascada por si las moscas.\
@@ -681,8 +680,7 @@ undum.game.situations = {
     }
   ),
   investigar: new undum.SimpleSituation(
-    "<img src='games/media/img/11.png' class='float_right' width='200' height='350'>\
-    <p>Para encontrar la habitación que busco tendré que buscar por todo el castillo.\
+    "<p>Para encontrar la habitación que busco tendré que buscar por todo el castillo.\
 	Espero que este proceso no sea muy largo.</p>\
 	<img src='./media/img/11.jpg' width='400' height='300'>\
 	<p>Tras dar un breve paseo por esta zona del castillo encuentro una habitación un tanto llamativa.\
@@ -744,8 +742,7 @@ undum.game.situations = {
     }
   ),
   muerte: new undum.SimpleSituation(
-    "<img src='games/media/img/22.png' class='float_right' width='200' height='350'>\
-    <p>Después de lo que ha hecho no sé si espera que lo perdonase pero aprovechando que está\
+    "<p>Después de lo que ha hecho no sé si espera que lo perdonase pero aprovechando que está\
 	de rodillas, le atizo un puñetazo que desciende del cielo cual gráfica Burndown.</p>\
 	<p>El ataque fue un éxito. Victorcillo está echando la siesta a mis pies. Aprovecho para recuperar\
 	mi ordenador y escapar de ahí. Ahora sí que soy libre para terminar mis prácticas.</p>\
@@ -780,8 +777,7 @@ undum.game.situations = {
           );
         }
         system.write(
-          "<img src='games/media/img/4.png' class='float_right' width='200' height='350'>\
-          <p>Me acerco al grupo de guardias que estaban en la puerta principal.\
+          "<p>Me acerco al grupo de guardias que estaban en la puerta principal.\
 					Desde lejos ya me están gritando que no me acerque\
 					pero les digo que no soy un peligro, solo un turista perdido.</p>\
 					<p>Cuando estoy cerca de ellos puedo ver lo malhumorados y agresivos que están.\
