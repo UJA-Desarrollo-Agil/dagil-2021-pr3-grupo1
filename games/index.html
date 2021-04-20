@@ -31,20 +31,6 @@
     />
     <!--<![endif]-->
 
-    <script>
-      window.onload=function(){
-        var audioElement = document.createElement('audio');
-        audioElement.setAttribute('games/media/music/', 'sonido.mp3');
-        document.getElementById("play").addEvenListener("click",function {
-          audioElement.play();
-        });
-        document.getElementById("pause").addEvenListener("click", function() {
-          audioElement.pause();
-        });
-      };
-    </script>
-
-
   </head>
   <body>
     <!-- This isn't needed and isn't visible in desktop versions, because we can display the character information and the tools onscreen all the time. -->
@@ -71,8 +57,10 @@
             asignatura Desarrollo Ágil.
             <br />
             <b>Nombre del personaje:</b> <label id="mostrarNombre"></label>
+            <audio src="games/media/music/sonido.mp3" controls="controls" type="audio/mpeg" preload="preload">
             <input type="button" value="Play" id="play">
             <input type="button" value="Pause" id="pause">
+          </audio>
           </p>
 
 
