@@ -29,6 +29,10 @@
 - [2.5. Sprint Retrospective](#retrospective1)
 - [2.6. Sprint Planning y Historias de Usuario del Product Backlog](#restantes1)
 
+[3. Sprint 2](#sprint2)
+
+- [3.1. Tarjetas escogidas](#tarjetas2)
+
 <a name="sprint0"></a>
 
 # 1. Práctica 3 - Sprint 0
@@ -182,6 +186,27 @@ Todas las historias de usuario que propusimos hacer a lo largo de este sprint ha
 
 _Captura de pantalla al finalizar el sprint (1/2)_
 
-![Captura10](/img/sprint1-3.png)
+![Captura11](/img/sprint1-3.png)
 
 _Captura de pantalla al finalizar el sprint (2/2)_
+
+<a name="sprint2"></a>
+
+# 3. Práctica 4 - Sprint 2
+
+Este sprint consiste en la realización del proyecto (Segundo incremento de la aplicación usando la metodología Scrum), por lo que continuamos trabajando con las tarjetas restantes del product backlog.
+
+<a name="tarjetas2"></a>
+
+## 3.1. Tarjetas escogidas
+
+![Captura12](/img/sprint2-1.png)
+
+_Captura de las tarjetas escogidas al comienzo del segundo Sprint_
+
+1. **Si una nueva versión del juego (las entregas en cada sprint) incluye nuevas situaciones, estas deben o bien complicar la misión inicial o bien añadir una nueva misión al juego**: Esta tarjeta es necesaria ya que es innegociable, por lo que debemos hacerla en este sprint.
+2. **Se creará un sitio web que incluirá una landing page del juego, de modo que el juego esté incrustado en esa landing page (la cual puede dar info sobre los creadores del juego, la asignatura para la que se creó, etc.)**: Puesto que tenemos conocimientos en html y css creemos que no supondrá un gran esfuerzo.
+3. **Se subirá el juego a un sitio web disponible on-line (es decir, no un servidor local)**: Queremos investigar sobre este tema, por lo que nos resulta interesante.
+4. **Se posibilitará (con css) una versión “sin distracciones” que no incluya imágenes, ni fondo, ni música**: Nos parece una tarea interesante y que no supondrá mucho tiempo.
+5. **Se añadirán videos (o enlaces a vídeos) en los que se incluya parte de la historia que necesita para completar el juego y tomar decisiones**: Nos resulta una tarea interesante de investigar.
+6. **Se añadirá música de fondo al juego:**: Igual que la tarea anterior, resulta de interés para el equipo investigar sobre este tema.

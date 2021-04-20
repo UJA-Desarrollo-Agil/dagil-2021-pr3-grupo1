@@ -357,6 +357,7 @@ undum.game.situations = {
 
     heading: "Recuperación",
   }),
+
   /*Elección campamento de villanos en sigilo*/
   campamento_sigilo: new undum.SimpleSituation(
     "<img src='./media/img/2.png' class='float_right' width='250' height='250'>\
@@ -742,8 +743,7 @@ undum.game.situations = {
     }
   ),
   muerte: new undum.SimpleSituation(
-    "<img src='games/media/img/22.png' class='float_right' width='200' height='350'>\
-    <p>Después de lo que ha hecho no sé si espera que lo perdonase pero aprovechando que está\
+    "<p>Después de lo que ha hecho no sé si espera que lo perdonase pero aprovechando que está\
 	de rodillas, le atizo un puñetazo que desciende del cielo cual gráfica Burndown.</p>\
 	<p>El ataque fue un éxito. Victorcillo está echando la siesta a mis pies. Aprovecho para recuperar\
 	mi ordenador y escapar de ahí. Ahora sí que soy libre para terminar mis prácticas.</p>\
