@@ -200,7 +200,7 @@ Este sprint consiste en la realización del proyecto (Segundo incremento de la a
 
 ## 3.1. Tarjetas escogidas
 
-![Captura12](/img/sprint2-1.png)
+![Captura12](/img/PB_inicial.PNG)
 
 _Captura de las tarjetas escogidas al comienzo del segundo Sprint_
 
