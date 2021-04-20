@@ -43,7 +43,10 @@ undum.game.situations = {
         <p><b>MOMO:</b> No pongas esa cara. Me llamo Momo. No sé quién eres ni qué buscas. La verdad es que me da igual.</p>\
         <p>Continúo en shock.</p>\
         <p><a href='sin_mono'>No quiero hablar con nadie</a> ni que nadie me moleste. O quizás sea\
-        <a href='con_mono'>una buena idea tener alguien al lado, aunque sea un mono.</a>.</p>"
+        <a href='con_mono'>una buena idea tener alguien al lado, aunque sea un mono.</a>.</p><br>\
+        <video controls autoplay width='100%'>\
+          <source src='videos/v1.mp4' type='video/mp4' />\
+        </video>"
   ),
   con_mono: new undum.SimpleSituation(
     "<img src='./media/img/0.png' class='float_right' width='250' height='250'>\
@@ -271,7 +274,10 @@ undum.game.situations = {
     "<img src='./media/img/14.jpg' class='float_right' width='500' height='250'>\
     <p>Tras conocer la ubicación <br> de mi ordenador y preguntar por las rutas existentes me planteo cuál seguir.</p>\
         <p>Por la ruta más larga tengo un <a href='campamento'>campamento de villanos</a>, según los datos proporcionados por el gnomo habitan cinco villanos y van armados con espadas de metal y escudos de madera.</p>\
-        <p>Por la ruta más corta tengo que <a href='montana'>pasar la montaña</a>, gobernada por un monstruo del cual no se conoce información, solo sé que es conocido como \"El rey de la montaña\".</p>",
+        <p>Por la ruta más corta tengo que <a href='montana'>pasar la montaña</a>, gobernada por un monstruo del cual no se conoce información, solo sé que es conocido como \"El rey de la montaña\".</p><br>\
+        <video controls autoplay width='100%'>\
+          <source src='videos/v2.mp4' type='video/mp4' />\
+        </video>",
     {
       heading: "Capítulo 3 - MI OBJETIVO",
     }
