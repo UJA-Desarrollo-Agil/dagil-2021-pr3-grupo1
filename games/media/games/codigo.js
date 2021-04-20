@@ -45,7 +45,6 @@ undum.game.situations = {
         <p><a href='sin_mono'>No quiero hablar con nadie</a> ni que nadie me moleste. O quizás sea\
         <a href='con_mono'>una buena idea tener alguien al lado, aunque sea un mono.</a>.</p>"
   ),
-
   con_mono: new undum.SimpleSituation(
     "<img src='./media/img/0.png' class='float_right' width='250' height='250'>\
     <p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
