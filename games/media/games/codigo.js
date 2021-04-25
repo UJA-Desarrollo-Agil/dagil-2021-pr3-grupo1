@@ -109,8 +109,7 @@ undum.game.situations = {
     <p>Momo se enfrenta a las abejas y en una dura batalla consigue alejarlas, pero las picaduras son demasiado fuertes para él y hacen que muera.</p>\
     <p>No me lo puedo creer. Ha dado su vida por mí. Me acerco a él y le acaricio la cara. Me percato de que en su riñonera hay algo. Meto la mano y encuentro un frasco que pone VIDA.</p>\
     <p>No sé lo que es, pero me lo guardo porque puede ser útil. Además, encuentro una barrita que pone CÓMEME.<a href='no_come'> No tiene muy buena pinta</a>, pero quizás</p>\
-    <p><a href='come'>pueda darme fuerzas para continuar la aventura</a></p>\
-    <p><a href='momo_muere'>Momo quiere enfrentarse a ellas</a>, pero ambos sabemos que puede morir.<a href='correr'> Creo que lo mejor es salir corriendo</a></p>",
+    <p><a href='come'>pueda darme fuerzas para continuar la aventura</a></p>",
     {
       heading: "Lucha de Momo contra abejas",
       enter: function (character, system, from) {
