@@ -213,7 +213,12 @@ _Captura de las tarjetas escogidas al comienzo del segundo Sprint_
 5. **Se añadirán videos (o enlaces a vídeos) en los que se incluya parte de la historia que necesita para completar el juego y tomar decisiones**: Nos resulta una tarea interesante de investigar.
 6. **Se añadirá música de fondo al juego:**: Igual que la tarea anterior, resulta de interés para el equipo investigar sobre este tema.
 
-El día 27-abr-2021 se actualizó y se escogió la siguiente tarjeta:
+El día 27-abr-2021 se actualizó y se escogieron las siguientes tarjetas:
+
+![Captura13](/img/Tarjeta13.PNG)
+
+_Captura de las tarjetas escogidas el día 27-abr-2021_
+
 
 13. **Se establecerá un sistema de Login+contraseña para que los jugadores se puedan dar de alta en nuestro sitio web.**: Esta tarjeta es necesaria para asegurar la seguridad en el acceso al proyecto.
 
@@ -223,7 +228,7 @@ Descompusimos la sexta tarjeta para que cada uno de los miembros del grupo se hi
 Lo dividimos de la siguiente manera: inicio, desarrollo(1), desarrollo(2) y fin.
 En las siguientes capturas de pantalla, muestro cómo lo descomponemos:
 
-![Captura13](/img/descomposicion2.PNG)
+![Captura14](/img/descomposicion2.PNG)
 
 En la tarjeta 6.1, se añadirán más objetos para el posible equipamiento del personaje.
 En las tarjeta 6.2, se añadirán nuevas situaciones al capítulo 1 de la historia.
@@ -232,7 +237,7 @@ En la tarjeta 6.4, se añadirán más situaciones al final de la historia.
 
 También descompusimos la tarjeta 22 para que cada uno realice la traducción de su parte. La dividimos de la siguiente manera:
 
-![Captura14](/img/descomposicion3.PNG)
+![Captura15](/img/descomposicion3.PNG)
 
 En la tarjeta 22.1, se traducirá el capitulo 1.
 En las tarjeta 22.2, se traducirá el capitulo 2.
@@ -242,6 +247,10 @@ En la tarjeta 22.4, se traducirá el capitulo 4.
 ## 3.3. Sprint Backlog Refinement
 
 El Product Owner planificó un Sprint Backlog Refinement donde agregó diversas tareas nuevas al Product Backlog. Fueron las siguientes:
+
+![Captura16](/img/PBR_inicial.PNG)
+
+_Captura de pantalla del Product Backlog tras las modificaciones realizadas en el Product Backlog Refinement_
 
 **Actualización 27-abr-2021**
 
@@ -255,6 +264,6 @@ Tras asignarle una puntuación tanto al PH como al valor, decidimos realizar la 
 
 22. **El juego estará disponible español y en otro idioma.**: Añadimos esta tarjeta al Sprint porque consideramos que mejoraría mucho la accesibilidad a nuestro proyecto.
 
-![Captura15](/img/Sprint1-5.PNG)
+![Captura17](/img/PBR_seleccionado.PNG)
 
-_Captura de pantalla del Product Backlog y del Sprint Backlog tras las modificaciones realizadas en el Product Backlog Refinement_
+_Captura de pantalla del Sprint Backlog tras las modificaciones realizadas en el Product Backlog Refinement_
