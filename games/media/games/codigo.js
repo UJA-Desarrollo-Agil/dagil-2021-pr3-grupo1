@@ -43,7 +43,10 @@ undum.game.situations = {
         <p><b>MOMO:</b> No pongas esa cara. Me llamo Momo. No sé quién eres ni qué buscas. La verdad es que me da igual.</p>\
         <p>Continúo en shock.</p>\
         <p><a href='sin_mono'>No quiero hablar con nadie</a> ni que nadie me moleste. O quizás sea\
-        <a href='con_mono'>una buena idea tener alguien al lado, aunque sea un mono.</a>.</p>"
+        <a href='con_mono'>una buena idea tener alguien al lado, aunque sea un mono.</a>.</p><br>\
+        <video controls autoplay width='100%'>\
+          <source src='videos/v1.mp4' type='video/mp4' />\
+        </video>"
   ),
   con_mono: new undum.SimpleSituation(
     "<img src='./media/img/0.png' class='float_right' width='250' height='250'>\
@@ -271,7 +274,10 @@ undum.game.situations = {
     "<img src='./media/img/14.jpg' class='float_right' width='500' height='250'>\
     <p>Tras conocer la ubicación <br> de mi ordenador y preguntar por las rutas existentes me planteo cuál seguir.</p>\
         <p>Por la ruta más larga tengo un <a href='campamento'>campamento de villanos</a>, según los datos proporcionados por el gnomo habitan cinco villanos y van armados con espadas de metal y escudos de madera.</p>\
-        <p>Por la ruta más corta tengo que <a href='montana'>pasar la montaña</a>, gobernada por un monstruo del cual no se conoce información, solo sé que es conocido como \"El rey de la montaña\".</p>",
+        <p>Por la ruta más corta tengo que <a href='montana'>pasar la montaña</a>, gobernada por un monstruo del cual no se conoce información, solo sé que es conocido como \"El rey de la montaña\".</p><br>\
+        <video controls autoplay width='100%'>\
+          <source src='videos/v2.mp4' type='video/mp4' />\
+        </video>",
     {
       heading: "Capítulo 3 - MI OBJETIVO",
     }
@@ -459,8 +465,9 @@ undum.game.situations = {
         "cuchilloHueso",
         character.qualities.cuchilloHueso + 1
       );
-      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
-
+      if (character.qualities.cuchilloHueso <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
       system.write($("#recojo_cuchillohuesos").html());
     },
     tags: ["eleccion_montana"],
@@ -476,7 +483,9 @@ undum.game.situations = {
         "cuchilloMetal",
         character.qualities.cuchilloMetal + 1
       );
-      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      if (character.qualities.cuchilloMetal <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
       system.write($("#recojo_cuchillometal").html());
     },
     tags: ["eleccion_villanos"],
@@ -488,7 +497,9 @@ undum.game.situations = {
     enter: function (character, system, from) {
       system.write($("#s_situations2").html());
       system.animateQuality("espadaHueso", character.qualities.espadaHueso + 1);
-      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      if (character.qualities.espadaHueso <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
       system.write($("#recojo_espadahuesos").html());
     },
     tags: ["eleccion_montana"],
@@ -501,7 +512,9 @@ undum.game.situations = {
       system.write($("#s_situations1").html());
 
       system.animateQuality("espadaMetal", character.qualities.espadaMetal + 1);
-      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      if (character.qualities.espadaMetal <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
       system.write($("#recojo_espadametal").html());
     },
     tags: ["eleccion_villanos"],
@@ -513,7 +526,9 @@ undum.game.situations = {
     enter: function (character, system, from) {
       system.write($("#s_situations2").html());
       system.animateQuality("arcoHueso", character.qualities.arcoHueso + 1);
-      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      if (character.qualities.arcoHueso <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
       system.write($("#recojo_arcohuesos").html());
     },
     tags: ["eleccion_montana"],
@@ -526,11 +541,147 @@ undum.game.situations = {
       system.write($("#s_situations1").html());
 
       system.animateQuality("arcoMetal", character.qualities.arcoMetal + 1);
-      system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      if (character.qualities.arcoMetal <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
       system.write($("#recojo_arcometal").html());
     },
     tags: ["eleccion_villanos"],
     optionText: "Arco de metal",
+    displayOrder: 1,
+  }),
+  // lanza de huesos
+  opcion7: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations2").html());
+      system.animateQuality("lanzaHueso", character.qualities.lanzaHueso + 1);
+      if (character.qualities.lanzaHueso <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
+      system.write($("#recojo_lanzahuesos").html());
+    },
+    tags: ["eleccion_montana"],
+    optionText: "Lanza de huesos",
+    displayOrder: 1,
+  }),
+  // lanza de metal
+  opcion8: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations1").html());
+
+      system.animateQuality("lanzaMetal", character.qualities.lanzaMetal + 1);
+      if (character.qualities.lanzaMetal <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
+      system.write($("#recojo_lanzametal").html());
+    },
+    tags: ["eleccion_villanos"],
+    optionText: "Lanza de metal",
+    displayOrder: 1,
+  }),
+  // Machete de huesos
+  opcion9: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations2").html());
+      system.animateQuality(
+        "macheteHueso",
+        character.qualities.macheteHueso + 1
+      );
+      if (character.qualities.macheteHueso <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
+      system.write($("#recojo_machetehuesos").html());
+    },
+    tags: ["eleccion_montana"],
+    optionText: "Machete de huesos",
+    displayOrder: 1,
+  }),
+  // Machete de metal
+  opcion10: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations1").html());
+
+      system.animateQuality(
+        "macheteMetal",
+        character.qualities.macheteMetal + 1
+      );
+      if (character.qualities.macheteMetal <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
+      system.write($("#recojo_machetemetal").html());
+    },
+    tags: ["eleccion_villanos"],
+    optionText: "Machete de metal",
+    displayOrder: 1,
+  }),
+  // Cuchara de huesos
+  opcion11: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations2").html());
+      system.animateQuality(
+        "cucharaHueso",
+        character.qualities.cucharaHueso + 1
+      );
+      if (character.qualities.cucharaHueso <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
+      system.write($("#recojo_cucharahuesos").html());
+    },
+    tags: ["eleccion_montana"],
+    optionText: "Cuchara de huesos",
+    displayOrder: 1,
+  }),
+  // Cuchara de metal
+  opcion12: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations1").html());
+
+      system.animateQuality(
+        "cucharaMetal",
+        character.qualities.cucharaMetal + 1
+      );
+      if (character.qualities.cucharaMetal <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
+      system.write($("#recojo_cucharametal").html());
+    },
+    tags: ["eleccion_villanos"],
+    optionText: "Cuchara de metal",
+    displayOrder: 1,
+  }),
+  // Tenedor de huesos
+  opcion13: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations2").html());
+      system.animateQuality(
+        "tenedorHueso",
+        character.qualities.tenedorHueso + 1
+      );
+      if (character.qualities.tenedorHueso <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
+      system.write($("#recojo_tenedorhuesos").html());
+    },
+    tags: ["eleccion_montana"],
+    optionText: "Tenedor de huesos",
+    displayOrder: 1,
+  }),
+  // Tenedor de metal
+  opcion14: new undum.Situation({
+    enter: function (character, system, from) {
+      system.write($("#s_situations1").html());
+
+      system.animateQuality(
+        "tenedorMetal",
+        character.qualities.tenedorMetal + 1
+      );
+      if (character.qualities.tenedorMetal <= 1) {
+        system.setQuality("equipamiento", character.qualities.equipamiento + 1);
+      }
+      system.write($("#recojo_tenedormetal").html());
+    },
+    tags: ["eleccion_villanos"],
+    optionText: "Tenedor de metal",
     displayOrder: 1,
   }),
 
@@ -835,6 +986,26 @@ undum.game.qualities = {
     group: "objetos",
     onDisplay: "&#10003;",
   }),
+  lanzaHueso: new undum.OnOffQuality("Lanza de hueso", {
+    priority: "0002",
+    group: "objetos",
+    onDisplay: "&#10003;",
+  }),
+  macheteHueso: new undum.OnOffQuality("Machete de hueso", {
+    priority: "0002",
+    group: "objetos",
+    onDisplay: "&#10003;",
+  }),
+  cucharaHueso: new undum.OnOffQuality("Cuchara de hueso", {
+    priority: "0002",
+    group: "objetos",
+    onDisplay: "&#10003;",
+  }),
+  tenedorHueso: new undum.OnOffQuality("Tenedor de hueso", {
+    priority: "0002",
+    group: "objetos",
+    onDisplay: "&#10003;",
+  }),
   cuchilloMetal: new undum.OnOffQuality("Cuchillo de metal", {
     priority: "0002",
     group: "objetos",
@@ -846,6 +1017,26 @@ undum.game.qualities = {
     onDisplay: "&#10003;",
   }),
   arcoMetal: new undum.OnOffQuality("Arco de metal", {
+    priority: "0002",
+    group: "objetos",
+    onDisplay: "&#10003;",
+  }),
+  lanzaMetal: new undum.OnOffQuality("Lanza de metal", {
+    priority: "0002",
+    group: "objetos",
+    onDisplay: "&#10003;",
+  }),
+  macheteMetal: new undum.OnOffQuality("Machete de metal", {
+    priority: "0002",
+    group: "objetos",
+    onDisplay: "&#10003;",
+  }),
+  tenedorMetal: new undum.OnOffQuality("Tenedor de metal", {
+    priority: "0002",
+    group: "objetos",
+    onDisplay: "&#10003;",
+  }),
+  cucharaMetal: new undum.OnOffQuality("Cuchara de metal", {
     priority: "0002",
     group: "objetos",
     onDisplay: "&#10003;",
@@ -891,9 +1082,17 @@ undum.game.init = function (character, system) {
   character.qualities.cuchilloHueso = 0;
   character.qualities.espadaHueso = 0;
   character.qualities.arcoHueso = 0;
+  character.qualities.lanzaHueso = 0;
+  character.qualities.macheteHueso = 0;
+  character.qualities.tenedorHueso = 0;
+  character.qualities.cucharaHueso = 0;
   character.qualities.cuchilloMetal = 0;
   character.qualities.espadaMetal = 0;
   character.qualities.arcoMetal = 0;
+  character.qualities.lanzaMetal = 0;
+  character.qualities.macheteMetal = 0;
+  character.qualities.tenedorMetal = 0;
+  character.qualities.cucharaMetal = 0;
   character.qualities.progreso_historia = 0;
   character.qualities.equipamiento = 0;
   character.qualities.frascoVida = 0;
