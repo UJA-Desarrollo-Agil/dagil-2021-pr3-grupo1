@@ -228,7 +228,7 @@ Descompusimos la sexta tarjeta para que cada uno de los miembros del grupo se hi
 Lo dividimos de la siguiente manera: inicio, desarrollo(1), desarrollo(2) y fin.
 En las siguientes capturas de pantalla, muestro cómo lo descomponemos:
 
-![Captura14](/img/descomposicion2.PNG)
+![Captura14](/img/Descomposicion2.PNG)
 
 En la tarjeta 6.1, se añadirán más objetos para el posible equipamiento del personaje.
 En las tarjeta 6.2, se añadirán nuevas situaciones al capítulo 1 de la historia.
@@ -237,7 +237,7 @@ En la tarjeta 6.4, se añadirán más situaciones al final de la historia.
 
 También descompusimos la tarjeta 22 para que cada uno realice la traducción de su parte. La dividimos de la siguiente manera:
 
-![Captura15](/img/descomposicion3.PNG)
+![Captura15](/img/Descomposicion3.PNG)
 
 En la tarjeta 22.1, se traducirá el capitulo 1.
 En las tarjeta 22.2, se traducirá el capitulo 2.
