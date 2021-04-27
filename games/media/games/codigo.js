@@ -684,6 +684,7 @@ undum.game.situations = {
     optionText: "Tenedor de metal",
     displayOrder: 1,
   }),
+
   /*Comienzo capítulo 4*/
   entrada: new undum.SimpleSituation(
     "<img src='./media/img/29.png' width='300' height='300'>\
