@@ -94,18 +94,77 @@ undum.game.situations = {
     <p>Sigo a Momo por un camino estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas, pero mi mente se encuentra en otro sitio</p>\
       <p>Si Alicia se hubiera cansado de correr tras el Conejo Blanco, no habría caído por la madriguera. Ni descubierto el País\
       de las Maravillas. Ni descubrierto quién era ella. Seguiré corriendo. Me caeré. E intentaré no tener miedo a aquello que me tenga que enfrentar</p>\
-      <p>Llegamos al final del camino, frente a un gnomo. Momo se acerca a mí y saca algo de su riñonera. Es un frasco.\
-      En el pone: VIDA.</p>\
-      <p> <b>MOMO</b>: Por si lo necesitas a lo largo de tu aventura </p>\
-      <p>Rápidamente, Momo desaparece ante mis ojos. Guardo el frasco en mi bolsillo y me acerco al <a href='situacion_intermedia1'>gnomo.</a></p>",
+      <p>Llegamos al final del camino. Junto a un gnomo vemos un nido de abejas. Están furiosas y vienen hacia nosotros.</p>\
+      <p><a href='momo_muere'>Momo quiere enfrentarse a ellas</a>, pero ambos sabemos que puede morir.<a href='correr'> Creo que lo mejor es salir corriendo</a></p>",
     {
       heading: "Extraño camino",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
-          character.qualities.progreso_historia + 12
+          character.qualities.progreso_historia + 6
+        );
+      },
+    }
+  ),
+
+  momo_muere: new undum.SimpleSituation(
+    "<img src='./media/img/1.png' class='float_right' width='250' height='250'>\
+    <p>Momo se enfrenta a las abejas y en una dura batalla consigue alejarlas, pero las picaduras son demasiado fuertes para él y hacen que muera.</p>\
+    <p>No me lo puedo creer. Ha dado su vida por mí. Me acerco a él y le acaricio la cara. Me percato de que en su riñonera hay algo. Meto la mano y encuentro un frasco que pone VIDA.</p>\
+    <p>No sé lo que es, pero me lo guardo porque puede ser útil. Además, encuentro una barrita que pone CÓMEME.<a href='no_come'> No tiene muy buena pinta</a>, pero quizás</p>\
+    <p><a href='come'>pueda darme fuerzas para continuar la aventura</a></p>",
+    {
+      heading: "Lucha de Momo contra abejas",
+      enter: function (character, system, from) {
+        system.setQuality(
+          "progreso_historia",
+          character.qualities.progreso_historia + 5
         );
         system.setQuality("frascoVida", character.qualities.frascoVida + 1);
+      },
+    }
+  ),
+
+  correr: new undum.SimpleSituation(
+    "<img src='./media/img/1.png' class='float_right' width='250' height='250'>\
+    <p>Ojeo un camino. Voy corriendo hacia por él. Le he perdido la pista a Momo. Sigo corriendo. Mientras corro miro hacia atrás por si me siguen las abejas</p>\
+    <p>Al girarme, no me doy cuenta de que el camino acaba. Hay un acantilado. Sin verlo, doy un paso en él y caigo. Tengo una fatal caída que acaba con mi vida y esta aventura.</p>",
+    {
+      heading: "Salir corriendo",
+      enter: function (character, system, from) {
+        system.setQuality(
+          "progreso_historia",
+          character.qualities.progreso_historia + 1
+        );
+      },
+    }
+  ),
+
+  no_come: new undum.SimpleSituation(
+    "<img src='./media/img/1.png' class='float_right' width='250' height='250'>\
+    <p>La barrita no tiene buena pinta. No quiero enfermar, solo quiero poder salir de aquí. Voy a acercarme al <a href='situacion_intermedia1'> gnomo</a>.</p>",
+    {
+      heading: "Me acerco al gnomo",
+      enter: function (character, system, from) {
+        system.setQuality(
+          "progreso_historia",
+          character.qualities.progreso_historia + 1
+        );
+      },
+    }
+  ),
+
+  come: new undum.SimpleSituation(
+    "<img src='./media/img/1.png' class='float_right' width='250' height='250'>\
+    <p>Tengo mucha hambre y, aunque la barrita no tenga buen aspecto me la comeré. Abro la barrita y la introduzco en mi boca.</p>\
+    <p>Es comida para mono. No es compatible para humanos. Acabo muriendo por envenenamiento.</p>",
+    {
+      heading: "Me como la barrita",
+      enter: function (character, system, from) {
+        system.setQuality(
+          "progreso_historia",
+          character.qualities.progreso_historia + 1
+        );
       },
     }
   ),
