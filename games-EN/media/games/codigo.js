@@ -35,33 +35,33 @@ nombre = prompt(
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
   start: new undum.SimpleSituation(
-    "<h1>CAPÍTULO 1: LA HISTORIA COMIENZA...</h1>\
+    "<h1>CHAPTER 1: THE STORY BEGINS ... </h1>\
     <img src='./media/img/15.png' class='float_ce' width='500' height='400'>\
-        <p>Despierto de golpe. La luz del sol me deslumbra.<br> Froto mis ojos hasta que consigo abrirlos por completo.</p>\
-        <p>Miro hacia arriba y a mi alrededor. El cielo está despejado. No sé dónde estoy. Intento hacer memoria para recordar</p>\
-        <p>como he llegado aquí... yo estaba en mi habitación, en el escritorio, con mi ordenador, terminando la práctica de Desarrollo Ágil que se entregaba hoy las 23.55h... ¿¡QUÉ HORA ES!? ¡Tengo que entregar la práctica! Miro mi muñeca y descubro que no tengo reloj. De repente, escucho un ruido, alguien se acerca.</p>\
-        <p><b>MOMO:</b> No pongas esa cara. Me llamo Momo. No sé quién eres ni qué buscas. La verdad es que me da igual.</p>\
-        <p>Continúo en shock.</p>\
-        <p><a href='sin_mono'>No quiero hablar con nadie</a> ni que nadie me moleste. O quizás sea\
-        <a href='con_mono'>una buena idea tener alguien al lado, aunque sea un mono.</a>.</p><br>\
+        <p>I wake up suddenly. The sunlight dazzles me. <br> I rub my eyes until I manage to open them fully. </p>\
+        <p>I look up and around me. The sky is clear. I do not know where I am. I try to remember to remember </p>\
+        <p>how I got here ... I was in my room, at the desk, with my computer, finishing the Agile Development practice that was delivered today at 11:55 pm ... WHAT TIME IS IT !? I have to turn in the practice! I look at my wrist and find that I don't have a watch. Suddenly, I hear a noise, someone is approaching. </p>\
+        <p><b>MOMO:</b> Do not put that face. My name is Momo. I don't know who you are or what you are looking for. The truth is that I do not care. </p>\
+        <p>I continue in shock. </p>\
+        <p><a href='sin_mono'>I do not want to speak with anybody </a> nor that nobody bothers me. Or maybe it's \
+        <a href='con_mono'>a good idea to have someone by your side, even a monkey. </a>.</p><br>\
         <video controls autoplay width='100%'>\
           <source src='videos/v1.mp4' type='video/mp4' />\
         </video>"
   ),
   con_mono: new undum.SimpleSituation(
     "<img src='./media/img/0.png' class='float_right' width='250' height='250'>\
-    <p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
-      <p>   <b>MOMO:</b> ¿Es el destino la mano que elige si nuestro reloj de arena funcionará hacia arriba o hacia abajo, o esa mano somos nosotros mismos?</p>\
-      <p>No puede ser. Creo que ya entiendo lo que Momo me quiere decir</p>\
+    <p>Momo looks smiling knowing that she can meet me. From her fanny pack he takes out an hourglass. </p>\
+      <p>   <b>MOMO:</b> Is fate the hand that chooses whether our hourglass will run up or down, or is that hand ourselves? </p>\
+      <p>Can not be. I think I already understand what Momo wants to tell me </p>\
       <p>   <b>" +
       nombre +
-      ":</b> ¿No te estarás refiriendo a que el tiempo que tiene ese reloj es el que tengo para poder\
-      encontrar mi ordenador?</p>\
-      <p>El mono asiente con la cabeza. ¡Qué estrés! Siento angustia. Esto me pasa por dejarlo todo para el último momento. No me veo con futuro en la carrera de ingeniería, quizás me equivoqué al elegirla...</p>\
-      <p>Momo siente mi decaida. Quiere darme ánimos. ¿Sigo escuchando<a href='detalle'> más detalladamente al mono</a>?</p>\
-      <p>Hace una seña para <a href='seguirlo'>lo siga</a>.</p>",
+      ":</b> Are you not referring to the time that this watch has is what I have to be able to \
+      find my computer? </p>\
+      <p>The monkey nods his head. What stress! I feel anguish. This happens to me for leaving everything for the last moment. I do not see myself with a future in the engineering career, perhaps I was wrong when choosing it ...</p>\
+      <p>Momo feels my downcast. She wants to cheer me up. Am i still listening <a href='detalle'> in more detail to the monkey </a>?</p>\
+      <p>Makes a sign to  <a href='seguirlo'>follow it</a>.</p>",
     {
-      heading: "Momo me acompañará",
+      heading: "Momo will accompany me",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -73,13 +73,13 @@ undum.game.situations = {
 
   detalle: new undum.SimpleSituation(
     "<img src='./media/img/3.png' class='float_right' width='250' height='250'>\
-    <p><b>MOMO:</b> Tú eliges, puedes pasar todo tu tiempo muerto o puedes coger tu tiempo y hacer algo valioso con él.\
-      Algo que llene ese tiempo de energía. Hay que vivir con la fuerza suficiente como para que la vida ceda a tu paso, no tú ante ella.\
-      La vida no es nada si no te atreves a vivirla. Hay que hacer algo con la vida que tenemos. Que se entere de que estamos aquí, dispuestos a dejarla\
-      boquiabierta con nuestra forma de pasar por ella.</p>\
-      <p>¡No puedo creer las palabras de este mono! Es más sabio de lo que parece, me ha hecho pensar... Y me siento con más energía. <a href='seguirlo'> CONTINUAR HISTORIA...</a></p>",
+    <p><b>MOMO:</b> You choose, you can spend all your time dead or you can take your time and do something valuable with it.\
+      Something that fills that time with energy. You have to live strong enough so that life gives way to you, not you to it. \
+      Life is nothing if you don't dare to live it. We must do something with the life we have. Let her find out that we are here, willing to leave her \
+      jaws dropped at our way of going through it. </p>\
+      <p>I can't believe this monkey's words! He is wiser than he seems, he has made me think ... And I feel more energetic. <a href='seguirlo'> CONTINUE STORY ... </a></p>",
     {
-      heading: "El mono me habla...",
+      heading: "The monkey talks to me ... ",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -91,13 +91,13 @@ undum.game.situations = {
 
   seguirlo: new undum.SimpleSituation(
     "<img src='./media/img/1.png' class='float_right' width='250' height='250'>\
-    <p>Sigo a Momo por un camino estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas, pero mi mente se encuentra en otro sitio</p>\
-      <p>Si Alicia se hubiera cansado de correr tras el Conejo Blanco, no habría caído por la madriguera. Ni descubierto el País\
-      de las Maravillas. Ni descubrierto quién era ella. Seguiré corriendo. Me caeré. E intentaré no tener miedo a aquello que me tenga que enfrentar</p>\
-      <p>Llegamos al final del camino. Junto a un gnomo vemos un nido de abejas. Están furiosas y vienen hacia nosotros.</p>\
-      <p><a href='momo_muere'>Momo quiere enfrentarse a ellas</a>, pero ambos sabemos que puede morir.<a href='correr'> Creo que lo mejor es salir corriendo</a></p>",
+    <p>I follow Momo down a narrow path full of branches and leaves. I scratch myself between them, but my mind is elsewhere </p>\
+      <p>If Alice had gotten tired of running after the White Rabbit, she would not have fallen down the burrow. Nor discovered the Country \
+      of Wonders. Nor did I discover who she was. I will keep running. I'll fall. And I will try not to be afraid of what I have to face </p>\
+      <p>We reached the end of the road. Next to a gnome we see a nest of bees. They are furious and they are coming towards us. </p>\
+      <p><a href='momo_muere'>Momo wants to face them </a>, but we both know that he can die. <a href='correr'> I think the best thing to do is run away</a></p>",
     {
-      heading: "Extraño camino",
+      heading: "Strange way ",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -109,12 +109,12 @@ undum.game.situations = {
 
   momo_muere: new undum.SimpleSituation(
     "<img src='./media/img/1.png' class='float_right' width='250' height='250'>\
-    <p>Momo se enfrenta a las abejas y en una dura batalla consigue alejarlas, pero las picaduras son demasiado fuertes para él y hacen que muera.</p>\
-    <p>No me lo puedo creer. Ha dado su vida por mí. Me acerco a él y le acaricio la cara. Me percato de que en su riñonera hay algo. Meto la mano y encuentro un frasco que pone VIDA.</p>\
-    <p>No sé lo que es, pero me lo guardo porque puede ser útil. Además, encuentro una barrita que pone CÓMEME.<a href='no_come'> No tiene muy buena pinta</a>, pero quizás</p>\
-    <p><a href='come'>pueda darme fuerzas para continuar la aventura</a></p>",
+    <p>Momo faces the bees and in a tough battle manages to drive them away, but the stings are too strong for him and cause him to die. </p>\
+    <p>I can not believe it. He has given his life for me. I go up to him and caress his face. I realize there is something in his fanny pack. I reach in and find a bottle that says LIFE. </p>\
+    <p>I don't know what it is, but I keep it to myself because it can be useful. Also, I find a bar that says EAT ME. <a href='no_come'> It doesn't look very good </a>, but maybe</p>\
+    <p><a href='come'>can give me strength to continue the adventure </a></p>",
     {
-      heading: "Lucha de Momo contra abejas",
+      heading: "Momo fight against bees ",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -127,10 +127,10 @@ undum.game.situations = {
 
   correr: new undum.SimpleSituation(
     "<img src='./media/img/1.png' class='float_right' width='250' height='250'>\
-    <p>Ojeo un camino. Voy corriendo hacia por él. Le he perdido la pista a Momo. Sigo corriendo. Mientras corro miro hacia atrás por si me siguen las abejas</p>\
-    <p>Al girarme, no me doy cuenta de que el camino acaba. Hay un acantilado. Sin verlo, doy un paso en él y caigo. Tengo una fatal caída que acaba con mi vida y esta aventura.</p>",
+    <p>I look at a path. I'm running towards him. I've lost track of Momo. I keep running. As I run I look back in case the bees follow me </p>\
+    <p>When I turn around, I don't realize that the road ends. There is a cliff. Without seeing it, I step into it and fall. I have a fatal fall that ends my life and this adventure. </p>",
     {
-      heading: "Salir corriendo",
+      heading: "Run out ",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -142,9 +142,9 @@ undum.game.situations = {
 
   no_come: new undum.SimpleSituation(
     "<img src='./media/img/1.png' class='float_right' width='250' height='250'>\
-    <p>La barrita no tiene buena pinta. No quiero enfermar, solo quiero poder salir de aquí. Voy a acercarme al <a href='situacion_intermedia1'> gnomo</a>.</p>",
+    <p>The bar doesn't look good. I don't want to get sick, I just want to be able to get out of here. I'm going to get closer to the <a href='situacion_intermedia1'> gnomo</a>.</p>",
     {
-      heading: "Me acerco al gnomo",
+      heading: "I approach the gnome ",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -156,10 +156,10 @@ undum.game.situations = {
 
   come: new undum.SimpleSituation(
     "<img src='./media/img/1.png' class='float_right' width='250' height='250'>\
-    <p>Tengo mucha hambre y, aunque la barrita no tenga buen aspecto me la comeré. Abro la barrita y la introduzco en mi boca.</p>\
-    <p>Es comida para mono. No es compatible para humanos. Acabo muriendo por envenenamiento.</p>",
+    <p>I'm very hungry and, even if the bar doesn't look good, I'll eat it. I open the bar and put it in my mouth. </p>\
+    <p>It's monkey food. It is not compatible for humans. I end up dying of poisoning. </p>",
     {
-      heading: "Me como la barrita",
+      heading: "I eat the bar ",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -171,15 +171,15 @@ undum.game.situations = {
 
   sin_mono: new undum.SimpleSituation(
     "<img src='./media/img/20.png' class='float_right' width='250' height='250'>\
-    <p>Momo frunce el ceño y empieza a sacar plátanos de la riñonera que lleva.</p>\
-    <p>Empieza a lanzármelos a la cabeza. Consigue darme con un par de ellos. Está muy cabreado.</p>\
-    <p>Corro por un camino escapando de él. El camino es estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas.</p>\
+    <p>Momo frowns and starts pulling bananas out of her fanny pack. </p>\
+    <p>Start throwing them at their heads. He manages to find me a couple of them. He is very pissed off. </p>\
+    <p>I run down a road running away from him. The path is narrow and full of branches and leaves. I do some scratches going between them. </p>\
     <p>   " +
       nombre +
-      " : Mi vida es un continuo intentar hacer crecer flores en el desierto...</p>\
-      <p>De repente, encuentro a un <a href='situacion_intermedia1'>gnomo</a> enfrente.</p>",
+      " : My life is a continual trying to grow flowers in the desert ... </p>\
+      <p>Suddenly I find a  <a href='situacion_intermedia1'>gnomo</a> enfrente.</p>",
     {
-      heading: "No quiero continuar con Momo",
+      heading: "I don't want to continue with Momo ",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
