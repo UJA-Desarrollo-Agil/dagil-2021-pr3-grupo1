@@ -747,17 +747,17 @@ undum.game.situations = {
   /*Comienzo capítulo 4*/
   entrada: new undum.SimpleSituation(
     "<img src='./media/img/29.png' width='300' height='300'>\
-	<p>Antes de llegar a la puerta principal, veo un bulto a lo lejos un tanto sospechoso\
-	por lo que me acerco para ver de qué se trata.</p>\
-	<p>Para mi sorpresa, era un <a href='./traje-tru' class='once'>traje de guardia</a> que se había perdido.\
-	Mejor lo guardo, nunca se sabe si lo podré necesitar.</p>\
-	Una vez llego a la puerta principal, empiezo a pensar en la\
-	forma de colarme en el castillo. Teniendo en cuenta que hay un\
-	ejército de guardias rodeándolo igual es mejor buscar una opción\
-	alternativa a la puerta principal.</p>\
-	<p>No es momento de pensar, tengo que decidir por dónde ir.\
-	Puedo <a href='entrar_sigilo'>ir en sigilo</a> e infiltrarme o puedo\
-	<a href='ataca_guardias'>atacar a los guardias</a>.\
+	<p>Before reaching the front door, I see a somewhat suspicious bundle in the distance \
+	so I go to see what it's about.</p>\
+	<p>To my surprise, it was a  <a href='./traje-tru' class='once'>guard suit</a> that had been lost.\
+	I better keep it, you never know if I might need it.</p>\
+	Once I get to the front door, I start to think about the\
+	way to sneak into the castle. Considering that there is a\
+	army of guards surrounding it is better to look for an alternative option\
+	to the front door.</p>\
+	<p>This is not the time to think, I have to decide where to go.\
+	I can <a href='entrar_sigilo'>stealth</a> and infiltrate or I can\
+	<a href='ataca_guardias'>attack the guards</a>.\
 	</p>",
     {
       actions: {
@@ -765,7 +765,7 @@ undum.game.situations = {
           system.setQuality("traje", true);
         },
       },
-      heading: "Entrada al castillo",
+      heading: "Entrance to the castle",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -794,31 +794,31 @@ undum.game.situations = {
         }
         system.write(
           "<img src='./media/img/8.png' width='400' height='400'>\
-					<p>Creo que atacar a los guardias va a ser la mejor opción.\
-					Cuantos menos enemigos vivos, mejor.</p>\
-					<p>Voy corriendo hacia ellos y empiezo a enfrentarme con todos los que se interponen\
-					en mi camino.</p>\
-					<p>Cuando pensaba que habia derrotado a todos, vienen refuerzos y parecen demasiados\
-					para mi solo.</p>\
-					<p>Se abalanzan contra mi y me inflan a palos. Para enfrentarme a un ejército entero\
-					tengo que ir mucho más armado.\
+					<p>I think attacking the guards is going to be the best option. \
+					The fewer enemies alive, the better.</p>\
+					<p>I run towards them and start to confront everyone who stands in the way \
+					on my way.</p>\
+					<p>When I thought I had defeated everyone, reinforcements come and seem too many \
+					for me alone.</p>\
+					<p>They pounce on me and hit me with everything. To face an entire army \
+					I have to be much more armed. \
 					</p>"
         );
       }
     },
 
-    heading: "Ataco a los guardias",
+    heading: "I attack the guards",
   }),
   ganas: new undum.SimpleSituation(
     "<img src='./media/img/27.jpg' width='500' height='400'>\
-	<p>Creo que atacar a los guardias va a ser la mejor opción.Cuantos menos enemigos vivos, mejor.</p>\
-	<p>Voy corriendo hacia ellos y empiezo a enfrentarme con todos los que se interponen en mi camino.</p>\
-	<p>Con mis armas voy acabando con cada uno de mis enemigos. Cuando pensaba que había derrotado a todos,\
-	vienen refuerzos pero me da igual. Acabaré con todos.</p>\
-	<p>Una vez he acabado con el ejército de mequetrefes, entro al castillo y busco al jefe con la\
-	información que me dieron los guardias.</p>\
-	<p>Efectivamente, la habitación del jefe está donde dijeron. Ahora <a href='despacho'>tengo que entrar</a>\
-	a recuperar mi ordenador.\
+	<p>I think attacking the guards is going to be the best option. The fewer enemies alive, the better.</p>\
+	<p>I run towards them and begin to confront everyone who stands in my way.</p>\
+	<p>With my weapons I am destroying each one of my enemies. When he thought he had defeated everyone, \
+	reinforcements are coming but I don't care. I'll kill them all.</p>\
+	<p>Once I have finished off the army, I enter the castle and search for the boss with the \
+	information the guards gave me.</p>\
+	<p>Sure enough, the boss's room is where they said. Now<a href='despacho'>I have to enter</a>\
+	to get my computer back.\
 	</p>",
     {
       enter: function (character, system, from) {
@@ -831,14 +831,70 @@ undum.game.situations = {
   ),
   entrar_sigilo: new undum.SimpleSituation(
     "<img src='./media/img/9.jpg' width='500' height='400'>\
-	<p>Decido entrar en sigilo ya que no me apetece enfrentarme a un ejército entero.\
-	Para encontrar mi vía de entrada voy a dar una vuelta por las afueras del castillo.</p>\
-	<p>Tras haber dado un paseo exploratorio, creo que las mejores opciones son\
-	intentar colarme por donde menos seguridad hay, <a href='parte_atras'>la parte de atrás</a>. O quizá también puedo\
-	<a href='disfraz_guardia'>disfrazarme como un guardia</a> y colarme por la puerta principal.\
+	<p>I decide to go into stealth as I don't feel like facing an entire army. \
+	To find my way of entry I am going to take a walk around the outskirts of the castle.</p>\
+	<p>I must be very lucky because I have found an object again, \
+	this time it is <a href='./cuerda-tru' class='once'> a rope. </a> </p> \
+	<p> Now I can <a href='cuerda_escalar'> climb the wall to infiltrate </a>. If not, I will continue on my way. </p> \
+	<p>After taking an exploratory walk, I think the best options are \
+	try to sneak through where there is less security, <a href='parte_atras'>the back</a>. Or maybe I can also\
+	<a href='disfraz_guardia'>disguise myself as a guard</a> and sneak through the front door.\
 	</p>",
     {
-      heading: "Entro en sigilo",
+	  actions: {
+			"cuerda-tru": function (character, system, action) {
+				system.setQuality("cuerda", true);
+			},
+	  },
+      heading: "I enter stealthing",
+      enter: function (character, system, from) {
+        system.setQuality(
+          "progreso_historia",
+          character.qualities.progreso_historia + 2
+        );
+      },
+    }
+  ),
+  cuerda_escalar: new undum.SimpleSituation("", {
+    enter: function (character, system, from) {
+      if (character.qualities.cuerda) {
+        {
+          system.setQuality(
+            "progreso_historia",
+            character.qualities.progreso_historia + 5
+          );
+        }
+        system.doLink("cuerda_escalar2");
+      } else {
+        {
+          system.setQuality(
+            "progreso_historia",
+            character.qualities.progreso_historia + 8
+          );
+        }
+        system.write(
+          "<p>Although I have no rope, I am about to climb the wall. \
+					<em> Surely for an ex-professional climber this is no problem.</em>\
+					</p>\
+					<p>That is what someone who has been a professional climber and not a useless person would say.\
+					</p>\
+					<p>As I go up a bit my hands start to sweat and I slip, falling \
+					from a height of half a meter. The hit wasn't a big deal, but it was enough \
+					to realize that being a hero is not my thing and I want to be calm again.\
+					</p>"
+        );
+      }
+    },
+
+    heading: "I climb the wall",
+  }),
+   cuerda_escalar2: new undum.SimpleSituation(
+    "<p>After hooking the rope to a tower, I am about to climb the wall.</p>\
+	<p>Although it was not an easy task, I am finally inside the castle.</p>\
+	<p>Now I have to find Victorcillo, although I suspect he will be in his room \
+	so <a href='despacho'>there I go</a>.\
+	</p>",
+    {
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -849,13 +905,13 @@ undum.game.situations = {
   ),
   parte_atras: new undum.SimpleSituation(
     "<img src='./media/img/30.png' width='400' height='300'>\
-	<p>Al final la mejor decisión era infiltrarse por la parte de atrás del castillo.\
-	Durante el paseo vi una ventana abierta que dejé atascada por si las moscas.\
+	<p>In the end the best decision was to infiltrate the back of the castle. \
+	During the walk I saw an open window that I left stuck just in case.\
 	</p>\
-	<p>Ahora que estoy dentro del castillo sólo me queda encontrar al ladrón que me robó\
-	el ordenador. Para ello primero tengo que encontrar la habitación en la que está.\
-	Puedo <a href='preguntar'>preguntar a los trabajadores</a> o\
-	igual <a href='investigar'>puedo investigar por mi cuenta</a>.\
+	<p>Now that I'm inside the castle, I have to find the thief who stole from me \
+	the computer. For this I first have to find the room it is in.\
+	I can <a href='preguntar'>ask the workers</a> or\
+	maybe <a href='investigar'>I can investigate on my own</a>.\
 	</p>",
     {
       heading: "Entro por la parte de atrás",
@@ -869,15 +925,15 @@ undum.game.situations = {
   ),
   preguntar: new undum.SimpleSituation(
     "<img src='./media/img/32.jpg' width='500' height='400'>\
-	<p>Me acerco a un trabajador que estaba merodeando por los pasillos. Llevaba un uniforme\
-	un tanto extraño, iba vestido de una forma elegante pero a la vez se podía adivinar que\
-	trabajaba ahí.</p>\
-	<p>Le pregunto sobre su jefe y su ubicación. Ahora ya conozco el nombre de mi enemigo,\
-	el temible Victorcillo. También me dijo que su despacho se encontraba en la primera planta.\
-	Me resulta raro que haya un despacho dentro de un castillo pero no tengo más opción que ir\
-	a comprobarlo.</p>\
-	<p>Efectivamente, ahí estaba. Solo me separa la puerta del despacho. No quedan más opciones.\
-	Es el momento de recuperar mi ordenador. <a href='despacho'>Entro al despacho de Victorcillo</a>.\
+	<p>I approach a worker who was loitering in the hallways. He was wearing a uniform \
+	a bit strange, he was dressed in an elegant way but at the same time you could guess that \
+	worked there.</p>\
+	<p> I ask him about his boss and his location. Now I know the name of my enemy, \
+	the fearsome Victorcillo. He also told me that his office was on the first floor. \
+	I find it strange that there is an office inside a castle but I have no choice but to go \
+	check it out.</p>\
+	<p>Sure enough, there it was. Only the office door separates me. There are no more options. \
+	It is time to get my computer back.<a href='despacho'> I enter Victorcillo's office</a>.\
 	</p>",
     {
       heading: "Pregunto a los trabajadores",
@@ -890,17 +946,17 @@ undum.game.situations = {
     }
   ),
   investigar: new undum.SimpleSituation(
-    "<p>Para encontrar la habitación que busco tendré que buscar por todo el castillo.\
-	Espero que este proceso no sea muy largo.</p>\
+    "<p>To find the room I am looking for I will have to search the entire castle. \
+	I hope this process is not very long.</p>\
 	<img src='./media/img/11.jpg' width='400' height='300'>\
-	<p>Tras dar un breve paseo por esta zona del castillo encuentro una habitación un tanto llamativa.\
-	En la puerta pone: <em>Victorcillo</em>. No entiendo mucho de este extraño\
-	lenguaje pero tiene pinta de que es la persona a la que busco.\
+	<p>After taking a short walk through this area of ​​the castle, I find a somewhat striking room. \
+	On the door it says: <em>Victorcillo</em>. I don't understand much about this strange\
+	language but it looks like he is the person I am looking for.\
 	</p>\
-	<p><a href='despacho'>Entro al despacho</a>.\
+	<p><a href='despacho'>I enter the office</a>.\
 	</p>",
     {
-      heading: "Investigo por mi cuenta",
+      heading: "I investigate on my own",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -911,22 +967,22 @@ undum.game.situations = {
   ),
   despacho: new undum.SimpleSituation(
     "<img src='./media/img/31.png' width='500' height='400'>\
-	<p>Abro la puerta de la habitación y observo desde fuera sin decir nada para no revelar\
-	mi identidad.</p>\
-	<p>Veo que Victorcillo está usando mi ordenador mientras dice unos vocablos un tanto extraños.\
-	Escucho no se qué de Scrum, que si Product Owner, que si Product Backlog. No lo tengo claro,\
-	pero debe de estar haciendo un ritual satánico o debe estar borracho.</p>\
-	<p>Entro a la sala y al verme, Victorcillo se levanta y viene hacia mí. Algo dentro de mí dice que\
-	no le ataque, al menos todavía. Cuando está cerca, me da un abrazo mientras llora.</p>\
-	<p>Aunque haya sido el ladrón de mi ordenador, me da pena y me apiado de él.\
-	En su versión de la historia cuenta que tuvo que robarme el ordenador porque estaba en\
-	pleno Sprint y debía acabar el trabajo. Acto seguido se arrodilló ante mí pidiéndome perdón\
-	por lo que hizo.</p>\
-	<p>Es una decisión difícil pero en mis manos está, <a href='perdon'>lo perdono</a> o\
-	<a href='muerte'>acabo con él</a>.\
+	<p>I open the door of the room and watch from outside without saying anything so as not to reveal \
+	my identity.</p>\
+	<p>I see that Victorcillo is using my computer while saying some strange words. \
+	I don't know what about Scrum, Product Owner, Product Backlog. I am not sure, \
+	but he must be doing a satanic ritual or he must be drunk.</p>\
+	<p>I enter the room and when he sees me, Victorcillo gets up and comes towards me. Something inside of me tells me\
+	dont attack him, at least not yet. When he's around, he gives me a hug while crying.</p>\
+	<p>Even though he was the thief of my computer, I feel sorry for him and I take pity on him. \
+	In his version of the story, he says that he had to steal my computer because it was in \
+	full sprint and he had to finish the job. Then he knelt before me asking my forgiveness \
+	for what he did.</p>\
+	<p>It is a difficult decision but it is in my hands, <a href='perdon'>I forgive him</a> or\
+	<a href='muerte'>I end him</a>.\
 	</p>",
     {
-      heading: "Entro en el despacho",
+      heading: "I enter the office",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -937,12 +993,12 @@ undum.game.situations = {
   ),
   perdon: new undum.SimpleSituation(
     "<img src='./media/img/26.jpg' width='500' height='400'>\
-	<p>Tras saber esto no puedo hacerle nada malo. Aunque lo que ha hecho está mal, puedo entenderlo.\
-	Dicho esto, Victorcillo me entrega mi ordenador de vuelta. Ahora sí que podré acabar mis prácticas.</p>\
-	<p>Arcadia es un lugar extraño pero al final, todo ha salido bien.\
+	<p>After knowing this I cannot do anything wrong to him. Even though what he's done is wrong, I can understand it.\
+	Victorcillo hands me my computer back. Now I will be able to finish my homework.</p>\
+	<p>Arcadia is a strange place but in the end, everything turned out fine.\
 	</p>",
     {
-      heading: "Perdono a Victorcillo",
+      heading: "I forgive Victorcillo",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -952,15 +1008,15 @@ undum.game.situations = {
     }
   ),
   muerte: new undum.SimpleSituation(
-    "<p>Después de lo que ha hecho no sé si espera que lo perdonase pero aprovechando que está\
-	de rodillas, le atizo un puñetazo que desciende del cielo cual gráfica Burndown.</p>\
-	<p>El ataque fue un éxito. Victorcillo está echando la siesta a mis pies. Aprovecho para recuperar\
-	mi ordenador y escapar de ahí. Ahora sí que soy libre para terminar mis prácticas.</p>\
+    "<p>After what he has done I do not know if he expects me to forgive him but taking advantage of the fact that he is\
+	on my knees, I hit him with a punch that descends from the sky like a Burndown graphic. </p>\
+	<p>The attack was a success. Victorcillo is taking a nap at my feet. I take this opportunity to recover \
+	my computer and escape from there. Now I am free to finish my homework. </p>\
 	<img src='./media/img/22.jpg' width='400' height='300'>\
-	<p>Arcadia es un lugar extraño pero al final, todo ha salido bien.\
+	<p>Arcadia is a strange place but in the end, everything turned out fine.\
 	</p>",
     {
-      heading: "Acabo con Victorcillo",
+      heading: "I end with Victorcillo",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -987,30 +1043,30 @@ undum.game.situations = {
           );
         }
         system.write(
-          "<p>Me acerco al grupo de guardias que estaban en la puerta principal.\
-					Desde lejos ya me están gritando que no me acerque\
-					pero les digo que no soy un peligro, solo un turista perdido.</p>\
-					<p>Cuando estoy cerca de ellos puedo ver lo malhumorados y agresivos que están.\
-					Antes de si quiera darme tiempo a responder, me finiquitan rápido cual daily Scrum.\
-					Sin duda estos guardias de Arcadia son de lo más peligroso.</p>\
+          "<p>I approach the group of guards who were at the front door. \
+					From afar they are already yelling at me not to come near \
+					but I tell you that I am not a danger, just a lost tourist. </p>\
+					<p>When I'm around them I can see how moody and aggressive they are. \
+					Before I even give myself time to respond, I am quickly finalized as a daily Scrum. \
+					Without a doubt these Arcadia guards are the most dangerous.</p>\
 					<img src='./media/img/8.png' width='500' height='400'>\
-					<p>En un hipotético caso de que pueda resucitar y volver a esta situación,\
-					igual es mejor tener un traje de guardia para acercarme a ellos.\
+					<p>In a hypothetical case that I can resurrect and return to this situation, \
+					it is still better to have a guard suit to approach them. \
 					</p>"
         );
       }
     },
 
-    heading: "Me disfrazo como un guardia",
+    heading: "I disguise myself as a guard",
   }),
   disfraz_guardia2: new undum.SimpleSituation(
-    "<p>Me acerco al grupo de guardias que estaban en la puerta principal. Al ir vestido como ellos\
-	no sospecharán de mi.</p>\
+    "<p>I approach the group of guards who were at the front door. By going dressed like them \
+	they will not suspect me.</p>\
 	<img src='./media/img/33.jpg' width='500' height='350'>\
-	<p>Cuando estoy cerca de ellos les digo que venía de un lugar lejano ya que estaba haciendo un\
-	encargo para el jefe. Por suerte me dijeron que un tal Victorcillo me estaba esperando en su despacho.</p>\
-	<p>Menos mal que ha colado y he podido entrar al castillo. Además ahora sé que me tengo que\
-	enfrentar a Victorcillo y que está en su habitación, así que <a href='despacho'>allí me dirijo</a>.\
+	<p>When I am near them I tell them that I came from a far away place since I was doing a \
+	order for the boss. Luckily they told me that a certain Victorcillo was waiting for me in his office.</p>\
+	<p>Luckily I sneaked in and I was able to enter the castle. Also now I know that I have to \
+	face Victorcillo and he's in his room, so<a href='despacho'>there I go</a>.\
 	</p>",
     {
       enter: function (character, system, from) {
@@ -1105,7 +1161,7 @@ undum.game.qualities = {
     group: "objetos",
     onDisplay: "&#10003;",
   }),
-  traje: new undum.OnOffQuality("Traje de guardia", {
+  traje: new undum.OnOffQuality("Guard suit", {
     priority: "0002",
     group: "objetos",
     onDisplay: "&#10003;",
@@ -1114,10 +1170,15 @@ undum.game.qualities = {
     priority: "0001",
     group: "stats",
   }),
-  equipamiento: new undum.IntegerQuality("Equipamiento", {
+  equipamiento: new undum.IntegerQuality("Equipment", {
     priority: "0001",
     group: "stats",
   }),
+      cuerda: new undum.OnOffQuality("Rope for climbing", {
+    priority: "0002",
+    group: "objetos",
+    onDisplay: "&#10003;",
+  })
 };
 
 // ---------------------------------------------------------------------------
@@ -1156,6 +1217,7 @@ undum.game.init = function (character, system) {
   character.qualities.equipamiento = 0;
   character.qualities.frascoVida = 0;
   system.setQuality("traje", false);
+  system.setQuality("cuerda", false);
 
-  system.setCharacterText("<p>Listado de objetos que lleva encima:</p>");
+  system.setCharacterText("<p>List of objects that I carry:</p>");
 };
