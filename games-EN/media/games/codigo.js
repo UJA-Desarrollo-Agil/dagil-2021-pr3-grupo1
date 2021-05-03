@@ -271,17 +271,17 @@ elijo_enfadarme2: new undum.SimpleSituation(
 
 /*¿Qué paso con los demás?*/
 elijo_sabermas: new undum.SimpleSituation(
-  " <p><b>Raerpin:</b> ¡Es broma! Todos mis amigos están sanísimo, se machacan en el gimnasio a diario. Me gustan las personas inocentes así que no me importará soportar un poco más tu mal olor.</p>\
+  " <p><b>Raerpin:</b> Just kidding! All my friends are healthy as hell, they work out at the gym every day. I like innocent people so I won't mind putting up with your stink a little longer.</p>\
     <p><b>" +
     nombre +
-    ":</b> <a href='elijo_1'>-Me habias asustado, he temido por mi vida por un momento.-</a>   |   <a href='elijo_2'>-Creo que no me caes del todo bien...-</a></p>"
+    ":</b> <a href='elijo_1'>-You had scared me, I feared for my life for a moment.-</a>   |   <a href='elijo_2'>-I don't think I like you at all....-</a></p>"
 ),
 /*Seguro que os lo merecíais*/
 elijo_vacilar: new undum.SimpleSituation(
-  " <p><b>Raerpin:</b> No nos lo merecemos, somos maravillosos y acabo de quedarme contigo como he querido. Todos mis amigos están sanísimo, se machacan en el gimnasio a diario. Pero me gustan las personas inocentes así que no me importará soportar un poco más tu mal olor. </p>\
+  " <p><b>Raerpin:</b>  We don't deserve it, we are wonderful and I just stayed with you as I wanted to. All my friends are healthy as hell, they work out at the gym every day. But I like innocent people so I won't mind putting up with your stink a little longer. </p>\
     <p><b>" +
     nombre +
-    ":</b> <a href='elijo_2'>-Por un momento había picado-</a>   |   <a href='elijo_2'>-Creo que no me caes del todo bien...-</a></p>"
+    ":</b> <a href='elijo_2'>-For a moment I believed it-</a>   |   <a href='elijo_2'>-I don't think I like you at all...-</a></p>"
 ),
 
 /*Me habias asustado, he temido por mi vida por un momento.*/
