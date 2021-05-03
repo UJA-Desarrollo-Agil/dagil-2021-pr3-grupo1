@@ -206,12 +206,12 @@ undum.game.situations = {
 /*Elijo Acompañar al gnomo*/
 acompanar: new undum.SimpleSituation(
   "<img src='./media/img/6.png' class='float_right' width='250' height='250'>\
-  <p>Decido emprender mi aventura junto a Raerpin por tres razones, la primera es que sigo sin tener idea de donde estoy,\
-    la segunda, ¿cómo que me estaba esperando? y la tercera, que hace decantarme ¡¡¡ESTOY HABLANDO CON UN GNOMO!!!</p>\
-    <p><b>Raerpin:</b> De acuerdo, se que te estás preguntando cómo sabía que vendrías, ¿No es así?\
+  <p>I decide to undertake my adventure with Raerpin for three reasons, the first is that I still have no idea where I am.,\
+  The second one, what do you mean he was waiting for me? and the third one, which makes me decide I'M TALKING TO A GNOMO!!!!</p>\
+    <p><b>Raerpin:</b> Okay, I know you're wondering how I knew you were coming, aren't you?\
     <p><b>" +
     nombre +
-    ":</b> <a href='elijo_si'>-Así es-</a>   |   <a href='elijo_no'>-Prefiero no saberlo-</a></p>",
+    ":</b> <a href='elijo_si'>-That's right-</a>   |   <a href='elijo_no'>-I prefer not to know-</a></p>",
   {
     heading: "Acompañar a Raerpin",
     enter: function (character, system, from) {
