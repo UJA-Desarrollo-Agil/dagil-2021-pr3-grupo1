@@ -226,17 +226,17 @@ acompanar: new undum.SimpleSituation(
 /*DIÁLOGO CON RAERPIN*/
 /*Así es*/
 elijo_si: new undum.SimpleSituation(
-  " <p><b>Raerpin:</b> He visto caer un ordenador hace un rato y me ha bastado con verte y olerme...para saber que eres estudiante de una ingeniería\
+  " <p><b>Raerpin:</b> I saw a computer fall a while ago and it was enough to see you and smell me... to know that you are an engineering student.\
     <p><b>" +
     nombre +
-    ":</b> <a href='elijo_reirme'>-Si te soy sincero, he tenido un dia complicado...-</a>   |   <a href='elijo_enfadarme'>-¡Los ingenieros también nos duchamos!-</a></p>"
+    ":</b> <a href='elijo_reirme'>-To tell you the truth, I've had a complicated day...-</a>   |   <a href='elijo_enfadarme'>-Engineers take showers too!-</a></p>"
 ),
 /*Prefiero no saberlo*/
 elijo_no: new undum.SimpleSituation(
-  " <p><b>Raerpin:</b> Igualmente te lo voy a contar para reirme de tí, he visto caer un ordenador hace un rato y me ha bastado con verte y olerme...para saber que eres estudiante de una ingeniería\
+  " <p><b>Raerpin:</b> I'm going to tell you anyway to make fun of you, I saw a computer fall a while ago and it was enough to see you and smell me... to know that you are an engineering student.\
     <p><b>" +
     nombre +
-    ":</b> <a href='elijo_reirme'>-He tenido un dia complicado...-</a>   |   <a href='elijo_enfadarme'>-¡Los ingenieros también nos duchamos!-</a></p>"
+    ":</b> <a href='elijo_reirme'>-To tell you the truth, I've had a complicated day...-</a>   |   <a href='elijo_enfadarme'>-Engineers take showers too!-</a></p>"
 ),
 
 /*He tenido un dia complicado*/
