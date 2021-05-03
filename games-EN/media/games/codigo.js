@@ -278,7 +278,7 @@ elijo_sabermas: new undum.SimpleSituation(
 ),
 /*Seguro que os lo merecíais*/
 elijo_vacilar: new undum.SimpleSituation(
-  " <p><b>Raerpin:</b>  We don't deserve it, we are wonderful and I just stayed with you as I wanted to. All my friends are healthy as hell, they work out at the gym every day. But I like innocent people so I won't mind putting up with your stink a little longer. </p>\
+  " <p><b>Raerpin:</b> We don't deserve it, we are wonderful and I just stayed with you as I wanted to. All my friends are healthy as hell, they work out at the gym every day. But I like innocent people so I won't mind putting up with your stink a little longer. </p>\
     <p><b>" +
     nombre +
     ":</b> <a href='elijo_2'>-For a moment I believed it-</a>   |   <a href='elijo_2'>-I don't think I like you at all...-</a></p>"
@@ -286,17 +286,17 @@ elijo_vacilar: new undum.SimpleSituation(
 
 /*Me habias asustado, he temido por mi vida por un momento.*/
 elijo_1: new undum.SimpleSituation(
-  " <p><b>Raerpin:</b> Y haces bien por temer. Me pondré serio, en Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
+  " <p><b>Raerpin:</b> And you do well to fear. I will get serious, in Arcadia you will find various baddies and I will leave in your hands the choice of the path you will take. If you make it to the end intact, you will get your computer back and you will be able to finish the Agile Development practice on time. ARE YOU READY?</p>\
     <p><b>" +
     nombre +
-    ":</b> <a href='elijo_seguir'>-Nací preparado-</a>   |   <a href='elijo_asustarme'>-Tengo mucho miedo, quiero irme a casa-</a></p>"
+    ":</b> <a href='elijo_seguir'>-I was born ready-</a>   |   <a href='elijo_asustarme'>-I'm so scared, I want to go home-</a></p>"
 ),
 /*Creo que no me caes del todo bien... // Por un momento había picado*/
 elijo_2: new undum.SimpleSituation(
-  " <p><b>Raerpin:</b> Aún así te advertiré de que en Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
+  " <p><b>Raerpin:</b> I will still warn you that in Arcadia you will encounter various baddies and I will leave it up to you to choose the path you will face. If you reach the end intact, you will recover your computer and you will be able to finish the Agile Development practice on time. ARE YOU READY?</p>\
     <p><b>" +
     nombre +
-    ":</b> <a href='elijo_seguir1'>-Nací preparado-</a>   |   <a href='cabezon1'>-Tengo mucho miedo, quiero irme a casa-</a></p>"
+    ":</b> <a href='elijo_seguir1'>-I was born ready-</a>   |   <a href='cabezon1'>-I'm so scared, I want to go home-</a></p>"
 ),
 
 /*Nací preparado*/
