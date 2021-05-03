@@ -241,17 +241,17 @@ elijo_no: new undum.SimpleSituation(
 
 /*He tenido un dia complicado*/
 elijo_reirme: new undum.SimpleSituation(
-  " <p><b>Raerpin:</b> ¡Menos mal que tengo esta pinza para la nariz!. </p>\
+  " <p><b>Raerpin:</b> Thank goodness I have this nose clip! </p>\
     <p><b>" +
     nombre +
-    ":</b> <a href='elijo_enfadarme2'>-¡Si te vuelves a meter con los ingenieros te las verás conmigo y mis compañeros!-</a>   |   <a href='elijo_reirme2'>-¿Todos los gnomos habeis salido del club de la comedia?-</a></p>"
+    ":</b> <a href='elijo_enfadarme2'>-If you mess with the engineers again, you'll have to deal with me and my partners!-</a>   |   <a href='elijo_reirme2'>-Are all you gnomes out of the comedy club?-</a></p>"
 ),
 /*¡Los ingernieros tambien nos duchamos!*/
 elijo_enfadarme: new undum.SimpleSituation(
-  " <p><b>Raerpin:</b> No lo pongo en duda pero hoy se te ha olvidado. Por suerte ¡tengo esta pinza para la nariz!</p>\
+  " <p><b>Raerpin:</b> I don't doubt it but you forgot today. Luckily I have this nose clip!</p>\
     <p><b>" +
     nombre +
-    ":</b> <a href='elijo_enfadarme2'>-¡Si te vuelves a meter con los ingenieros te las verás conmigo y mis compañeros!-</a>   |   <a href='elijo_reirme2'>-¿Todos los gnomos habeis salido del club de la comedia?-</a></p>"
+    ":</b> <a href='elijo_enfadarme2'>-If you mess with the engineers again, you'll have to deal with me and my partners!-</a>   |   <a href='elijo_reirme2'>-Are all you gnomes out of the comedy club?-</a></p>"
 ),
 
 /*¿Todos los gnomos habeis salido del club de la comedia?*/
