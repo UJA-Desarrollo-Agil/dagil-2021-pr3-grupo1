@@ -269,19 +269,31 @@ undum.game.situations = {
       ":</b> <a href='elijo_sabermas'>-¿Qué paso con los demás?-</a>   |   <a href='elijo_vacilar'>-Seguro que os lo merecíais-</a></p>"
   ),
 
+  /*¿Qué paso con los demás?*/
+  elijo_sabermas: new undum.SimpleSituation(
+    " <p><b>Raerpin:</b> ¡Es broma! Todos mis amigos están sanísimo, se machacan en el gimnasio a diario. Me gustan las personas inocentes así que no me importará soportar un poco más tu mal olor.</p>\
+      <p><b>" +
+      nombre +
+      ":</b> <a href='elijo_1'>-Me habias asustado, he temido por mi vida por un momento.-</a>   |   <a href='elijo_2'>-Creo que no me caes del todo bien...-</a></p>"
+  ),
+  /*Seguro que os lo merecíais*/
+  elijo_vacilar: new undum.SimpleSituation(
+    " <p><b>Raerpin:</b> No nos lo merecemos, somos maravillosos y acabo de quedarme contigo como he querido. Todos mis amigos están sanísimo, se machacan en el gimnasio a diario. Pero me gustan las personas inocentes así que no me importará soportar un poco más tu mal olor. </p>\
+      <p><b>" +
+      nombre +
+      ":</b> <a href='elijo_2'>-Por un momento había picado-</a>   |   <a href='elijo_2'>-Creo que no me caes del todo bien...-</a></p>"
+  ),
 
-
-  
-  /*He tenido un dia complicado*/
-  elijo_reirme2: new undum.SimpleSituation(
-    " <p><b>Raerpin:</b> ¡Menos mal que tengo esta pinza para la nariz!. Pero ahora me pondré serio. En Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
+  /*Me habias asustado, he temido por mi vida por un momento.*/
+  elijo_1: new undum.SimpleSituation(
+    " <p><b>Raerpin:</b> Y haces bien por temer. Me pondré serio, en Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
       <p><b>" +
       nombre +
       ":</b> <a href='elijo_seguir'>-Nací preparado-</a>   |   <a href='elijo_asustarme'>-Tengo mucho miedo, quiero irme a casa-</a></p>"
   ),
-  /*¡Los ingernieros tambien nos duchamos!*/
-  elijo_enfadarme2: new undum.SimpleSituation(
-    " <p><b>Raerpin:</b> No lo pongo en duda pero hoy se te ha olvidado. Por suerte ¡tengo esta pinza para la nariz! Pero ahora me pondré serio. En Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
+  /*Creo que no me caes del todo bien... // Por un momento había picado*/
+  elijo_2: new undum.SimpleSituation(
+    " <p><b>Raerpin:</b> Aún así te advertiré de que en Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
       <p><b>" +
       nombre +
       ":</b> <a href='elijo_seguir'>-Nací preparado-</a>   |   <a href='cabezon'>-Tengo mucho miedo, quiero irme a casa-</a></p>"
