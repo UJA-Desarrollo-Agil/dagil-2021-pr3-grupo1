@@ -296,11 +296,11 @@ undum.game.situations = {
     " <p><b>Raerpin:</b> Aún así te advertiré de que en Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
       <p><b>" +
       nombre +
-      ":</b> <a href='elijo_seguir'>-Nací preparado-</a>   |   <a href='cabezon'>-Tengo mucho miedo, quiero irme a casa-</a></p>"
+      ":</b> <a href='elijo_seguir1'>-Nací preparado-</a>   |   <a href='cabezon1'>-Tengo mucho miedo, quiero irme a casa-</a></p>"
   ),
 
   /*Nací preparado*/
-  elijo_seguir: new undum.SimpleSituation(
+  elijo_seguir1: new undum.SimpleSituation(
     " <p><b>Raerpin:</b> De acuerdo, ¿Eres capaz de acertar esta adivinanza?</p>\
     <div align='center'><img src='./media/img/acertijo.jpg' align='middle' width='250' height='250'></div>\
       <p><b>" +
@@ -365,7 +365,7 @@ undum.game.situations = {
   ),
 
   /*Vuelvo a elegir no acompañar al gnomo*/
-  cabezon: new undum.SimpleSituation(
+  cabezon1: new undum.SimpleSituation(
     "<p><b>Raerpin:</b> Está bien, te convierto en mi nueva mascota, !SERÁS UN BONITO PERRO PARA EL RESTO DE TUS DÍAS!</p>\
     <p>   <b>" +
       nombre +
