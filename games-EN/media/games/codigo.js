@@ -301,7 +301,7 @@ elijo_2: new undum.SimpleSituation(
 
 /*Nací preparado*/
 elijo_seguir1: new undum.SimpleSituation(
-  " <p><b>Raerpin:</b> De acuerdo, ¿Eres capaz de acertar esta adivinanza?</p>\
+  " <p><b>Raerpin:</b> Okay, are you able to guess this riddle?</p>\
   <div align='center'><img src='./media/img/acertijo.jpg' align='middle' width='250' height='250'></div>\
     <p><b>" +
     nombre +
@@ -311,8 +311,8 @@ elijo_seguir1: new undum.SimpleSituation(
 
 /*40*/
 elijo_40: new undum.SimpleSituation(
-  "<p>Ambas respuestas eran correctas, has elegido la más fácil a la que llegar. Las respuestas a las sumas dependen, menos en el primer caso, del resultado de la suma anterior.</p>\
-      <p><a href='fin_capitulo'>Continuar con la historia</a> o <a href='elijo_96'>Ver la solución difícil</a></p>",
+  "<p>Both answers were correct, you have chosen the easiest one to arrive at. The answers to the sums depend, except in the first case, on the result of the previous sum.</p>\
+      <p><a href='fin_capitulo'>Continue with the story</a> o <a href='elijo_96'>See the difficult solution</a></p>",
   {
     heading: "Solución Fácil",
     enter: function (character, system, from) {
@@ -325,8 +325,8 @@ elijo_40: new undum.SimpleSituation(
 ),
 /*96*/
 elijo_96: new undum.SimpleSituation(
-  "<p>Ambas respuestas eran correctas, has elegido a la que llegan quienes consiguen pensar fuera de la caja y ven multiplicaciones donde otros solo ven sumas. Multiplicando los dígitos que plantea la suma y sumando al resultado el primero de ellos se llega a la solución.</p>\
-      <p><a href='fin_capitulo'>Continuar con la historia</a> o <a href='elijo_40'>Ver la solución fácil</a></p>",
+  "<p>Both answers were correct, you have chosen the one that those who can think outside the box and see multiplications where others only see additions. Multiplying the digits that the sum poses and adding the first of them to the result leads to the solution.</p>\
+      <p><a href='fin_capitulo'>Continue with the story</a> o <a href='elijo_40'>See the easy solution</a></p>",
   {
     heading: "Solución Difícil",
     enter: function (character, system, from) {
