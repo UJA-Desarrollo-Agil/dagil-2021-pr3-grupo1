@@ -289,7 +289,7 @@ elijo_1: new undum.SimpleSituation(
   " <p><b>Raerpin:</b> And you do well to fear. I will get serious, in Arcadia you will find various baddies and I will leave in your hands the choice of the path you will take. If you make it to the end intact, you will get your computer back and you will be able to finish the Agile Development practice on time. ARE YOU READY?</p>\
     <p><b>" +
     nombre +
-    ":</b> <a href='elijo_seguir'>-I was born ready-</a>   |   <a href='elijo_asustarme'>-I'm so scared, I want to go home-</a></p>"
+    ":</b> <a href='elijo_seguir1'>-I was born ready-</a>   |   <a href='elijo_cabezon1'>-I'm so scared, I want to go home-</a></p>"
 ),
 /*Creo que no me caes del todo bien... // Por un momento había picado*/
 elijo_2: new undum.SimpleSituation(

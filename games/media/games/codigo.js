@@ -289,7 +289,7 @@ undum.game.situations = {
     " <p><b>Raerpin:</b> Y haces bien por temer. Me pondré serio, en Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afrontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
       <p><b>" +
       nombre +
-      ":</b> <a href='elijo_seguir'>-Nací preparado-</a>   |   <a href='elijo_asustarme'>-Tengo mucho miedo, quiero irme a casa-</a></p>"
+      ":</b> <a href='elijo_seguir1'>-Nací preparado-</a>   |   <a href='cabezon1'>-Tengo mucho miedo, quiero irme a casa-</a></p>"
   ),
   /*Creo que no me caes del todo bien... // Por un momento había picado*/
   elijo_2: new undum.SimpleSituation(
