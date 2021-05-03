@@ -213,7 +213,7 @@ acompanar: new undum.SimpleSituation(
     nombre +
     ":</b> <a href='elijo_si'>-That's right-</a>   |   <a href='elijo_no'>-I prefer not to know-</a></p>",
   {
-    heading: "Acompañar a Raerpin",
+    heading: "Accompany Raerpin",
     enter: function (character, system, from) {
       system.setQuality(
         "progreso_historia",
@@ -314,7 +314,7 @@ elijo_40: new undum.SimpleSituation(
   "<p>Both answers were correct, you have chosen the easiest one to arrive at. The answers to the sums depend, except in the first case, on the result of the previous sum.</p>\
       <p><a href='fin_capitulo'>Continue with the story</a> o <a href='elijo_96'>See the difficult solution</a></p>",
   {
-    heading: "Solución Fácil",
+    heading: "Easy Solution",
     enter: function (character, system, from) {
       system.setQuality(
         "progreso_historia",
@@ -328,7 +328,7 @@ elijo_96: new undum.SimpleSituation(
   "<p>Both answers were correct, you have chosen the one that those who can think outside the box and see multiplications where others only see additions. Multiplying the digits that the sum poses and adding the first of them to the result leads to the solution.</p>\
       <p><a href='fin_capitulo'>Continue with the story</a> o <a href='elijo_40'>See the easy solution</a></p>",
   {
-    heading: "Solución Difícil",
+    heading: "Difficult Solution",
     enter: function (character, system, from) {
       system.setQuality(
         "progreso_historia",
@@ -343,7 +343,7 @@ fin_capitulo: new undum.SimpleSituation(
   " <img src='./media/img/23.png' class='float_right' width='250' height='250'>\
   <p>For having found the solution, Raerpin confesses to me that I will find the computer in the last place on my way and that I will only get it if I defeat the villain of Arcadia along with all his henchmen that I will find <a href= 'capitulo_tercero'>until I get to him.</a></p>",
   {
-    heading: "Continuamos.....",
+    heading: "CContinued.....",
     enter: function (character, system, from) {
       system.setQuality(
         "progreso_historia",
@@ -360,7 +360,7 @@ no_acompanar: new undum.SimpleSituation(
   <p><b>Raerpin:</b> You won't last a minute longer...</p>\
   <p><a href='acompanar'>Accompany Raerpin</a> o <a href='cabezon'>not to accompany Raerpin</a>.</p>",
   {
-    heading: "No me inspira confianza, mejor me voy",
+    heading: "I don't trust him, I'd better go",
   }
 ),
 
@@ -372,7 +372,7 @@ cabezon1: new undum.SimpleSituation(
     ":</b> ¡¡Guau!! ¡¡guau!!</p>\
   <p><b>You have lost, GAME OVER</b></p>",
   {
-    heading: "Quiero hacerlo todo solo porque soy el mejor",
+    heading: "I want to do everything just because I am the best",
   }
 ),
 
