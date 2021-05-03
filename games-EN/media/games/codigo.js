@@ -341,7 +341,7 @@ elijo_96: new undum.SimpleSituation(
 /*Fin del capítulo 2*/
 fin_capitulo: new undum.SimpleSituation(
   " <img src='./media/img/23.png' class='float_right' width='250' height='250'>\
-  <p>Por haber dado con la solución, Raerpin me confiesa que el ordenador lo encontraré en el último lugar de mi camino y que solo lo conseguiré si derroto al villano de Arcadia junto a todos sus secuaces que iré encontrando <a href= 'capitulo_tercero'>hasta llegar a él.</a></p>",
+  <p>For having found the solution, Raerpin confesses to me that I will find the computer in the last place on my way and that I will only get it if I defeat the villain of Arcadia along with all his henchmen that I will find <a href= 'capitulo_tercero'>until I get to him.</a></p>",
   {
     heading: "Continuamos.....",
     enter: function (character, system, from) {
@@ -355,10 +355,10 @@ fin_capitulo: new undum.SimpleSituation(
 
 /*Elijo No acompañar al gnomo*/
 no_acompanar: new undum.SimpleSituation(
-  "<p><b>Raerpin:</b> ¿Te crees muy listo verdad? Todos necesitamos ayuda, mira la cantidad de ayuda que te han proporcionado tus compañero en cada una de tus prácticas, entonces ¡SÍ ACEPTABAS SU AYUDA!</p>\
-  <p>¿Y qué pasará si esta vez decido hacerlo solo? le pregunto</p>\
-  <p><b>Raerpin:</b> Que no durarás ni un minuto más...</p>\
-  <p><a href='acompanar'>Acompañar a Raerpin</a> o <a href='cabezon'>no acompañar a Raerpin</a>.</p>",
+  "<p><b>Raerpin:</b> You think you're so smart, don't you? We all need help, look at the amount of help your classmates have given you in each of your internships, so YOU WERE ACCEPTING THEIR HELP!</p>\
+  <p>And what will happen if this time I decide to do it alone? I ask him</p>\
+  <p><b>Raerpin:</b> You won't last a minute longer...</p>\
+  <p><a href='acompanar'>Accompany Raerpin</a> o <a href='cabezon'>not to accompany Raerpin</a>.</p>",
   {
     heading: "No me inspira confianza, mejor me voy",
   }
@@ -366,11 +366,11 @@ no_acompanar: new undum.SimpleSituation(
 
 /*Vuelvo a elegir no acompañar al gnomo*/
 cabezon1: new undum.SimpleSituation(
-  "<p><b>Raerpin:</b> Está bien, te convierto en mi nueva mascota, !SERÁS UN BONITO PERRO PARA EL RESTO DE TUS DÍAS!</p>\
+  "<p><b>Raerpin:</b> Okay, I make you my new pet, YOU WILL BE A NICE DOG FOR THE REST OF YOUR DAYS!</p>\
   <p>   <b>" +
     nombre +
     ":</b> ¡¡Guau!! ¡¡guau!!</p>\
-  <p><b>Has perdido, GAME OVER</b></p>",
+  <p><b>You have lost, GAME OVER</b></p>",
   {
     heading: "Quiero hacerlo todo solo porque soy el mejor",
   }
