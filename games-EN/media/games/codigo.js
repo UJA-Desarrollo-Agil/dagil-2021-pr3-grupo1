@@ -256,17 +256,17 @@ elijo_enfadarme: new undum.SimpleSituation(
 
 /*¿Todos los gnomos habeis salido del club de la comedia?*/
 elijo_reirme2: new undum.SimpleSituation(
-  " <p><b>Raerpin:</b> Por desgracia soy el último gnomo que queda con vida, después de pasarlo mal durante mucho tiempo debido a la gran soledad que sentía, decidí vivir los días que me queden con humor.</p>\
+  " <p><b>Raerpin:</b> Unfortunately I am the last gnome left alive, after having a hard time for a long time due to the great loneliness I felt, I decided to live my remaining days with humor.</p>\
     <p><b>" +
     nombre +
-    ":</b> <a href='elijo_sabermas'>-¿Qué paso con los demás?-</a>   |   <a href='elijo_vacilar'>-Seguro que os lo merecíais-</a></p>"
+    ":</b> <a href='elijo_sabermas'>-What happened to the others?-</a>   |   <a href='elijo_vacilar'>-I'm sure you deserved it-</a></p>"
 ),
 /*¡Si te vuelves a meter con los ingenieros te las verás conmigo y mis compañeros!*/
 elijo_enfadarme2: new undum.SimpleSituation(
-  " <p><b>Raerpin:</b> Te envidio mucho, ojalá yo pudiera refugirme en mis amigos pero ya no puedo. Por desgracia soy el último gnomo que queda con vida. </p>\
+  " <p><b>Raerpin:</b> I envy you so much, I wish I could take refuge in my friends but I can't anymore. Unfortunately I am the last gnome left alive. </p>\
     <p><b>" +
     nombre +
-    ":</b> <a href='elijo_sabermas'>-¿Qué paso con los demás?-</a>   |   <a href='elijo_vacilar'>-Seguro que os lo merecíais-</a></p>"
+    ":</b> <a href='elijo_sabermas'>-What happened to the others?-</a>   |   <a href='elijo_vacilar'>-I'm sure you deserved it-</a></p>"
 ),
 
 /*¿Qué paso con los demás?*/
