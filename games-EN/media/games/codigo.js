@@ -189,144 +189,192 @@ undum.game.situations = {
     }
   ),
 
-  /*Comienzo capitulo 2*/
-  situacion_intermedia1: new undum.SimpleSituation(
-    "<h1>CAPITULO 2 - CONOCIENDO A RAERPIN</h1>\
-    <img src='./media/img/15_2.png' class='float_right' width='250' height='250'>\
-        <p> El gnomo parece bastante amigable a pesar de su ridículo aspecto así que decido acercarme a él para saber si tiene idea de donde estamos. </p>\
-        <p> Hola, me llamo " +
-      nombre +
-      " y no se si decirle Buenas tardes o buenos días porque no se donde estamos y para colmo, ¡¡he perdido mi reloj!!.</p>\
-        <p>Hola " +
-      nombre +
-      ", yo soy Raerpin y estamos en el Mágico Mundo de Arcadia, he estado esperándote. ¿Deseas que te guíe en tu aventura?\
-        <a href='acompanar'>Acompañar a Raerpin</a> o <a href='no_acompanar'>no acompañar a Raerpin</a>.</p>"
-  ),
+ /*Comienzo capitulo 2*/
+ situacion_intermedia1: new undum.SimpleSituation(
+  "<h1>CHAPTER 2 - MEETING RAERPIN</h1>\
+  <img src='./media/img/15_2.png' class='float_right' width='250' height='250'>\
+      <p> The gnome seems friendly enough despite his ridiculous appearance so I decide to approach him to see if he has any idea where we are. </p>\
+      <p> Hello, my name is " +
+    nombre +
+    " and I don't know whether to say good afternoon or good morning because I don't know where we are and to top it off, I have lost my watch!!!.</p>\
+      <p>Hello " +
+    nombre +
+    ", I am Raerpin and we are in the Magical World of Arcadia, I have been waiting for you. Would you like me to guide you in your adventure?\
+      <a href='acompanar'>Accompany Raerpin</a> o <a href='no_acompanar'>not to accompany Raerpin</a>.</p>"
+),
 
-  /*Elijo Acompañar al gnomo*/
-  acompanar: new undum.SimpleSituation(
-    "<img src='./media/img/6.png' class='float_right' width='250' height='250'><p>Decido emprender mi aventura junto a Raerpin por tres razones, la primera es que sigo sin tener idea de donde estoy,\
-      la segunda, ¿cómo que me estaba esperando? y la tercera, que hace decantarme ¡¡¡ESTOY HABLANDO CON UN GNOMO!!!</p>\
-      <p><b>Raerpin:</b> De acuerdo, se que te estás preguntando cómo sabía que vendrías, ¿No es así?\
-      <p><b>" +
-      nombre +
-      ":</b> <a href='elijo_si'>-Así es-</a>   |   <a href='elijo_no'>-Prefiero no saberlo-</a></p>",
-    {
-      heading: "Acompañar a Raerpin",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 15
-        );
-      },
-    }
-  ),
-  /*DIÁLOGO CON RAERPIN*/
-  /*Así es*/
-  elijo_si: new undum.SimpleSituation(
-    " <p><b>Raerpin:</b> He visto caer un ordenador hace un rato y me ha bastado con verte y olerme...para saber que eres estudiante de una ingeniería\
-      <p><b>" +
-      nombre +
-      ":</b> <a href='elijo_reirme'>-Si te soy sincero, he tenido un dia complicado...-</a>   |   <a href='elijo_enfadarme'>-¡Los ingenieros también nos duchamos!-</a></p>"
-  ),
-  /*Prefiero no saberlo*/
-  elijo_no: new undum.SimpleSituation(
-    " <p><b>Raerpin:</b> Igualmente te lo voy a contar para reirme de tí, he visto caer un ordenador hace un rato y me ha bastado con verte y olerme...para saber que eres estudiante de una ingeniería\
-      <p><b>" +
-      nombre +
-      ":</b> <a href='elijo_reirme'>-He tenido un dia complicado...-</a>   |   <a href='elijo_enfadarme'>-¡Los ingenieros también nos duchamos!-</a></p>"
-  ),
-  /*He tenido un dia complicado*/
-  elijo_reirme: new undum.SimpleSituation(
-    " <p><b>Raerpin:</b> ¡Menos mal que tengo esta pinza para la nariz!. Pero ahora me pondré serio. En Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
-      <p><b>" +
-      nombre +
-      ":</b> <a href='elijo_seguir'>-Nací preparado-</a>   |   <a href='elijo_asustarme'>-Tengo mucho miedo, quiero irme a casa-</a></p>"
-  ),
-  /*¡Los ingernieros tambien nos duchamos!*/
-  elijo_enfadarme: new undum.SimpleSituation(
-    " <p><b>Raerpin:</b> No lo pongo en duda pero hoy se te ha olvidado. Por suerte ¡tengo esta pinza para la nariz! Pero ahora me pondré serio. En Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
-      <p><b>" +
-      nombre +
-      ":</b> <a href='elijo_seguir'>-Nací preparado-</a>   |   <a href='cabezon'>-Tengo mucho miedo, quiero irme a casa-</a></p>"
-  ),
+/*Elijo Acompañar al gnomo*/
+acompanar: new undum.SimpleSituation(
+  "<img src='./media/img/6.png' class='float_right' width='250' height='250'>\
+  <p>Decido emprender mi aventura junto a Raerpin por tres razones, la primera es que sigo sin tener idea de donde estoy,\
+    la segunda, ¿cómo que me estaba esperando? y la tercera, que hace decantarme ¡¡¡ESTOY HABLANDO CON UN GNOMO!!!</p>\
+    <p><b>Raerpin:</b> De acuerdo, se que te estás preguntando cómo sabía que vendrías, ¿No es así?\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_si'>-Así es-</a>   |   <a href='elijo_no'>-Prefiero no saberlo-</a></p>",
+  {
+    heading: "Acompañar a Raerpin",
+    enter: function (character, system, from) {
+      system.setQuality(
+        "progreso_historia",
+        character.qualities.progreso_historia + 15
+      );
+    },
+  }
+),
 
-  /*Nací preparado*/
-  elijo_seguir: new undum.SimpleSituation(
-    " <p><b>Raerpin:</b> De acuerdo, ¿Eres capaz de acertar esta adivinanza?</p>\
-    <div align='center'><img src='./media/img/acertijo.jpg' align='middle' width='250' height='250'></div>\
-      <p><b>" +
-      nombre +
-      ":</b> <a href='elijo_40'>-40-</a>   |   <a href='elijo_96'>-96-</a></p>"
-  ),
-  /*Tengo mucho miedo, quiero irme a casa- GAME OVER*/
+/*DIÁLOGO CON RAERPIN*/
+/*Así es*/
+elijo_si: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> He visto caer un ordenador hace un rato y me ha bastado con verte y olerme...para saber que eres estudiante de una ingeniería\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_reirme'>-Si te soy sincero, he tenido un dia complicado...-</a>   |   <a href='elijo_enfadarme'>-¡Los ingenieros también nos duchamos!-</a></p>"
+),
+/*Prefiero no saberlo*/
+elijo_no: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> Igualmente te lo voy a contar para reirme de tí, he visto caer un ordenador hace un rato y me ha bastado con verte y olerme...para saber que eres estudiante de una ingeniería\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_reirme'>-He tenido un dia complicado...-</a>   |   <a href='elijo_enfadarme'>-¡Los ingenieros también nos duchamos!-</a></p>"
+),
 
-  /*40*/
-  elijo_40: new undum.SimpleSituation(
-    "<p>Ambas respuestas eran correctas, has elegido la más fácil a la que llegar. Las respuestas a las sumas dependen, menos en el primer caso, del resultado de la suma anterior.</p>\
-        <p><a href='fin_capitulo'>Continuar con la historia</a> o <a href='elijo_96'>Ver la solución difícil</a></p>",
-    {
-      heading: "Solución Fácil",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 5
-        );
-      },
-    }
-  ),
-  /*96*/
-  elijo_96: new undum.SimpleSituation(
-    "<p>Ambas respuestas eran correctas, has elegido a la que llegan quienes consiguen pensar fuera de la caja y ven multiplicaciones donde otros solo ven sumas. Multiplicando los dígitos que plantea la suma y sumando al resultado el primero de ellos se llega a la solución.</p>\
-        <p><a href='fin_capitulo'>Continuar con la historia</a> o <a href='elijo_40'>Ver la solución fácil</a></p>",
-    {
-      heading: "Solución Difícil",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 5
-        );
-      },
-    }
-  ),
+/*He tenido un dia complicado*/
+elijo_reirme: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> ¡Menos mal que tengo esta pinza para la nariz!. </p>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_enfadarme2'>-¡Si te vuelves a meter con los ingenieros te las verás conmigo y mis compañeros!-</a>   |   <a href='elijo_reirme2'>-¿Todos los gnomos habeis salido del club de la comedia?-</a></p>"
+),
+/*¡Los ingernieros tambien nos duchamos!*/
+elijo_enfadarme: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> No lo pongo en duda pero hoy se te ha olvidado. Por suerte ¡tengo esta pinza para la nariz!</p>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_enfadarme2'>-¡Si te vuelves a meter con los ingenieros te las verás conmigo y mis compañeros!-</a>   |   <a href='elijo_reirme2'>-¿Todos los gnomos habeis salido del club de la comedia?-</a></p>"
+),
 
-  /*Fin del capítulo 2*/
-  fin_capitulo: new undum.SimpleSituation(
-    " <img src='./media/img/23.png' class='float_right' width='250' height='250'>\
-    <p>Por haber dado con la solución, Raerpin me confiesa que el ordenador lo encontraré en el último lugar de mi camino y que solo lo conseguiré si derroto al villano de Arcadia junto a todos sus secuaces que iré encontrando <a href= 'capitulo_tercero'>hasta llegar a él.</a></p>",
-    {
-      heading: "Continuamos.....",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 5
-        );
-      },
-    }
-  ),
+/*¿Todos los gnomos habeis salido del club de la comedia?*/
+elijo_reirme2: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> Por desgracia soy el último gnomo que queda con vida, después de pasarlo mal durante mucho tiempo debido a la gran soledad que sentía, decidí vivir los días que me queden con humor.</p>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_sabermas'>-¿Qué paso con los demás?-</a>   |   <a href='elijo_vacilar'>-Seguro que os lo merecíais-</a></p>"
+),
+/*¡Si te vuelves a meter con los ingenieros te las verás conmigo y mis compañeros!*/
+elijo_enfadarme2: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> Te envidio mucho, ojalá yo pudiera refugirme en mis amigos pero ya no puedo. Por desgracia soy el último gnomo que queda con vida. </p>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_sabermas'>-¿Qué paso con los demás?-</a>   |   <a href='elijo_vacilar'>-Seguro que os lo merecíais-</a></p>"
+),
 
-  /*Elijo No acompañar al gnomo*/
-  no_acompanar: new undum.SimpleSituation(
-    "<p><b>Raerpin:</b> ¿Te crees muy listo verdad? Todos necesitamos ayuda, mira la cantidad de ayuda que te han proporcionado tus compañero en cada una de tus prácticas, entonces ¡SÍ ACEPTABAS SU AYUDA!</p>\
-    <p>¿Y qué pasará si esta vez decido hacerlo solo? le pregunto</p>\
-    <p><b>Raerpin:</b> Que no durarás ni un minuto más...</p>\
-    <p><a href='acompanar'>Acompañar a Raerpin</a> o <a href='cabezon'>no acompañar a Raerpin</a>.</p>",
-    {
-      heading: "No me inspira confianza, mejor me voy",
-    }
-  ),
+/*¿Qué paso con los demás?*/
+elijo_sabermas: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> ¡Es broma! Todos mis amigos están sanísimo, se machacan en el gimnasio a diario. Me gustan las personas inocentes así que no me importará soportar un poco más tu mal olor.</p>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_1'>-Me habias asustado, he temido por mi vida por un momento.-</a>   |   <a href='elijo_2'>-Creo que no me caes del todo bien...-</a></p>"
+),
+/*Seguro que os lo merecíais*/
+elijo_vacilar: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> No nos lo merecemos, somos maravillosos y acabo de quedarme contigo como he querido. Todos mis amigos están sanísimo, se machacan en el gimnasio a diario. Pero me gustan las personas inocentes así que no me importará soportar un poco más tu mal olor. </p>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_2'>-Por un momento había picado-</a>   |   <a href='elijo_2'>-Creo que no me caes del todo bien...-</a></p>"
+),
 
-  /*Vuelvo a elegir no acompañar al gnomo*/
-  cabezon: new undum.SimpleSituation(
-    "<p><b>Raerpin:</b> Está bien, te convierto en mi nueva mascota, !SERÁS UN BONITO PERRO PARA EL RESTO DE TUS DÍAS!</p>\
-    <p>   <b>" +
-      nombre +
-      ":</b> ¡¡Guau!! ¡¡guau!!</p>\
-    <p><b>Has perdido, GAME OVER</b></p>",
-    {
-      heading: "Quiero hacerlo todo solo porque soy el mejor",
-    }
-  ),
+/*Me habias asustado, he temido por mi vida por un momento.*/
+elijo_1: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> Y haces bien por temer. Me pondré serio, en Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_seguir'>-Nací preparado-</a>   |   <a href='elijo_asustarme'>-Tengo mucho miedo, quiero irme a casa-</a></p>"
+),
+/*Creo que no me caes del todo bien... // Por un momento había picado*/
+elijo_2: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> Aún así te advertiré de que en Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_seguir1'>-Nací preparado-</a>   |   <a href='cabezon1'>-Tengo mucho miedo, quiero irme a casa-</a></p>"
+),
+
+/*Nací preparado*/
+elijo_seguir1: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> De acuerdo, ¿Eres capaz de acertar esta adivinanza?</p>\
+  <div align='center'><img src='./media/img/acertijo.jpg' align='middle' width='250' height='250'></div>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_40'>-40-</a>   |   <a href='elijo_96'>-96-</a></p>"
+),
+/*Tengo mucho miedo, quiero irme a casa- GAME OVER*/
+
+/*40*/
+elijo_40: new undum.SimpleSituation(
+  "<p>Ambas respuestas eran correctas, has elegido la más fácil a la que llegar. Las respuestas a las sumas dependen, menos en el primer caso, del resultado de la suma anterior.</p>\
+      <p><a href='fin_capitulo'>Continuar con la historia</a> o <a href='elijo_96'>Ver la solución difícil</a></p>",
+  {
+    heading: "Solución Fácil",
+    enter: function (character, system, from) {
+      system.setQuality(
+        "progreso_historia",
+        character.qualities.progreso_historia + 5
+      );
+    },
+  }
+),
+/*96*/
+elijo_96: new undum.SimpleSituation(
+  "<p>Ambas respuestas eran correctas, has elegido a la que llegan quienes consiguen pensar fuera de la caja y ven multiplicaciones donde otros solo ven sumas. Multiplicando los dígitos que plantea la suma y sumando al resultado el primero de ellos se llega a la solución.</p>\
+      <p><a href='fin_capitulo'>Continuar con la historia</a> o <a href='elijo_40'>Ver la solución fácil</a></p>",
+  {
+    heading: "Solución Difícil",
+    enter: function (character, system, from) {
+      system.setQuality(
+        "progreso_historia",
+        character.qualities.progreso_historia + 5
+      );
+    },
+  }
+),
+
+/*Fin del capítulo 2*/
+fin_capitulo: new undum.SimpleSituation(
+  " <img src='./media/img/23.png' class='float_right' width='250' height='250'>\
+  <p>Por haber dado con la solución, Raerpin me confiesa que el ordenador lo encontraré en el último lugar de mi camino y que solo lo conseguiré si derroto al villano de Arcadia junto a todos sus secuaces que iré encontrando <a href= 'capitulo_tercero'>hasta llegar a él.</a></p>",
+  {
+    heading: "Continuamos.....",
+    enter: function (character, system, from) {
+      system.setQuality(
+        "progreso_historia",
+        character.qualities.progreso_historia + 5
+      );
+    },
+  }
+),
+
+/*Elijo No acompañar al gnomo*/
+no_acompanar: new undum.SimpleSituation(
+  "<p><b>Raerpin:</b> ¿Te crees muy listo verdad? Todos necesitamos ayuda, mira la cantidad de ayuda que te han proporcionado tus compañero en cada una de tus prácticas, entonces ¡SÍ ACEPTABAS SU AYUDA!</p>\
+  <p>¿Y qué pasará si esta vez decido hacerlo solo? le pregunto</p>\
+  <p><b>Raerpin:</b> Que no durarás ni un minuto más...</p>\
+  <p><a href='acompanar'>Acompañar a Raerpin</a> o <a href='cabezon'>no acompañar a Raerpin</a>.</p>",
+  {
+    heading: "No me inspira confianza, mejor me voy",
+  }
+),
+
+/*Vuelvo a elegir no acompañar al gnomo*/
+cabezon1: new undum.SimpleSituation(
+  "<p><b>Raerpin:</b> Está bien, te convierto en mi nueva mascota, !SERÁS UN BONITO PERRO PARA EL RESTO DE TUS DÍAS!</p>\
+  <p>   <b>" +
+    nombre +
+    ":</b> ¡¡Guau!! ¡¡guau!!</p>\
+  <p><b>Has perdido, GAME OVER</b></p>",
+  {
+    heading: "Quiero hacerlo todo solo porque soy el mejor",
+  }
+),
 
   /*Comienzo capitulo 3*/
   capitulo_tercero: new undum.SimpleSituation(
