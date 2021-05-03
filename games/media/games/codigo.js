@@ -254,9 +254,24 @@ undum.game.situations = {
       ":</b> <a href='elijo_enfadarme2'>-¡Si te vuelves a meter con los ingenieros te las verás conmigo y mis compañeros!-</a>   |   <a href='elijo_reirme2'>-¿Todos los gnomos habeis salido del club de la comedia?-</a></p>"
   ),
 
+  /*¿Todos los gnomos habeis salido del club de la comedia?*/
+  elijo_reirme2: new undum.SimpleSituation(
+    " <p><b>Raerpin:</b> Por desgracia soy el último gnomo que queda con vida, después de pasarlo mal durante mucho tiempo debido a la gran soledad que sentía, decidí vivir los días que me queden con humor.</p>\
+      <p><b>" +
+      nombre +
+      ":</b> <a href='elijo_sabermas'>-¿Qué paso con los demás?-</a>   |   <a href='elijo_vacilar'>-Seguro que os lo merecíais-</a></p>"
+  ),
+  /*¡Si te vuelves a meter con los ingenieros te las verás conmigo y mis compañeros!*/
+  elijo_enfadarme2: new undum.SimpleSituation(
+    " <p><b>Raerpin:</b> Te envidio mucho, ojalá yo pudiera refugirme en mis amigos pero ya no puedo. Por desgracia soy el último gnomo que queda con vida. </p>\
+      <p><b>" +
+      nombre +
+      ":</b> <a href='elijo_sabermas'>-¿Qué paso con los demás?-</a>   |   <a href='elijo_vacilar'>-Seguro que os lo merecíais-</a></p>"
+  ),
 
 
 
+  
   /*He tenido un dia complicado*/
   elijo_reirme2: new undum.SimpleSituation(
     " <p><b>Raerpin:</b> ¡Menos mal que tengo esta pinza para la nariz!. Pero ahora me pondré serio. En Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
