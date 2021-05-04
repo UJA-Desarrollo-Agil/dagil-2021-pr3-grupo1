@@ -35,33 +35,33 @@ nombre = prompt(
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
   start: new undum.SimpleSituation(
-    "<h1>CAPÍTULO 1: LA HISTORIA COMIENZA...</h1>\
+    "<h1>CHAPTER 1: THE STORY BEGINS ... </h1>\
     <img src='./media/img/15.png' class='float_ce' width='500' height='400'>\
-        <p>Despierto de golpe. La luz del sol me deslumbra.<br> Froto mis ojos hasta que consigo abrirlos por completo.</p>\
-        <p>Miro hacia arriba y a mi alrededor. El cielo está despejado. No sé dónde estoy. Intento hacer memoria para recordar</p>\
-        <p>como he llegado aquí... yo estaba en mi habitación, en el escritorio, con mi ordenador, terminando la práctica de Desarrollo Ágil que se entregaba hoy las 23.55h... ¿¡QUÉ HORA ES!? ¡Tengo que entregar la práctica! Miro mi muñeca y descubro que no tengo reloj. De repente, escucho un ruido, alguien se acerca.</p>\
-        <p><b>MOMO:</b> No pongas esa cara. Me llamo Momo. No sé quién eres ni qué buscas. La verdad es que me da igual.</p>\
-        <p>Continúo en shock.</p>\
-        <p><a href='sin_mono'>No quiero hablar con nadie</a> ni que nadie me moleste. O quizás sea\
-        <a href='con_mono'>una buena idea tener alguien al lado, aunque sea un mono.</a>.</p><br>\
+        <p>I wake up suddenly. The sunlight dazzles me. <br> I rub my eyes until I manage to open them fully. </p>\
+        <p>I look up and around me. The sky is clear. I do not know where I am. I try to remember to remember </p>\
+        <p>how I got here ... I was in my room, at the desk, with my computer, finishing the Agile Development practice that was delivered today at 11:55 pm ... WHAT TIME IS IT !? I have to turn in the practice! I look at my wrist and find that I don't have a watch. Suddenly, I hear a noise, someone is approaching. </p>\
+        <p><b>MOMO:</b> Do not put that face. My name is Momo. I don't know who you are or what you are looking for. The truth is that I do not care. </p>\
+        <p>I continue in shock. </p>\
+        <p><a href='sin_mono'>I do not want to speak with anybody </a> nor that nobody bothers me. Or maybe it's \
+        <a href='con_mono'>a good idea to have someone by your side, even a monkey. </a>.</p><br>\
         <video controls autoplay width='100%'>\
           <source src='videos/v1.mp4' type='video/mp4' />\
         </video>"
   ),
   con_mono: new undum.SimpleSituation(
     "<img src='./media/img/0.png' class='float_right' width='250' height='250'>\
-    <p>Momo luce sonriente sabiendo se que puede quedar conmigo. De su riñonera saca un reloj de arena.</p>\
-      <p>   <b>MOMO:</b> ¿Es el destino la mano que elige si nuestro reloj de arena funcionará hacia arriba o hacia abajo, o esa mano somos nosotros mismos?</p>\
-      <p>No puede ser. Creo que ya entiendo lo que Momo me quiere decir</p>\
+    <p>Momo looks smiling knowing that she can meet me. From her fanny pack he takes out an hourglass. </p>\
+      <p>   <b>MOMO:</b> Is fate the hand that chooses whether our hourglass will run up or down, or is that hand ourselves? </p>\
+      <p>Can not be. I think I already understand what Momo wants to tell me </p>\
       <p>   <b>" +
       nombre +
-      ":</b> ¿No te estarás refiriendo a que el tiempo que tiene ese reloj es el que tengo para poder\
-      encontrar mi ordenador?</p>\
-      <p>El mono asiente con la cabeza. ¡Qué estrés! Siento angustia. Esto me pasa por dejarlo todo para el último momento. No me veo con futuro en la carrera de ingeniería, quizás me equivoqué al elegirla...</p>\
-      <p>Momo siente mi decaida. Quiere darme ánimos. ¿Sigo escuchando<a href='detalle'> más detalladamente al mono</a>?</p>\
-      <p>Hace una seña para <a href='seguirlo'>lo siga</a>.</p>",
+      ":</b> Are you not referring to the time that this watch has is what I have to be able to \
+      find my computer? </p>\
+      <p>The monkey nods his head. What stress! I feel anguish. This happens to me for leaving everything for the last moment. I do not see myself with a future in the engineering career, perhaps I was wrong when choosing it ...</p>\
+      <p>Momo feels my downcast. She wants to cheer me up. Am i still listening <a href='detalle'> in more detail to the monkey </a>?</p>\
+      <p>Makes a sign to  <a href='seguirlo'>follow it</a>.</p>",
     {
-      heading: "Momo me acompañará",
+      heading: "Momo will accompany me",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -73,13 +73,13 @@ undum.game.situations = {
 
   detalle: new undum.SimpleSituation(
     "<img src='./media/img/3.png' class='float_right' width='250' height='250'>\
-    <p><b>MOMO:</b> Tú eliges, puedes pasar todo tu tiempo muerto o puedes coger tu tiempo y hacer algo valioso con él.\
-      Algo que llene ese tiempo de energía. Hay que vivir con la fuerza suficiente como para que la vida ceda a tu paso, no tú ante ella.\
-      La vida no es nada si no te atreves a vivirla. Hay que hacer algo con la vida que tenemos. Que se entere de que estamos aquí, dispuestos a dejarla\
-      boquiabierta con nuestra forma de pasar por ella.</p>\
-      <p>¡No puedo creer las palabras de este mono! Es más sabio de lo que parece, me ha hecho pensar... Y me siento con más energía. <a href='seguirlo'> CONTINUAR HISTORIA...</a></p>",
+    <p><b>MOMO:</b> You choose, you can spend all your time dead or you can take your time and do something valuable with it.\
+      Something that fills that time with energy. You have to live strong enough so that life gives way to you, not you to it. \
+      Life is nothing if you don't dare to live it. We must do something with the life we have. Let her find out that we are here, willing to leave her \
+      jaws dropped at our way of going through it. </p>\
+      <p>I can't believe this monkey's words! He is wiser than he seems, he has made me think ... And I feel more energetic. <a href='seguirlo'> CONTINUE STORY ... </a></p>",
     {
-      heading: "El mono me habla...",
+      heading: "The monkey talks to me ... ",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -91,13 +91,13 @@ undum.game.situations = {
 
   seguirlo: new undum.SimpleSituation(
     "<img src='./media/img/1.png' class='float_right' width='250' height='250'>\
-    <p>Sigo a Momo por un camino estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas, pero mi mente se encuentra en otro sitio</p>\
-      <p>Si Alicia se hubiera cansado de correr tras el Conejo Blanco, no habría caído por la madriguera. Ni descubierto el País\
-      de las Maravillas. Ni descubrierto quién era ella. Seguiré corriendo. Me caeré. E intentaré no tener miedo a aquello que me tenga que enfrentar</p>\
-      <p>Llegamos al final del camino. Junto a un gnomo vemos un nido de abejas. Están furiosas y vienen hacia nosotros.</p>\
-      <p><a href='momo_muere'>Momo quiere enfrentarse a ellas</a>, pero ambos sabemos que puede morir.<a href='correr'> Creo que lo mejor es salir corriendo</a></p>",
+    <p>I follow Momo down a narrow path full of branches and leaves. I scratch myself between them, but my mind is elsewhere </p>\
+      <p>If Alice had gotten tired of running after the White Rabbit, she would not have fallen down the burrow. Nor discovered the Country \
+      of Wonders. Nor did I discover who she was. I will keep running. I'll fall. And I will try not to be afraid of what I have to face </p>\
+      <p>We reached the end of the road. Next to a gnome we see a nest of bees. They are furious and they are coming towards us. </p>\
+      <p><a href='momo_muere'>Momo wants to face them </a>, but we both know that he can die. <a href='correr'> I think the best thing to do is run away</a></p>",
     {
-      heading: "Extraño camino",
+      heading: "Strange way ",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -109,12 +109,12 @@ undum.game.situations = {
 
   momo_muere: new undum.SimpleSituation(
     "<img src='./media/img/1.png' class='float_right' width='250' height='250'>\
-    <p>Momo se enfrenta a las abejas y en una dura batalla consigue alejarlas, pero las picaduras son demasiado fuertes para él y hacen que muera.</p>\
-    <p>No me lo puedo creer. Ha dado su vida por mí. Me acerco a él y le acaricio la cara. Me percato de que en su riñonera hay algo. Meto la mano y encuentro un frasco que pone VIDA.</p>\
-    <p>No sé lo que es, pero me lo guardo porque puede ser útil. Además, encuentro una barrita que pone CÓMEME.<a href='no_come'> No tiene muy buena pinta</a>, pero quizás</p>\
-    <p><a href='come'>pueda darme fuerzas para continuar la aventura</a></p>",
+    <p>Momo faces the bees and in a tough battle manages to drive them away, but the stings are too strong for him and cause him to die. </p>\
+    <p>I can not believe it. He has given his life for me. I go up to him and caress his face. I realize there is something in his fanny pack. I reach in and find a bottle that says LIFE. </p>\
+    <p>I don't know what it is, but I keep it to myself because it can be useful. Also, I find a bar that says EAT ME. <a href='no_come'> It doesn't look very good </a>, but maybe</p>\
+    <p><a href='come'>can give me strength to continue the adventure </a></p>",
     {
-      heading: "Lucha de Momo contra abejas",
+      heading: "Momo fight against bees ",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -127,10 +127,10 @@ undum.game.situations = {
 
   correr: new undum.SimpleSituation(
     "<img src='./media/img/1.png' class='float_right' width='250' height='250'>\
-    <p>Ojeo un camino. Voy corriendo hacia por él. Le he perdido la pista a Momo. Sigo corriendo. Mientras corro miro hacia atrás por si me siguen las abejas</p>\
-    <p>Al girarme, no me doy cuenta de que el camino acaba. Hay un acantilado. Sin verlo, doy un paso en él y caigo. Tengo una fatal caída que acaba con mi vida y esta aventura.</p>",
+    <p>I look at a path. I'm running towards him. I've lost track of Momo. I keep running. As I run I look back in case the bees follow me </p>\
+    <p>When I turn around, I don't realize that the road ends. There is a cliff. Without seeing it, I step into it and fall. I have a fatal fall that ends my life and this adventure. </p>",
     {
-      heading: "Salir corriendo",
+      heading: "Run out ",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -142,9 +142,9 @@ undum.game.situations = {
 
   no_come: new undum.SimpleSituation(
     "<img src='./media/img/1.png' class='float_right' width='250' height='250'>\
-    <p>La barrita no tiene buena pinta. No quiero enfermar, solo quiero poder salir de aquí. Voy a acercarme al <a href='situacion_intermedia1'> gnomo</a>.</p>",
+    <p>The bar doesn't look good. I don't want to get sick, I just want to be able to get out of here. I'm going to get closer to the <a href='situacion_intermedia1'> gnomo</a>.</p>",
     {
-      heading: "Me acerco al gnomo",
+      heading: "I approach the gnome ",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -156,10 +156,10 @@ undum.game.situations = {
 
   come: new undum.SimpleSituation(
     "<img src='./media/img/1.png' class='float_right' width='250' height='250'>\
-    <p>Tengo mucha hambre y, aunque la barrita no tenga buen aspecto me la comeré. Abro la barrita y la introduzco en mi boca.</p>\
-    <p>Es comida para mono. No es compatible para humanos. Acabo muriendo por envenenamiento.</p>",
+    <p>I'm very hungry and, even if the bar doesn't look good, I'll eat it. I open the bar and put it in my mouth. </p>\
+    <p>It's monkey food. It is not compatible for humans. I end up dying of poisoning. </p>",
     {
-      heading: "Me como la barrita",
+      heading: "I eat the bar ",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -171,15 +171,15 @@ undum.game.situations = {
 
   sin_mono: new undum.SimpleSituation(
     "<img src='./media/img/20.png' class='float_right' width='250' height='250'>\
-    <p>Momo frunce el ceño y empieza a sacar plátanos de la riñonera que lleva.</p>\
-    <p>Empieza a lanzármelos a la cabeza. Consigue darme con un par de ellos. Está muy cabreado.</p>\
-    <p>Corro por un camino escapando de él. El camino es estrecho y lleno de ramas y hojas. Me hago algunos rasguños pasando entre ellas.</p>\
+    <p>Momo frowns and starts pulling bananas out of her fanny pack. </p>\
+    <p>Start throwing them at their heads. He manages to find me a couple of them. He is very pissed off. </p>\
+    <p>I run down a road running away from him. The path is narrow and full of branches and leaves. I do some scratches going between them. </p>\
     <p>   " +
       nombre +
-      " : Mi vida es un continuo intentar hacer crecer flores en el desierto...</p>\
-      <p>De repente, encuentro a un <a href='situacion_intermedia1'>gnomo</a> enfrente.</p>",
+      " : My life is a continual trying to grow flowers in the desert ... </p>\
+      <p>Suddenly I find a  <a href='situacion_intermedia1'>gnomo</a> enfrente.</p>",
     {
-      heading: "No quiero continuar con Momo",
+      heading: "I don't want to continue with Momo.",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -189,168 +189,216 @@ undum.game.situations = {
     }
   ),
 
-  /*Comienzo capitulo 2*/
-  situacion_intermedia1: new undum.SimpleSituation(
-    "<h1>CAPITULO 2 - CONOCIENDO A RAERPIN</h1>\
-    <img src='./media/img/15_2.png' class='float_right' width='250' height='250'>\
-        <p> El gnomo parece bastante amigable a pesar de su ridículo aspecto así que decido acercarme a él para saber si tiene idea de donde estamos. </p>\
-        <p> Hola, me llamo " +
-      nombre +
-      " y no se si decirle Buenas tardes o buenos días porque no se donde estamos y para colmo, ¡¡he perdido mi reloj!!.</p>\
-        <p>Hola " +
-      nombre +
-      ", yo soy Raerpin y estamos en el Mágico Mundo de Arcadia, he estado esperándote. ¿Deseas que te guíe en tu aventura?\
-        <a href='acompanar'>Acompañar a Raerpin</a> o <a href='no_acompanar'>no acompañar a Raerpin</a>.</p>"
-  ),
+ /*Comienzo capitulo 2*/
+ situacion_intermedia1: new undum.SimpleSituation(
+  "<h1>CHAPTER 2 - MEETING RAERPIN</h1>\
+  <img src='./media/img/15_2.png' class='float_right' width='250' height='250'>\
+      <p> The gnome seems friendly enough despite his ridiculous appearance so I decide to approach him to see if he has any idea where we are. </p>\
+      <p> Hello, my name is " +
+    nombre +
+    " and I don't know whether to say good afternoon or good morning because I don't know where we are and to top it off, I have lost my watch!!!.</p>\
+      <p>Hello " +
+    nombre +
+    ", I am Raerpin and we are in the Magical World of Arcadia, I have been waiting for you. Would you like me to guide you in your adventure?\
+      <a href='acompanar'>Accompany Raerpin</a> o <a href='no_acompanar'>not to accompany Raerpin</a>.</p>"
+),
 
-  /*Elijo Acompañar al gnomo*/
-  acompanar: new undum.SimpleSituation(
-    "<img src='./media/img/6.png' class='float_right' width='250' height='250'><p>Decido emprender mi aventura junto a Raerpin por tres razones, la primera es que sigo sin tener idea de donde estoy,\
-      la segunda, ¿cómo que me estaba esperando? y la tercera, que hace decantarme ¡¡¡ESTOY HABLANDO CON UN GNOMO!!!</p>\
-      <p><b>Raerpin:</b> De acuerdo, se que te estás preguntando cómo sabía que vendrías, ¿No es así?\
-      <p><b>" +
-      nombre +
-      ":</b> <a href='elijo_si'>-Así es-</a>   |   <a href='elijo_no'>-Prefiero no saberlo-</a></p>",
-    {
-      heading: "Acompañar a Raerpin",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 15
-        );
-      },
-    }
-  ),
-  /*DIÁLOGO CON RAERPIN*/
-  /*Así es*/
-  elijo_si: new undum.SimpleSituation(
-    " <p><b>Raerpin:</b> He visto caer un ordenador hace un rato y me ha bastado con verte y olerme...para saber que eres estudiante de una ingeniería\
-      <p><b>" +
-      nombre +
-      ":</b> <a href='elijo_reirme'>-Si te soy sincero, he tenido un dia complicado...-</a>   |   <a href='elijo_enfadarme'>-¡Los ingenieros también nos duchamos!-</a></p>"
-  ),
-  /*Prefiero no saberlo*/
-  elijo_no: new undum.SimpleSituation(
-    " <p><b>Raerpin:</b> Igualmente te lo voy a contar para reirme de tí, he visto caer un ordenador hace un rato y me ha bastado con verte y olerme...para saber que eres estudiante de una ingeniería\
-      <p><b>" +
-      nombre +
-      ":</b> <a href='elijo_reirme'>-He tenido un dia complicado...-</a>   |   <a href='elijo_enfadarme'>-¡Los ingenieros también nos duchamos!-</a></p>"
-  ),
-  /*He tenido un dia complicado*/
-  elijo_reirme: new undum.SimpleSituation(
-    " <p><b>Raerpin:</b> ¡Menos mal que tengo esta pinza para la nariz!. Pero ahora me pondré serio. En Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
-      <p><b>" +
-      nombre +
-      ":</b> <a href='elijo_seguir'>-Nací preparado-</a>   |   <a href='elijo_asustarme'>-Tengo mucho miedo, quiero irme a casa-</a></p>"
-  ),
-  /*¡Los ingernieros tambien nos duchamos!*/
-  elijo_enfadarme: new undum.SimpleSituation(
-    " <p><b>Raerpin:</b> No lo pongo en duda pero hoy se te ha olvidado. Por suerte ¡tengo esta pinza para la nariz! Pero ahora me pondré serio. En Arcadia encontrarás diversos malvados y dejaré en tus manos la elección del camino que afontarás. Si llegas intacto al final, recuperarás tu ordenador y podrás acabar la práctica de Desarrollo Ágil a tiempo. ¿ESTÁS PREPARADO?</p>\
-      <p><b>" +
-      nombre +
-      ":</b> <a href='elijo_seguir'>-Nací preparado-</a>   |   <a href='cabezon'>-Tengo mucho miedo, quiero irme a casa-</a></p>"
-  ),
+/*Elijo Acompañar al gnomo*/
+acompanar: new undum.SimpleSituation(
+  "<img src='./media/img/6.png' class='float_right' width='250' height='250'>\
+  <p>I decide to undertake my adventure with Raerpin for three reasons, the first is that I still have no idea where I am.,\
+  The second one, what do you mean he was waiting for me? and the third one, which makes me decide I'M TALKING TO A GNOMO!!!!</p>\
+    <p><b>Raerpin:</b> Okay, I know you're wondering how I knew you were coming, aren't you?\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_si'>-That's right-</a>   |   <a href='elijo_no'>-I prefer not to know-</a></p>",
+  {
+    heading: "Accompany Raerpin",
+    enter: function (character, system, from) {
+      system.setQuality(
+        "progreso_historia",
+        character.qualities.progreso_historia + 15
+      );
+    },
+  }
+),
 
-  /*Nací preparado*/
-  elijo_seguir: new undum.SimpleSituation(
-    " <p><b>Raerpin:</b> De acuerdo, ¿Eres capaz de acertar esta adivinanza?</p>\
-    <div align='center'><img src='./media/img/acertijo.jpg' align='middle' width='250' height='250'></div>\
-      <p><b>" +
-      nombre +
-      ":</b> <a href='elijo_40'>-40-</a>   |   <a href='elijo_96'>-96-</a></p>"
-  ),
-  /*Tengo mucho miedo, quiero irme a casa- GAME OVER*/
+/*DIÁLOGO CON RAERPIN*/
+/*Así es*/
+elijo_si: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> I saw a computer fall a while ago and it was enough to see you and smell me... to know that you are an engineering student.\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_reirme'>-To tell you the truth, I've had a complicated day...-</a>   |   <a href='elijo_enfadarme'>-Engineers take showers too!-</a></p>"
+),
+/*Prefiero no saberlo*/
+elijo_no: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> I'm going to tell you anyway to make fun of you, I saw a computer fall a while ago and it was enough to see you and smell me... to know that you are an engineering student.\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_reirme'>-To tell you the truth, I've had a complicated day...-</a>   |   <a href='elijo_enfadarme'>-Engineers take showers too!-</a></p>"
+),
 
-  /*40*/
-  elijo_40: new undum.SimpleSituation(
-    "<p>Ambas respuestas eran correctas, has elegido la más fácil a la que llegar. Las respuestas a las sumas dependen, menos en el primer caso, del resultado de la suma anterior.</p>\
-        <p><a href='fin_capitulo'>Continuar con la historia</a> o <a href='elijo_96'>Ver la solución difícil</a></p>",
-    {
-      heading: "Solución Fácil",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 5
-        );
-      },
-    }
-  ),
-  /*96*/
-  elijo_96: new undum.SimpleSituation(
-    "<p>Ambas respuestas eran correctas, has elegido a la que llegan quienes consiguen pensar fuera de la caja y ven multiplicaciones donde otros solo ven sumas. Multiplicando los dígitos que plantea la suma y sumando al resultado el primero de ellos se llega a la solución.</p>\
-        <p><a href='fin_capitulo'>Continuar con la historia</a> o <a href='elijo_40'>Ver la solución fácil</a></p>",
-    {
-      heading: "Solución Difícil",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 5
-        );
-      },
-    }
-  ),
+/*He tenido un dia complicado*/
+elijo_reirme: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> Thank goodness I have this nose clip! </p>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_enfadarme2'>-If you mess with the engineers again, you'll have to deal with me and my partners!-</a>   |   <a href='elijo_reirme2'>-Are all you gnomes out of the comedy club?-</a></p>"
+),
+/*¡Los ingernieros tambien nos duchamos!*/
+elijo_enfadarme: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> I don't doubt it but you forgot today. Luckily I have this nose clip!</p>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_enfadarme2'>-If you mess with the engineers again, you'll have to deal with me and my partners!-</a>   |   <a href='elijo_reirme2'>-Are all you gnomes out of the comedy club?-</a></p>"
+),
 
-  /*Fin del capítulo 2*/
-  fin_capitulo: new undum.SimpleSituation(
-    " <img src='./media/img/23.png' class='float_right' width='250' height='250'>\
-    <p>Por haber dado con la solución, Raerpin me confiesa que el ordenador lo encontraré en el último lugar de mi camino y que solo lo conseguiré si derroto al villano de Arcadia junto a todos sus secuaces que iré encontrando <a href= 'capitulo_tercero'>hasta llegar a él.</a></p>",
-    {
-      heading: "Continuamos.....",
-      enter: function (character, system, from) {
-        system.setQuality(
-          "progreso_historia",
-          character.qualities.progreso_historia + 5
-        );
-      },
-    }
-  ),
+/*¿Todos los gnomos habeis salido del club de la comedia?*/
+elijo_reirme2: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> Unfortunately I am the last gnome left alive, after having a hard time for a long time due to the great loneliness I felt, I decided to live my remaining days with humor.</p>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_sabermas'>-What happened to the others?-</a>   |   <a href='elijo_vacilar'>-I'm sure you deserved it-</a></p>"
+),
+/*¡Si te vuelves a meter con los ingenieros te las verás conmigo y mis compañeros!*/
+elijo_enfadarme2: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> I envy you so much, I wish I could take refuge in my friends but I can't anymore. Unfortunately I am the last gnome left alive. </p>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_sabermas'>-What happened to the others?-</a>   |   <a href='elijo_vacilar'>-I'm sure you deserved it-</a></p>"
+),
 
-  /*Elijo No acompañar al gnomo*/
-  no_acompanar: new undum.SimpleSituation(
-    "<p><b>Raerpin:</b> ¿Te crees muy listo verdad? Todos necesitamos ayuda, mira la cantidad de ayuda que te han proporcionado tus compañero en cada una de tus prácticas, entonces ¡SÍ ACEPTABAS SU AYUDA!</p>\
-    <p>¿Y qué pasará si esta vez decido hacerlo solo? le pregunto</p>\
-    <p><b>Raerpin:</b> Que no durarás ni un minuto más...</p>\
-    <p><a href='acompanar'>Acompañar a Raerpin</a> o <a href='cabezon'>no acompañar a Raerpin</a>.</p>",
-    {
-      heading: "No me inspira confianza, mejor me voy",
-    }
-  ),
+/*¿Qué paso con los demás?*/
+elijo_sabermas: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> Just kidding! All my friends are healthy as hell, they work out at the gym every day. I like innocent people so I won't mind putting up with your stink a little longer.</p>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_1'>-You had scared me, I feared for my life for a moment.-</a>   |   <a href='elijo_2'>-I don't think I like you at all....-</a></p>"
+),
+/*Seguro que os lo merecíais*/
+elijo_vacilar: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> We don't deserve it, we are wonderful and I just stayed with you as I wanted to. All my friends are healthy as hell, they work out at the gym every day. But I like innocent people so I won't mind putting up with your stink a little longer. </p>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_2'>-For a moment I believed it-</a>   |   <a href='elijo_2'>-I don't think I like you at all...-</a></p>"
+),
 
-  /*Vuelvo a elegir no acompañar al gnomo*/
-  cabezon: new undum.SimpleSituation(
-    "<p><b>Raerpin:</b> Está bien, te convierto en mi nueva mascota, !SERÁS UN BONITO PERRO PARA EL RESTO DE TUS DÍAS!</p>\
-    <p>   <b>" +
-      nombre +
-      ":</b> ¡¡Guau!! ¡¡guau!!</p>\
-    <p><b>Has perdido, GAME OVER</b></p>",
-    {
-      heading: "Quiero hacerlo todo solo porque soy el mejor",
-    }
-  ),
+/*Me habias asustado, he temido por mi vida por un momento.*/
+elijo_1: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> And you do well to fear. I will get serious, in Arcadia you will find various baddies and I will leave in your hands the choice of the path you will take. If you make it to the end intact, you will get your computer back and you will be able to finish the Agile Development practice on time. ARE YOU READY?</p>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_seguir1'>-I was born ready-</a>   |   <a href='elijo_cabezon1'>-I'm so scared, I want to go home-</a></p>"
+),
+/*Creo que no me caes del todo bien... // Por un momento había picado*/
+elijo_2: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> I will still warn you that in Arcadia you will encounter various baddies and I will leave it up to you to choose the path you will face. If you reach the end intact, you will recover your computer and you will be able to finish the Agile Development practice on time. ARE YOU READY?</p>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_seguir1'>-I was born ready-</a>   |   <a href='cabezon1'>-I'm so scared, I want to go home-</a></p>"
+),
+
+/*Nací preparado*/
+elijo_seguir1: new undum.SimpleSituation(
+  " <p><b>Raerpin:</b> Okay, are you able to guess this riddle?</p>\
+  <div align='center'><img src='./media/img/acertijo.jpg' align='middle' width='250' height='250'></div>\
+    <p><b>" +
+    nombre +
+    ":</b> <a href='elijo_40'>-40-</a>   |   <a href='elijo_96'>-96-</a></p>"
+),
+/*Tengo mucho miedo, quiero irme a casa- GAME OVER*/
+
+/*40*/
+elijo_40: new undum.SimpleSituation(
+  "<p>Both answers were correct, you have chosen the easiest one to arrive at. The answers to the sums depend, except in the first case, on the result of the previous sum.</p>\
+      <p><a href='fin_capitulo'>Continue with the story</a> o <a href='elijo_96'>See the difficult solution</a></p>",
+  {
+    heading: "Easy Solution",
+    enter: function (character, system, from) {
+      system.setQuality(
+        "progreso_historia",
+        character.qualities.progreso_historia + 5
+      );
+    },
+  }
+),
+/*96*/
+elijo_96: new undum.SimpleSituation(
+  "<p>Both answers were correct, you have chosen the one that those who can think outside the box and see multiplications where others only see additions. Multiplying the digits that the sum poses and adding the first of them to the result leads to the solution.</p>\
+      <p><a href='fin_capitulo'>Continue with the story</a> o <a href='elijo_40'>See the easy solution</a></p>",
+  {
+    heading: "Difficult Solution",
+    enter: function (character, system, from) {
+      system.setQuality(
+        "progreso_historia",
+        character.qualities.progreso_historia + 5
+      );
+    },
+  }
+),
+
+/*Fin del capítulo 2*/
+fin_capitulo: new undum.SimpleSituation(
+  " <img src='./media/img/23.png' class='float_right' width='250' height='250'>\
+  <p>For having found the solution, Raerpin confesses to me that I will find the computer in the last place on my way and that I will only get it if I defeat the villain of Arcadia along with all his henchmen that I will find <a href= 'capitulo_tercero'>until I get to him.</a></p>",
+  {
+    heading: "CContinued.....",
+    enter: function (character, system, from) {
+      system.setQuality(
+        "progreso_historia",
+        character.qualities.progreso_historia + 5
+      );
+    },
+  }
+),
+
+/*Elijo No acompañar al gnomo*/
+no_acompanar: new undum.SimpleSituation(
+  "<p><b>Raerpin:</b> You think you're so smart, don't you? We all need help, look at the amount of help your classmates have given you in each of your internships, so YOU WERE ACCEPTING THEIR HELP!</p>\
+  <p>And what will happen if this time I decide to do it alone? I ask him</p>\
+  <p><b>Raerpin:</b> You won't last a minute longer...</p>\
+  <p><a href='acompanar'>Accompany Raerpin</a> o <a href='cabezon'>not to accompany Raerpin</a>.</p>",
+  {
+    heading: "I don't trust him, I'd better go",
+  }
+),
+
+/*Vuelvo a elegir no acompañar al gnomo*/
+cabezon1: new undum.SimpleSituation(
+  "<p><b>Raerpin:</b> Okay, I make you my new pet, YOU WILL BE A NICE DOG FOR THE REST OF YOUR DAYS!</p>\
+  <p>   <b>" +
+    nombre +
+    ":</b> ¡¡Guau!! ¡¡guau!!</p>\
+  <p><b>You have lost, GAME OVER</b></p>",
+  {
+    heading: "I want to do everything just because I am the best",
+  }
+),
 
   /*Comienzo capitulo 3*/
   capitulo_tercero: new undum.SimpleSituation(
     "<img src='./media/img/14.jpg' class='float_right' width='500' height='250'>\
-    <p>Tras conocer la ubicación <br> de mi ordenador y preguntar por las rutas existentes me planteo cuál seguir.</p>\
-        <p>Por la ruta más larga tengo un <a href='campamento'>campamento de villanos</a>, según los datos proporcionados por el gnomo habitan cinco villanos y van armados con espadas de metal y escudos de madera.</p>\
-        <p>Por la ruta más corta tengo que <a href='montana'>pasar la montaña</a>, gobernada por un monstruo del cual no se conoce información, solo sé que es conocido como \"El rey de la montaña\".</p><br>\
+    <p> After knowing the location of my computer and asking about the existing routes, I ask myself which one to follow. </p> \
+        <p> By the longest route I have a <a href='campamento'>villain camp</a>, according to the data provided by the gnome there are five villains and they are armed with metal swords and wooden shields. </ p> \
+        <p> By the shortest route I have to <a href='montana'>pass the mountain</a>, ruled by a monster about which no information is known, I only know that he is known as \"The king of the mountain \". </p> <br> \
         <video controls autoplay width='100%'>\
           <source src='videos/v2.mp4' type='video/mp4' />\
         </video>",
     {
-      heading: "Capítulo 3 - MI OBJETIVO",
+      heading: "Chapter 3 - MY GOAL",
     }
   ),
 
   /*Elección campamento de villanos*/
   campamento: new undum.SimpleSituation(
     "<img src='./media/img/25.jpg' class='float_right' width='500' height='300'>\
-    <p>Decido ir por la ruta más larga, <br> pero de la que más información tengo, llegar hasta allí me llevará cinco días y cuatro noches, por lo que decido partir ya.</p>\
-        <p>Tras varias días caminando sin cesar, diviso a lo lejos el campamento de villanos. Para mi asombro solo está compuesto por cabañas de madera con el techo de paja y de un río que cruza por el centro.</p>\
-        <p><a href='detalladamente_campamento'>Mirar detalladamente el campamento</a>.</p>\
-        <p>Permanezco escondido y comienzo a preparar el plan para atacar, pudiendo hacerlo de dos formas distintas, o bien <a href='campamento_fuerza'>entro a la fuerza</a> atacando e intentando pillarlos desprevenidos o me centro en <a href='campamento_sigilo'>hacerlo sigilosamente</a>.</p>",
+    <p> I decide to take the longest route, <br> but about the one I have more information about, getting there will take me five days and four nights, so I decide to leave now. </p> \
+        <p> After several days of walking incessantly, he made out the villain camp in the distance. To my amazement it is only made up of wooden huts with thatched roofs and a river that runs through the center. </p> \
+        <p> <a href='detailed_camping'> Look at the campsite in detail </a>. </p> \
+        <p> I remain hidden and begin to prepare the plan to attack, being able to do it in two different ways, either <a href='campamento_force'> I enter by force </a> attacking and trying to catch them off guard or I focus on <a href = 'stealth_camping'> do it stealthily </a>. </p> ",
     {
-      heading: "Campamento de villanos",
+      heading: "Villain Camp",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -361,19 +409,19 @@ undum.game.situations = {
   ),
   campamento2: new undum.SimpleSituation(
     "<img src='./media/img/25.jpg' class='float_right' width='500' height='300'>\
-    <p>Decido ir por la ruta más larga, <br> pero de la que más información tengo, llegar hasta allí me llevará cinco días y cuatro noches, por lo que decido partir ya.</p>\
-        <p>Tras varias días caminando sin cesar, diviso a lo lejos el campamento de villanos. Para mi asombro solo está compuesto por cabañas de madera con el techo de paja y de un río que cruza por el centro.</p>\
-        <p>Permanezco escondido y comienzo a preparar el plan para atacar, pudiendo hacerlo de dos formas distintas, o bien <a href='campamento_fuerza'>entro a la fuerza</a> atacando e intentando pillarlos desprevenidos o me centro en <a href='campamento_sigilo'>hacerlo sigilosamente</a>.</p>",
+    <p> I decide to take the longest route, <br> but about the one I have more information about, getting there will take me five days and four nights, so I decide to leave now. </p> \
+        <p> After several days of walking incessantly, he made out the villain camp in the distance. To my amazement it is only made up of wooden huts with thatched roofs and a river that runs through the center. </p> \
+        <p> I remain hidden and begin to prepare the plan to attack, being able to do it in two different ways, either <a href='campamento_force'> I enter by force </a> attacking and trying to catch them off guard or I focus on <a href = 'stealth_camping'> do it stealthily </a>. </p> ",
     {
-      heading: "Campamento de villanos",
+      heading: "Villain Camp",
     }
   ),
   /*Mirar detalladamente el campamento*/
   detalladamente_campamento: new undum.SimpleSituation(
-    "<p>veo que hay un tirador con arco y flechas de piedra.</p>\
-        <p><a href='campamento2'>Continuar con la historia</a></p>",
+    "<p> I see there is a shooter with a stone bow and arrows. </p> \
+    <p> <a href='camp2'> Continue with the story </a> </p>",
     {
-      heading: "Tras mirar detalladamente ...",
+      heading: "After looking closely ...",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -385,10 +433,10 @@ undum.game.situations = {
   /*Elección campamento de villanos a la fuerza*/
   campamento_fuerza: new undum.SimpleSituation(
     "<img src='./media/img/16.png' class='float_right' width='250' height='250'>\
-    <p>Decido hacer el ataque por la fuerza, <br> con mi espada en mano salgo a correr hacia el campamento entrando por la parte trasera y acabando con la vida de dos villanos. En este momento los dos que se encuentran en tierra más el arquero subido en una plataforma se focalizan en mí. Esquivando flechas y luchando contra los dos a la vez consigo salir victorioso pero con heridas físicas graves, por lo que tendré que recuperarme antes de poder seguir.</p>\
-        <p>Me tumbo en una de las camas del campamento para <a href='campamento_fuerza2'> reposar y sanar mis heridas</a>.</p>",
+    <p> I decide to make the attack by force, <br> with my sword in hand I go running towards the camp entering from the back and killing two villains. At this moment the two on the ground plus the archer on a platform focus on me. Dodging arrows and fighting both at the same time I manage to emerge victorious but with serious physical injuries, so I will have to recover before I can continue. </p> \
+    <p> I lie down on one of the camp beds to <a href='campamento_force2'> rest and heal my wounds </a>. </p> ",
     {
-      heading: "Ataque al campamento por la fuerza",
+      heading: "Attack on the camp by force",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -402,34 +450,34 @@ undum.game.situations = {
       if (character.qualities.frascoVida > 0) {
         system.write(
           "<img src='./media/img/19.png' class='float_right' width='250' height='300'>\
-          <p>Al tumbarme sobre la cama de una cabaña, recuerdo el frasco de vida que me dio Momo.</p>\
-                    <p>Decido tomarmelo de un trago y, para mi asombro todas mis heridas han sanado en cueston de segundos.\
-                    Gracias a esto podré <a href='eleccion_villanos'>continuar mi viaje</a> sin perder tiempo.</p>"
+          <p> As I lay down on a bed in a cabin, I remember the vial of life that Momo gave me. </p> \
+          <p> I decide to take it in one gulp and, to my amazement, all my wounds have healed in a matter of seconds. \
+          Thanks to this I will be able to <a href='eleccion_villalanos'> continue my journey </a> without wasting time. </p> "
         );
 
         system.setQuality("frascoVida", character.qualities.frascoVida - 1);
       } else {
         system.write(
           "<img src='./media/img/12.png' class='float_right' width='150' height='150'>\
-          <p> Tras una semana, <br> mis heridas han sanado y procedo a prepararme para llegar al castillo del jefe,</p>\
-          quien ha robado mi ordenador.</p>\
-          <p>Antes de salir voy a llevar conmigo algunas de las\
-          <a href='eleccion_villanos'>armas que tenían los villanos</a></p>"
+          <p> After a week, <br> my wounds have healed and I proceed to prepare to get to the boss's castle, </p> \
+          who has stolen my computer. </p> \
+          <p> Before leaving I am going to take with me some of the \
+          <a href='eleccion_villains'> weapons that the villains had </a> </p> "
         );
       }
     },
 
-    heading: "Recuperación",
+    heading: "Recovery",
   }),
 
   /*Elección campamento de villanos en sigilo*/
   campamento_sigilo: new undum.SimpleSituation(
     "<img src='./media/img/2.png' class='float_right' width='250' height='250'>\
-    <p>Decido hacer un ataque sigiloso, <br> con mi espada en mano entro de noche en el campamento nadando por el río.</p>\
-        <p>Mi mayor prioridad es acabar con el arquero, ya que es el que presenta la gran amenaza. Me avalanzo sobre él por la espalda sin que el resto se percate. Cojo su arco y acabo con dos soldados que se encontraban de guardia, bajo y acaba con la vida de los soldados que estaban descansando en sus cabañas.</p>\
-        <p>Decido pasar la noche en el campamento y antes de partir hacia el castillo <a href='eleccion_villanos'>recojo algunas armas pertenecientes a los villanos.</a></p>",
+    <p> I decide to make a stealth attack, <br> with my sword in hand I enter the camp at night swimming by the river. </p> \
+    <p> My highest priority is to take down the archer, as he is the one who presents the greatest threat. I rush on him from behind without the rest of them noticing. I take his bow and finish with two soldiers who were on guard, low and kill the soldiers who were resting in their cabins. </p> \
+    <p> I decide to spend the night in the camp and before leaving for the castle <a href='eleccion_villalanos'> I collect some weapons belonging to the villains. </a> </p> ",
     {
-      heading: "Ataque al campamento sigilosamente",
+      heading: "Attack the camp stealthily",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -441,12 +489,12 @@ undum.game.situations = {
   /*Elección pasar por la montaña*/
   montana: new undum.SimpleSituation(
     "<img src='./media/img/5.png' class='float_right' width='250' height='250'>\
-    <p>Decido ir por la ruta más corta, <br>pese a no tener información sobre el monstruo.</p>\
-        <p>Tras un dia de camino llego a las llanuras de la montaña, noto algo inquietante y es que la vegetación y el clima son muy secos.</p>\
-        <p>Me adentro en ella y continuo recto durante el día. Al llegar la noche decido continuar sin parar hasta que noto como algo me vigila en la distancia, decido correr y algo se avalanza sobre mí, consigo escaparme y verlo de frente, se trata de un lobo enorme.</p>\
-        <p>Tengo poco tiempo para pensar ya que se volvera a avalanzar sobre mi, nose si debería <a href='salir_corriendo'>salir corriendo</a> o <a href='enfrentarme'>enfrentarme a él</a>.</p>",
+    <p> I decide to go the shortest route, <br> despite having no information about the monster. </p> \
+    <p> After a day of walking I arrive at the mountain plains, I notice something disturbing and that is that the vegetation and the climate are very dry. </p> \
+    <p> I step into it and go straight through the day. When night comes I decide to continue without stopping until I notice how something watches me in the distance, I decide to run and something is rushing over me, I manage to escape and see it head-on, it is a huge wolf. </p> \
+    <p> I have little time to think since he will attack me again, I don't know if I should <a href= 'run_out'> run away </a> or <a href='front me'> face him </a> . </p> ",
     {
-      heading: "El rey de la montaña",
+      heading: "King of the mountain",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -458,9 +506,9 @@ undum.game.situations = {
   /*Salir corriendo del lobo*/
   salir_corriendo: new undum.SimpleSituation(
     "<img src='./media/img/24.jpg' class='float_right' width='500' height='300'>\
-    <p>Tras pensarlo rapidamente, <br>decido salir corriendo entre la maleza del bosque, el lobo me persigue sin cesar por lo que no me queda otra que darme la vuelta y <a href='enfrentarme'>enfrentarme a él</p>",
+    <p> After thinking about it quickly, I decide to run through the undergrowth of the forest, the wolf chases me incessantly so I have no choice but to turn around and <a href='front me'> face him </ p> ",
     {
-      heading: "Salir corriendo",
+      heading: "Run out",
     }
   ),
   /*Enfrentarme a el*/
@@ -469,13 +517,13 @@ undum.game.situations = {
       if (character.qualities.frascoVida > 0) {
         system.write(
           "<img src='./media/img/4.png' class='float_right' width='250' height='250'>\
-          <p>Cojo mi espada, <br> y salgo corriendo hacia él, me muerde el brazo mientras le atravieso el cuello con mi arma.\
-                    El resultado ha sido desastroso, mi brazo ha acabado destrozado, pero al menos he conseguido sobrevivir ante semejante amenaza.</p>\
-                    <p>Tras acabar la batalla me tumbo en el suelo del bosque destrozado y recuerdo el frasco de vida que me dió Momo,\
-                    decido tomarlo de un trago y, para mi asombro ¡Qué está pasando! en cuestión de segundos mis heridas han sanado y mi brazo\
-                    a crecido de nuevo. Tras varios minutos asimilando lo sucedido decido conversar con el gnomo sobre el lobo.\
-                    El gnomo me cuenta que se trata de un animal mágico y que sus huesos sirven para hacer armas mas fuertes que el hierro.</p>\
-                    <p>Puesto que no tengo todo el tiempo del mundo debo decidir que <a href='eleccion_montana'>armas fabricar</a>.</p>"
+          <p> I grab my sword, <br> and run towards him, he bites my arm as I pierce his neck with my weapon. \
+          The result has been disastrous, my arm has been destroyed, but at least I have managed to survive against such a threat. </p> \
+          <p> After finishing the battle I lie on the floor of the destroyed forest and I remember the vial of life that Momo gave me, \
+          I decide to take it in one gulp and, to my amazement, what is happening! in a matter of seconds my wounds have healed and my arm \
+          it has grown again. After several minutes assimilating what happened, I decide to talk to the gnome about the wolf. \
+          The gnome tells me that it is a magical animal and that its bones are used to make weapons stronger than iron. </p> \
+          <p> Since I don't have all the time in the world, I must decide what <a href='eleccion_montana'> weapons to make </a>. </p> "
         );
         system.setQuality("frascoVida", character.qualities.frascoVida - 1);
         system.setQuality(
@@ -485,10 +533,10 @@ undum.game.situations = {
       } else {
         system.write(
           "<img src='./media/img/4.png' class='float_right' width='250' height='250'>\
-          <p>Cojo mi espada, <br> y salgo corriendo hacia él, me muerde el brazo mientras le atravieso el cuello con mi arma.\
-                    El resultado ha sido desastroso, mi brazo ha acabado destrozado, pero al menos he conseguido sobrevivir ante semejante amenaza.</p>\
-                    <p>Tras varios días de recuperación, el gnomo me cuenta que se trata de un animal mágico y que sus huesos sirven para hacer armas mas fuertes que el hierro.</p>\
-                    <p>Puesto que no tengo todo el tiempo del mundo debo decidir que <a href='eleccion_montana'>armas fabricar</a>.</p>"
+          <p> I grab my sword, <br> and run towards him, he bites my arm as I pierce his neck with my weapon. \
+          The result has been disastrous, my arm has been destroyed, but at least I have managed to survive against such a threat. </p> \
+          <p> After several days of recovery, the gnome tells me that it is a magical animal and that its bones are used to make weapons stronger than iron. </p> \
+          <p> Since I don't have all the time in the world, I must decide what <a href='eleccion_montana'> weapons to make </a>. </p> "
         );
         system.setQuality(
           "progreso_historia",
@@ -497,16 +545,16 @@ undum.game.situations = {
       }
     },
 
-    heading: "Enfrentamiento con el lobo",
+    heading: "Confrontation with the wolf",
   }),
   /*llegada a castillo*/
   llegada_castillo: new undum.SimpleSituation(
     "<img src='./media/img/28.png' class='float_right' width='250' height='250'>\
-    <p>Tras reponer mi inventario con nuevas armas, <br> focalizo mi atención en llegar hacia el castillo.</p>\
-        <p>Tras un día caminando sin descanso diviso a lo lejos el inmenso castillo del responsable de robar mi ordenador.</p>\
-        <p><a href='entrada'>Me dirigo hacia la puerta principal</a></p>",
+    <p> After restocking my inventory with new weapons, <br> I focus my attention on reaching the castle. </p> \
+    <p> After a day of walking without rest, I can see in the distance the immense castle of the person responsible for stealing my computer. </p> \
+    <p> <a href='entry'> I'm heading towards the front door </a> </p> ",
     {
-      heading: "Llegada al castillo",
+      heading: "Arrival at the castle",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -530,7 +578,7 @@ undum.game.situations = {
       system.write($("#recojo_cuchillohuesos").html());
     },
     tags: ["eleccion_montana"],
-    optionText: "Cuchillo de huesos",
+    optionText: "Bone knife",
     displayOrder: 1,
   }),
   // Cuchillo Metal
@@ -548,7 +596,7 @@ undum.game.situations = {
       system.write($("#recojo_cuchillometal").html());
     },
     tags: ["eleccion_villanos"],
-    optionText: "Cuchillo de metal",
+    optionText: "Metal knife",
     displayOrder: 1,
   }),
   // espada de huesos
@@ -562,7 +610,7 @@ undum.game.situations = {
       system.write($("#recojo_espadahuesos").html());
     },
     tags: ["eleccion_montana"],
-    optionText: "Espada de huesos",
+    optionText: "Sword of bones",
     displayOrder: 1,
   }),
   // Espada de metal
@@ -577,7 +625,7 @@ undum.game.situations = {
       system.write($("#recojo_espadametal").html());
     },
     tags: ["eleccion_villanos"],
-    optionText: "Espada de metal",
+    optionText: "Metal Sword",
     displayOrder: 1,
   }),
   // arco de huesos
@@ -591,7 +639,7 @@ undum.game.situations = {
       system.write($("#recojo_arcohuesos").html());
     },
     tags: ["eleccion_montana"],
-    optionText: "Arco de huesos",
+    optionText: "Bow of Bones",
     displayOrder: 1,
   }),
   // arco de metal
@@ -606,7 +654,7 @@ undum.game.situations = {
       system.write($("#recojo_arcometal").html());
     },
     tags: ["eleccion_villanos"],
-    optionText: "Arco de metal",
+    optionText: "Metal bow",
     displayOrder: 1,
   }),
   // lanza de huesos
@@ -620,7 +668,7 @@ undum.game.situations = {
       system.write($("#recojo_lanzahuesos").html());
     },
     tags: ["eleccion_montana"],
-    optionText: "Lanza de huesos",
+    optionText: "Spear of bones",
     displayOrder: 1,
   }),
   // lanza de metal
@@ -635,7 +683,7 @@ undum.game.situations = {
       system.write($("#recojo_lanzametal").html());
     },
     tags: ["eleccion_villanos"],
-    optionText: "Lanza de metal",
+    optionText: "Metal spear",
     displayOrder: 1,
   }),
   // Machete de huesos
@@ -652,7 +700,7 @@ undum.game.situations = {
       system.write($("#recojo_machetehuesos").html());
     },
     tags: ["eleccion_montana"],
-    optionText: "Machete de huesos",
+    optionText: "Bone machete",
     displayOrder: 1,
   }),
   // Machete de metal
@@ -670,7 +718,7 @@ undum.game.situations = {
       system.write($("#recojo_machetemetal").html());
     },
     tags: ["eleccion_villanos"],
-    optionText: "Machete de metal",
+    optionText: "Metal Machete",
     displayOrder: 1,
   }),
   // Cuchara de huesos
@@ -687,7 +735,7 @@ undum.game.situations = {
       system.write($("#recojo_cucharahuesos").html());
     },
     tags: ["eleccion_montana"],
-    optionText: "Cuchara de huesos",
+    optionText: "Bone spoon",
     displayOrder: 1,
   }),
   // Cuchara de metal
@@ -705,7 +753,7 @@ undum.game.situations = {
       system.write($("#recojo_cucharametal").html());
     },
     tags: ["eleccion_villanos"],
-    optionText: "Cuchara de metal",
+    optionText: "Metal spoon",
     displayOrder: 1,
   }),
   // Tenedor de huesos
@@ -722,7 +770,7 @@ undum.game.situations = {
       system.write($("#recojo_tenedorhuesos").html());
     },
     tags: ["eleccion_montana"],
-    optionText: "Tenedor de huesos",
+    optionText: "Bone fork",
     displayOrder: 1,
   }),
   // Tenedor de metal
@@ -740,7 +788,7 @@ undum.game.situations = {
       system.write($("#recojo_tenedormetal").html());
     },
     tags: ["eleccion_villanos"],
-    optionText: "Tenedor de metal",
+    optionText: "Metal fork",
     displayOrder: 1,
   }),
 
