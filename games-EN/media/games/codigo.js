@@ -179,7 +179,7 @@ undum.game.situations = {
       " : My life is a continual trying to grow flowers in the desert ... </p>\
       <p>Suddenly I find a  <a href='situacion_intermedia1'>gnomo</a> enfrente.</p>",
     {
-      heading: "I don't want to continue with Momo ",
+      heading: "I don't want to continue with Momo.",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
