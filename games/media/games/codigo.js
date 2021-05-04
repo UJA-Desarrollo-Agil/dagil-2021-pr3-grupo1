@@ -35,7 +35,7 @@ nombre = prompt(
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
   start: new undum.SimpleSituation(
-    "<h1>CAPÍTULO 1: LA HISTORIA COMIENZA...</h1>\
+    "<h1>CAPÍTULO 1: LA HISTORIA COMIENZA... </h1>\
     <img src='./media/img/15.png' class='float_ce' width='500' height='400'>\
         <p>Despierto de golpe. La luz del sol me deslumbra.<br> Froto mis ojos hasta que consigo abrirlos por completo.</p>\
         <p>Miro hacia arriba y a mi alrededor. El cielo está despejado. No sé dónde estoy. Intento hacer memoria para recordar</p>\
