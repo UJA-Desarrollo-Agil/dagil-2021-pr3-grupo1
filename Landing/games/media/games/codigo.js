@@ -877,15 +877,24 @@ undum.game.situations = {
       },
     }
   ),
+ 
   entrar_sigilo: new undum.SimpleSituation(
     "<img src='./media/img/9.jpg' width='500' height='400'>\
 	<p>Decido entrar en sigilo ya que no me apetece enfrentarme a un ejército entero.\
 	Para encontrar mi vía de entrada voy a dar una vuelta por las afueras del castillo.</p>\
+	<p>Debo tener una gran suerte porque me he vuelto a encontrar un objeto, \
+	esta vez es <a href='./cuerda-tru' class='once'>una cuerda.</a></p>\
+	<p>Ahora igual puedo <a href='cuerda_escalar'>escalar el muro para infiltrarme</a>. Sino, continuaré mi camino.</p>\
 	<p>Tras haber dado un paseo exploratorio, creo que las mejores opciones son\
 	intentar colarme por donde menos seguridad hay, <a href='parte_atras'>la parte de atrás</a>. O quizá también puedo\
 	<a href='disfraz_guardia'>disfrazarme como un guardia</a> y colarme por la puerta principal.\
 	</p>",
     {
+	  actions: {
+			"cuerda-tru": function (character, system, action) {
+				system.setQuality("cuerda", true);
+			},
+	  },
       heading: "Entro en sigilo",
       enter: function (character, system, from) {
         system.setQuality(
@@ -895,6 +904,57 @@ undum.game.situations = {
       },
     }
   ),
+  
+  cuerda_escalar: new undum.SimpleSituation("", {
+    enter: function (character, system, from) {
+      if (character.qualities.cuerda) {
+        {
+          system.setQuality(
+            "progreso_historia",
+            character.qualities.progreso_historia + 5
+          );
+        }
+        system.doLink("cuerda_escalar2");
+      } else {
+        {
+          system.setQuality(
+            "progreso_historia",
+            character.qualities.progreso_historia + 8
+          );
+        }
+        system.write(
+          "<p>Aunque no tenga cuerda me dispongo a escalar el muro.\
+					<em>Seguro que para un ex-escalador profesional no supone ningún problema.</em>\
+					</p>\
+					<p>Eso es lo que diría alguien que ha sido escalador profesional y no un inútil.\
+					</p>\
+					<p>Conforme subo un poco me empiezan a sudar las manos y me resbalo, cayendo hacia atás\
+					desde una altura de medio metro. El golpe no fue gran cosa, pero fue suficiente\
+					para darme cuenta de que ser un héroe no es lo mío y quiero volver a estar tranquilo.\
+					</p>"
+        );
+      }
+    },
+
+    heading: "Escalo el muro",
+  }),
+  
+    cuerda_escalar2: new undum.SimpleSituation(
+    "<p>Tras enganchar la cuerda a un torreón, me dispongo a escalar el muro.</p>\
+	<p>Aunque no ha sido una tarea sencilla, por fin estoy dentro del castillo.</p>\
+	<p>Ahora sólo me queda encontrar a Victorcillo, aunque sospecho que estará en su habitación \
+	así que <a href='despacho'>allí me dirijo</a>.\
+	</p>",
+    {
+      enter: function (character, system, from) {
+        system.setQuality(
+          "progreso_historia",
+          character.qualities.progreso_historia + 2
+        );
+      },
+    }
+  ),
+  
   parte_atras: new undum.SimpleSituation(
     "<img src='./media/img/30.png' width='400' height='300'>\
 	<p>Al final la mejor decisión era infiltrarse por la parte de atrás del castillo.\
@@ -910,7 +970,7 @@ undum.game.situations = {
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
-          character.qualities.progreso_historia + 3
+          character.qualities.progreso_historia + 5
         );
       },
     }
@@ -1166,6 +1226,11 @@ undum.game.qualities = {
     priority: "0001",
     group: "stats",
   }),
+    cuerda: new undum.OnOffQuality("Cuerda para escalar", {
+    priority: "0002",
+    group: "objetos",
+    onDisplay: "&#10003;",
+  })
 };
 
 // ---------------------------------------------------------------------------
@@ -1204,6 +1269,7 @@ undum.game.init = function (character, system) {
   character.qualities.equipamiento = 0;
   character.qualities.frascoVida = 0;
   system.setQuality("traje", false);
+  system.setQuality("cuerda", false);
 
   system.setCharacterText("<p>Listado de objetos que lleva encima:</p>");
 };
