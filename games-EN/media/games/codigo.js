@@ -379,26 +379,26 @@ cabezon1: new undum.SimpleSituation(
   /*Comienzo capitulo 3*/
   capitulo_tercero: new undum.SimpleSituation(
     "<img src='./media/img/14.jpg' class='float_right' width='500' height='250'>\
-    <p>Tras conocer la ubicación <br> de mi ordenador y preguntar por las rutas existentes me planteo cuál seguir.</p>\
-        <p>Por la ruta más larga tengo un <a href='campamento'>campamento de villanos</a>, según los datos proporcionados por el gnomo habitan cinco villanos y van armados con espadas de metal y escudos de madera.</p>\
-        <p>Por la ruta más corta tengo que <a href='montana'>pasar la montaña</a>, gobernada por un monstruo del cual no se conoce información, solo sé que es conocido como \"El rey de la montaña\".</p><br>\
+    <p> After knowing the location of my computer and asking about the existing routes, I ask myself which one to follow. </p> \
+        <p> By the longest route I have a <a href='campamento'>villain camp</a>, according to the data provided by the gnome there are five villains and they are armed with metal swords and wooden shields. </ p> \
+        <p> By the shortest route I have to <a href='montana'>pass the mountain</a>, ruled by a monster about which no information is known, I only know that he is known as \"The king of the mountain \". </p> <br> \
         <video controls autoplay width='100%'>\
           <source src='videos/v2.mp4' type='video/mp4' />\
         </video>",
     {
-      heading: "Capítulo 3 - MI OBJETIVO",
+      heading: "Chapter 3 - MY GOAL",
     }
   ),
 
   /*Elección campamento de villanos*/
   campamento: new undum.SimpleSituation(
     "<img src='./media/img/25.jpg' class='float_right' width='500' height='300'>\
-    <p>Decido ir por la ruta más larga, <br> pero de la que más información tengo, llegar hasta allí me llevará cinco días y cuatro noches, por lo que decido partir ya.</p>\
-        <p>Tras varias días caminando sin cesar, diviso a lo lejos el campamento de villanos. Para mi asombro solo está compuesto por cabañas de madera con el techo de paja y de un río que cruza por el centro.</p>\
-        <p><a href='detalladamente_campamento'>Mirar detalladamente el campamento</a>.</p>\
-        <p>Permanezco escondido y comienzo a preparar el plan para atacar, pudiendo hacerlo de dos formas distintas, o bien <a href='campamento_fuerza'>entro a la fuerza</a> atacando e intentando pillarlos desprevenidos o me centro en <a href='campamento_sigilo'>hacerlo sigilosamente</a>.</p>",
+    <p> I decide to take the longest route, <br> but about the one I have more information about, getting there will take me five days and four nights, so I decide to leave now. </p> \
+        <p> After several days of walking incessantly, he made out the villain camp in the distance. To my amazement it is only made up of wooden huts with thatched roofs and a river that runs through the center. </p> \
+        <p> <a href='detailed_camping'> Look at the campsite in detail </a>. </p> \
+        <p> I remain hidden and begin to prepare the plan to attack, being able to do it in two different ways, either <a href='campamento_force'> I enter by force </a> attacking and trying to catch them off guard or I focus on <a href = 'stealth_camping'> do it stealthily </a>. </p> ",
     {
-      heading: "Campamento de villanos",
+      heading: "Villain Camp",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -409,19 +409,19 @@ cabezon1: new undum.SimpleSituation(
   ),
   campamento2: new undum.SimpleSituation(
     "<img src='./media/img/25.jpg' class='float_right' width='500' height='300'>\
-    <p>Decido ir por la ruta más larga, <br> pero de la que más información tengo, llegar hasta allí me llevará cinco días y cuatro noches, por lo que decido partir ya.</p>\
-        <p>Tras varias días caminando sin cesar, diviso a lo lejos el campamento de villanos. Para mi asombro solo está compuesto por cabañas de madera con el techo de paja y de un río que cruza por el centro.</p>\
-        <p>Permanezco escondido y comienzo a preparar el plan para atacar, pudiendo hacerlo de dos formas distintas, o bien <a href='campamento_fuerza'>entro a la fuerza</a> atacando e intentando pillarlos desprevenidos o me centro en <a href='campamento_sigilo'>hacerlo sigilosamente</a>.</p>",
+    <p> I decide to take the longest route, <br> but about the one I have more information about, getting there will take me five days and four nights, so I decide to leave now. </p> \
+        <p> After several days of walking incessantly, he made out the villain camp in the distance. To my amazement it is only made up of wooden huts with thatched roofs and a river that runs through the center. </p> \
+        <p> I remain hidden and begin to prepare the plan to attack, being able to do it in two different ways, either <a href='campamento_force'> I enter by force </a> attacking and trying to catch them off guard or I focus on <a href = 'stealth_camping'> do it stealthily </a>. </p> ",
     {
-      heading: "Campamento de villanos",
+      heading: "Villain Camp",
     }
   ),
   /*Mirar detalladamente el campamento*/
   detalladamente_campamento: new undum.SimpleSituation(
-    "<p>veo que hay un tirador con arco y flechas de piedra.</p>\
-        <p><a href='campamento2'>Continuar con la historia</a></p>",
+    "<p> I see there is a shooter with a stone bow and arrows. </p> \
+    <p> <a href='camp2'> Continue with the story </a> </p>",
     {
-      heading: "Tras mirar detalladamente ...",
+      heading: "After looking closely ...",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -433,10 +433,10 @@ cabezon1: new undum.SimpleSituation(
   /*Elección campamento de villanos a la fuerza*/
   campamento_fuerza: new undum.SimpleSituation(
     "<img src='./media/img/16.png' class='float_right' width='250' height='250'>\
-    <p>Decido hacer el ataque por la fuerza, <br> con mi espada en mano salgo a correr hacia el campamento entrando por la parte trasera y acabando con la vida de dos villanos. En este momento los dos que se encuentran en tierra más el arquero subido en una plataforma se focalizan en mí. Esquivando flechas y luchando contra los dos a la vez consigo salir victorioso pero con heridas físicas graves, por lo que tendré que recuperarme antes de poder seguir.</p>\
-        <p>Me tumbo en una de las camas del campamento para <a href='campamento_fuerza2'> reposar y sanar mis heridas</a>.</p>",
+    <p> I decide to make the attack by force, <br> with my sword in hand I go running towards the camp entering from the back and killing two villains. At this moment the two on the ground plus the archer on a platform focus on me. Dodging arrows and fighting both at the same time I manage to emerge victorious but with serious physical injuries, so I will have to recover before I can continue. </p> \
+    <p> I lie down on one of the camp beds to <a href='campamento_force2'> rest and heal my wounds </a>. </p> ",
     {
-      heading: "Ataque al campamento por la fuerza",
+      heading: "Attack on the camp by force",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -450,34 +450,34 @@ cabezon1: new undum.SimpleSituation(
       if (character.qualities.frascoVida > 0) {
         system.write(
           "<img src='./media/img/19.png' class='float_right' width='250' height='300'>\
-          <p>Al tumbarme sobre la cama de una cabaña, recuerdo el frasco de vida que me dio Momo.</p>\
-                    <p>Decido tomarmelo de un trago y, para mi asombro todas mis heridas han sanado en cueston de segundos.\
-                    Gracias a esto podré <a href='eleccion_villanos'>continuar mi viaje</a> sin perder tiempo.</p>"
+          <p> As I lay down on a bed in a cabin, I remember the vial of life that Momo gave me. </p> \
+          <p> I decide to take it in one gulp and, to my amazement, all my wounds have healed in a matter of seconds. \
+          Thanks to this I will be able to <a href='eleccion_villalanos'> continue my journey </a> without wasting time. </p> "
         );
 
         system.setQuality("frascoVida", character.qualities.frascoVida - 1);
       } else {
         system.write(
           "<img src='./media/img/12.png' class='float_right' width='150' height='150'>\
-          <p> Tras una semana, <br> mis heridas han sanado y procedo a prepararme para llegar al castillo del jefe,</p>\
-          quien ha robado mi ordenador.</p>\
-          <p>Antes de salir voy a llevar conmigo algunas de las\
-          <a href='eleccion_villanos'>armas que tenían los villanos</a></p>"
+          <p> After a week, <br> my wounds have healed and I proceed to prepare to get to the boss's castle, </p> \
+          who has stolen my computer. </p> \
+          <p> Before leaving I am going to take with me some of the \
+          <a href='eleccion_villains'> weapons that the villains had </a> </p> "
         );
       }
     },
 
-    heading: "Recuperación",
+    heading: "Recovery",
   }),
 
   /*Elección campamento de villanos en sigilo*/
   campamento_sigilo: new undum.SimpleSituation(
     "<img src='./media/img/2.png' class='float_right' width='250' height='250'>\
-    <p>Decido hacer un ataque sigiloso, <br> con mi espada en mano entro de noche en el campamento nadando por el río.</p>\
-        <p>Mi mayor prioridad es acabar con el arquero, ya que es el que presenta la gran amenaza. Me avalanzo sobre él por la espalda sin que el resto se percate. Cojo su arco y acabo con dos soldados que se encontraban de guardia, bajo y acaba con la vida de los soldados que estaban descansando en sus cabañas.</p>\
-        <p>Decido pasar la noche en el campamento y antes de partir hacia el castillo <a href='eleccion_villanos'>recojo algunas armas pertenecientes a los villanos.</a></p>",
+    <p> I decide to make a stealth attack, <br> with my sword in hand I enter the camp at night swimming by the river. </p> \
+    <p> My highest priority is to take down the archer, as he is the one who presents the greatest threat. I rush on him from behind without the rest of them noticing. I take his bow and finish with two soldiers who were on guard, low and kill the soldiers who were resting in their cabins. </p> \
+    <p> I decide to spend the night in the camp and before leaving for the castle <a href='eleccion_villalanos'> I collect some weapons belonging to the villains. </a> </p> ",
     {
-      heading: "Ataque al campamento sigilosamente",
+      heading: "Attack the camp stealthily",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -489,12 +489,12 @@ cabezon1: new undum.SimpleSituation(
   /*Elección pasar por la montaña*/
   montana: new undum.SimpleSituation(
     "<img src='./media/img/5.png' class='float_right' width='250' height='250'>\
-    <p>Decido ir por la ruta más corta, <br>pese a no tener información sobre el monstruo.</p>\
-        <p>Tras un dia de camino llego a las llanuras de la montaña, noto algo inquietante y es que la vegetación y el clima son muy secos.</p>\
-        <p>Me adentro en ella y continuo recto durante el día. Al llegar la noche decido continuar sin parar hasta que noto como algo me vigila en la distancia, decido correr y algo se avalanza sobre mí, consigo escaparme y verlo de frente, se trata de un lobo enorme.</p>\
-        <p>Tengo poco tiempo para pensar ya que se volvera a avalanzar sobre mi, nose si debería <a href='salir_corriendo'>salir corriendo</a> o <a href='enfrentarme'>enfrentarme a él</a>.</p>",
+    <p> I decide to go the shortest route, <br> despite having no information about the monster. </p> \
+    <p> After a day of walking I arrive at the mountain plains, I notice something disturbing and that is that the vegetation and the climate are very dry. </p> \
+    <p> I step into it and go straight through the day. When night comes I decide to continue without stopping until I notice how something watches me in the distance, I decide to run and something is rushing over me, I manage to escape and see it head-on, it is a huge wolf. </p> \
+    <p> I have little time to think since he will attack me again, I don't know if I should <a href= 'run_out'> run away </a> or <a href='front me'> face him </a> . </p> ",
     {
-      heading: "El rey de la montaña",
+      heading: "King of the mountain",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -506,9 +506,9 @@ cabezon1: new undum.SimpleSituation(
   /*Salir corriendo del lobo*/
   salir_corriendo: new undum.SimpleSituation(
     "<img src='./media/img/24.jpg' class='float_right' width='500' height='300'>\
-    <p>Tras pensarlo rapidamente, <br>decido salir corriendo entre la maleza del bosque, el lobo me persigue sin cesar por lo que no me queda otra que darme la vuelta y <a href='enfrentarme'>enfrentarme a él</p>",
+    <p> After thinking about it quickly, I decide to run through the undergrowth of the forest, the wolf chases me incessantly so I have no choice but to turn around and <a href='front me'> face him </ p> ",
     {
-      heading: "Salir corriendo",
+      heading: "Run out",
     }
   ),
   /*Enfrentarme a el*/
@@ -517,13 +517,13 @@ cabezon1: new undum.SimpleSituation(
       if (character.qualities.frascoVida > 0) {
         system.write(
           "<img src='./media/img/4.png' class='float_right' width='250' height='250'>\
-          <p>Cojo mi espada, <br> y salgo corriendo hacia él, me muerde el brazo mientras le atravieso el cuello con mi arma.\
-                    El resultado ha sido desastroso, mi brazo ha acabado destrozado, pero al menos he conseguido sobrevivir ante semejante amenaza.</p>\
-                    <p>Tras acabar la batalla me tumbo en el suelo del bosque destrozado y recuerdo el frasco de vida que me dió Momo,\
-                    decido tomarlo de un trago y, para mi asombro ¡Qué está pasando! en cuestión de segundos mis heridas han sanado y mi brazo\
-                    a crecido de nuevo. Tras varios minutos asimilando lo sucedido decido conversar con el gnomo sobre el lobo.\
-                    El gnomo me cuenta que se trata de un animal mágico y que sus huesos sirven para hacer armas mas fuertes que el hierro.</p>\
-                    <p>Puesto que no tengo todo el tiempo del mundo debo decidir que <a href='eleccion_montana'>armas fabricar</a>.</p>"
+          <p> I grab my sword, <br> and run towards him, he bites my arm as I pierce his neck with my weapon. \
+          The result has been disastrous, my arm has been destroyed, but at least I have managed to survive against such a threat. </p> \
+          <p> After finishing the battle I lie on the floor of the destroyed forest and I remember the vial of life that Momo gave me, \
+          I decide to take it in one gulp and, to my amazement, what is happening! in a matter of seconds my wounds have healed and my arm \
+          it has grown again. After several minutes assimilating what happened, I decide to talk to the gnome about the wolf. \
+          The gnome tells me that it is a magical animal and that its bones are used to make weapons stronger than iron. </p> \
+          <p> Since I don't have all the time in the world, I must decide what <a href='eleccion_montana'> weapons to make </a>. </p> "
         );
         system.setQuality("frascoVida", character.qualities.frascoVida - 1);
         system.setQuality(
@@ -533,10 +533,10 @@ cabezon1: new undum.SimpleSituation(
       } else {
         system.write(
           "<img src='./media/img/4.png' class='float_right' width='250' height='250'>\
-          <p>Cojo mi espada, <br> y salgo corriendo hacia él, me muerde el brazo mientras le atravieso el cuello con mi arma.\
-                    El resultado ha sido desastroso, mi brazo ha acabado destrozado, pero al menos he conseguido sobrevivir ante semejante amenaza.</p>\
-                    <p>Tras varios días de recuperación, el gnomo me cuenta que se trata de un animal mágico y que sus huesos sirven para hacer armas mas fuertes que el hierro.</p>\
-                    <p>Puesto que no tengo todo el tiempo del mundo debo decidir que <a href='eleccion_montana'>armas fabricar</a>.</p>"
+          <p> I grab my sword, <br> and run towards him, he bites my arm as I pierce his neck with my weapon. \
+          The result has been disastrous, my arm has been destroyed, but at least I have managed to survive against such a threat. </p> \
+          <p> After several days of recovery, the gnome tells me that it is a magical animal and that its bones are used to make weapons stronger than iron. </p> \
+          <p> Since I don't have all the time in the world, I must decide what <a href='eleccion_montana'> weapons to make </a>. </p> "
         );
         system.setQuality(
           "progreso_historia",
@@ -545,16 +545,16 @@ cabezon1: new undum.SimpleSituation(
       }
     },
 
-    heading: "Enfrentamiento con el lobo",
+    heading: "Confrontation with the wolf",
   }),
   /*llegada a castillo*/
   llegada_castillo: new undum.SimpleSituation(
     "<img src='./media/img/28.png' class='float_right' width='250' height='250'>\
-    <p>Tras reponer mi inventario con nuevas armas, <br> focalizo mi atención en llegar hacia el castillo.</p>\
-        <p>Tras un día caminando sin descanso diviso a lo lejos el inmenso castillo del responsable de robar mi ordenador.</p>\
-        <p><a href='entrada'>Me dirigo hacia la puerta principal</a></p>",
+    <p> After restocking my inventory with new weapons, <br> I focus my attention on reaching the castle. </p> \
+    <p> After a day of walking without rest, I can see in the distance the immense castle of the person responsible for stealing my computer. </p> \
+    <p> <a href='entry'> I'm heading towards the front door </a> </p> ",
     {
-      heading: "Llegada al castillo",
+      heading: "Arrival at the castle",
       enter: function (character, system, from) {
         system.setQuality(
           "progreso_historia",
@@ -578,7 +578,7 @@ cabezon1: new undum.SimpleSituation(
       system.write($("#recojo_cuchillohuesos").html());
     },
     tags: ["eleccion_montana"],
-    optionText: "Cuchillo de huesos",
+    optionText: "Bone knife",
     displayOrder: 1,
   }),
   // Cuchillo Metal
@@ -596,7 +596,7 @@ cabezon1: new undum.SimpleSituation(
       system.write($("#recojo_cuchillometal").html());
     },
     tags: ["eleccion_villanos"],
-    optionText: "Cuchillo de metal",
+    optionText: "Metal knife",
     displayOrder: 1,
   }),
   // espada de huesos
@@ -610,7 +610,7 @@ cabezon1: new undum.SimpleSituation(
       system.write($("#recojo_espadahuesos").html());
     },
     tags: ["eleccion_montana"],
-    optionText: "Espada de huesos",
+    optionText: "Sword of bones",
     displayOrder: 1,
   }),
   // Espada de metal
@@ -625,7 +625,7 @@ cabezon1: new undum.SimpleSituation(
       system.write($("#recojo_espadametal").html());
     },
     tags: ["eleccion_villanos"],
-    optionText: "Espada de metal",
+    optionText: "Metal Sword",
     displayOrder: 1,
   }),
   // arco de huesos
@@ -639,7 +639,7 @@ cabezon1: new undum.SimpleSituation(
       system.write($("#recojo_arcohuesos").html());
     },
     tags: ["eleccion_montana"],
-    optionText: "Arco de huesos",
+    optionText: "Bow of Bones",
     displayOrder: 1,
   }),
   // arco de metal
@@ -654,7 +654,7 @@ cabezon1: new undum.SimpleSituation(
       system.write($("#recojo_arcometal").html());
     },
     tags: ["eleccion_villanos"],
-    optionText: "Arco de metal",
+    optionText: "Metal bow",
     displayOrder: 1,
   }),
   // lanza de huesos
@@ -668,7 +668,7 @@ cabezon1: new undum.SimpleSituation(
       system.write($("#recojo_lanzahuesos").html());
     },
     tags: ["eleccion_montana"],
-    optionText: "Lanza de huesos",
+    optionText: "Spear of bones",
     displayOrder: 1,
   }),
   // lanza de metal
@@ -683,7 +683,7 @@ cabezon1: new undum.SimpleSituation(
       system.write($("#recojo_lanzametal").html());
     },
     tags: ["eleccion_villanos"],
-    optionText: "Lanza de metal",
+    optionText: "Metal spear",
     displayOrder: 1,
   }),
   // Machete de huesos
@@ -700,7 +700,7 @@ cabezon1: new undum.SimpleSituation(
       system.write($("#recojo_machetehuesos").html());
     },
     tags: ["eleccion_montana"],
-    optionText: "Machete de huesos",
+    optionText: "Bone machete",
     displayOrder: 1,
   }),
   // Machete de metal
@@ -718,7 +718,7 @@ cabezon1: new undum.SimpleSituation(
       system.write($("#recojo_machetemetal").html());
     },
     tags: ["eleccion_villanos"],
-    optionText: "Machete de metal",
+    optionText: "Metal Machete",
     displayOrder: 1,
   }),
   // Cuchara de huesos
@@ -735,7 +735,7 @@ cabezon1: new undum.SimpleSituation(
       system.write($("#recojo_cucharahuesos").html());
     },
     tags: ["eleccion_montana"],
-    optionText: "Cuchara de huesos",
+    optionText: "Bone spoon",
     displayOrder: 1,
   }),
   // Cuchara de metal
@@ -753,7 +753,7 @@ cabezon1: new undum.SimpleSituation(
       system.write($("#recojo_cucharametal").html());
     },
     tags: ["eleccion_villanos"],
-    optionText: "Cuchara de metal",
+    optionText: "Metal spoon",
     displayOrder: 1,
   }),
   // Tenedor de huesos
@@ -770,7 +770,7 @@ cabezon1: new undum.SimpleSituation(
       system.write($("#recojo_tenedorhuesos").html());
     },
     tags: ["eleccion_montana"],
-    optionText: "Tenedor de huesos",
+    optionText: "Bone fork",
     displayOrder: 1,
   }),
   // Tenedor de metal
@@ -788,7 +788,7 @@ cabezon1: new undum.SimpleSituation(
       system.write($("#recojo_tenedormetal").html());
     },
     tags: ["eleccion_villanos"],
-    optionText: "Tenedor de metal",
+    optionText: "Metal fork",
     displayOrder: 1,
   }),
 
