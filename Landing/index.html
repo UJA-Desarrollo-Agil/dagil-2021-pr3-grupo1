@@ -1,119 +1,66 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HOME</title>
+    <title>Inicio de sesión</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <script>
+      function login() {
+        if (
+          document.form.contrasena.value == "admin" &&
+          document.form.usuario.value == "admin"
+        ) {
+          window.location.href = "./home.html";
+        } else {
+          var x = document.getElementById("texto");
+          x.style.display = "block";
+        }
+      }
+    </script>
   </head>
   <body>
     <!-- Header -->
     <section id="header">
       <header>
-        <h1>PROYECTO GRUPAL DESARROLLO ÁGIL</h1>
-        <p>HOME</p>
+        <h1>INICIAR SESIÓN</h1>
       </header>
-      <footer>
-        <a href="#banner" class="button style2 scrolly-middle"
-          >¿Quienes somos?</a
-        >
-      </footer>
-    </section>
-
-    <!-- Banner -->
-    <section id="banner">
-      <header>
-        <h2>¿QUIENES SOMOS?</h2>
-      </header>
-      <p>
-        Somos el grupo 1 de la asignatura Desarrollo Ágil de Ingeniería
-        Informática de la Universidad de Jaén compuesto por: <br />
-        Domingo Aguilar, Rocío - rda00010@red.ujaen.es <br />
-        Hidalgo Lozano, Cristian - chl00014@red.ujaen.es <br />
-        Martínez Morales, Álvaro - amm00337@red.ujaen.es <br />
-        Vico Guzmán, Sebastián Alberto - savg0001@red.ujaen.es <br />
-
-        Contamos con dos versiones del proyecto, en primer lugar tenemos la
-        versión origin y más abajo la versión sin distracciones.
-      </p>
-      <footer>
-        <a href="#first" class="button style2 scrolly">Acceso al proyecto</a>
-      </footer>
-    </section>
-
-    <!-- Feature 1 -->
-    <article id="first" class="container box style1 right">
-      <a href="../games/index.html" class="image fit"
-        ><img src="images/pic01-O.jpg" alt=""
-      /></a>
-      <div class="inner">
-        <header>
-          <h2>Versión original</h2>
-        </header>
-        <p>
-          Se trata de la versión original del proyecto, cuenta con imágenes,
-          vídeos, música ...
-        </p>
-        <p><a href="../games/index.html">Comenzar</a></p>
-      </div>
-    </article>
-
-    <!-- Contact -->
-    <article class="container box style1 right">
-      <a href="../games/index.html" class="image fit"
-        ><img src="images/pic01-R.jpg" alt=""
-      /></a>
-      <div class="inner">
-        <header>
-          <h2>Versión sin distracciones</h2>
-        </header>
-        <p>
-          Se trata de una versión "reducida" donde no se incluyen imágenes,
-          vídeos, música ...
-        </p>
-        <p><a href="../games/index.html">Comenzar</a></p>
-      </div>
-    </article>
-
-    <section id="footer">
-      <ul class="icons">
-        <li>
-          <a href="#" class="icon fa-twitter"
-            ><span class="label">Twitter</span></a
-          >
-        </li>
-        <li>
-          <a href="#" class="icon fa-facebook"
-            ><span class="label">Facebook</span></a
-          >
-        </li>
-        <li>
-          <a href="#" class="icon fa-google-plus"
-            ><span class="label">Google+</span></a
-          >
-        </li>
-        <li>
-          <a href="#" class="icon fa-pinterest"
-            ><span class="label">Pinterest</span></a
-          >
-        </li>
-        <li>
-          <a href="#" class="icon fa-dribbble"
-            ><span class="label">Dribbble</span></a
-          >
-        </li>
-        <li>
-          <a href="#" class="icon fa-linkedin"
-            ><span class="label">LinkedIn</span></a
-          >
-        </li>
-      </ul>
-      <div class="copyright">
-        <ul class="menu">
-          <li>&copy; Proyecto Desarrollo Ágil. All rights reserved.</li>
-          <li>Design: Grupo 1</li>
-        </ul>
-      </div>
+      <article class="container box style3">
+        <form method="post" action="#" name="form">
+          <div class="row 50%">
+            <div class="6u 12u$(mobile)">
+              <input
+                type="text"
+                class="text"
+                name="usuario"
+                placeholder="Usuario"
+              />
+            </div>
+            <div class="6u$ 12u$(mobile)">
+              <input
+                type="password"
+                class="text"
+                name="contrasena"
+                placeholder="Contraseña"
+              />
+            </div>
+            <div class="12u$">
+              <ul class="actions">
+                <li>
+                  <input
+                    onclick="login()"
+                    type="button"
+                    value="Iniciar sesión"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div id="texto" style="color: red; display: none">
+              <p>Introduce un usuario y contraseña correctas</p>
+            </div>
+          </div>
+        </form>
+      </article>
     </section>
 
     <!-- Scripts -->
