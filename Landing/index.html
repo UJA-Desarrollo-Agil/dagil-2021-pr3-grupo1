@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Inicio de sesión</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script>
+      function login() {
+        if (
+          document.form.contrasena.value == "admin" &&
+          document.form.usuario.value == "admin"
+        ) {
+          window.location.href = "./home.html";
+        } else {
+          var x = document.getElementById("texto");
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Header -->
+    <section id="header">
+      <header>
+        <h1>INICIAR SESIÓN</h1>
+      </header>
+      <article class="container box style3">
+        <form method="post" action="#" name="form">
+          <div class="row 50%">
+            <div class="6u 12u$(mobile)">
+              <input
+                type="text"
+                class="text"
+                name="usuario"
+                placeholder="Usuario"
+              />
+            </div>
+            <div class="6u$ 12u$(mobile)">
+              <input
+                type="password"
+                class="text"
+                name="contrasena"
+                placeholder="Contraseña"
+              />
+            </div>
+            <div class="12u$">
+              <ul class="actions">
+                <li>
+                  <input
+                    onclick="login()"
+                    type="button"
+                    value="Iniciar sesión"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div id="texto" style="color: red; display: none">
+              <p>Introduce un usuario y contraseña correctas</p>
+            </div>
+          </div>
+        </form>
+      </article>
+    </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

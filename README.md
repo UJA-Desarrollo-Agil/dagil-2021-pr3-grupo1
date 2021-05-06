@@ -2,6 +2,14 @@
 
 # Práctica 3 Desarrollo ágil
 
+# Consideraciones antes de comenzar:
+
+**_URL del proyecto en un servidor externo_**: [https://el-misterio-de-arcadia.web.app/](https://el-misterio-de-arcadia.web.app/)
+
+**_Usuario_**: admin
+
+**_Contraseña_**: admin
+
 ## Miembros
 
 - Domingo Aguilar, Rocío - _rda00010@red.uajen.es_.
@@ -27,7 +35,16 @@
 - [2.3. Sprint Backlog Refinement](#refinemet1)
 - [2.4. Sprint Review](#review1)
 - [2.5. Sprint Retrospective](#retrospective1)
-- [2.6. Sprint Planning y Historias de Usuario del Product Backlog](#restantes1)
+- [2.6. Sprint Planning e Historias de Usuario del Product Backlog](#restantes1)
+
+[3. Sprint 2](#sprint2)
+
+- [3.1. Tarjetas escogidas](#tarjetas2)
+- [3.2. Descomposición tarjetas](#descomposicion2)
+- [3.3. Sprint Backlog Refinement](#refinemet2)
+- [3.4. Sprint Review](#review2)
+- [3.5. Sprint Retrospective](#retrospective2)
+- [3.6. Sprint Planning e Historias de Usuario del Product Backlog](#restantes2)
 
 <a name="sprint0"></a>
 
@@ -174,7 +191,7 @@ Al final de este incremento, nos reunimos todo el equipo en una reunión de 1 ho
 
 <a name="restantes1"></a>
 
-## 2.6. Sprint Planning y Historias de Usuario del Product Backlog
+## 2.6. Sprint Planning e Historias de Usuario del Product Backlog
 
 Todas las historias de usuario que propusimos hacer a lo largo de este sprint han sido completadas incluyendo las que añadimos durante el Sprint Backlog Refinement.
 
@@ -182,6 +199,118 @@ Todas las historias de usuario que propusimos hacer a lo largo de este sprint ha
 
 _Captura de pantalla al finalizar el sprint (1/2)_
 
-![Captura10](/img/sprint1-3.png)
+![Captura11](/img/sprint1-3.png)
 
 _Captura de pantalla al finalizar el sprint (2/2)_
+
+<a name="sprint2"></a>
+
+# 3. Práctica 4 - Sprint 2
+
+Este sprint consiste en la realización del proyecto (Segundo incremento de la aplicación usando la metodología Scrum), por lo que continuamos trabajando con las tarjetas restantes del product backlog.
+
+<a name="tarjetas2"></a>
+
+## 3.1. Tarjetas escogidas
+
+![Captura12](/img/PB_inicial.PNG)
+
+_Captura de las tarjetas escogidas al comienzo del segundo Sprint_
+
+1. **Si una nueva versión del juego (las entregas en cada sprint) incluye nuevas situaciones, estas deben o bien complicar la misión inicial o bien añadir una nueva misión al juego**: Esta tarjeta es necesaria ya que es innegociable, por lo que debemos hacerla en este sprint.
+2. **Se creará un sitio web que incluirá una landing page del juego, de modo que el juego esté incrustado en esa landing page (la cual puede dar info sobre los creadores del juego, la asignatura para la que se creó, etc.)**: Puesto que tenemos conocimientos en html y css creemos que no supondrá un gran esfuerzo.
+3. **Se subirá el juego a un sitio web disponible on-line (es decir, no un servidor local)**: Queremos investigar sobre este tema, por lo que nos resulta interesante.
+4. **Se posibilitará (con css) una versión “sin distracciones” que no incluya imágenes, ni fondo, ni música**: Nos parece una tarea interesante y que no supondrá mucho tiempo.
+5. **Se añadirán videos (o enlaces a vídeos) en los que se incluya parte de la historia que necesita para completar el juego y tomar decisiones**: Nos resulta una tarea interesante de investigar.
+6. **Se añadirá música de fondo al juego:**: Igual que la tarea anterior, resulta de interés para el equipo investigar sobre este tema.
+
+El día 27-abr-2021 se actualizó y se escogieron las siguientes tarjetas:
+
+![Captura13](/img/Tarjeta13.PNG)
+
+_Captura de las tarjetas escogidas el día 27-abr-2021_
+
+13. **Se establecerá un sistema de Login+contraseña para que los jugadores se puedan dar de alta en nuestro sitio web.**: Esta tarjeta es necesaria para asegurar la seguridad en el acceso al proyecto.
+
+<a name="descomposicion2"></a>
+
+## 3.2. Descomposición tarjetas
+
+Descompusimos la sexta tarjeta para que cada uno de los miembros del grupo se hiciera cargo en modificar para mejorar una parte de la historia.
+Lo dividimos de la siguiente manera: inicio, desarrollo(1), desarrollo(2) y fin.
+En las siguientes capturas de pantalla, muestro cómo lo descomponemos:
+
+![Captura14](/img/Descomposicion2.PNG)
+
+En la tarjeta 6.1, se añadirán más objetos para el posible equipamiento del personaje.
+En las tarjeta 6.2, se añadirán nuevas situaciones al capítulo 1 de la historia.
+En la tarjeta 6.3, se alargará el diálogo entre personajes.
+En la tarjeta 6.4, se añadirán más situaciones al final de la historia.
+
+También descompusimos la tarjeta 22 para que cada uno realice la traducción de su parte. La dividimos de la siguiente manera:
+
+![Captura15](/img/Descomposicion3.PNG)
+
+En la tarjeta 22.1, se traducirá el capitulo 1.
+En las tarjeta 22.2, se traducirá el capitulo 2.
+En la tarjeta 22.3, se traducirá el capitulo 3.
+En la tarjeta 22.4, se traducirá el capitulo 4.
+
+<a name="refinemet2"></a>
+
+## 3.3. Sprint Backlog Refinement
+
+El Product Owner planificó un Sprint Backlog Refinement donde agregó diversas tareas nuevas al Product Backlog. Fueron las siguientes:
+
+![Captura16](/img/PBR_inicial.PNG)
+
+_Captura de pantalla del Product Backlog tras las modificaciones realizadas en el Product Backlog Refinement_
+
+**Actualización 27-abr-2021**
+
+- El jugador podrá solicitar ayuda al juego y recibirá información que le sirva para entender el juego y lograr llegar al final del mismo.
+
+- La ayuda que aporte el juego será sensible al contexto, es decir, en función de la situación en que esté y/o los objetos que tenga y/o la puntuación que lleve y/o cualquier otro aspecto que deseéis considerar se le aportará una información de ayuda u otra. DEPENDE DE LA ANTERIOR.
+
+- El juego estará disponible español y en otro idioma.
+
+Tras asignarle una puntuación tanto al PH como al valor, decidimos realizar la siguiente en este Sprint:
+
+22. **El juego estará disponible español y en otro idioma.**: Añadimos esta tarjeta al Sprint porque consideramos que mejoraría mucho la accesibilidad a nuestro proyecto.
+
+![Captura17](/img/PBR_seleccionado.PNG)
+
+_Captura de pantalla del Sprint Backlog tras las modificaciones realizadas en el Product Backlog Refinement_
+
+<a name="review2"></a>
+
+## 3.4. Sprint Review
+
+Al final del segundo incremento nos reunimos todo el equipo en una reunión de 1 hora y llegamos a la conclusión de que al igual que el sprint anterior, ha sido muy productivo.
+Hemos completado la última tarjeta innegociable que quedaba y prácticamente todas las historias de usuario restantes a excepción de cuatro, que aportan poco valor en comparación con los puntos de historia asignados y que al no disponer de demasiado tiempo hemos decidido no realizar.
+Pensamos que hemos hecho un buen trabajo porque el producto final es muy completo.
+
+<a name="retrospective2"></a>
+
+## 3.5. Sprint Retrospective
+
+Al final de este incremento, nos reunimos todo el equipo en una reunión de 1 hora y media y
+llegamos a las siguientes conclusiones:
+
+- ¿Qué ha ido bien?
+  Al igual que en el sprint anterior la comunicación y el reparto detareas han quedado claras por los integrantes del equipo para cumplir con la metodología Scrum. Además hemos mejorado con el cumplimiento de las daily scrum.
+
+- ¿Qué mejorar para la próxima?
+  Aunque hemos mejorado con respecto al anterior sprint las Daily scrum, no han sido diarias por lo que debemos esforzarnos y encontrar un hueco que nos venga bien a todos.
+
+- ¿Qué vamos a hacer en el siguiente sprint?
+  En un supuesto siguiente sprint acabaríamos las 4 historias de usuario que nos quedan y las que se añadieran nuevas.
+
+<a name="restantes2"></a>
+
+## 3.6. Sprint Planning e Historias de Usuario del Product Backlog
+
+Todas las historias que propusimos fueron completadas incluyendo las que añadimos durante el Sprint Backlog Refinement.
+
+![Captura18](/img/final.PNG)
+_Captura de pantalla final de Trello_
