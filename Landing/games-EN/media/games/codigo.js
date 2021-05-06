@@ -1227,12 +1227,6 @@ undum.game.qualities = {
   }),
 };
 
-// ---------------------------------------------------------------------------
-/* The qualities are displayed in groups in the character bar. This
- * determines the groups, their heading (which can be null for no
- * heading) and ordering. QualityDefinitions without a group appear at
- * the end. It is an error to have a quality definition belong to a
- * non-existent group. */
 undum.game.qualityGroups = {
   stats: new undum.QualityGroup(null, { priority: "0001" }),
 
