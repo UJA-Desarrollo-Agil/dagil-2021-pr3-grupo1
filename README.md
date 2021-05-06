@@ -279,6 +279,16 @@ Pensamos que hemos hecho un buen trabajo porque el producto final es muy complet
 
 ## 3.5. Sprint Retrospective
 
+Al final de este incremento, nos reunimos todo el equipo en una reunión de 1 hora y media y
+llegamos a las siguientes conclusiones:
 
+- ¿Qué ha ido bien? 
+Al igual que en el sprint anterior la comunicación y el reparto detareas han quedado claras por los integrantes del equipo para cumplir con la metodología Scrum. Además hemos mejorado con el cumplimiento de las daily scrum.
+
+- ¿Qué mejorar para la próxima? 
+Aunque hemos mejorado con respecto al anterior sprint las Daily scrum, no han sido diarias por lo que debemos esforzarnos y encontrar un hueco que nos venga bien a todos.
+
+- ¿Qué vamos a hacer en el siguiente sprint? 
+En un supuesto siguiente sprint acabaríamos las 4 historias de usuario que nos quedan y las que se añadieran nuevas.
 
 ## 3.6. Sprint Planning e Historias de Usuario del Product Backlog
