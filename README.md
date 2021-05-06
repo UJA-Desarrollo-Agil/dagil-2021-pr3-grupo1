@@ -5,7 +5,9 @@
 # Consideraciones antes de comenzar:
 
 **_URL del proyecto en un servidor externo_**: [https://el-misterio-de-arcadia.web.app/](https://el-misterio-de-arcadia.web.app/)
+
 **_Usuario_**: admin
+
 **_Contraseña_**: admin
 
 ## Miembros
@@ -231,6 +233,7 @@ _Captura de las tarjetas escogidas el día 27-abr-2021_
 13. **Se establecerá un sistema de Login+contraseña para que los jugadores se puedan dar de alta en nuestro sitio web.**: Esta tarjeta es necesaria para asegurar la seguridad en el acceso al proyecto.
 
 <a name="descomposicion2"></a>
+
 ## 3.2. Descomposición tarjetas
 
 Descompusimos la sexta tarjeta para que cada uno de los miembros del grupo se hiciera cargo en modificar para mejorar una parte de la historia.
@@ -254,6 +257,7 @@ En la tarjeta 22.3, se traducirá el capitulo 3.
 En la tarjeta 22.4, se traducirá el capitulo 4.
 
 <a name="refinemet2"></a>
+
 ## 3.3. Sprint Backlog Refinement
 
 El Product Owner planificó un Sprint Backlog Refinement donde agregó diversas tareas nuevas al Product Backlog. Fueron las siguientes:
@@ -279,6 +283,7 @@ Tras asignarle una puntuación tanto al PH como al valor, decidimos realizar la 
 _Captura de pantalla del Sprint Backlog tras las modificaciones realizadas en el Product Backlog Refinement_
 
 <a name="review2"></a>
+
 ## 3.4. Sprint Review
 
 Al final del segundo incremento nos reunimos todo el equipo en una reunión de 1 hora y llegamos a la conclusión de que al igual que el sprint anterior, ha sido muy productivo.
@@ -286,21 +291,23 @@ Hemos completado la última tarjeta innegociable que quedaba y prácticamente to
 Pensamos que hemos hecho un buen trabajo porque el producto final es muy completo.
 
 <a name="retrospective2"></a>
+
 ## 3.5. Sprint Retrospective
 
 Al final de este incremento, nos reunimos todo el equipo en una reunión de 1 hora y media y
 llegamos a las siguientes conclusiones:
 
-- ¿Qué ha ido bien? 
-Al igual que en el sprint anterior la comunicación y el reparto detareas han quedado claras por los integrantes del equipo para cumplir con la metodología Scrum. Además hemos mejorado con el cumplimiento de las daily scrum.
+- ¿Qué ha ido bien?
+  Al igual que en el sprint anterior la comunicación y el reparto detareas han quedado claras por los integrantes del equipo para cumplir con la metodología Scrum. Además hemos mejorado con el cumplimiento de las daily scrum.
 
-- ¿Qué mejorar para la próxima? 
-Aunque hemos mejorado con respecto al anterior sprint las Daily scrum, no han sido diarias por lo que debemos esforzarnos y encontrar un hueco que nos venga bien a todos.
+- ¿Qué mejorar para la próxima?
+  Aunque hemos mejorado con respecto al anterior sprint las Daily scrum, no han sido diarias por lo que debemos esforzarnos y encontrar un hueco que nos venga bien a todos.
 
-- ¿Qué vamos a hacer en el siguiente sprint? 
-En un supuesto siguiente sprint acabaríamos las 4 historias de usuario que nos quedan y las que se añadieran nuevas. 
+- ¿Qué vamos a hacer en el siguiente sprint?
+  En un supuesto siguiente sprint acabaríamos las 4 historias de usuario que nos quedan y las que se añadieran nuevas.
 
 <a name="restantes2"></a>
+
 ## 3.6. Sprint Planning e Historias de Usuario del Product Backlog
 
 Todas las historias que propusimos fueron completadas incluyendo las que añadimos durante el Sprint Backlog Refinement.
