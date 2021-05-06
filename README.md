@@ -27,13 +27,16 @@
 - [2.3. Sprint Backlog Refinement](#refinemet1)
 - [2.4. Sprint Review](#review1)
 - [2.5. Sprint Retrospective](#retrospective1)
-- [2.6. Sprint Planning y Historias de Usuario del Product Backlog](#restantes1)
+- [2.6. Sprint Planning e Historias de Usuario del Product Backlog](#restantes1)
 
 [3. Sprint 2](#sprint2)
 
 - [3.1. Tarjetas escogidas](#tarjetas2)
 - [3.2. Descomposición tarjetas](#descomposicion2)
 - [3.3. Sprint Backlog Refinement](#refinemet2)
+- [3.4. Sprint Review](#review2)
+- [3.5. Sprint Retrospective](#retrospective2)
+- [3.6. Sprint Planning e Historias de Usuario del Product Backlog](#restantes2)
 
 <a name="sprint0"></a>
 
@@ -180,7 +183,7 @@ Al final de este incremento, nos reunimos todo el equipo en una reunión de 1 ho
 
 <a name="restantes1"></a>
 
-## 2.6. Sprint Planning y Historias de Usuario del Product Backlog
+## 2.6. Sprint Planning e Historias de Usuario del Product Backlog
 
 Todas las historias de usuario que propusimos hacer a lo largo de este sprint han sido completadas incluyendo las que añadimos durante el Sprint Backlog Refinement.
 
@@ -267,3 +270,25 @@ Tras asignarle una puntuación tanto al PH como al valor, decidimos realizar la 
 ![Captura17](/img/PBR_seleccionado.PNG)
 
 _Captura de pantalla del Sprint Backlog tras las modificaciones realizadas en el Product Backlog Refinement_
+
+## 3.4. Sprint Review
+
+Al final del segundo incremento nos reunimos todo el equipo en una reunión de 1 hora y llegamos a la conclusión de que al igual que el sprint anterior, ha sido muy productivo.
+Hemos completado la última tarjeta innegociable que quedaba y prácticamente todas las historias de usuario restantes a excepción de cuatro, que aportan poco valor en comparación con los puntos de historia asignados y que al no disponer de demasiado tiempo hemos decidido no realizar.
+Pensamos que hemos hecho un buen trabajo porque el producto final es muy completo.
+
+## 3.5. Sprint Retrospective
+
+Al final de este incremento, nos reunimos todo el equipo en una reunión de 1 hora y media y
+llegamos a las siguientes conclusiones:
+
+- ¿Qué ha ido bien? 
+Al igual que en el sprint anterior la comunicación y el reparto detareas han quedado claras por los integrantes del equipo para cumplir con la metodología Scrum. Además hemos mejorado con el cumplimiento de las daily scrum.
+
+- ¿Qué mejorar para la próxima? 
+Aunque hemos mejorado con respecto al anterior sprint las Daily scrum, no han sido diarias por lo que debemos esforzarnos y encontrar un hueco que nos venga bien a todos.
+
+- ¿Qué vamos a hacer en el siguiente sprint? 
+En un supuesto siguiente sprint acabaríamos las 4 historias de usuario que nos quedan y las que se añadieran nuevas.
+
+## 3.6. Sprint Planning e Historias de Usuario del Product Backlog
