@@ -1212,7 +1212,7 @@ undum.game.qualities = {
     group: "objetos",
     onDisplay: "&#10003;",
   }),
-  progreso_historia: new undum.IntegerQuality("Progreso %:", {
+  progreso_historia: new undum.IntegerQuality("Progress %:", {
     priority: "0001",
     group: "stats",
   }),
