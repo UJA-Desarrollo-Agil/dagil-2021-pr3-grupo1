@@ -2,6 +2,12 @@
 
 # Práctica 3 Desarrollo ágil
 
+# Consideraciones antes de comenzar:
+
+**_URL del proyecto en un servidor externo_**: [https://el-misterio-de-arcadia.web.app/](https://el-misterio-de-arcadia.web.app/)
+**_Usuario_**: admin
+**_Contraseña_**: admin
+
 ## Miembros
 
 - Domingo Aguilar, Rocío - _rda00010@red.uajen.es_.
@@ -225,6 +231,7 @@ _Captura de las tarjetas escogidas el día 27-abr-2021_
 
 13. **Se establecerá un sistema de Login+contraseña para que los jugadores se puedan dar de alta en nuestro sitio web.**: Esta tarjeta es necesaria para asegurar la seguridad en el acceso al proyecto.
 
+<a name="descomposicion2"></a>
 ## 3.2. Descomposición tarjetas
 
 Descompusimos la sexta tarjeta para que cada uno de los miembros del grupo se hiciera cargo en modificar para mejorar una parte de la historia.
@@ -247,6 +254,7 @@ En las tarjeta 22.2, se traducirá el capitulo 2.
 En la tarjeta 22.3, se traducirá el capitulo 3.
 En la tarjeta 22.4, se traducirá el capitulo 4.
 
+<a name="refinemet2"></a>
 ## 3.3. Sprint Backlog Refinement
 
 El Product Owner planificó un Sprint Backlog Refinement donde agregó diversas tareas nuevas al Product Backlog. Fueron las siguientes:
@@ -271,12 +279,14 @@ Tras asignarle una puntuación tanto al PH como al valor, decidimos realizar la 
 
 _Captura de pantalla del Sprint Backlog tras las modificaciones realizadas en el Product Backlog Refinement_
 
+<a name="review2"></a>
 ## 3.4. Sprint Review
 
 Al final del segundo incremento nos reunimos todo el equipo en una reunión de 1 hora y llegamos a la conclusión de que al igual que el sprint anterior, ha sido muy productivo.
 Hemos completado la última tarjeta innegociable que quedaba y prácticamente todas las historias de usuario restantes a excepción de cuatro, que aportan poco valor en comparación con los puntos de historia asignados y que al no disponer de demasiado tiempo hemos decidido no realizar.
 Pensamos que hemos hecho un buen trabajo porque el producto final es muy completo.
 
+<a name="retrospective2"></a>
 ## 3.5. Sprint Retrospective
 
 Al final de este incremento, nos reunimos todo el equipo en una reunión de 1 hora y media y
@@ -291,4 +301,10 @@ Aunque hemos mejorado con respecto al anterior sprint las Daily scrum, no han si
 - ¿Qué vamos a hacer en el siguiente sprint? 
 En un supuesto siguiente sprint acabaríamos las 4 historias de usuario que nos quedan y las que se añadieran nuevas. 
 
+<a name="restantes2"></a>
 ## 3.6. Sprint Planning e Historias de Usuario del Product Backlog
+
+Todas las historias que propusimos fueron completadas incluyendo las que añadimos durante el Sprint Backlog Refinement.
+
+![Captura18](/img/final.PNG)
+_Captura de pantalla final de Trello_
