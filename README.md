@@ -289,6 +289,6 @@ Al igual que en el sprint anterior la comunicación y el reparto detareas han qu
 Aunque hemos mejorado con respecto al anterior sprint las Daily scrum, no han sido diarias por lo que debemos esforzarnos y encontrar un hueco que nos venga bien a todos.
 
 - ¿Qué vamos a hacer en el siguiente sprint? 
-En un supuesto siguiente sprint acabaríamos las 4 historias de usuario que nos quedan y las que se añadieran nuevas.
+En un supuesto siguiente sprint acabaríamos las 4 historias de usuario que nos quedan y las que se añadieran nuevas. 
 
 ## 3.6. Sprint Planning e Historias de Usuario del Product Backlog
