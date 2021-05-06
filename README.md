@@ -219,7 +219,6 @@ El día 27-abr-2021 se actualizó y se escogieron las siguientes tarjetas:
 
 _Captura de las tarjetas escogidas el día 27-abr-2021_
 
-
 13. **Se establecerá un sistema de Login+contraseña para que los jugadores se puedan dar de alta en nuestro sitio web.**: Esta tarjeta es necesaria para asegurar la seguridad en el acceso al proyecto.
 
 ## 3.2. Descomposición tarjetas
