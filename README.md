@@ -356,5 +356,5 @@ _Gráfica burnDown de los valores asociados._
 
 ![Captura24](/img/tabla_velocidad.PNG)
 
-_Tabla de velocidades_
+_Tabla de velocidades._
 
