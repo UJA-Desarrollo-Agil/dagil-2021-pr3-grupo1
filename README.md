@@ -50,8 +50,9 @@
 
 - [4.1. Proyecto en su totalidad](#totalidad)
 - [4.2. Tabla de velocidades](#velocidades)
-- [4.3. Sprint 1](#sprint1)
-- [4.4. Sprint 2](#sprint2)
+- [4.3. Sprint 1](#sprint1-tablas)
+- [4.4. Sprint 2](#sprint2-tablas)
+- [4.5. Conclusiones](#conclusiones-tablas)
 
 <a name="sprint0"></a>
 
@@ -361,7 +362,7 @@ _Gráfica burnDown de los valores asociados._
 
 _Tabla de velocidades._
 
-<a name="sprint1"></a>
+<a name="sprint1-tablas"></a>
 
 ## 4.3. Sprint 1
 
@@ -381,7 +382,7 @@ _Tabla de PH hechos._
 
 _Gráfica burnUp de PH hechos._
 
-<a name="sprint2"></a>
+<a name="sprint2-tablas"></a>
 
 ## 4.4. Sprint 2
 
@@ -393,9 +394,15 @@ _Tabla de PH Sprint 2._
 
 _Gráfica burnDown Sprint 2._
 
-![Captura31](/img/Burn-upSprint2.PNG)
+![Captura31](/img/Burn-upSprint2.png)
 
 _Gráfica burn-up Sprint 2._
+
+<a name="conclusiones-tablas"></a>
+
+## 4.5. Conclusiones
+
+Como se puede observar, probablemente podríamos haber organizado mejor el trabajo. Como se observa en las gráficas, en el Sprint 1 empezamos algo más flojo que en el Sprint 2. Esto creemos que es debido a la ignorancia, en el primer sprint quizás no supimos organizarnos del todo eficientemente. En cambio, en el segundo sprint trabajamos con más soltura.
 
 
 
