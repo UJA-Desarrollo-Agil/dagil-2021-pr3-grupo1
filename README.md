@@ -329,6 +329,7 @@ _Captura de pantalla final de Trello_
 # 4. Métricas
 
 El objetivo de esta parte es la realización del cálculo de métricas asociadas a nuestro proyecto y conocer la velocidad a la que hemos ido desarrollando HU.
+El enlace a la hoja de cálculos con las tablas y las gráficas es: [https://docs.google.com/spreadsheets/d/1TmgArtyv5jdU-8BSwitq08QKVOp33CIgrcrYcSCKcoY/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1TmgArtyv5jdU-8BSwitq08QKVOp33CIgrcrYcSCKcoY/edit?usp=sharing)
 
 <a name="totalidad"></a>
 
