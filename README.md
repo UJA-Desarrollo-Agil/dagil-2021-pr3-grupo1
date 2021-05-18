@@ -317,6 +317,7 @@ llegamos a las siguientes conclusiones:
 Todas las historias que propusimos fueron completadas incluyendo las que añadimos durante el Sprint Backlog Refinement.
 
 ![Captura18](/img/final.PNG)
+
 _Captura de pantalla final de Trello_
 
 <a name="metricas"></a>
@@ -330,16 +331,21 @@ El objetivo de esta parte es la realización del cálculo de métricas asociadas
 ## 4.1. Proyecto en su totalidad
 
 ![Captura19](/img/tabla_global.png)
+
 _Tabla del proyecto global_
 
 ![Captura20](/img/burndownph.png)
+
 _Gráfica burnUp de los puntos de historia_
 
 ![Captura21](/img/burnupph.png)
+
 _Gráfica burnDown de los puntos de historia_
 
 ![Captura22](/img/burndownvalor.png)
+
 _Gráfica burnUp de los valores asociados_
 
 ![Captura23](/img/burnupvalor.png)
+
 _Gráfica burnDown de los valores asociados_
