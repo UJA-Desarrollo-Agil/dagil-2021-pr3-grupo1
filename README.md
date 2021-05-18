@@ -50,6 +50,7 @@
 
 - [4.1. Proyecto en su totalidad](#totalidad)
 - [4.2. Tabla de velocidades](#velocidades)
+- [4.3. Sprint 1](#sprint1)
 
 <a name="sprint0"></a>
 
@@ -352,9 +353,33 @@ _Gráfica burnUp de los valores asociados._
 _Gráfica burnDown de los valores asociados._
 
 <a name="velocidades"></a>
+
 ## 4.2. Tabla de velocidades
 
 ![Captura24](/img/tabla_velocidad.PNG)
 
-_Tabla de velocidades_
+_Tabla de velocidades._
+
+<a name="sprint1"></a>
+
+## 4.3. Sprint 1
+
+![Captura25](/img/tablaburndownS1.PNG)
+
+_Tabla de PH por hacer._
+
+![Captura26](/img/burdownS1.PNG)
+
+_Gráfica burnDown de PH por hacer._
+
+![Captura27](/img/tablaburnupS1.PNG)
+
+_Tabla de PH hechos._
+
+![Captura28](/img/burnupS1.PNG)
+
+_Gráfica burnUp de PH hechos._
+
+
+
 
