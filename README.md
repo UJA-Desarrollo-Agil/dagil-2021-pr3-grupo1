@@ -49,6 +49,7 @@
 [4. Métricas](#metricas)
 
 - [4.1. Proyecto en su totalidad](#totalidad)
+- [4.2. Tabla de velocidades](#velocidades)
 
 <a name="sprint0"></a>
 
@@ -349,6 +350,9 @@ _Gráfica burnUp de los valores asociados._
 ![Captura23](/img/burnupvalor.png)
 
 _Gráfica burnDown de los valores asociados._
+
+<a name="velocidades"></a>
+## 4.2. Tabla de velocidades
 
 ![Captura24](/img/tabla_velocidad.PNG)
 
