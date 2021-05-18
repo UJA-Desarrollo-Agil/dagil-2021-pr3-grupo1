@@ -46,6 +46,10 @@
 - [3.5. Sprint Retrospective](#retrospective2)
 - [3.6. Sprint Planning e Historias de Usuario del Product Backlog](#restantes2)
 
+[4. Métricas](#metricas)
+
+- [4.1. Proyecto en su totalidad](#totalidad)
+
 <a name="sprint0"></a>
 
 # 1. Práctica 3 - Sprint 0
@@ -314,3 +318,28 @@ Todas las historias que propusimos fueron completadas incluyendo las que añadim
 
 ![Captura18](/img/final.PNG)
 _Captura de pantalla final de Trello_
+
+<a name="metricas"></a>
+
+# 4. Métricas
+
+El objetivo de esta parte es la realización del cálculo de métricas asociadas a nuestro proyecto y conocer la velocidad a la que hemos ido desarrollando HU.
+
+<a name="totalidad"></a>
+
+## 4.1. Proyecto en su totalidad
+
+![Captura19](/img/tabla_global.png)
+_Tabla del proyecto global_
+
+![Captura20](/img/burndownph.png)
+_Gráfica burnUp de los puntos de historia_
+
+![Captura21](/img/burnupph.png)
+_Gráfica burnDown de los puntos de historia_
+
+![Captura22](/img/burndownvalor.png)
+_Gráfica burnUp de los valores asociados_
+
+![Captura23](/img/burnupvalor.png)
+_Gráfica burnDown de los valores asociados_
