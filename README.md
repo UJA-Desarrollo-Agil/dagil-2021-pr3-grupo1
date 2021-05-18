@@ -349,3 +349,7 @@ _Gráfica burnUp de los valores asociados._
 ![Captura23](/img/burnupvalor.png)
 
 _Gráfica burnDown de los valores asociados._
+
+![Captura24](/img/tabla_velocidad.png)
+_Tabla de velocidades_
+
