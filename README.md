@@ -51,6 +51,7 @@
 - [4.1. Proyecto en su totalidad](#totalidad)
 - [4.2. Tabla de velocidades](#velocidades)
 - [4.3. Sprint 1](#sprint1)
+- [4.4. Sprint 2](#sprint2)
 
 <a name="sprint0"></a>
 
@@ -379,6 +380,25 @@ _Tabla de PH hechos._
 ![Captura28](/img/burnupS1.PNG)
 
 _Gráfica burnUp de PH hechos._
+
+<a name="sprint2"></a>
+
+## 4.4. Sprint 2
+
+![Captura29](/img/TablaSprint2.png)
+
+_Tabla de PH Sprint 2._
+
+![Captura30](/img/BurndownSprint2.png)
+
+_Gráfica burnDown Sprint 2._
+
+![Captura31](/img/Burn-upSprint2.PNG)
+
+_Gráfica burn-up Sprint 2._
+
+
+
 
 
 
