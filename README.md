@@ -332,20 +332,20 @@ El objetivo de esta parte es la realización del cálculo de métricas asociadas
 
 ![Captura19](/img/tabla_global.png)
 
-_Tabla del proyecto global_
+_Tabla del proyecto global._
 
 ![Captura20](/img/burndownph.png)
 
-_Gráfica burnUp de los puntos de historia_
+_Gráfica burnUp de los puntos de historia._
 
 ![Captura21](/img/burnupph.png)
 
-_Gráfica burnDown de los puntos de historia_
+_Gráfica burnDown de los puntos de historia._
 
 ![Captura22](/img/burndownvalor.png)
 
-_Gráfica burnUp de los valores asociados_
+_Gráfica burnUp de los valores asociados._
 
 ![Captura23](/img/burnupvalor.png)
 
-_Gráfica burnDown de los valores asociados_
+_Gráfica burnDown de los valores asociados._
